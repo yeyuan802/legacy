@@ -1,0 +1,3290 @@
+[ 2020-05-04T20:26:48+08:00 ] ::1 /test/culture3.0/index.php?_ijt=baultvo35h1799i4s057sogutq
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.146677s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.053303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.053469s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.680998s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.018353s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.808486s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.448927s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.001057s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.761182s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000655s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.502058s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.001476s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.116569s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000512s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.823219s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000409s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.290986s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000782s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000205s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000355s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.996718s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.996854s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.037094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.037208s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.037419s ]
+INFO: [ app_end ] --END-- [ RunTime:0.037526s ]
+
+[ 2020-05-04T20:26:50+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000678s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.594228s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.594376s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000321s ]
+
+[ 2020-05-04T20:30:12+08:00 ] ::1 /test/culture3.0/Resource/director.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000581s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.084091s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000528s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062840s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062923s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000602s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000663s ]
+
+[ 2020-05-04T20:30:12+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.019773s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019851s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005322s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005405s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000322s ]
+
+[ 2020-05-04T20:30:21+08:00 ] ::1 /test/culture3.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000606s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000813s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000915s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.022946s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000376s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.011226s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000273s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.000478s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.010966s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000488s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.010796s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.001415s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.010626s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000364s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.010587s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000345s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.018452s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000366s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050355s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050419s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000203s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000627s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000732s ]
+
+[ 2020-05-04T20:30:21+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000444s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005536s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005604s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000193s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000237s ]
+
+[ 2020-05-04T20:48:15+08:00 ] ::1 /test/culture3.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.052307s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000420s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.018200s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000332s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.000680s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.011906s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.010044s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.013314s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.001466s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.012505s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000561s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.012310s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000345s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.173395s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.001091s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000253s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063649s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063777s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000644s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000718s ]
+
+[ 2020-05-04T20:48:15+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000727s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020077s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020154s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000306s ]
+
+[ 2020-05-04T20:51:21+08:00 ] ::1 /test/culture3.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000525s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.019958s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000346s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.092882s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000776s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.001508s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.016656s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000730s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.012638s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.001209s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.014860s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000369s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.011236s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000306s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.041903s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000379s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045891s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045959s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.039770s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.039837s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000742s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000877s ]
+
+[ 2020-05-04T20:51:21+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000471s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004990s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005059s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000191s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000233s ]
+
+[ 2020-05-04T20:52:04+08:00 ] ::1 /test/culture3.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000627s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.023494s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000317s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.055969s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000278s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.000471s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.013010s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000645s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.243807s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.002775s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.012767s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.014085s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000309s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.010655s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000420s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043278s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043342s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000593s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000682s ]
+
+[ 2020-05-04T20:52:04+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000432s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005935s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005999s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000190s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000233s ]
+
+[ 2020-05-04T20:57:19+08:00 ] ::1 /test/culture3.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000561s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000629s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.327431s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000446s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.014869s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000286s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.000479s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.014932s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000563s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.010822s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.001356s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.010591s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000378s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.013389s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000297s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.010716s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000365s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071093s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071158s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000546s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000609s ]
+
+[ 2020-05-04T20:57:19+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000425s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018117s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018181s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000190s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000233s ]
+
+[ 2020-05-04T20:57:42+08:00 ] ::1 /test/culture3.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.018794s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000477s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.012657s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000274s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.000461s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.010956s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000517s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.066484s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.001297s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.011202s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000384s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.011488s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000282s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.010874s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000375s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.081071s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.081155s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000589s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000683s ]
+
+[ 2020-05-04T20:57:42+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000426s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017317s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017382s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000195s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000239s ]
+
+[ 2020-05-04T20:58:07+08:00 ] ::1 /test/culture3.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000578s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.078090s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000633s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.032194s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000429s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.000792s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.016814s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000720s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.012186s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.001219s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.010761s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000381s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.012271s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000292s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.011756s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000366s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044620s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044693s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000483s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000544s ]
+
+[ 2020-05-04T20:58:07+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000429s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017818s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017882s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000193s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000237s ]
+
+[ 2020-05-04T20:58:22+08:00 ] ::1 /test/culture3.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000424s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.019491s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000338s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.010687s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000274s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.000476s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.011259s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000520s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.010806s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.001215s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.010800s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000381s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.010396s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000292s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.019866s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000355s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043178s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043240s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000205s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000485s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000548s ]
+
+[ 2020-05-04T20:58:22+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000462s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034802s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034891s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000338s ]
+
+[ 2020-05-04T20:58:52+08:00 ] ::1 /test/culture3.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000432s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.020697s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000384s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.010621s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000272s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.000456s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.011237s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000540s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.013637s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.001572s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.011535s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000526s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.011755s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000331s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.015393s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000362s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000223s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057321s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001004s ]
+
+[ 2020-05-04T20:58:52+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006282s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006352s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000197s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000239s ]
+
+[ 2020-05-04T20:59:50+08:00 ] ::1 /test/culture3.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.028638s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000790s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.080938s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000578s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.000893s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.013863s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000551s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.013049s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.001254s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.010881s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000440s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.014643s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000292s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.010989s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000361s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043113s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043193s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000588s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000680s ]
+
+[ 2020-05-04T20:59:50+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000620s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016995s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017062s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000194s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000238s ]
+
+[ 2020-05-04T21:00:16+08:00 ] ::1 /test/culture3.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000425s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.022245s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000606s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.057202s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000352s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.000629s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.015233s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000706s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.011953s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.041265s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.014998s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000565s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.014732s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000405s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.013513s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000384s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042452s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042518s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000199s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000770s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000872s ]
+
+[ 2020-05-04T21:00:16+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000725s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017849s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017929s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000194s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000238s ]
+
+[ 2020-05-04T21:00:29+08:00 ] ::1 /test/culture3.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.034308s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000498s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.013574s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000326s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.000602s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.011705s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000558s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.276484s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.003322s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.015492s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000597s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.011045s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000283s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.010791s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000413s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000140s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000251s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052412s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052486s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000883s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000991s ]
+
+[ 2020-05-04T21:00:29+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000428s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006085s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006152s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000191s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000232s ]
+
+[ 2020-05-04T21:00:41+08:00 ] ::1 /test/culture3.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000437s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.078677s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.001194s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.016476s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000312s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.000547s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.065027s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000577s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.443829s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.001861s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.075434s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000391s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.010804s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000263s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.011167s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000391s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052992s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053057s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000251s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000683s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000795s ]
+
+[ 2020-05-04T21:00:41+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000692s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000779s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021766s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021874s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000404s ]
+
+[ 2020-05-04T21:00:57+08:00 ] ::1 /test/culture3.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000430s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.041423s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000425s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.013568s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000325s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.000684s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.013039s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000561s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.011270s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.001213s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.012359s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000373s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.010786s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000292s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.010485s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000366s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042575s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042636s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000215s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000492s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000568s ]
+
+[ 2020-05-04T21:00:57+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000884s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005388s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005455s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000191s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000233s ]
+
+[ 2020-05-04T21:04:15+08:00 ] ::1 /test/culture3.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.024892s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000703s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.014626s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000317s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.000489s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.015245s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000510s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.010288s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.001197s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.010478s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000351s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.010932s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000291s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.019301s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000361s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043493s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043560s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000576s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000656s ]
+
+[ 2020-05-04T21:04:15+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000431s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017777s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017906s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000346s ]
+
+[ 2020-05-04T21:04:38+08:00 ] ::1 /test/culture3.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000483s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.008879s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000338s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.011170s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000271s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.000459s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.011202s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000552s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.010007s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.001155s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.010126s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000381s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.011983s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000294s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.036767s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000329s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044489s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044549s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000201s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000639s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000738s ]
+
+[ 2020-05-04T21:04:38+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000564s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000634s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018045s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018111s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000220s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000298s ]
+
+[ 2020-05-04T21:05:18+08:00 ] ::1 /test/culture3.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000436s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.023849s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000651s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.014034s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000279s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.000484s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.011249s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000522s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.010410s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.001212s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.011322s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.011395s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000334s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.011042s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000362s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043466s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043529s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000199s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000480s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000539s ]
+
+[ 2020-05-04T21:05:18+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000426s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018083s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018146s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000188s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000231s ]
+
+[ 2020-05-04T21:07:30+08:00 ] ::1 /test/culture3.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.026906s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000749s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.015394s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000311s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.000548s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.010930s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000534s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.010623s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.001221s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.063389s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000545s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.014837s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000408s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.165301s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000617s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000240s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053996s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054109s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000534s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000708s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000805s ]
+
+[ 2020-05-04T21:07:30+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000429s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017239s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017308s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000201s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000246s ]
+
+[ 2020-05-04T21:09:09+08:00 ] ::1 /test/culture3.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.025888s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000779s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.015564s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000324s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.000553s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.010599s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000525s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.011215s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.001221s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.010949s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000375s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.011078s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000292s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.010733s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000363s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043429s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043501s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000686s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000783s ]
+
+[ 2020-05-04T21:09:09+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018128s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018194s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000197s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000238s ]
+
+[ 2020-05-04T21:11:23+08:00 ] ::1 /test/culture3.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.079032s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000366s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.010910s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000300s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.000472s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.053042s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000768s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.015067s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.001894s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.012903s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000441s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.012274s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000293s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.010870s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000364s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046081s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046146s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000568s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000658s ]
+
+[ 2020-05-04T21:11:23+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000431s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017787s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017853s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000201s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000243s ]
+
+[ 2020-05-04T21:11:44+08:00 ] ::1 /test/culture3.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.028640s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000570s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.013223s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000356s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.000588s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.012011s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000622s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.012326s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.001903s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.013153s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000347s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.013135s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000282s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.013002s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000350s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058357s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058459s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000563s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000659s ]
+
+[ 2020-05-04T21:11:44+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000441s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000455s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005724s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005791s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000185s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000227s ]
+
+[ 2020-05-04T21:12:20+08:00 ] ::1 /test/culture3.0/index.php?_ijt=16gi1pmuilke8qfnh81mg6r64o
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.011292s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000425s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.012331s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000310s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.000544s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.010960s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000508s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.011421s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.001231s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.040509s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000386s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.011827s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000299s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.012188s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000373s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048015s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048094s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000724s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000846s ]
+
+[ 2020-05-04T21:15:39+08:00 ] ::1 /test/culture3.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.106791s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.013335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013487s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.114847s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.001153s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.149604s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.015542s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.001740s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.065316s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.001348s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.015499s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.001423s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.010977s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000344s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.010821s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000297s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.010965s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000362s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000219s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000369s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.599063s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.599128s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.031190s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.031253s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.036259s ]
+INFO: [ app_end ] --END-- [ RunTime:0.036462s ]
+
+[ 2020-05-04T21:15:39+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.081849s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.081934s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000544s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000618s ]
+
+[ 2020-05-04T21:17:23+08:00 ] ::1 /test/culture3.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.011977s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000341s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.098474s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000644s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.001280s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.014993s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000734s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.055525s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.001498s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.051024s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000403s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.041434s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000265s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.009972s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000363s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.090906s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090974s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001005s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001137s ]
+
+[ 2020-05-04T21:17:23+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006164s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006325s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000410s ]
+
+[ 2020-05-04T21:20:20+08:00 ] ::1 /test/culture3.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.044670s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000338s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.014107s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000280s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.000461s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.010922s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000485s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.011033s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.001258s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.010642s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000392s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.011118s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000295s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.053133s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000440s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000197s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048065s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048139s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001092s ]
+
+[ 2020-05-04T21:20:20+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016624s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016692s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000194s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000235s ]
+
+[ 2020-05-04T21:20:38+08:00 ] ::1 /test/culture3.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.007858s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000344s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.021343s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000348s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.000483s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.010746s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000539s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.044260s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.001779s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.035016s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000421s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.013119s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000359s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.049620s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000396s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.098823s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.098945s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001077s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001191s ]
+
+[ 2020-05-04T21:20:38+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000423s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016647s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016713s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000193s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000235s ]
+
+[ 2020-05-04T21:21:10+08:00 ] ::1 /test/culture3.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000426s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.009091s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000337s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.022936s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000268s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.000456s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.043796s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000575s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.016751s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.001466s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.250234s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.001232s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.019959s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000355s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.011389s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000361s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042474s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042536s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000203s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000493s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000574s ]
+
+[ 2020-05-04T21:21:10+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018284s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018346s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000207s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000253s ]
+
+[ 2020-05-04T21:21:45+08:00 ] ::1 /test/culture3.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000426s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.028250s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000660s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.013956s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000292s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.000502s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.014494s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000490s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.010771s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.001188s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.014414s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000344s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.010150s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000291s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.010029s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000357s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042219s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042283s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000505s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000567s ]
+
+[ 2020-05-04T21:21:45+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000430s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004646s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004709s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000194s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000237s ]
+
+[ 2020-05-04T21:22:00+08:00 ] ::1 /test/culture3.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000425s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.047460s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000442s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.011477s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000237s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.000584s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.011605s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000573s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.011687s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.001436s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.010412s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000356s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.010712s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000256s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.009852s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000382s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041527s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041589s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000200s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000485s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000556s ]
+
+[ 2020-05-04T21:22:00+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000455s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006085s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006148s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000194s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000237s ]
+
+[ 2020-05-04T21:22:27+08:00 ] ::1 /test/culture3.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.058168s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000685s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.015697s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000354s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.000669s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.027511s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000517s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.010723s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.001234s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.009968s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000374s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.010902s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000286s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.028600s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000369s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042460s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042523s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000559s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000628s ]
+
+[ 2020-05-04T21:22:27+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000550s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005023s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005089s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000190s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000232s ]
+
+[ 2020-05-04T21:23:18+08:00 ] ::1 /test/culture3.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.027386s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000673s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.015571s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000312s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.000544s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.011231s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000534s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.010910s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.001212s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.053843s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000469s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.013542s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000355s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.013420s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000438s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045430s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000571s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000666s ]
+
+[ 2020-05-04T21:23:18+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000702s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005169s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005237s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000193s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000236s ]
+
+[ 2020-05-04T21:25:49+08:00 ] ::1 /test/culture3.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.098394s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000358s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.011762s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000312s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.000460s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.010855s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000518s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.011054s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.001214s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.010223s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000374s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.010766s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000307s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.010572s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000359s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.090192s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090278s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000832s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000928s ]
+
+[ 2020-05-04T21:25:49+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000667s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000684s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021717s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021791s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000297s ]
+
+[ 2020-05-04T21:26:37+08:00 ] ::1 /test/culture3.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000533s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.008466s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000382s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.017265s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000324s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.000475s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.010816s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000487s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.011368s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.001208s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.010441s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000370s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.014822s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000301s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.011022s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000358s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042690s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042757s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000596s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000689s ]
+
+[ 2020-05-04T21:26:37+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000456s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004682s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004749s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000202s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000245s ]
+
+[ 2020-05-04T21:28:38+08:00 ] ::1 /test/culture3.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.027990s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000360s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.056253s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000518s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.000966s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.020214s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000807s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.013328s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.001283s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.010672s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000441s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.037329s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000288s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.010235s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000370s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000203s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.122283s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.122348s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000569s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000633s ]
+
+[ 2020-05-04T21:28:39+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000432s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018076s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018145s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000202s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000246s ]
+
+[ 2020-05-04T21:30:03+08:00 ] ::1 /test/culture3.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.019686s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000340s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.094806s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000252s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.000462s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.022985s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000517s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.010889s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.001253s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.010776s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000410s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.010589s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000299s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.010982s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000367s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043174s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043236s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000209s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000484s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000553s ]
+
+[ 2020-05-04T21:30:03+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000485s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005461s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005557s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000383s ]
+
+[ 2020-05-04T21:30:24+08:00 ] ::1 /test/culture3.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.023132s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000362s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.089550s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000398s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.000717s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.017996s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000522s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.010275s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.001222s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.011241s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000444s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.010614s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000296s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.010205s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000356s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.185189s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.185251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000554s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000627s ]
+
+[ 2020-05-04T21:30:24+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000797s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005361s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005439s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000360s ]
+
+[ 2020-05-04T21:31:27+08:00 ] ::1 /test/culture3.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000106s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000647s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.011810s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000341s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.011038s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000280s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.000465s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.011284s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000544s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.010962s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.001216s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.010879s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000368s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.071196s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000408s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.017515s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000601s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049076s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000550s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000638s ]
+
+[ 2020-05-04T21:31:27+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000425s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004949s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005014s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000191s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000234s ]
+
+[ 2020-05-04T21:32:06+08:00 ] ::1 /test/culture3.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.014844s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000507s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.012985s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000281s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.000464s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.010479s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000568s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.032395s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.001254s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.074838s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000680s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.020944s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000545s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.014214s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000423s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045241s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045309s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000212s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000821s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000931s ]
+
+[ 2020-05-04T21:32:06+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000425s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005628s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005709s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000190s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000234s ]
+
+[ 2020-05-04T21:32:54+08:00 ] ::1 /test/culture3.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000431s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.008560s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000318s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.011815s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000338s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.000561s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.082508s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000660s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.012285s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.001349s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.011785s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000430s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.011901s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000320s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.011783s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000343s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055962s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056033s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000825s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000899s ]
+
+[ 2020-05-04T21:32:54+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000432s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005013s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005076s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000192s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000235s ]
+
+[ 2020-05-04T21:33:34+08:00 ] ::1 /test/culture3.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.022793s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000337s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.117098s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000571s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.000889s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.043170s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000757s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.067898s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.004416s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.015524s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000433s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.054650s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000346s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.013168s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000477s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045442s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045518s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000549s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000612s ]
+
+[ 2020-05-04T21:33:34+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000495s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005276s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000192s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000236s ]
+
+[ 2020-05-04T21:34:18+08:00 ] ::1 /test/culture3.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.025326s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000616s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.014855s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000238s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.000653s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.009767s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000602s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.010434s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.001202s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.010219s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000368s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.010695s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000322s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.009928s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000384s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047389s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047454s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000749s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000854s ]
+
+[ 2020-05-04T21:34:19+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000561s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000633s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017064s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017132s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000194s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000235s ]
+
+[ 2020-05-04T21:35:13+08:00 ] ::1 /test/culture3.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000425s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.024927s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000751s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.013904s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000310s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.000505s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.011038s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000514s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.011146s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.001189s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.011047s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000396s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.011275s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000300s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.010865s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000429s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042729s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042790s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000197s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000474s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000533s ]
+
+[ 2020-05-04T21:35:13+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000435s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005878s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000192s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000235s ]
+
+[ 2020-05-04T21:36:01+08:00 ] ::1 /test/culture3.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000428s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.008607s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000342s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.011342s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000265s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.000618s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.012210s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.011502s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.001280s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.016100s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000424s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.010891s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000288s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.010339s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000391s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053196s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053287s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000579s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000668s ]
+
+[ 2020-05-04T21:36:01+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000628s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021535s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021636s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000413s ]
+
+[ 2020-05-04T21:36:12+08:00 ] ::1 /test/culture3.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.009389s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000343s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.011048s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000270s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.000533s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.010279s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000582s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.010536s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.001261s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.036484s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000478s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.012659s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000265s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.010995s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000354s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000232s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.091464s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.091531s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000549s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000614s ]
+
+[ 2020-05-04T21:36:12+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000663s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005027s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005141s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000192s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000236s ]
+
+[ 2020-05-04T21:36:50+08:00 ] ::1 /test/culture3.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000575s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.012182s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000342s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.011043s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000280s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.000454s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.048829s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000610s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.012225s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.001505s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.011881s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000429s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.012947s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000335s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.010436s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000415s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043203s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043270s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000676s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000753s ]
+
+[ 2020-05-04T21:36:50+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000457s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005542s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005612s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000296s ]
+
+[ 2020-05-04T21:37:32+08:00 ] ::1 /test/culture3.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000898s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.016264s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000337s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.010760s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000271s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.000454s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.010857s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000518s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.011155s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.001212s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.011011s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.010698s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000300s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.011513s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000361s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042791s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042853s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000202s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000479s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000538s ]
+
+[ 2020-05-04T21:37:32+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000440s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005037s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005101s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000194s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000239s ]
+
+[ 2020-05-04T21:37:46+08:00 ] ::1 /test/culture3.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000430s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.027489s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000856s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.015211s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000333s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.000495s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.011106s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000497s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.010917s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.001186s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.010747s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000373s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.010114s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000290s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.011007s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000372s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071358s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071418s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000200s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000480s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000548s ]
+
+[ 2020-05-04T21:37:46+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000424s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005367s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005451s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000355s ]
+
+[ 2020-05-04T21:39:23+08:00 ] ::1 /test/culture3.0/index.php?_ijt=vg52p9lsuegsgi1cmmuoha4a9p
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000833s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000917s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.035198s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000343s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.040120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000295s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.000498s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.011632s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000645s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.012537s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.001230s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.015139s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000396s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.012963s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000300s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.011489s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000375s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048788s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048852s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000577s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000668s ]
+
+[ 2020-05-04T21:46:15+08:00 ] ::1 /test/culture3.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.531932s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.080836s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.081077s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.024675s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000708s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.014625s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000335s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.000761s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.061129s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.001605s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.016048s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.029864s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.010776s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000404s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.011363s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000340s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.049214s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000442s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000243s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.349748s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.349894s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.035770s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.035937s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.049704s ]
+INFO: [ app_end ] --END-- [ RunTime:0.049861s ]
+
+[ 2020-05-04T21:46:15+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000598s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030215s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030300s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000300s ]
+
+[ 2020-05-04T21:46:35+08:00 ] ::1 /test/culture3.0/Policy/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000536s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.034086s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_policy` WHERE `type` = 'China' LIMIT 1   [ RunTime:0.030698s ]
+SQL: SELECT * FROM `tb_policy` WHERE `type` = 'China' ORDER BY `time` desc LIMIT 0,15   [ RunTime:0.000524s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.017110s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000365s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000141s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000215s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.163632s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.163722s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000604s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000704s ]
+
+[ 2020-05-04T21:46:35+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000425s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.089612s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.089691s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000208s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000252s ]
+
+[ 2020-05-04T21:46:43+08:00 ] ::1 /test/culture3.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000431s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.013857s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000319s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.048757s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000293s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.000482s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.142925s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.001109s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.093599s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.001552s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.011487s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000460s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.010958s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000326s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.010455s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000342s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049466s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049560s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000490s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000568s ]
+
+[ 2020-05-04T21:46:43+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000499s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000760s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005641s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005707s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000321s ]
+
+[ 2020-05-04T21:47:02+08:00 ] ::1 /test/culture3.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000558s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000637s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.008304s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000372s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.029784s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000287s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.000477s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.037075s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.013622s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.011055s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.001333s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.011068s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000426s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.064057s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000580s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.017659s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000593s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.168002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.168121s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000438s ]
+
+[ 2020-05-04T21:47:05+08:00 ] ::1 /test/culture3.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.008502s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000395s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.011464s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000229s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.000699s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.010534s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000538s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.012252s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.001800s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.028734s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000375s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.049124s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000338s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.011783s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000402s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044229s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044298s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000545s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000608s ]
+
+[ 2020-05-04T21:47:05+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000595s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005455s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005524s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000192s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000237s ]
+
+[ 2020-05-04T22:28:55+08:00 ] ::1 /test/culture3.0/index.php?_ijt=g3vv2dnu5noptvrsaqs36e1k86
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.056839s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010740s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010822s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.235050s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.001110s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.175245s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.057702s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.026531s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.024196s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.020423s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.052918s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.025606s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.024325s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.020393s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.057342s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000673s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.009903s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000859s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.040257s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.040336s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.035657s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.035720s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.120925s ]
+INFO: [ app_end ] --END-- [ RunTime:0.121082s ]
+
+[ 2020-05-04T22:28:56+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000794s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.374351s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.374472s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000515s ]
+
+[ 2020-05-04T22:29:13+08:00 ] ::1 /test/culture3.0/Policy/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000622s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000726s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.064151s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_policy` WHERE `type` = 'China' LIMIT 1   [ RunTime:0.000355s ]
+SQL: SELECT * FROM `tb_policy` WHERE `type` = 'China' ORDER BY `time` desc LIMIT 0,15   [ RunTime:0.000659s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.010738s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000598s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.303893s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.303999s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000422s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000730s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000828s ]
+
+[ 2020-05-04T22:29:13+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000434s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009089s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009213s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000209s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000255s ]
+
+[ 2020-05-04T22:29:18+08:00 ] ::1 /test/culture3.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000586s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.045743s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000515s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.010995s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000222s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.000410s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.012456s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000507s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.013537s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.013511s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.011968s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000473s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.010303s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000260s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.011195s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000378s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054594s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054690s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000791s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000924s ]
+
+[ 2020-05-04T22:29:18+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000527s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000471s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000204s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010073s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010195s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000564s ]
+
+[ 2020-05-04T22:29:21+08:00 ] ::1 /test/culture3.0/Policy/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000543s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000474s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.058953s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_policy` WHERE `type` = 'China' LIMIT 1   [ RunTime:0.000301s ]
+SQL: SELECT * FROM `tb_policy` WHERE `type` = 'China' ORDER BY `time` desc LIMIT 0,15   [ RunTime:0.000555s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.102706s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000467s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052695s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052809s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000554s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000645s ]
+
+[ 2020-05-04T22:29:21+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000426s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000576s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000673s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007795s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007874s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000196s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000240s ]
+
+[ 2020-05-04T22:29:32+08:00 ] ::1 /test/culture3.0/Resource/shop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000559s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000892s ]
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.363032s ]
+SQL: SELECT * FROM `tb_goods` WHERE `type` = 'food' ORDER BY `time` desc  [ RunTime:0.000577s ]
+SQL: SELECT * FROM `tb_goods` WHERE `state` = '1' LIMIT 1   [ RunTime:0.098403s ]
+SQL: SELECT * FROM `tb_goods` WHERE `type` = 'artware' ORDER BY `time` desc  [ RunTime:0.000449s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.090517s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000505s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000250s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071236s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071365s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000919s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001039s ]
+
+[ 2020-05-04T22:29:32+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000710s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007230s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007309s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000326s ]
+
+[ 2020-05-04T22:29:37+08:00 ] ::1 /test/culture3.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000433s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.011152s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000403s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.034366s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000257s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.000566s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.045866s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000576s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.108038s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.001382s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.118405s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000454s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.012440s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000250s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.011709s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000458s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070929s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071033s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000580s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000671s ]
+
+[ 2020-05-04T22:29:37+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000655s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006538s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006650s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000420s ]
+

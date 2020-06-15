@@ -1,0 +1,855 @@
+[ 2020-06-14T10:25:43+08:00 ] ::1 /test/culture3.0/index.php?_ijt=mca5rj7mgk78k5g5mpf3rprvsk
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.085684s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.038985s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.039098s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.170168s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000953s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.069886s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.167561s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.032595s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.037784s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.019113s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.034153s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.022505s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.099811s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000546s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.181983s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.032472s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.021817s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.082680s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000216s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000324s ]
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:2.270999s ]
+INFO: [ view_parse ] --END-- [ RunTime:2.271225s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.084717s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.084781s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.131900s ]
+INFO: [ app_end ] --END-- [ RunTime:0.132001s ]
+
+[ 2020-06-14T10:25:43+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000614s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.252203s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.252289s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000476s ]
+
+[ 2020-06-14T10:30:29+08:00 ] ::1 /test/culture3.0/Resource/director.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.069027s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.163428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.163504s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+NOTIC: [8] Undefined variable: country D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\ca5f80acdd68d35b412913ce7854baf4.php 第 108 行.
+NOTIC: [8] Undefined variable: msg D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\ca5f80acdd68d35b412913ce7854baf4.php 第 121 行.
+NOTIC: [8] Undefined variable: msg D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\ca5f80acdd68d35b412913ce7854baf4.php 第 121 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:6.748850s ]
+INFO: [ view_parse ] --END-- [ RunTime:6.748942s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.637518s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.637596s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.176888s ]
+INFO: [ app_end ] --END-- [ RunTime:0.176981s ]
+
+[ 2020-06-14T10:30:40+08:00 ] ::1 /test/culture3.0/index.php?_ijt=mca5rj7mgk78k5g5mpf3rprvsk
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001008s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.054399s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000514s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.031571s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.033409s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.017654s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.489871s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000668s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:1.297749s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.017453s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.033070s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000547s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.341870s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000322s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.416192s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000573s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.653409s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.653517s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000473s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000534s ]
+
+[ 2020-06-14T10:30:42+08:00 ] ::1 /test/culture3.0/index.php?_ijt=mca5rj7mgk78k5g5mpf3rprvsk
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000633s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001370s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.016784s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000617s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.028396s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000348s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.000494s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.299639s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000898s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.015226s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.001885s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.016009s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000587s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.027526s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000279s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.015565s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000388s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.128145s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.128216s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000532s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000587s ]
+
+[ 2020-06-14T10:30:42+08:00 ] ::1 /test/culture3.0/Resource/director.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000550s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000228s ]
+NOTIC: [8] Undefined variable: country D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\ca5f80acdd68d35b412913ce7854baf4.php 第 108 行.
+NOTIC: [8] Undefined variable: msg D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\ca5f80acdd68d35b412913ce7854baf4.php 第 121 行.
+NOTIC: [8] Undefined variable: msg D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\ca5f80acdd68d35b412913ce7854baf4.php 第 121 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.104088s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.104164s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000760s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000835s ]
+
+[ 2020-06-14T10:30:47+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000469s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000217s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.712966s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.713053s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000222s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000278s ]
+
+[ 2020-06-14T10:30:53+08:00 ] ::1 /test/culture3.0/Resource/directorList/type/%E6%B0%91%E9%97%B4%E6%96%87%E5%AD%A6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.125618s ]
+SQL: SELECT * FROM `tb_director` WHERE `type` = '民间文学' ORDER BY `Did` asc  [ RunTime:0.000874s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000659s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000786s ]
+
+[ 2020-06-14T10:30:55+08:00 ] ::1 /test/culture3.0/Resource/directorList/type/%E6%B0%91%E9%97%B4%E6%96%87%E5%AD%A6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000465s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.217943s ]
+SQL: SELECT * FROM `tb_director` WHERE `type` = '民间文学' ORDER BY `Did` asc  [ RunTime:0.000430s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000499s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000552s ]
+
+[ 2020-06-14T10:32:16+08:00 ] ::1 /test/culture3.0/Resource/director.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001187s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001623s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+NOTIC: [8] Undefined variable: country D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\ca5f80acdd68d35b412913ce7854baf4.php 第 108 行.
+NOTIC: [8] Undefined variable: msg D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\ca5f80acdd68d35b412913ce7854baf4.php 第 121 行.
+NOTIC: [8] Undefined variable: msg D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\ca5f80acdd68d35b412913ce7854baf4.php 第 121 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.258895s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.258955s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001293s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001346s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006534s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006785s ]
+
+[ 2020-06-14T10:32:16+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000682s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000763s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010763s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011595s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000739s ]
+
+[ 2020-06-14T10:32:20+08:00 ] ::1 /test/culture3.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000556s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.013721s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000429s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.021976s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000273s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.000544s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.020867s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000528s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.014904s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.001330s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.023199s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000420s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.014419s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000302s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.072389s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000348s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000220s ]
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.164455s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.164521s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000520s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000570s ]
+
+[ 2020-06-14T10:32:22+08:00 ] ::1 /test/culture3.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000456s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.021672s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000576s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.105919s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000316s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.000881s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.023221s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000672s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.014272s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.001265s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.048962s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000415s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.014639s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000302s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.014118s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000384s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.103429s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.103484s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000238s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000633s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000699s ]
+
+[ 2020-06-14T10:32:22+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000459s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006661s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006747s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000664s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000757s ]
+
+[ 2020-06-14T10:32:48+08:00 ] ::1 /test/culture3.0/Policy/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000549s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.026196s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_policy` WHERE `type` = 'China' LIMIT 1   [ RunTime:0.000340s ]
+SQL: SELECT * FROM `tb_policy` WHERE `type` = 'China' ORDER BY `time` desc LIMIT 0,15   [ RunTime:0.000434s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.059983s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000431s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.193967s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.194046s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000857s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001223s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003637s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004385s ]
+
+[ 2020-06-14T10:32:48+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000537s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006421s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006507s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000398s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000474s ]
+
+[ 2020-06-14T10:32:52+08:00 ] ::1 /test/culture3.0/Resource/director.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000434s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+NOTIC: [8] Undefined variable: country D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\ca5f80acdd68d35b412913ce7854baf4.php 第 108 行.
+NOTIC: [8] Undefined variable: msg D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\ca5f80acdd68d35b412913ce7854baf4.php 第 121 行.
+NOTIC: [8] Undefined variable: msg D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\ca5f80acdd68d35b412913ce7854baf4.php 第 121 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070408s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070462s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000198s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000949s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001046s ]
+
+[ 2020-06-14T10:32:52+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000548s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007565s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000197s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000245s ]
+
+[ 2020-06-14T10:32:55+08:00 ] ::1 /test/culture3.0/Resource/directorList/type/%E6%B0%91%E9%97%B4%E6%96%87%E5%AD%A6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000735s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000444s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.149464s ]
+SQL: SELECT * FROM `tb_director` WHERE `type` = '民间文学' ORDER BY `Did` asc  [ RunTime:0.000711s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000696s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000775s ]
+
+[ 2020-06-14T10:33:01+08:00 ] ::1 /test/culture3.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000926s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.026501s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000952s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.021914s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000447s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.000668s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.021222s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000514s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.014963s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.001283s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.014499s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000399s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.014586s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000328s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.014508s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000363s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.105103s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.105155s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000652s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000743s ]
+
+[ 2020-06-14T10:33:01+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000444s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007437s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007497s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000213s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000255s ]
+
+[ 2020-06-14T10:36:54+08:00 ] ::1 /test/culture3.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000651s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.018667s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000457s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.025465s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000314s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.000922s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.024566s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000542s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.019531s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.003338s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.017353s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000527s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.018314s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000298s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.031494s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000725s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000203s ]
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.138537s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.138691s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000506s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000582s ]
+
+[ 2020-06-14T10:36:56+08:00 ] ::1 /test/culture3.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000607s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.016264s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000534s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.026091s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.000760s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.000708s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.077295s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000482s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.077533s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.002410s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.018492s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000502s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.017390s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000300s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.017696s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000374s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\culture3.0\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.130683s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.130741s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000428s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000909s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000993s ]
+
+[ 2020-06-14T10:36:56+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001407s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008655s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008731s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000257s ]
+
+[ 2020-06-14T10:41:44+08:00 ] ::1 /test/culture3.0/Resource/countryList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000544s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.037310s ]
+SQL: SELECT * FROM `tb_director` WHERE `place` = '巴南�\�' ORDER BY `Did` asc  [ RunTime:0.000482s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.015764s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000374s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.114061s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.114148s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000789s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000891s ]
+
+[ 2020-06-14T10:41:44+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000762s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005960s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006036s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000452s ]
+
+[ 2020-06-14T11:10:00+08:00 ] ::1 /test/culture3.0/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012902s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.014912s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015038s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.306150s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.306267s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.011595s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011692s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001445s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001515s ]
+
+[ 2020-06-14T11:10:01+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000639s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000981s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054442s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054563s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000432s ]
+
+[ 2020-06-14T11:10:01+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000584s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006670s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006752s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000346s ]
+
+[ 2020-06-14T11:10:01+08:00 ] ::1 /test/culture3.0/Home/User/captcha
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000473s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001104s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001333s ]
+
+[ 2020-06-14T11:10:04+08:00 ] ::1 /test/culture3.0/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000579s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.225207s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.225302s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000442s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000495s ]
+
+[ 2020-06-14T11:10:04+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000777s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001646s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005716s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005781s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000194s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000238s ]
+
+[ 2020-06-14T11:10:04+08:00 ] ::1 /test/culture3.0/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001685s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013630s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013722s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000273s ]
+
+[ 2020-06-14T11:10:04+08:00 ] ::1 /test/culture3.0/Home/User/captcha
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000780s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000473s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000566s ]
+
