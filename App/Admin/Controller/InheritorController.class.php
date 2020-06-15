@@ -7,7 +7,7 @@ class InheritorController extends CommonController
     public function index()
     {
         $model=D('inheritor');
-        $where=array('nid'=>'0');
+        $where=array('status'=>'1');
         $count=$model->where($where)->count();
         $Page=new \Think\Page($count, 5);
 
