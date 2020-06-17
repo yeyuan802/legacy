@@ -7,7 +7,7 @@ class TravelController extends CommonController
     public function index()
     {
         $model=D('travel');
-        $where=array('placeid'=>'0');
+        $where=array('status'=>'1');
         $count=$model->where($where)->count();
         $Page=new \Think\Page($count, 5);
 

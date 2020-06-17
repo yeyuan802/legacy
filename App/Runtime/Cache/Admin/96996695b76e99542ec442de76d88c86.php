@@ -125,95 +125,93 @@
     <title>Title</title>
 </head>
 <body>
-<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-    <ul class="list-group">
-        <a href="/EPP_Project/legacy/Admin/Goods/index" class="list-group-item active">查看商品</a>
-        <a href="/EPP_Project/legacy/Admin/Goods/add" class="list-group-item">添加商品</a>
-        <a href="/EPP_Project/legacy/Admin/Goods/index" class="list-group-item">修改商品</a>
-        <a href="/EPP_Project/legacy/Admin/Goods/search" class="list-group-item">查询商品</a>
-        <a href="/EPP_Project/legacy/Admin/Goods/index" class="list-group-item">删除商品</a>
-    </ul>
-</div>
-<!--右侧主要内容-->
-<div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <h1>商品管理</h1>
-            <!--<div class="panel panel-default">
-                <div class="panel-body">
-                    <ul id="myTab" class="nav nav-tabs" role="tablist">
-                        <li class="active">
-                            <a href="#index" role="tab" data-toggle="tab">查看商品</a>
-                        </li>
-                        <li>
-                            <a href="#add" role="tab" data-toggle="tab">添加商品</a>
-                        </li>
-                        <li>
-                            <a href="#rule" role="tab" data-toggle="tab">修改商品</a>
-                        </li>
-                        <li>
-                            <a href="#rule" role="tab" data-toggle="tab">查询商品</a>
-                        </li>
-                        <li>
-                            <a href="#rule" role="tab" data-toggle="tab">删除商品</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>-->
+        <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+            <ul class="list-group">
+                <li><a href="/EPP_Project/legacy/Admin/Message/index" class="list-group-item active">查看留言</a></li>
+            </ul>
         </div>
-        <div class="panel-body">
-            <table class="table table-hover">
-                <tbody>
-                <tr class="bg-primary">
-                    <th scope="row"></th>
-                    <th class="all"><input type="checkbox">全选</th>
-                    <th>商品名字</th>
-                    <th>商品价格</th>
-                    <th>上架时间</th>
-                    <th>总的数量</th>
-                    <th>商品标号</th>
-                    <th>商品产地</th>
-                    <th>商品图片</th>
-                    <th>商品操作</th>
-                </tr>
-                <?php if(is_array($res)): foreach($res as $key=>$v): ?><tr class="bg-success">
-                        <th scope="row"></th>
-                        <td><input type="checkbox" name="input[]"></td>
-                        <td><?php echo ($v["goodname"]); ?></td>
-                        <td><?php echo ($v["price"]); ?></td>
-                        <td><?php echo ($v["time"]); ?></td>
-                        <td><?php echo ($v["total"]); ?></td>
-                        <td><?php echo ($v["biaohao"]); ?></td>
-                        <td><?php echo ($v["place"]); ?></td>
-                        <td>
-                            <?php echo ($v["picname"]); ?>
-                            <a href="/EPP_Project/legacy/Admin/Goods/goods/goodname/<?php echo ($v["rid"]); ?>" target="_blank"><?php if(empty($v["picname"])): ?><img src="/EPP_Project/legacy/Public/image/preview.jpg"><?php else: ?><img src="/EPP_Project/legacy/Public/uploads/thumb/<?php echo ($v["picname"]); ?>"><?php endif; ?></a>
-                        </td>
-                        <td>
-                            <a type="button" class="btn btn-primary btn-sm" href="/EPP_Project/legacy/Admin/Goods/revise/id/<?php echo ($v["id"]); ?>">
-                                <span class="glyphicon glyphicon-pencil"></span>编辑 </a>
-                            <a type="button" class="btn btn-danger btn-sm" href="/EPP_Project/legacy/Admin/Goods/delete/id/<?php echo ($v["id"]); ?>">
-                                <span class="glyphicon glyphicon-trash"></span>删除</a>
-                        </td>
-                    </tr><?php endforeach; endif; ?>
-                </tbody>
-            </table>
-            <div class="pagelist" align="right">
-                <?php echo $page; ?>
+        <!--右侧主要内容-->
+        <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <!--这里放置标题、选项-->
+                    <h1>查看留言</h1>
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <ul id="myTab" class="nav nav-tabs" role="tablist">
+                                <li class="active">
+                                    <a href="#bulletin" role="tab" data-toggle="tab">查看留言</a>
+                                </li>
+                            </ul>
+                            <!--选项卡面板-->
+                            <div id="myTabContent" class="tab-content">
+                                <div class="tab-pane active" id="bulletin">
+                                    <table class="table table-hover">
+                                        <tbody>
+                                        <tr class="bg-primary">
+                                            <th scope="row"></th>
+                                            <td>id</td>
+                                            <td>留言人</td>
+                                            <td>留言内容</td>
+                                            <td>留言时间</td>
+                                            <td>回复内容</td>
+                                            <td>是否回复</td>
+                                            <td>是否删除
+                                            </td>
+                                        </tr>
+                                        <?php if(is_array($list)): foreach($list as $key=>$v): ?><tr class="bg-danger">
+                                            <th scope="row"></th>
+                                            <td><?php echo ($v["id"]); ?></td>
+                                            <td><?php echo ($v["writer"]); ?></td>
+                                            <td><?php echo ($v["content"]); ?></td>
+                                            <td><?php echo ($v["time"]); ?></td>
+                                            <td><?php echo ($v["reply"]); ?></td>
+                                            <td><a href="/EPP_Project/legacy/Admin/Message/reply/id/<?php echo ($v["id"]); ?>">回复</a></td>
+
+                                            <td><a href="/EPP_Project/legacy/Admin/Message/check/id/<?php echo ($v["id"]); ?>"> 删除</a></td>
+                                        </tr><?php endforeach; endif; ?>
+                                        </tbody>
+                                    </table>
+                                    <table>
+                                        <nav class="pull-right">
+                                            <ul class="pagination">
+                                                <?php echo $page; ?>
+                                      <!--          <li class="disabled">
+                                                    <a href="#" aria-label="Previous">
+                                                        <span aria-hidden="true">&laquo;</span>
+                                                    </a>
+                                                </li>
+                                                <li class="active">
+                                                    <a href="#">1</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">2</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">3</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">4</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">5</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">6</a>
+                                                </li>
+                                                <li><a href="#">
+                                                    <span aria-hidden="true">&raquo;</span>
+                                                </a> </li>-->
+                                            </ul>
+                                        </nav>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
-<script type="text/javascript">
-    $(".all input[type]").click(function () {
-        var $cks=$("td input[type=checkbox]");
-        if ($cks.is(":checked")){
-            $cks.removeAttr("checked");
-        }else {
-            $cks.prop("checked","true");
-        }
-    })
-</script>
 </body>
 </html></div>
 </div>
