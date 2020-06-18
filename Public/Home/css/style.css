@@ -108,11 +108,12 @@ p{
     color: #fff;
 }
 .navbar-collapse {
-    padding: 0px !important;
+    padding: 0 !important;
 }
 .navbar-nav > li > .dropdown-menu {
     text-align: center;
 }
+
 ul .dropdown-menu {
     background: orangered;
     box-shadow: 0 0 0;
@@ -545,14 +546,13 @@ form{
     display: flex;
     flex-direction: row;
     background-color: white;
+    height:420px;
     width: 100%;
-    height: 470px;
 }
 
 #inheritor-content{
     width: 54%;
     margin: 2%;
-    height: 94%;
     display:flex;
     flex-direction: column;
     background-color: rgba(255, 233, 228, 0.2);
@@ -575,7 +575,6 @@ form{
 #index-content{
     width: 96%;
     margin: 8px;
-    height: 380px;
     text-decoration: underline;
     background-color: white;
     font-size: 20px;
@@ -703,6 +702,16 @@ form{
     font-family: "微软雅黑 Light";
 }
 /*shopList end*/
+/*Page shop*/
+.shop-index{
+    margin-top:40px;
+}
+.goodslist{height: 400px;}
+.goodspic{height: 400px;}
+.goodspic .slide{width: 100%;height: 100%}
+.goodspic .carousel-inner{width: 100%;height: 100%}
+.goodspic .item{width: 100%;height: 100%}
+/*Shop end*/
 
 /*footer start*/
 .footer{
