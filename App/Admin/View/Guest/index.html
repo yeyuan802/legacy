@@ -32,21 +32,21 @@
                                             <th scope="row"></th>
                                             <td>用户id</td>
                                             <td>昵称</td>
-                                            <td>性别</td>
-                                            <td>qq</td>
-                                            <td>用户积分</td>
-                                            <td>生日</td>
-                                            <td>查看订单</td>
+                                            <td>邮箱</td>
+                                            <td>电话号码</td>
+                                            <td>家庭住址</td>
+                                            <td>注册时间</td>
+                                            <td></td>
                                         </tr>
                                         <foreach name="res" item="v">
                                             <tr class="bg-danger">
                                                 <th scope="row"></th>
-                                                <td>{$v.id}</td>
-                                                <td>{$v.name}</td>
-                                                <td>{$v.sex}</td>
-                                                <td>{$v.qq}</td>
-                                                <td>{$v.score}</td>
-                                                <td>{$v.birthday}</td>
+                                                <td>{$v.uid}</td>
+                                                <td>{$v.nickname}</td>
+                                                <td>{$v.email}</td>
+                                                <td>{$v.phone}</td>
+                                                <td>{$v.address}</td>
+                                                <td>{$v.regdate}</td>
                                                 <td><a href="__CONTROLLER__/searchorder/id/{$v.id}">查看</a></td>
                                             </tr>
                                         </foreach>

@@ -6,7 +6,7 @@ class GuestController extends CommonController
     //查看用户
     public function index()
     {
-        $model=D('guest');
+        $model=D('user');
         $where=array('status'=>'1');
         $count=$model->count();
         $Page=new \Think\Page($count,5);
