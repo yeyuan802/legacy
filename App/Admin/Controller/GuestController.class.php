@@ -28,12 +28,16 @@ class GuestController extends CommonController
     }
 
     public function searchorder(){
-        $id=I('get.id');
-        $model=D('dingdan');
+        $id=I('get.orderid');
+        $model=D('order');
 
         $data=$model->where("id=$id")->select();
-        $this->assign('data',$data);
-        $this->display();
+        if(!$data) {
+            echo "该顾客不存在";
+        }else {
+            $this->assign('data', $data);
+            $this->display();
+        }
     }
     public function seachguest(){
         $this->display();
@@ -41,9 +45,9 @@ class GuestController extends CommonController
 
     public function searchguest_ok(){
 
-        $id =I('get.id');
-        $model = D('guest');
-        $data = $model->where("id=$id")->select();
+        $id =I('get.uid');
+        $model = D('user');
+        $data = $model->where("uid=$id")->select();
         if(!$data) {
             echo "该顾客不存在";
         }else{

@@ -125,11 +125,65 @@
     <title>Title</title>
 </head>
 <body>
-<form method="get" action="/EPP_Project/legacy/Admin/Guest/searchguest_ok">
-请输入订单号<input type="text" name="orderid">
-请输入顾客id<input type="text" name="uid">
-    <input type="submit" value="确认" />
-</form>
+        <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+            <ul class="list-group">
+                <a href="/EPP_Project/legacy/Admin/Dynamic/index" class="list-group-item active">查看动态</a>
+                <a href="/EPP_Project/legacy/Admin/Dynamic/add" class="list-group-item">增加动态</a>
+                <a href="/EPP_Project/legacy/Admin/Dynamic/revise" class="list-group-item">修改动态</a>
+            </ul>
+        </div>
+        <!--右侧主要内容-->
+        <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <!--这里放置标题、选项-->
+                    <h1>查看动态</h1>
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <ul id="myTab" class="nav nav-tabs" role="tablist">
+                                <li class="active">
+                                    <a href="#bulletin" role="tab" data-toggle="tab">所有动态</a>
+                                </li>
+                            </ul>
+                            <!--选项卡面板-->
+                            <div id="myTabContent" class="tab-content">
+                                <div class="tab-pane active" id="bulletin">
+                                    <table class="table table-hover">
+                                        <tbody>
+                                        <tr class="bg-primary">
+                                            <th scope="row"></th>
+                                            <td>id</td>
+                                            <td>动态题目</td>
+                                            <td>动态内容</td>
+                                            <td>作者</td>
+                                            <td>发布时间</td>
+                                            <td>是否删除</td>
+                                        </tr>
+                                        <?php if(is_array($list)): foreach($list as $key=>$v): ?><tr class="bg-danger">
+                                                <th scope="row"></th>
+                                                <td><?php echo ($v["id"]); ?></td>
+                                                <td><?php echo ($v["title"]); ?></td>
+                                                <td><a href="/EPP_Project/legacy/Admin/Dynamic/content/id/<?php echo ($v["id"]); ?>">动态详情</a></td>
+                                                <td><?php echo ($v["writer"]); ?></td>
+                                                <td><?php echo ($v["time"]); ?></td>
+                                                <td><a href="/EPP_Project/legacy/Admin/Dynamic/delete/id/<?php echo ($v["id"]); ?>">删除</a></td>
+                                            </tr><?php endforeach; endif; ?>
+                                        </tbody>
+                                    </table>
+                                    <table>
+                                        <nav class="pull-right">
+                                            <ul class="pagination">
+                                                <?php echo $page; ?>
+                                            </ul>
+                                        </nav>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 </body>
 </html></div>
 </div>

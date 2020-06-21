@@ -122,14 +122,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>传承人</title>
 </head>
 <body>
-<form method="get" action="/EPP_Project/legacy/Admin/Guest/searchguest_ok">
-请输入订单号<input type="text" name="orderid">
-请输入顾客id<input type="text" name="uid">
-    <input type="submit" value="确认" />
-</form>
+<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+    <ul class="list-group">
+        <a href="/EPP_Project/legacy/Admin/Inheritor/index" class="list-group-item active">查看传承人</a>
+        <a href="/EPP_Project/legacy/Admin/Inheritor/add" class="list-group-item">添加传承人</a>
+        <a href="/EPP_Project/legacy/Admin/Inheritor/index" class="list-group-item">修改传承人</a>
+        <a href="/EPP_Project/legacy/Admin/Inheritor/search" class="list-group-item">查询传承人</a>
+        <a href="/EPP_Project/legacy/Admin/Inheritor/index" class="list-group-item">删除传承人</a>
+    </ul>
+</div>
+<!--右侧主要内容-->
+<div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h1>传承人管理</h1>
+        </div>
+        <div class="panel-body">
+            <table class="table table-hover">
+                <tbody>
+                <tr class="bg-primary">
+                    <th scope="row"></th>
+                    <th><input type="checkbox">全选</th>
+                    <th>姓名</th>
+                    <th>性别</th>
+                    <th>称号</th>
+                    <th>年龄</th>
+                    <th>封号时间</th>
+                    <th>事迹</th>
+                    <th>操作</th>
+                </tr>
+                <?php if(is_array($res)): foreach($res as $key=>$v): ?><tr class="bg-success">
+                        <th scope="row"></th>
+                        <td><input type="checkbox"></td>
+                        <td><?php echo ($v["name"]); ?></td>
+                        <td><?php echo ($v["sex"]); ?></td>
+                        <td><?php echo ($v["qname"]); ?></td>
+                        <td><?php echo ($v["age"]); ?></td>
+                        <td><?php echo ($v["inputtime"]); ?></td>
+                        <td><?php echo (msubstr($v["shiji"],0,40)); ?></td>
+                        <td>
+                            <a type="button" class="btn btn-primary btn-sm" href="/EPP_Project/legacy/Admin/Inheritor/revise/id/<?php echo ($v["id"]); ?>">
+                                <span class="glyphicon glyphicon-pencil"></span>编辑 </a>
+                            <a type="button" class="btn btn-danger btn-sm" href="/EPP_Project/legacy/Admin/Inheritor/delete/id/<?php echo ($v["id"]); ?>">
+                                <span class="glyphicon glyphicon-trash"></span>删除</a>
+                        </td>
+                    </tr><?php endforeach; endif; ?>
+                </tbody>
+            </table>
+            <div class="pagelist" align="right">
+                <?php echo $page; ?>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html></div>
 </div>

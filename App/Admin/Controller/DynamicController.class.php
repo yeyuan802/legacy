@@ -49,6 +49,14 @@ class DynamicController extends CommonController
         $this->display();
     }
 
+    public function content(){
+        $id=I('get.id');
+        $model=D('dynamic');
+        $res=$model->where("id=$id")->select();
+        $this->assign('page',$res);
+        $this->display();
+    }
+
     public function add()
     {
         if (IS_POST) {

@@ -125,11 +125,31 @@
     <title>Title</title>
 </head>
 <body>
-<form method="get" action="/EPP_Project/legacy/Admin/Guest/searchguest_ok">
-请输入订单号<input type="text" name="orderid">
-请输入顾客id<input type="text" name="uid">
-    <input type="submit" value="确认" />
-</form>
+<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+    <ul class="list-group">
+        <a href="/EPP_Project/legacy/Admin/Dynamic/index" class="list-group-item active">查看动态</a>
+        <a href="/EPP_Project/legacy/Admin/Dynamic/add" class="list-group-item">增加动态</a>
+        <a href="/EPP_Project/legacy/Admin/Dynamic/revise" class="list-group-item">修改动态</a>
+    </ul>
+</div>
+<!--右侧主要内容-->
+<div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <!--这里放置标题、选项-->
+            <h1>查看动态</h1>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <?php if(is_array($page)): foreach($page as $key=>$v): ?><p style="text-align: center;font-size: 40px"><?php echo ($v["title"]); ?></p>
+                        <div style=" text-indent:2em;margin-top: 20px;border-right: solid;border-left: solid;border-width: 2px;height: auto;border-color: #C0C0BB;">
+                            <?php echo ($v["content"]); ?>
+                        </div>
+                        <p style="float: right;color: #1f1f1f;"><?php echo ($v["time"]); ?></p><?php endforeach; endif; ?>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html></div>
 </div>

@@ -6,37 +6,23 @@ class IndexController extends CommonController {
     public function index() {
         $model1=D('travel');
         $where1=array('status'=>'1');
-        $placecount=$model1->where($where1)->count();
+        $travelcount=$model1->where($where1)->count();
 
         $model2=D('goods');
-<<<<<<< HEAD
         $where2=array('status'=>'1');
         $goodscount=$model2->where($where2)->count();
 
         $model3=D('user');
-=======
-        $where2=array('status'>='1');
-        $goodscount=$model2->where($where2)->count();
-
-        $model3=D('guest');
->>>>>>> 477be5099b064badaf16fe1c6d2ec9d1be0ca4ca
         $where3=array('status'=>'1');
-        $guestcount=$model3->where($where3)->count();
+        $usercount=$model3->where($where3)->count();
 
-        $model4=D('notice');
-<<<<<<< HEAD
+        $model4=D('order');
         $where4=array('status'=>'1');
-        $noticecount=$model4->where($where4)->count();
+        $ordercount=$model4->where($where4)->count();
 
-        $model5=D('order');
-=======
-        $where4=array('status'>='1');
-        $noticecount=$model4->where($where4)->count();
-
-        $model5=D('dingdan');
->>>>>>> 477be5099b064badaf16fe1c6d2ec9d1be0ca4ca
+        $model5=D('notice');
         $where5=array('status'=>'1');
-        $dingdancount=$model5->where($where5)->count();
+        $noticecount=$model5->where($where5)->count();
 
         $model6=D('message');
         $where6=array('status'=>'1');
@@ -45,13 +31,20 @@ class IndexController extends CommonController {
         $model7=D('director');
         $where7=array('status'=>'1');
         $directorcount=$model7->where($where7)->count();
-        $this->assign('placecount', $placecount);
-        $this->assign('goodcount', $goodscount);
-        $this->assign('guestcount', $guestcount);
+
+        $model8=D('dynamic');
+        $where8=array('status'=>'1');
+        $dynamiccount=$model8->where($where8)->count();
+
+        $this->assign('travelcount', $travelcount);
+        $this->assign('goodscount', $goodscount);
+        $this->assign('usercount', $usercount);
         $this->assign('messagecount', $messagecount);
         $this->assign('noticecount', $noticecount);
-        $this->assign('dingdancount', $dingdancount);
+        $this->assign('ordercount', $ordercount);
         $this->assign('directorcount', $directorcount);
+        $this->assign('dynamiccount', $dynamiccount);
+
         $this->display();
     }
 }

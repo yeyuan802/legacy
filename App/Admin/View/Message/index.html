@@ -7,7 +7,7 @@
 <body>
         <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
             <ul class="list-group">
-                <li><a href="__MODULE__/Message/index" class="list-group-item active">查看留言</a></li>
+                <a href="__MODULE__/Message/index" class="list-group-item active">查看留言</a>
             </ul>
         </div>
         <!--右侧主要内容-->
@@ -30,21 +30,20 @@
                                         <tbody>
                                         <tr class="bg-primary">
                                             <th scope="row"></th>
-                                            <td>id</td>
-                                            <td>留言人</td>
+                                            <td>留言id</td>
                                             <td>留言内容</td>
-                                            <td>留言时间</td>
                                             <td>回复内容</td>
+                                            <td>留言人</td>
+                                            <td>留言时间</td>
                                             <td>是否回复</td>
-                                            <td>是否删除
-                                            </td>
+                                            <td>是否删除</td>
                                         </tr>
                                         <foreach name="list" item="v">
                                         <tr class="bg-danger">
                                             <th scope="row"></th>
                                             <td>{$v.id}</td>
-                                            <td>{$v.writer}</td>
                                             <td>{$v.content}</td>
+                                            <td>{$v.writer}</td>
                                             <td>{$v.time}</td>
                                             <td>{$v.reply}</td>
                                             <td><a href="__CONTROLLER__/reply/id/{$v.id}">回复</a></td>

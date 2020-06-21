@@ -7,8 +7,8 @@
 <body>
 <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
     <ul class="list-group">
-        <li><a href="__MODULE__/Message/index" class="list-group-item">查看留言</a></li>
-        <li><a href="__MODULE__/Message/check" class="list-group-item active">审核留言</a></li>
+        <a href="__MODULE__/Message/index" class="list-group-item">查看留言</a>
+        <a href="__MODULE__/Message/check" class="list-group-item active">审核留言</a>
     </ul>
 </div>
 <!--右侧主要内容-->
@@ -30,9 +30,13 @@
                             <form method="post">
                             <table class="table table-hover">
                                 <tbody>
-                                <tr><th width="80">留言id：</th><td>{$id}</td></tr><!---要修改的id-->
-                                <tr><th>留言内容：</th><td><textarea name="reply"></textarea></td></tr>
-                                <tr><td>&nbsp;</td><td><input class="login_btn" type="submit" value="确认" /></td></tr>
+                                <foreach name="list" item="v">
+                                    <tr><th width="80">留言id：</th><td>{$v.id}</td></tr><!---要修改的id-->
+                                    <tr><th width="80">留言内容：</th><td>{$v.content}</td></tr>
+                                    <tr><th>回复内容：</th><td><textarea name="reply"></textarea></td></tr>
+                                    <tr><td>&nbsp;</td><td><input class="login_btn" type="submit" value="确认" /></td></tr>
+                                </foreach>
+
                                 </tbody>
                             </table>
                             </form>

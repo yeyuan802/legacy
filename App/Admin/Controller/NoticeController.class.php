@@ -62,6 +62,13 @@ class NoticeController extends CommonController
         $this->display();
     }
 
+    public function content(){
+        $id=I('get.id');
+        $model=D('notice');
+        $res=$model->where("id=$id")->select();
+        $this->assign('page',$res);
+        $this->display();
+    }
 
     public function delete(){
         $id=I('get.id');

@@ -7,7 +7,7 @@
         .dropdown-submenu { position: relative; } .dropdown-submenu>.dropdown-menu { top: 0; left: 100%; margin-top: -6px; margin-left: -1px; -webkit-border-radius: 0 6px 6px 6px; -moz-border-radius: 0 6px 6px; border-radius: 0 6px 6px 6px; } .dropdown-submenu:hover>.dropdown-menu { display: block; } .dropdown-submenu>a:after { display: block; content: " "; float: right; width: 0; height: 0; border-color: transparent; border-style: solid; border-width: 5px 0 5px 5px; border-left-color: #ccc; margin-top: 5px; margin-right: -10px; } .dropdown-submenu:hover>a:after { border-left-color: #fff; } .dropdown-submenu.pull-left { float: none; } .dropdown-submenu.pull-left>.dropdown-menu { left: -100%; margin-left: 10px; -webkit-border-radius: 6px 0 6px 6px; -moz-border-radius: 6px 0 6px 6px; border-radius: 6px 0 6px 6px; }
     </style>
     <link href="/EPP_Project/legacy/Public/Admin/css/bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet" />
-    <script src="/EPP_Project/legacy/Public/bootstrap/js/jquery-3.4.1.js"></script>
+    <script src="/EPP_Project/legacy/Public/bootstrap/js/jquery.js"></script>
     <script src="/EPP_Project/legacy/Public/bootstrap/js/bootstrap.js"></script>
     <script type="text/javascript"></script>
 </head>
@@ -127,7 +127,7 @@
 <body>
         <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
             <ul class="list-group">
-                <li><a href="/EPP_Project/legacy/Admin/Message/index" class="list-group-item active">查看留言</a></li>
+                <a href="/EPP_Project/legacy/Admin/Message/index" class="list-group-item active">查看留言</a>
             </ul>
         </div>
         <!--右侧主要内容-->
@@ -150,20 +150,19 @@
                                         <tbody>
                                         <tr class="bg-primary">
                                             <th scope="row"></th>
-                                            <td>id</td>
-                                            <td>留言人</td>
+                                            <td>留言id</td>
                                             <td>留言内容</td>
-                                            <td>留言时间</td>
                                             <td>回复内容</td>
+                                            <td>留言人</td>
+                                            <td>留言时间</td>
                                             <td>是否回复</td>
-                                            <td>是否删除
-                                            </td>
+                                            <td>是否删除</td>
                                         </tr>
                                         <?php if(is_array($list)): foreach($list as $key=>$v): ?><tr class="bg-danger">
                                             <th scope="row"></th>
                                             <td><?php echo ($v["id"]); ?></td>
-                                            <td><?php echo ($v["writer"]); ?></td>
                                             <td><?php echo ($v["content"]); ?></td>
+                                            <td><?php echo ($v["writer"]); ?></td>
                                             <td><?php echo ($v["time"]); ?></td>
                                             <td><?php echo ($v["reply"]); ?></td>
                                             <td><a href="/EPP_Project/legacy/Admin/Message/reply/id/<?php echo ($v["id"]); ?>">回复</a></td>

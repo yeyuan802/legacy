@@ -10,7 +10,7 @@ class MessageController extends CommonController
         $model=D('message');
         $all=$model->select();
         foreach ($all as $v){
-            if($v['title']==''){
+            if($v['id']==''){
                 $id=$v['id'];
                 $model->where("id=$id")->delete();
             }
@@ -48,6 +48,8 @@ class MessageController extends CommonController
 
     public function reply(){
         $id=I('get.id');
+        $model=D('message');
+        $list=$model->where("id==$id")->select();
         if(IS_POST){
             $rst=$this->create('message','save',2,array("id=$id"));
             if ($rst===false){
@@ -56,7 +58,7 @@ class MessageController extends CommonController
             $this->success('回复成功', U('Message/index'));
             return;
         }
-        $this->assign('id',$id);
+        $this->assign('list',$list);
         $this->display();
 
     }

@@ -1,0 +1,132 @@
+[ 2020-06-21T09:16:44+08:00 ] ::1 /EPP_Project/legacy/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000165s ]
+INFO: [ app_init ] --END-- [ RunTime:0.271879s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.020616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.020813s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.078646s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.036849s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.094095s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.066763s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.011968s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.072053s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.032134s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.081143s ]
+SQL: SELECT * FROM `tb_director` WHERE ( Did>=1 ) ORDER BY `Did` asc  [ RunTime:0.039967s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.051873s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.002761s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.236212s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.001608s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.014779s ]
+ERR: 1146:Table 'db_culture.tb_country' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_country`
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.002199s ]
+ERR: 1146:Table 'db_culture.tb_country' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc 
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000337s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000495s ]
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\EPP_Project\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\EPP_Project\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\EPP_Project\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\EPP_Project\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\EPP_Project\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\EPP_Project\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\EPP_Project\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\EPP_Project\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\EPP_Project\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\EPP_Project\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined index: intro D:\phpStudy\WWW\EPP_Project\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 305 行.
+NOTIC: [8] Undefined index: birthPlace D:\phpStudy\WWW\EPP_Project\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 314 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.410281s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.410456s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.024936s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.025145s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006472s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006720s ]
+
+[ 2020-06-21T09:16:45+08:00 ] ::1 /EPP_Project/legacy/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001872s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001553s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001664s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000267s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000610s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.129156s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.129374s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006423s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006788s ]
+
+[ 2020-06-21T09:16:57+08:00 ] ::1 /EPP_Project/legacy/Message/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003190s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005634s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007549s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.081449s ]
+ERR: 1146:Table 'db_culture.tb_country' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_country`
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.002259s ]
+ERR: 1146:Table 'db_culture.tb_country' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc 
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000249s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000456s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.091955s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.092200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002310s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002433s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002770s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002932s ]
+
+[ 2020-06-21T09:16:57+08:00 ] ::1 /EPP_Project/legacy/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001455s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002672s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000197s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017983s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018134s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002717s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002851s ]
+
+[ 2020-06-21T09:17:14+08:00 ] ::1 /EPP_Project/legacy/Public/Admin/js/jquery-3.4.1.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001507s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000211s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000758s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042099s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042346s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002690s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002837s ]
+

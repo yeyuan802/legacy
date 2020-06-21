@@ -7,10 +7,9 @@
 <body>
         <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
             <ul class="list-group">
-                <li><a href="__MODULE__/Dynamic/index" class="list-group-item active">查看动态</a></li>
-                <li><a href="__MODULE__/Dynamic/add" class="list-group-item">增加动态</a></li>
-                <li><a href="__MODULE__/Dynamic/revise" class="list-group-item">修改动态</a></li>
-                <li><a href="__MODULE__/Dynamic/delete" class="list-group-item">删除动态</a></li>
+                <a href="__MODULE__/Dynamic/index" class="list-group-item active">查看动态</a>
+                <a href="__MODULE__/Dynamic/add" class="list-group-item">增加动态</a>
+                <a href="__MODULE__/Dynamic/revise" class="list-group-item">修改动态</a>
             </ul>
         </div>
         <!--右侧主要内容-->
@@ -23,7 +22,7 @@
                         <div class="panel-body">
                             <ul id="myTab" class="nav nav-tabs" role="tablist">
                                 <li class="active">
-                                    <a href="#bulletin" role="tab" data-toggle="tab">查看动态</a>
+                                    <a href="#bulletin" role="tab" data-toggle="tab">所有动态</a>
                                 </li>
                             </ul>
                             <!--选项卡面板-->
@@ -33,9 +32,10 @@
                                         <tbody>
                                         <tr class="bg-primary">
                                             <th scope="row"></th>
-                                            <td>动态id</td>
+                                            <td>id</td>
                                             <td>动态题目</td>
                                             <td>动态内容</td>
+                                            <td>作者</td>
                                             <td>发布时间</td>
                                             <td>是否删除</td>
                                         </tr>
@@ -44,7 +44,8 @@
                                                 <th scope="row"></th>
                                                 <td>{$v.id}</td>
                                                 <td>{$v.title}</td>
-                                                <td>{$v.content}</td>
+                                                <td><a href="__CONTROLLER__/content/id/{$v.id}">动态详情</a></td>
+                                                <td>{$v.writer}</td>
                                                 <td>{$v.time}</td>
                                                 <td><a href="__CONTROLLER__/delete/id/{$v.id}">删除</a></td>
                                             </tr>

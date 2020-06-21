@@ -125,13 +125,83 @@
     <title>Title</title>
 </head>
 <body>
-<form method="get" action="/EPP_Project/legacy/Admin/Guest/searchguest_ok">
-请输入订单号<input type="text" name="orderid">
-请输入顾客id<input type="text" name="uid">
-    <input type="submit" value="确认" />
-</form>
+<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+    <ul class="list-group">
+        <a href="/EPP_Project/legacy/Admin/Message/index" class="list-group-item">查看留言</a>
+        <a href="/EPP_Project/legacy/Admin/Message/check" class="list-group-item active">审核留言</a>
+    </ul>
+</div>
+<!--右侧主要内容-->
+<div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <!--这里放置标题、选项-->
+            <h1>回复留言</h1>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <ul id="myTab" class="nav nav-tabs" role="tablist">
+                        <li class="active">
+                            <a href="#bulletin" role="tab" data-toggle="tab">回复留言</a>
+                        </li>
+                    </ul>
+                    <!--选项卡面板-->
+                    <div id="myTabContent" class="tab-content">
+                        <div class="tab-pane active" id="bulletin">
+                            <form method="post">
+                            <table class="table table-hover">
+                                <tbody>
+                                <?php if(is_array($list)): foreach($list as $key=>$v): ?><tr><th width="80">留言id：</th><td><?php echo ($v["id"]); ?></td></tr><!---要修改的id-->
+                                    <tr><th width="80">留言内容：</th><td><?php echo ($v["content"]); ?></td></tr>
+                                    <tr><th>回复内容：</th><td><textarea name="reply"></textarea></td></tr>
+                                    <tr><td>&nbsp;</td><td><input class="login_btn" type="submit" value="确认" /></td></tr><?php endforeach; endif; ?>
+
+                                </tbody>
+                            </table>
+                            </form>
+                            <table>
+                                <nav class="pull-right">
+                                    <ul class="pagination">
+                                        <?php echo $page; ?>
+                                        <!--          <li class="disabled">
+                                                      <a href="#" aria-label="Previous">
+                                                          <span aria-hidden="true">&laquo;</span>
+                                                      </a>
+                                                  </li>
+                                                  <li class="active">
+                                                      <a href="#">1</a>
+                                                  </li>
+                                                  <li>
+                                                      <a href="#">2</a>
+                                                  </li>
+                                                  <li>
+                                                      <a href="#">3</a>
+                                                  </li>
+                                                  <li>
+                                                      <a href="#">4</a>
+                                                  </li>
+                                                  <li>
+                                                      <a href="#">5</a>
+                                                  </li>
+                                                  <li>
+                                                      <a href="#">6</a>
+                                                  </li>
+                                                  <li><a href="#">
+                                                      <span aria-hidden="true">&raquo;</span>
+                                                  </a> </li>-->
+                                    </ul>
+                                </nav>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
-</html></div>
+</html>
+
+</div>
 </div>
 
 </body>
