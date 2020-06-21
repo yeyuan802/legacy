@@ -7,7 +7,7 @@
         .dropdown-submenu { position: relative; } .dropdown-submenu>.dropdown-menu { top: 0; left: 100%; margin-top: -6px; margin-left: -1px; -webkit-border-radius: 0 6px 6px 6px; -moz-border-radius: 0 6px 6px; border-radius: 0 6px 6px 6px; } .dropdown-submenu:hover>.dropdown-menu { display: block; } .dropdown-submenu>a:after { display: block; content: " "; float: right; width: 0; height: 0; border-color: transparent; border-style: solid; border-width: 5px 0 5px 5px; border-left-color: #ccc; margin-top: 5px; margin-right: -10px; } .dropdown-submenu:hover>a:after { border-left-color: #fff; } .dropdown-submenu.pull-left { float: none; } .dropdown-submenu.pull-left>.dropdown-menu { left: -100%; margin-left: 10px; -webkit-border-radius: 6px 0 6px 6px; -moz-border-radius: 6px 0 6px 6px; border-radius: 6px 0 6px 6px; }
     </style>
     <link href="/EPP_Project/legacy/Public/Admin/css/bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet" />
-    <script src="/EPP_Project/legacy/Public/bootstrap/js/jquery-3.4.1.js"></script>
+    <script src="/EPP_Project/legacy/Public/bootstrap/js/jquery.js"></script>
     <script src="/EPP_Project/legacy/Public/bootstrap/js/bootstrap.js"></script>
     <script type="text/javascript"></script>
 </head>
@@ -56,7 +56,7 @@
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> 信息管理<b class="caret"></b></a>
+                        <a href="/EPP_Project/legacy/Admin/Notice/index" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> 信息管理<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li class="dropdown-submenu">
                                 <a href="/EPP_Project/legacy/Admin/Notice/index">公告管理</a>
@@ -95,7 +95,7 @@
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> 留言管理<b class="caret"></b></a>
+                        <a href="/EPP_Project/legacy/Admin/Message/index" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> 留言管理<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="/EPP_Project/legacy/Admin/Message/index">查看留言</a></li>
                         </ul>
@@ -148,7 +148,6 @@
         <a href="/EPP_Project/legacy/Admin/Goods/add" class="list-group-item  active">添加商品</a>
         <a href="/EPP_Project/legacy/Admin/Goods/index" class="list-group-item">修改商品</a>
         <a href="/EPP_Project/legacy/Admin/Goods/search" class="list-group-item">查询商品</a>
-        <a href="/EPP_Project/legacy/Admin/Goods/index" class="list-group-item">删除商品</a>
     </ul>
 </div>
 <!--右侧主要内容-->

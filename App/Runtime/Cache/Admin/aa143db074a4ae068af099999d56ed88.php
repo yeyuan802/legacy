@@ -7,7 +7,7 @@
         .dropdown-submenu { position: relative; } .dropdown-submenu>.dropdown-menu { top: 0; left: 100%; margin-top: -6px; margin-left: -1px; -webkit-border-radius: 0 6px 6px 6px; -moz-border-radius: 0 6px 6px; border-radius: 0 6px 6px 6px; } .dropdown-submenu:hover>.dropdown-menu { display: block; } .dropdown-submenu>a:after { display: block; content: " "; float: right; width: 0; height: 0; border-color: transparent; border-style: solid; border-width: 5px 0 5px 5px; border-left-color: #ccc; margin-top: 5px; margin-right: -10px; } .dropdown-submenu:hover>a:after { border-left-color: #fff; } .dropdown-submenu.pull-left { float: none; } .dropdown-submenu.pull-left>.dropdown-menu { left: -100%; margin-left: 10px; -webkit-border-radius: 6px 0 6px 6px; -moz-border-radius: 6px 0 6px 6px; border-radius: 6px 0 6px 6px; }
     </style>
     <link href="/EPP_Project/legacy/Public/Admin/css/bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet" />
-    <script src="/EPP_Project/legacy/Public/bootstrap/js/jquery-3.4.1.js"></script>
+    <script src="/EPP_Project/legacy/Public/bootstrap/js/jquery.js"></script>
     <script src="/EPP_Project/legacy/Public/bootstrap/js/bootstrap.js"></script>
     <script type="text/javascript"></script>
 </head>
@@ -131,7 +131,6 @@
         <a href="/EPP_Project/legacy/Admin/Goods/add" class="list-group-item">添加商品</a>
         <a href="/EPP_Project/legacy/Admin/Goods/index" class="list-group-item">修改商品</a>
         <a href="/EPP_Project/legacy/Admin/Goods/search" class="list-group-item">查询商品</a>
-        <a href="/EPP_Project/legacy/Admin/Goods/index" class="list-group-item">删除商品</a>
     </ul>
 </div>
 <!--右侧主要内容-->
@@ -166,31 +165,28 @@
                 <tbody>
                 <tr class="bg-primary">
                     <th scope="row"></th>
-                    <th class="all"><input type="checkbox">全选</th>
-                    <th>商品名字</th>
-                    <th>商品价格</th>
-                    <th>上架时间</th>
-                    <th>总的数量</th>
-                    <th>商品标号</th>
-                    <th>商品产地</th>
-                    <th>商品图片</th>
-                    <th>商品操作</th>
+                    <td><input type="checkbox">全选</td>
+                    <td>商品名称</td>
+                    <td>商品类型</td>
+                    <td>商品价格</td>
+                    <td>商品简介</td>
+                    <td>上架时间</td>
+                    <td>商品总量</td>
+                    <td>商品产地</td>
+                    <td>商品操作</td>
                 </tr>
                 <?php if(is_array($res)): foreach($res as $key=>$v): ?><tr class="bg-success">
                         <th scope="row"></th>
-                        <td><input type="checkbox" name="input[]"></td>
+                        <td><input type="checkbox"></td>
                         <td><?php echo ($v["goodname"]); ?></td>
+                        <td><?php echo ($v["type"]); ?></td>
                         <td><?php echo ($v["price"]); ?></td>
+                        <td><?php echo ($v["introduce"]); ?></td>
                         <td><?php echo ($v["time"]); ?></td>
-                        <td><?php echo ($v["total"]); ?></td>
-                        <td><?php echo ($v["biaohao"]); ?></td>
+                        <td><?php echo ($v["title"]); ?></td>
                         <td><?php echo ($v["place"]); ?></td>
                         <td>
-                            <?php echo ($v["picname"]); ?>
-                            <a href="/EPP_Project/legacy/Admin/Goods/goods/goodname/<?php echo ($v["rid"]); ?>" target="_blank"><?php if(empty($v["picname"])): ?><img src="/EPP_Project/legacy/Public/image/preview.jpg"><?php else: ?><img src="/EPP_Project/legacy/Public/uploads/thumb/<?php echo ($v["picname"]); ?>"><?php endif; ?></a>
-                        </td>
-                        <td>
-                            <a type="button" class="btn btn-primary btn-sm" href="/EPP_Project/legacy/Admin/Goods/revise/id/<?php echo ($v["id"]); ?>">
+                            <a type="button" class="btn btn-primary btn-sm" href="/EPP_Project/legacy/Admin/Goods/revise/goodname/<?php echo ($v["goodname"]); ?>">
                                 <span class="glyphicon glyphicon-pencil"></span>编辑 </a>
                             <a type="button" class="btn btn-danger btn-sm" href="/EPP_Project/legacy/Admin/Goods/delete/id/<?php echo ($v["id"]); ?>">
                                 <span class="glyphicon glyphicon-trash"></span>删除</a>

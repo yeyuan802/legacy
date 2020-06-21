@@ -122,29 +122,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<form method="get" action="/EPP_Project/legacy/Admin/Guest/searchguest_ok">
-请输入订单号<input type="text" name="orderid">
-请输入顾客id<input type="text" name="uid">
-    <input type="submit" value="确认" />
-</form>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
     <title>旅游</title>
 </head>
 <body>
 <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
     <ul class="list-group">
-        <a href="/EPP_Project/legacy/Admin/Guest/index" class="list-group-item ">查看景点</a>
-        <a href="/EPP_Project/legacy/Admin/Guest/add" class="list-group-item">添加景点</a>
-        <a href="/EPP_Project/legacy/Admin/Guest/revise" class="list-group-item">修改景点</a>
-        <a href="/EPP_Project/legacy/Admin/Guest/search" class="list-group-item active">查询景点</a>
+        <a href="/EPP_Project/legacy/Admin/Travel/index" class="list-group-item ">查看景点</a>
+        <a href="/EPP_Project/legacy/Admin/Travel/add" class="list-group-item">添加景点</a>
+        <a href="/EPP_Project/legacy/Admin/Travel/revise" class="list-group-item">修改景点</a>
+        <a href="/EPP_Project/legacy/Admin/Travel/search" class="list-group-item active">查询景点</a>
+        <a href="/EPP_Project/legacy/Admin/Travel/index" class="list-group-item">删除景点</a>
     </ul>
 </div>
 <!--右侧主要内容-->
@@ -154,13 +141,29 @@
             <h1>旅游管理</h1>
         </div>
         <div class="panel-body">
-            <form class="form-inline" role="form" method="get" action="/EPP_Project/legacy/Admin/Guest/search_ok">
-                <div class="form-group">
-                    <label class="sr-only" for="name">查询用户名称</label>
-                    <input type="text" class="form-control" id="name" name="place" placeholder="查询用户名称">
-                </div>
-                <button type="submit" class="btn btn-default">搜索🔍</button>
-            </form>
+            <table class="table table-hover">
+                <tbody>
+                <tr class="bg-primary">
+                    <th>景点名称</th>
+                    <th>景点介绍</th>
+                    <th>景点票价</th>
+                    <th>景点票数</th>
+                    <th>操作</th>
+                </tr>
+                <?php if(is_array($res)): foreach($res as $key=>$v): ?><tr class="bg-success">
+                        <td><?php echo ($v["place"]); ?></td>
+                        <td><?php echo ($v["introduce"]); ?></td>
+                        <td><?php echo ($v["hticket"]); ?></td>
+                        <td><?php echo ($v["sticket"]); ?></td>
+                        <td>
+                            <a type="button" class="btn btn-primary btn-sm" href="/EPP_Project/legacy/Admin/Travel/revise/id/<?php echo ($v["id"]); ?>">
+                                <span class="glyphicon glyphicon-pencil"></span>编辑 </a>
+                            <a type="button" class="btn btn-danger btn-sm" href="/EPP_Project/legacy/Admin/Travel/delete/id/<?php echo ($v["id"]); ?>">
+                                <span class="glyphicon glyphicon-trash"></span>删除</a>
+                        </td>
+                    </tr><?php endforeach; endif; ?>
+                </tbody>
+            </table>
         </div>
     </div>
 </div>

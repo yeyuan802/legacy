@@ -11,7 +11,6 @@
         <a href="__CONTROLLER__/add" class="list-group-item">添加商品</a>
         <a href="__CONTROLLER__/index" class="list-group-item">修改商品</a>
         <a href="__CONTROLLER__/search" class="list-group-item">查询商品</a>
-        <a href="__CONTROLLER__/index" class="list-group-item">删除商品</a>
     </ul>
 </div>
 <!--右侧主要内容-->
@@ -46,32 +45,29 @@
                 <tbody>
                 <tr class="bg-primary">
                     <th scope="row"></th>
-                    <th class="all"><input type="checkbox">全选</th>
-                    <th>商品名字</th>
-                    <th>商品价格</th>
-                    <th>上架时间</th>
-                    <th>总的数量</th>
-                    <th>商品标号</th>
-                    <th>商品产地</th>
-                    <th>商品图片</th>
-                    <th>商品操作</th>
+                    <td><input type="checkbox">全选</td>
+                    <td>商品名称</td>
+                    <td>商品类型</td>
+                    <td>商品价格</td>
+                    <td>商品简介</td>
+                    <td>上架时间</td>
+                    <td>商品总量</td>
+                    <td>商品产地</td>
+                    <td>商品操作</td>
                 </tr>
                 <foreach name="res" item="v">
                     <tr class="bg-success">
                         <th scope="row"></th>
-                        <td><input type="checkbox" name="input[]"></td>
+                        <td><input type="checkbox"></td>
                         <td>{$v.goodname}</td>
+                        <td>{$v.type}</td>
                         <td>{$v.price}</td>
+                        <td>{$v.introduce}</td>
                         <td>{$v.time}</td>
-                        <td>{$v.total}</td>
-                        <td>{$v.biaohao}</td>
+                        <td>{$v.title}</td>
                         <td>{$v.place}</td>
                         <td>
-                            {$v.picname}
-                            <a href="__CONTROLLER__/goods/goodname/{$v.rid}" target="_blank"><empty name="v.picname"><img src="__PUBLIC__/image/preview.jpg"><else/><img src="__PUBLIC__/uploads/thumb/{$v.picname}"></empty></a>
-                        </td>
-                        <td>
-                            <a type="button" class="btn btn-primary btn-sm" href="__CONTROLLER__/revise/id/{$v.id}">
+                            <a type="button" class="btn btn-primary btn-sm" href="__CONTROLLER__/revise/goodname/{$v.goodname}">
                                 <span class="glyphicon glyphicon-pencil"></span>编辑 </a>
                             <a type="button" class="btn btn-danger btn-sm" href="__CONTROLLER__/delete/id/{$v.id}">
                                 <span class="glyphicon glyphicon-trash"></span>删除</a>

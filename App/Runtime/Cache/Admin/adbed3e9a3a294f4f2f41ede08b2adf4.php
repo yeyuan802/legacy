@@ -7,7 +7,7 @@
         .dropdown-submenu { position: relative; } .dropdown-submenu>.dropdown-menu { top: 0; left: 100%; margin-top: -6px; margin-left: -1px; -webkit-border-radius: 0 6px 6px 6px; -moz-border-radius: 0 6px 6px; border-radius: 0 6px 6px 6px; } .dropdown-submenu:hover>.dropdown-menu { display: block; } .dropdown-submenu>a:after { display: block; content: " "; float: right; width: 0; height: 0; border-color: transparent; border-style: solid; border-width: 5px 0 5px 5px; border-left-color: #ccc; margin-top: 5px; margin-right: -10px; } .dropdown-submenu:hover>a:after { border-left-color: #fff; } .dropdown-submenu.pull-left { float: none; } .dropdown-submenu.pull-left>.dropdown-menu { left: -100%; margin-left: 10px; -webkit-border-radius: 6px 0 6px 6px; -moz-border-radius: 6px 0 6px 6px; border-radius: 6px 0 6px 6px; }
     </style>
     <link href="/EPP_Project/legacy/Public/Admin/css/bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet" />
-    <script src="/EPP_Project/legacy/Public/bootstrap/js/jquery-3.4.1.js"></script>
+    <script src="/EPP_Project/legacy/Public/bootstrap/js/jquery.js"></script>
     <script src="/EPP_Project/legacy/Public/bootstrap/js/bootstrap.js"></script>
     <script type="text/javascript"></script>
 </head>
@@ -129,9 +129,8 @@
     <ul class="list-group">
         <a href="/EPP_Project/legacy/Admin/Travel/index" class="list-group-item active">查看景点</a>
         <a href="/EPP_Project/legacy/Admin/Travel/add" class="list-group-item">添加景点</a>
-        <a href="/EPP_Project/legacy/Admin/Travel/index" class="list-group-item">修改景点</a>
+        <a href="/EPP_Project/legacy/Admin/Travel/revise" class="list-group-item">修改景点</a>
         <a href="/EPP_Project/legacy/Admin/Travel/search" class="list-group-item">查询景点</a>
-        <a href="/EPP_Project/legacy/Admin/Travel/index" class="list-group-item">删除景点</a>
     </ul>
 </div>
 <!--右侧主要内容-->

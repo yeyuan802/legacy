@@ -127,8 +127,8 @@
 <body>
 <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
             <ul class="list-group">
-                <li><a href="/EPP_Project/legacy/Admin/Guest/index" class="list-group-item active">查看顾客信息</a></li>
-                <li><a href="/EPP_Project/legacy/Admin/Guest/searchguest" class="list-group-item">查询顾客</a></li>
+                <a href="/EPP_Project/legacy/Admin/Guest/index" class="list-group-item active">查看顾客信息</a>
+                <a href="/EPP_Project/legacy/Admin/Guest/searchguest" class="list-group-item">查询顾客</a>
             </ul>
         </div>
         <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
@@ -156,7 +156,6 @@
                                             <td>电话号码</td>
                                             <td>家庭住址</td>
                                             <td>注册时间</td>
-                                            <td></td>
                                         </tr>
                                         <?php if(is_array($res)): foreach($res as $key=>$v): ?><tr class="bg-danger">
                                                 <th scope="row"></th>
@@ -166,7 +165,6 @@
                                                 <td><?php echo ($v["phone"]); ?></td>
                                                 <td><?php echo ($v["address"]); ?></td>
                                                 <td><?php echo ($v["regdate"]); ?></td>
-                                                <td><a href="/EPP_Project/legacy/Admin/Guest/searchorder/id/<?php echo ($v["id"]); ?>">查看</a></td>
                                             </tr><?php endforeach; endif; ?>
                                         </tbody>
                                     </table>
