@@ -48,13 +48,42 @@ class IndexController extends Controller
 
         //非遗名录部分
         $director = D("director");
-        $Dir_arr = $director->where("Did>=1")->order(array('Did' => "asc"))->select();
-        $count1=0;
-        foreach ($Dir_arr as $key) {
-            $dir_arr[$count1++] = $key["name"];
-            if ($count1 == 8) break;
+        $Dir_ctxj = $director->where(array("type" => "传统戏剧"))->order(array('Did' => "asc"))->select();
+        $Dir_mjyy = $director->where(array("type" => "民间音乐"))->order(array('Did' => "asc"))->select();
+        $Dir_mjwd = $director->where(array("type" => "民间舞蹈"))->order(array('Did' => "asc"))->select();
+        $Dir_ctgy = $director->where(array("type" => "传统手工技艺"))->order(array('Did' => "asc"))->select();
+        $count=0;
+        foreach ($Dir_ctxj as $key) {
+            $dir_ctxj[$count++] = $key["name"];
+            if ($count == 4) {
+                $count=0;
+                break;
+            }
         }
-        $this->assign('director', $dir_arr);
+        foreach ($Dir_mjyy as $key) {
+            $dir_mjyy[$count++] = $key["name"];
+            if ($count == 4) {
+                $count=0;
+                break;
+            }
+        }
+        foreach ($Dir_mjwd as $key) {
+
+            $dir_mjwd[$count++] = $key["name"];
+            if ($count == 4) {
+                $count=0;
+                break;
+            }
+        }
+        foreach ($Dir_ctgy as $key) {
+            $dir_ctgy[$count++] = $key["name"];
+            if ($count == 4)
+                break;
+        }
+        $this->assign('ctxj', $dir_ctxj);
+        $this->assign('mjyy', $dir_mjyy);
+        $this->assign('mjwd', $dir_mjwd);
+        $this->assign('ctgy', $dir_ctgy);
 
         //非遗动态部分
         $dynamic = D("dynamic");

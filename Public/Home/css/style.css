@@ -469,6 +469,10 @@ form{
     background-color: whitesmoke;
 }
 
+.minglu-list:hover{
+    background-color: whitesmoke;
+}
+
 .minglu-pic>img{
     border-image-source: url("../image/logo/border.jpg");
     border-image-width: 26px;
@@ -493,6 +497,7 @@ form{
 
 .minglu-list{
     height: 30px;
+    line-height: 30px;
     border-bottom:1px solid whitesmoke;
     background-color: white;
     text-align: center;
