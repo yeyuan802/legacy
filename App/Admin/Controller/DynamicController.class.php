@@ -36,17 +36,23 @@ class DynamicController extends CommonController
     }
 
     public function revise(){
-
+        $id=I('get.id',0, 'int');
         if(IS_POST){
-            $id=I('post.id');
-            $rst=$this->create('dynamic','save',2,array("id=$id"));
-            if ($rst===false){
-                $this->error("修改失败");
-            }
-            $this->success('修改成功', U('Dynamic/index'));
+            $this->reviseAction($id);
             return;
         }
+        $model=D('dynamic');
+        $res=$model->where("id=$id")->select();
+        $this->assign('res',$res);
         $this->display();
+
+    }
+    public function reviseAction($id){
+        $rst=$this->create('dynamic','save',2,array("id=$id"));
+        if ($rst===false){
+            $this->error("修改动态失败");
+        }
+        $this->success('修改公告成功', U('Dynamic/index'));
     }
 
     public function content(){

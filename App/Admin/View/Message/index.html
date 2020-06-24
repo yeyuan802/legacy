@@ -32,23 +32,25 @@
                                             <th scope="row"></th>
                                             <td>留言id</td>
                                             <td>留言内容</td>
-                                            <td>回复内容</td>
                                             <td>留言人</td>
                                             <td>留言时间</td>
+                                            <td>回复内容</td>
                                             <td>是否回复</td>
                                             <td>是否删除</td>
                                         </tr>
                                         <foreach name="list" item="v">
-                                        <tr class="bg-danger">
+                                        <tr class="bg-success">
                                             <th scope="row"></th>
                                             <td>{$v.id}</td>
                                             <td>{$v.content}</td>
                                             <td>{$v.writer}</td>
                                             <td>{$v.time}</td>
                                             <td>{$v.reply}</td>
-                                            <td><a href="__CONTROLLER__/reply/id/{$v.id}">回复</a></td>
+                                           <td><a type="button" class="btn btn-primary btn-sm" href="__CONTROLLER__/reply/id/{$v.id}">
+                                                <span class="glyphicon glyphicon-pencil"></span>回复 </a></td>
+                                            <td><a type="button" class="btn btn-danger btn-sm" href="__CONTROLLER__/check/id/{$v.id}">
+                                                <span class="glyphicon glyphicon-trash"></span>删除</a></td>
 
-                                            <td><a href="__CONTROLLER__/check/id/{$v.id}"> 删除</a></td>
                                         </tr>
                                         </foreach>
                                         </tbody>
@@ -57,32 +59,6 @@
                                         <nav class="pull-right">
                                             <ul class="pagination">
                                                 <?php echo $page; ?>
-                                      <!--          <li class="disabled">
-                                                    <a href="#" aria-label="Previous">
-                                                        <span aria-hidden="true">&laquo;</span>
-                                                    </a>
-                                                </li>
-                                                <li class="active">
-                                                    <a href="#">1</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">2</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">3</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">4</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">5</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">6</a>
-                                                </li>
-                                                <li><a href="#">
-                                                    <span aria-hidden="true">&raquo;</span>
-                                                </a> </li>-->
                                             </ul>
                                         </nav>
                                     </table>

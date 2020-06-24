@@ -129,7 +129,6 @@
     <ul class="list-group">
         <a href="/EPP_Project/legacy/Admin/Dynamic/index" class="list-group-item active">查看公告</a>
         <a href="/EPP_Project/legacy/Admin/Dynamic/add" class="list-group-item">增加公告</a>
-        <a href="/EPP_Project/legacy/Admin/Dynamic/revise" class="list-group-item">修改公告</a>
     </ul>
 </div>
 <!--右侧主要内容-->
@@ -151,7 +150,14 @@
     </div>
 </div>
 </body>
-</html></div>
+</html>
+
+
+
+
+
+
+</div>
 </div>
 
 </body>

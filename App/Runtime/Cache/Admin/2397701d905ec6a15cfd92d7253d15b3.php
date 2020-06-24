@@ -27,17 +27,17 @@
             </div>
             <!--Collect the nav linnks, forms, and other content for toggling-->
             <div class="collapse navbar-collapse navbar-ex1-collapse " id="bs-example-navbar-collapse-1" >
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="/EPP_Project/legacy/Admin/Index/index"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> 首页</a></li>
+                <ul class="nav navbar-nav activemenu ">
+                    <li class=""><a href="/EPP_Project/legacy/Admin/Index/index"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> 首页</a></li>
                     <li class="dropdown">
-                        <a href="/EPP_Project/legacy/Admin/Guest/index" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> 顾客管理<b class="caret"></b></a>
+                        <a href="/EPP_Project/legacy/Admin/Guest/index" class="dropdown-toggle active1" data-toggle="dropdown"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> 顾客管理<b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="/EPP_Project/legacy/Admin/Guest/index">查看顾客信息</a></li>
+                            <li><a href="/EPP_Project/legacy/Admin/Guest/index">查看顾客</a></li>
                             <li><a href="/EPP_Project/legacy/Admin/Guest/searchguest">查询顾客</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="/EPP_Project/legacy/Admin/Goods/index" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> 商品管理<b class="caret"></b></a>
+                        <a href="/EPP_Project/legacy/Admin/Goods/index" class="dropdown-toggle active2" data-toggle="dropdown"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> 商品管理<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="/EPP_Project/legacy/Admin/Goods/index">查看商品</a></li>
                             <li><a href="/EPP_Project/legacy/Admin/Goods/add">添加商品</a></li>
@@ -63,7 +63,6 @@
                                 <ul class="dropdown-menu">
                                     <li><a href="/EPP_Project/legacy/Admin/Notice/index">查看公告</a></li>
                                     <li><a href="/EPP_Project/legacy/Admin/Notice/add">增加公告</a></li>
-                                    <li><a href="/EPP_Project/legacy/Admin/Notice/revise">修改公告</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown-submenu">
@@ -71,7 +70,6 @@
                                 <ul class="dropdown-menu">
                                     <li><a href="/EPP_Project/legacy/Admin/Dynamic/index">查看动态</a></li>
                                     <li><a href="/EPP_Project/legacy/Admin/Dynamic/add">增加动态</a></li>
-                                    <li><a href="/EPP_Project/legacy/Admin/Dynamic/revise">修改动态</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown-submenu">
@@ -103,7 +101,7 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">admin<b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle " data-toggle="dropdown">admin<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="/EPP_Project/legacy/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>前台首页</a></li>
                             <li><a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span>个人设置</a></li>
@@ -117,21 +115,21 @@
         </nav>
     </nav>
 </div>
+
+
+<script>
+    $(document).ready(function () {
+        $(".activemenu li a").each(function () {
+            $this=$(this);
+            if($this[0].href==String(window.location)){
+                $this.parent().addClass("active");
+            }
+        });
+    });
+</script>
+
 <div id="content">
-    <div class="item"><!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<form method="get" action="/EPP_Project/legacy/Admin/Guest/searchguest_ok">
-请输入订单号<input type="text" name="orderid">
-请输入顾客id<input type="text" name="uid">
-    <input type="submit" value="确认" />
-</form>
-</body>
-</html>
+    <div class="item">
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -141,10 +139,8 @@
 <body>
 <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
     <ul class="list-group">
-        <a href="/EPP_Project/legacy/Admin/Guest/index" class="list-group-item ">查看景点</a>
-        <a href="/EPP_Project/legacy/Admin/Guest/add" class="list-group-item">添加景点</a>
-        <a href="/EPP_Project/legacy/Admin/Guest/revise" class="list-group-item">修改景点</a>
-        <a href="/EPP_Project/legacy/Admin/Guest/search" class="list-group-item active">查询景点</a>
+        <a href="/EPP_Project/legacy/Admin/Guest/index" class="list-group-item">查看顾客信息</a>
+        <a href="/EPP_Project/legacy/Admin/Guest/searchguest" class="list-group-item active">查询顾客</a>
     </ul>
 </div>
 <!--右侧主要内容-->
@@ -154,10 +150,10 @@
             <h1>旅游管理</h1>
         </div>
         <div class="panel-body">
-            <form class="form-inline" role="form" method="get" action="/EPP_Project/legacy/Admin/Guest/search_ok">
+            <form class="form-inline" role="form" method="get" action="/EPP_Project/legacy/Admin/Guest/searchguest_ok">
                 <div class="form-group">
-                    <label class="sr-only" for="name">查询用户名称</label>
-                    <input type="text" class="form-control" id="name" name="place" placeholder="查询用户名称">
+                    <label class="sr-only" for="name">顾客id：</label>
+                    <input type="text" class="form-control" id="name" name="userid" placeholder="请输入顾客id">
                 </div>
                 <button type="submit" class="btn btn-default">搜索🔍</button>
             </form>

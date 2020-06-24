@@ -27,17 +27,17 @@
             </div>
             <!--Collect the nav linnks, forms, and other content for toggling-->
             <div class="collapse navbar-collapse navbar-ex1-collapse " id="bs-example-navbar-collapse-1" >
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="/EPP_Project/legacy/Admin/Index/index"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> 首页</a></li>
+                <ul class="nav navbar-nav activemenu ">
+                    <li class=""><a href="/EPP_Project/legacy/Admin/Index/index"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> 首页</a></li>
                     <li class="dropdown">
-                        <a href="/EPP_Project/legacy/Admin/Guest/index" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> 顾客管理<b class="caret"></b></a>
+                        <a href="/EPP_Project/legacy/Admin/Guest/index" class="dropdown-toggle active1" data-toggle="dropdown"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> 顾客管理<b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="/EPP_Project/legacy/Admin/Guest/index">查看顾客信息</a></li>
+                            <li><a href="/EPP_Project/legacy/Admin/Guest/index">查看顾客</a></li>
                             <li><a href="/EPP_Project/legacy/Admin/Guest/searchguest">查询顾客</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="/EPP_Project/legacy/Admin/Goods/index" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> 商品管理<b class="caret"></b></a>
+                        <a href="/EPP_Project/legacy/Admin/Goods/index" class="dropdown-toggle active2" data-toggle="dropdown"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> 商品管理<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="/EPP_Project/legacy/Admin/Goods/index">查看商品</a></li>
                             <li><a href="/EPP_Project/legacy/Admin/Goods/add">添加商品</a></li>
@@ -63,7 +63,6 @@
                                 <ul class="dropdown-menu">
                                     <li><a href="/EPP_Project/legacy/Admin/Notice/index">查看公告</a></li>
                                     <li><a href="/EPP_Project/legacy/Admin/Notice/add">增加公告</a></li>
-                                    <li><a href="/EPP_Project/legacy/Admin/Notice/revise">修改公告</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown-submenu">
@@ -71,7 +70,6 @@
                                 <ul class="dropdown-menu">
                                     <li><a href="/EPP_Project/legacy/Admin/Dynamic/index">查看动态</a></li>
                                     <li><a href="/EPP_Project/legacy/Admin/Dynamic/add">增加动态</a></li>
-                                    <li><a href="/EPP_Project/legacy/Admin/Dynamic/revise">修改动态</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown-submenu">
@@ -103,7 +101,7 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">admin<b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle " data-toggle="dropdown">admin<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="/EPP_Project/legacy/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>前台首页</a></li>
                             <li><a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span>个人设置</a></li>
@@ -117,6 +115,19 @@
         </nav>
     </nav>
 </div>
+
+
+<script>
+    $(document).ready(function () {
+        $(".activemenu li a").each(function () {
+            $this=$(this);
+            if($this[0].href==String(window.location)){
+                $this.parent().addClass("active");
+            }
+        });
+    });
+</script>
+
 <div id="content">
     <div class="item"><!DOCTYPE html>
 <html lang="en">
@@ -129,59 +140,49 @@
             <ul class="list-group">
                 <a href="/EPP_Project/legacy/Admin/Notice/index" class="list-group-item active">查看公告</a>
                 <a href="/EPP_Project/legacy/Admin/Notice/add" class="list-group-item">增加公告</a>
-                <a href="/EPP_Project/legacy/Admin/Notice/revise" class="list-group-item">修改公告</a>
-                <a href="/EPP_Project/legacy/Admin/Notice/delete" class="list-group-item">删除公告</a>
             </ul>
-        </div>
+</div>
         <!--右侧主要内容-->
         <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <!--这里放置标题、选项-->
                     <h1>查看公告</h1>
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            <ul id="myTab" class="nav nav-tabs" role="tablist">
-                                <li class="active">
-                                    <a href="#bulletin" role="tab" data-toggle="tab">查看公告</a>
-                                </li>
-                            </ul>
-                            <!--选项卡面板-->
-                            <div id="myTabContent" class="tab-content">
-                                <div class="tab-pane active" id="bulletin">
-                                    <table class="table table-hover">
-                                        <tbody>
-                                        <tr class="bg-primary">
-                                            <th scope="row"></th>
-                                            <td>公告id</td>
-                                            <td>公告题目</td>
-                                            <td>公告内容</td>
-                                            <td>发布时间</td>
-                                        </tr>
-                                        <?php if(is_array($list)): foreach($list as $key=>$v): ?><tr class="bg-danger">
-                                                <th scope="row"></th>
-                                                <td><?php echo ($v["id"]); ?></td>
-                                                <td><?php echo ($v["title"]); ?></td>
-                                                <td><a href="/EPP_Project/legacy/Admin/Notice/content/id/<?php echo ($v["id"]); ?>">公告详情</a></td>
-                                                <td><?php echo ($v["time"]); ?></td>
-                                            </tr><?php endforeach; endif; ?>
-                                        </tbody>
-                                    </table>
-                                    <table>
-                                        <nav class="pull-right">
-                                            <ul class="pagination">
-                                                <?php echo $page; ?>
-                                            </ul>
-                                        </nav>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
+                </div>
+                <div class="panel-body">
+                    <table class="table table-hover">
+                        <tbody>
+                            <tr class="bg-primary">
+                                <th scope="row"></th>
+                                <td>公告id</td>
+                                <td>公告题目</td>
+                                <td>公告内容</td>
+                                <td>发布时间</td>
+                                <td>操作</td>
+                            </tr>
+                            <?php if(is_array($list)): foreach($list as $key=>$v): ?><tr class="bg-success">
+                                    <th scope="row"></th>
+                                    <td><?php echo ($v["id"]); ?></td>
+                                    <td><?php echo ($v["title"]); ?></td>
+                                    <td><a href="/EPP_Project/legacy/Admin/Notice/content/id/<?php echo ($v["id"]); ?>">公告详情</a></td>
+                                    <td><?php echo ($v["time"]); ?></td>
+                                    <td>
+                                        <a type="button" class="btn btn-primary btn-sm" href="/EPP_Project/legacy/Admin/Notice/revise/id/<?php echo ($v["id"]); ?>">
+                                        <span class="glyphicon glyphicon-pencil"></span>编辑
+                                        </a>
+                                        <a type="button" class="btn btn-danger btn-sm" href="/EPP_Project/legacy/Admin/Notice/delete/id/<?php echo ($v["id"]); ?>">
+                                            <span class="glyphicon glyphicon-trash"></span>删除
+                                        </a>
+                                    </td>
+                                </tr><?php endforeach; endif; ?>
+                        </tbody>
+                    </table>
+                    <div class="pagelist" align="right">
+                        <?php echo $page; ?>
                     </div>
                 </div>
             </div>
         </div>
-
 </body>
 </html></div>
 </div>

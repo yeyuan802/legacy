@@ -47,20 +47,23 @@ class MessageController extends CommonController
     }
 
     public function reply(){
-        $id=I('get.id');
-        $model=D('message');
-        $list=$model->where("id==$id")->select();
+        $id=I('get.id',0, 'int');
         if(IS_POST){
-            $rst=$this->create('message','save',2,array("id=$id"));
-            if ($rst===false){
-                $this->error("回复失败");
-            }
-            $this->success('回复成功', U('Message/index'));
+            $this->reviseAction($id);
             return;
         }
-        $this->assign('list',$list);
+        $model=D('message');
+        $res=$model->where("id=$id")->select();
+        $this->assign('list',$res);
         $this->display();
 
+    }
+    public function reviseAction($id){
+        $rst=$this->create('message','save',2,array("id=$id"));
+        if ($rst===false){
+            $this->error("回复失败");
+        }
+        $this->success('回复成功', U('Message/index'));
     }
 
 

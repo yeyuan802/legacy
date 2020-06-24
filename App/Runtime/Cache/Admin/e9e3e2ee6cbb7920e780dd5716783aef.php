@@ -122,29 +122,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>旅游</title>
+    <title>政策</title>
     <style>
         /*内容编辑*/
         .data-edit{border:1px solid #ddd;background:#F7F7F7;max-width:550px;padding:20px 40px;}
         .data-edit label{font-weight:normal;text-align:right;vertical-align:top;}
         .data-edit label{padding:0 10px;}
         .data-edit select{min-width:100px;height:26px;}
-        .data-edit textarea{width:200px;height:50px;}
+        .data-edit textarea{width:200px;height:150px;}
         .data-edit input{width:200px;}
     </style>
 </head>
 <body>
 <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
     <ul class="list-group">
-        <a href="/EPP_Project/legacy/Admin/Notice/index" class="list-group-item active">查看公告</a>
-        <a href="/EPP_Project/legacy/Admin/Notice/add" class="list-group-item">增加公告</a>
+        <a href="/EPP_Project/legacy/Admin/Policy/index" class="list-group-item">查看政策</a>
+        <a href="/EPP_Project/legacy/Admin/Policy/add" class="list-group-item active">添加政策</a>
+        <a href="/EPP_Project/legacy/Admin/Policy/index" class="list-group-item">修改政策</a>
+        <a href="/EPP_Project/legacy/Admin/Policy/index" class="list-group-item">删除政策</a>
     </ul>
 </div>
 <!--右侧主要内容-->
 <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
     <div class="panel panel-default">
         <div class="panel-heading">
-            <h1>公告管理</h1>
+            <h1>政策管理</h1>
         </div>
         <div class="panel-body">
             <div class="data-edit" align="center">
@@ -152,39 +154,45 @@
                     <div class="container">
                         <div class="row form-group" style="padding: 20px 0">
                             <div class="col-lg-5 col-md-6">
-                                <h3>修改公告</h3>
+                                <h3>添加政策</h3>
                             </div>
                         </div>
-                        <?php if(is_array($res)): foreach($res as $key=>$v): ?><div class="row form-group">
-                                <label class="control-label col-lg-1" for="id">公告id：</label>
-                                <div class="col-lg-5 col-md-6">
-                                    <input class="form-control" name="place" id="id" type="text" value="<?php echo ($v["id"]); ?>">
-                                </div>
+                        <div class="row form-group">
+                            <label class="control-label col-lg-1" for="time">发布时间：</label>
+                            <div class="col-lg-5 col-md-6">
+                                <input class="form-control" name="time" id="time" type="text">
                             </div>
-                            <div class="row form-group">
-                                <label class="control-label col-lg-1" for="title">公告名称：</label>
-                                <div class="col-lg-5 col-md-6">
-                                    <input class="form-control" name="place" id="title" type="text" value="<?php echo ($v["title"]); ?>">
-                                </div>
+                        </div>
+                        <div class="row form-group">
+                            <label class="control-label col-lg-1" for="promulgator">发布机构：</label>
+                            <div class="col-lg-5 col-md-6">
+                                <input class="form-control" name="promulgator" id="promulgator" type="text">
                             </div>
-                            <div class="row form-group">
-                                <label class="control-label col-lg-1">公告内容：</label>
-                                <div class="col-lg-5 col-md-6">
-                                    <textarea class="form-control" rows="5" name="content"><?php echo ($v["content"]); ?></textarea>
-                                </div>
+                        </div>
+                        <div class="row form-group">
+                            <label class="control-label col-lg-1" for="reference">索引号：</label>
+                            <div class="col-lg-5 col-md-6">
+                                <input class="form-control" name="reference" id="reference" type="text">
                             </div>
-                            <div class="row form-group">
-                                <label class="control-label col-lg-1" for="time">发布时间：</label>
-                                <div class="col-lg-5 col-md-6">
-                                    <input class="form-control" name="hticket" id="time" type="text" value="<?php echo ($v["time"]); ?>">
-                                </div>
+                        </div>
+                        <div class="row form-group">
+                            <label class="control-label col-lg-1">标题：</label>
+                            <div class="col-lg-5 col-md-6">
+                                <textarea class="form-control" rows="20" name="title"></textarea>
                             </div>
-                            <div class="row form-group">
-                                <div class="col-lg-5 col-md-6" style="margin-bottom: 50px;">
-                                    <input class="btn btn-info" type="submit" value="确定" />
-                                    <input class="btn btn-info" type="reset" value="重置" />
-                                </div>
-                            </div><?php endforeach; endif; ?>
+                        </div>
+                        <div class="row form-group">
+                            <label class="control-label col-lg-1">内容：</label>
+                            <div class="col-lg-5 col-md-6">
+                                <textarea class="form-control" rows="20" name="content"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row form-group">
+                            <div class="col-lg-5 col-md-6">
+                                <input class="btn btn-info" type="submit" value="确定" />  <input class="btn btn-info" type="reset" value="重置" />
+                            </div>
+                        </div>
                     </div>
                 </form>
             </div>

@@ -122,84 +122,103 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>旅游</title>
+    <style>
+        /*内容编辑*/
+        .data-edit{border:1px solid #ddd;background:#F7F7F7;max-width:550px;padding:20px 40px;}
+        .data-edit label{font-weight:normal;text-align:right;vertical-align:top;}
+        .data-edit label{padding:0 10px;}
+        .data-edit select{min-width:100px;height:26px;}
+        .data-edit textarea{width:200px;height:50px;}
+        .data-edit input{width:200px;}
+    </style>
 </head>
 <body>
 <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
     <ul class="list-group">
         <a href="/EPP_Project/legacy/Admin/Message/index" class="list-group-item">查看留言</a>
-        <a href="/EPP_Project/legacy/Admin/Message/check" class="list-group-item active">审核留言</a>
+        <a href="/EPP_Project/legacy/Admin/Message/check" class="list-group-item active">回复留言</a>
     </ul>
 </div>
 <!--右侧主要内容-->
 <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
     <div class="panel panel-default">
         <div class="panel-heading">
-            <!--这里放置标题、选项-->
             <h1>回复留言</h1>
-            <div class="panel panel-default">
-                <div class="panel-body">
-                    <ul id="myTab" class="nav nav-tabs" role="tablist">
-                        <li class="active">
-                            <a href="#bulletin" role="tab" data-toggle="tab">回复留言</a>
-                        </li>
-                    </ul>
-                    <!--选项卡面板-->
-                    <div id="myTabContent" class="tab-content">
-                        <div class="tab-pane active" id="bulletin">
-                            <form method="post">
-                            <table class="table table-hover">
-                                <tbody>
-                                <?php if(is_array($list)): foreach($list as $key=>$v): ?><tr><th width="80">留言id：</th><td><?php echo ($v["id"]); ?></td></tr><!---要修改的id-->
-                                    <tr><th width="80">留言内容：</th><td><?php echo ($v["content"]); ?></td></tr>
-                                    <tr><th>回复内容：</th><td><textarea name="reply"></textarea></td></tr>
-                                    <tr><td>&nbsp;</td><td><input class="login_btn" type="submit" value="确认" /></td></tr><?php endforeach; endif; ?>
-
-                                </tbody>
-                            </table>
-                            </form>
-                            <table>
-                                <nav class="pull-right">
-                                    <ul class="pagination">
-                                        <?php echo $page; ?>
-                                        <!--          <li class="disabled">
-                                                      <a href="#" aria-label="Previous">
-                                                          <span aria-hidden="true">&laquo;</span>
-                                                      </a>
-                                                  </li>
-                                                  <li class="active">
-                                                      <a href="#">1</a>
-                                                  </li>
-                                                  <li>
-                                                      <a href="#">2</a>
-                                                  </li>
-                                                  <li>
-                                                      <a href="#">3</a>
-                                                  </li>
-                                                  <li>
-                                                      <a href="#">4</a>
-                                                  </li>
-                                                  <li>
-                                                      <a href="#">5</a>
-                                                  </li>
-                                                  <li>
-                                                      <a href="#">6</a>
-                                                  </li>
-                                                  <li><a href="#">
-                                                      <span aria-hidden="true">&raquo;</span>
-                                                  </a> </li>-->
-                                    </ul>
-                                </nav>
-                            </table>
+        </div>
+        <div class="panel-body">
+            <div class="data-edit" align="center">
+                <form class="form-horizontal" method="post">
+                    <div class="container">
+                        <div class="row form-group" style="padding: 20px 0">
+                            <div class="col-lg-5 col-md-6">
+                                <h3>回复留言</h3>
+                            </div>
                         </div>
+                        <?php if(is_array($list)): foreach($list as $key=>$v): ?><div class="row form-group">
+                                <label class="control-label col-lg-1" for="id">留言id：</label>
+                                <div class="col-lg-5 col-md-6">
+                                    <input class="form-control" name="id" id="id" type="text" value="<?php echo ($v["id"]); ?>">
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <label class="control-label col-lg-1">留言内容：</label>
+                                <div class="col-lg-5 col-md-6">
+                                    <textarea class="form-control" rows="5" name="content"><?php echo ($v["content"]); ?></textarea>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <label class="control-label col-lg-1" for="writer">留言人：</label>
+                                <div class="col-lg-5 col-md-6">
+                                    <input class="form-control" name="writer" id="writer" type="text" value="<?php echo ($v["writer"]); ?>">
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <label class="control-label col-lg-1" for="time">发布时间：</label>
+                                <div class="col-lg-5 col-md-6">
+                                    <input class="form-control" name="time" id="time" type="text" value="<?php echo ($v["time"]); ?>">
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <label class="control-label col-lg-1" for="phone">电话号码：</label>
+                                <div class="col-lg-5 col-md-6">
+                                    <input class="form-control" name="phone" id="phone" type="text" value="<?php echo ($v["phone"]); ?>">
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <label class="control-label col-lg-1" for="email">邮箱：</label>
+                                <div class="col-lg-5 col-md-6">
+                                    <input class="form-control" name="email" id="email" type="text" value="<?php echo ($v["email"]); ?>">
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <label class="control-label col-lg-1">回复内容：</label>
+                                <div class="col-lg-5 col-md-6">
+                                    <textarea class="form-control" rows="5" name="reply"></textarea>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-lg-5 col-md-6" style="margin-bottom: 50px;">
+                                    <input class="btn btn-info" type="submit" value="确定" />
+                                    <input class="btn btn-info" type="reset" value="重置" />
+                                </div>
+                            </div><?php endforeach; endif; ?>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     </div>
 </div>
 </body>
 </html>
+
+
+
+
+
+
+
+
 
 </div>
 </div>

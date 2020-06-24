@@ -9,60 +9,50 @@
             <ul class="list-group">
                 <a href="__MODULE__/Notice/index" class="list-group-item active">查看公告</a>
                 <a href="__MODULE__/Notice/add" class="list-group-item">增加公告</a>
-                <a href="__MODULE__/Notice/revise" class="list-group-item">修改公告</a>
-                <a href="__MODULE__/Notice/delete" class="list-group-item">删除公告</a>
             </ul>
-        </div>
+</div>
         <!--右侧主要内容-->
         <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <!--这里放置标题、选项-->
                     <h1>查看公告</h1>
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            <ul id="myTab" class="nav nav-tabs" role="tablist">
-                                <li class="active">
-                                    <a href="#bulletin" role="tab" data-toggle="tab">查看公告</a>
-                                </li>
-                            </ul>
-                            <!--选项卡面板-->
-                            <div id="myTabContent" class="tab-content">
-                                <div class="tab-pane active" id="bulletin">
-                                    <table class="table table-hover">
-                                        <tbody>
-                                        <tr class="bg-primary">
-                                            <th scope="row"></th>
-                                            <td>公告id</td>
-                                            <td>公告题目</td>
-                                            <td>公告内容</td>
-                                            <td>发布时间</td>
-                                        </tr>
-                                        <foreach name="list" item="v">
-                                            <tr class="bg-danger">
-                                                <th scope="row"></th>
-                                                <td>{$v.id}</td>
-                                                <td>{$v.title}</td>
-                                                <td><a href="__CONTROLLER__/content/id/{$v.id}">公告详情</a></td>
-                                                <td>{$v.time}</td>
-                                            </tr>
-                                        </foreach>
-                                        </tbody>
-                                    </table>
-                                    <table>
-                                        <nav class="pull-right">
-                                            <ul class="pagination">
-                                                <?php echo $page; ?>
-                                            </ul>
-                                        </nav>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
+                </div>
+                <div class="panel-body">
+                    <table class="table table-hover">
+                        <tbody>
+                            <tr class="bg-primary">
+                                <th scope="row"></th>
+                                <td>公告id</td>
+                                <td>公告题目</td>
+                                <td>公告内容</td>
+                                <td>发布时间</td>
+                                <td>操作</td>
+                            </tr>
+                            <foreach name="list" item="v">
+                                <tr class="bg-success">
+                                    <th scope="row"></th>
+                                    <td>{$v.id}</td>
+                                    <td>{$v.title}</td>
+                                    <td><a href="__CONTROLLER__/content/id/{$v.id}">公告详情</a></td>
+                                    <td>{$v.time}</td>
+                                    <td>
+                                        <a type="button" class="btn btn-primary btn-sm" href="__CONTROLLER__/revise/id/{$v.id}">
+                                        <span class="glyphicon glyphicon-pencil"></span>编辑
+                                        </a>
+                                        <a type="button" class="btn btn-danger btn-sm" href="__CONTROLLER__/delete/id/{$v.id}">
+                                            <span class="glyphicon glyphicon-trash"></span>删除
+                                        </a>
+                                    </td>
+                                </tr>
+                            </foreach>
+                        </tbody>
+                    </table>
+                    <div class="pagelist" align="right">
+                        <?php echo $page; ?>
                     </div>
                 </div>
             </div>
         </div>
-
 </body>
 </html>

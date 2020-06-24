@@ -27,17 +27,17 @@
             </div>
             <!--Collect the nav linnks, forms, and other content for toggling-->
             <div class="collapse navbar-collapse navbar-ex1-collapse " id="bs-example-navbar-collapse-1" >
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="/EPP_Project/legacy/Admin/Index/index"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> 首页</a></li>
+                <ul class="nav navbar-nav activemenu ">
+                    <li class=""><a href="/EPP_Project/legacy/Admin/Index/index"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> 首页</a></li>
                     <li class="dropdown">
-                        <a href="/EPP_Project/legacy/Admin/Guest/index" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> 顾客管理<b class="caret"></b></a>
+                        <a href="/EPP_Project/legacy/Admin/Guest/index" class="dropdown-toggle active1" data-toggle="dropdown"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> 顾客管理<b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="/EPP_Project/legacy/Admin/Guest/index">查看顾客信息</a></li>
+                            <li><a href="/EPP_Project/legacy/Admin/Guest/index">查看顾客</a></li>
                             <li><a href="/EPP_Project/legacy/Admin/Guest/searchguest">查询顾客</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="/EPP_Project/legacy/Admin/Goods/index" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> 商品管理<b class="caret"></b></a>
+                        <a href="/EPP_Project/legacy/Admin/Goods/index" class="dropdown-toggle active2" data-toggle="dropdown"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> 商品管理<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="/EPP_Project/legacy/Admin/Goods/index">查看商品</a></li>
                             <li><a href="/EPP_Project/legacy/Admin/Goods/add">添加商品</a></li>
@@ -63,7 +63,6 @@
                                 <ul class="dropdown-menu">
                                     <li><a href="/EPP_Project/legacy/Admin/Notice/index">查看公告</a></li>
                                     <li><a href="/EPP_Project/legacy/Admin/Notice/add">增加公告</a></li>
-                                    <li><a href="/EPP_Project/legacy/Admin/Notice/revise">修改公告</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown-submenu">
@@ -71,7 +70,6 @@
                                 <ul class="dropdown-menu">
                                     <li><a href="/EPP_Project/legacy/Admin/Dynamic/index">查看动态</a></li>
                                     <li><a href="/EPP_Project/legacy/Admin/Dynamic/add">增加动态</a></li>
-                                    <li><a href="/EPP_Project/legacy/Admin/Dynamic/revise">修改动态</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown-submenu">
@@ -103,7 +101,7 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">admin<b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle " data-toggle="dropdown">admin<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="/EPP_Project/legacy/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>前台首页</a></li>
                             <li><a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span>个人设置</a></li>
@@ -117,76 +115,73 @@
         </nav>
     </nav>
 </div>
+
+
+<script>
+    $(document).ready(function () {
+        $(".activemenu li a").each(function () {
+            $this=$(this);
+            if($this[0].href==String(window.location)){
+                $this.parent().addClass("active");
+            }
+        });
+    });
+</script>
+
 <div id="content">
     <div class="item"><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>旅游</title>
-    <style>
-        /*内容编辑*/
-        .data-edit{border:1px solid #ddd;background:#F7F7F7;max-width:550px;padding:20px 40px;}
-        .data-edit label{font-weight:normal;text-align:right;vertical-align:top;}
-        .data-edit label{padding:0 10px;}
-        .data-edit select{min-width:100px;height:26px;}
-        .data-edit textarea{width:200px;height:50px;}
-        .data-edit input{width:200px;}
-    </style>
+    <title>政策</title>
 </head>
 <body>
 <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
     <ul class="list-group">
-        <a href="/EPP_Project/legacy/Admin/Notice/index" class="list-group-item active">查看公告</a>
-        <a href="/EPP_Project/legacy/Admin/Notice/add" class="list-group-item">增加公告</a>
+        <a href="index" class="list-group-item active">查看政策</a>
+        <a href="/EPP_Project/legacy/Admin/Policy/add" class="list-group-item">添加政策</a>
+        <a href="/EPP_Project/legacy/Admin/Policy/index" class="list-group-item">修改政策</a>
+        <a href="/EPP_Project/legacy/Admin/Policy/index" class="list-group-item">删除政策</a>
     </ul>
 </div>
 <!--右侧主要内容-->
 <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
     <div class="panel panel-default">
         <div class="panel-heading">
-            <h1>公告管理</h1>
+            <h1>政策管理</h1>
         </div>
         <div class="panel-body">
-            <div class="data-edit" align="center">
-                <form class="form-horizontal" method="post">
-                    <div class="container">
-                        <div class="row form-group" style="padding: 20px 0">
-                            <div class="col-lg-5 col-md-6">
-                                <h3>修改公告</h3>
-                            </div>
-                        </div>
-                        <?php if(is_array($res)): foreach($res as $key=>$v): ?><div class="row form-group">
-                                <label class="control-label col-lg-1" for="id">公告id：</label>
-                                <div class="col-lg-5 col-md-6">
-                                    <input class="form-control" name="place" id="id" type="text" value="<?php echo ($v["id"]); ?>">
-                                </div>
-                            </div>
-                            <div class="row form-group">
-                                <label class="control-label col-lg-1" for="title">公告名称：</label>
-                                <div class="col-lg-5 col-md-6">
-                                    <input class="form-control" name="place" id="title" type="text" value="<?php echo ($v["title"]); ?>">
-                                </div>
-                            </div>
-                            <div class="row form-group">
-                                <label class="control-label col-lg-1">公告内容：</label>
-                                <div class="col-lg-5 col-md-6">
-                                    <textarea class="form-control" rows="5" name="content"><?php echo ($v["content"]); ?></textarea>
-                                </div>
-                            </div>
-                            <div class="row form-group">
-                                <label class="control-label col-lg-1" for="time">发布时间：</label>
-                                <div class="col-lg-5 col-md-6">
-                                    <input class="form-control" name="hticket" id="time" type="text" value="<?php echo ($v["time"]); ?>">
-                                </div>
-                            </div>
-                            <div class="row form-group">
-                                <div class="col-lg-5 col-md-6" style="margin-bottom: 50px;">
-                                    <input class="btn btn-info" type="submit" value="确定" />
-                                    <input class="btn btn-info" type="reset" value="重置" />
-                                </div>
-                            </div><?php endforeach; endif; ?>
-                    </div>
-                </form>
+            <table class="table table-hover">
+                <tbody>
+                <tr class="bg-primary">
+                    <th scope="row"></th>
+                    <th><input type="checkbox">全选</th>
+                    <th>发布时间</th>
+                    <th>发布机构</th>
+                    <th>索引号</th>
+                    <th>标题</th>
+                    <th>内容</th>
+                    <th>操作</th>
+                </tr>
+                <?php if(is_array($res)): foreach($res as $key=>$v): ?><tr class="bg-success">
+                        <th scope="row"></th>
+                        <td><input type="checkbox"></td>
+                        <td><?php echo ($v["time"]); ?></td>
+                        <td><?php echo ($v["promulgator"]); ?></td>
+                        <td><?php echo ($v["reference"]); ?></td>
+                        <td><?php echo (msubstr($v["title"],0,20)); ?></td>
+                        <td><?php echo (msubstr($v["content"],0,40)); ?></td>
+                        <td>
+                            <a type="button" class="btn btn-primary btn-sm" href="/EPP_Project/legacy/Admin/Policy/revise/id/<?php echo ($v["id"]); ?>">
+                                <span class="glyphicon glyphicon-pencil"></span>编辑 </a>
+                            <a type="button" class="btn btn-danger btn-sm" href="/EPP_Project/legacy/Admin/Policy/delete/id/<?php echo ($v["id"]); ?>">
+                                <span class="glyphicon glyphicon-trash"></span>删除</a>
+                        </td>
+                    </tr><?php endforeach; endif; ?>
+                </tbody>
+            </table>
+            <div class="pagelist" align="right">
+                <?php echo $page; ?>
             </div>
         </div>
     </div>

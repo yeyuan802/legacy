@@ -122,13 +122,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>旅游</title>
+    <title>Title</title>
     <style>
         /*内容编辑*/
         .data-edit{border:1px solid #ddd;background:#F7F7F7;max-width:550px;padding:20px 40px;}
         .data-edit label{font-weight:normal;text-align:right;vertical-align:top;}
         .data-edit label{padding:0 10px;}
         .data-edit select{min-width:100px;height:26px;}
+        .data-edit .file{font-size:12px;}
         .data-edit textarea{width:200px;height:50px;}
         .data-edit input{width:200px;}
     </style>
@@ -136,15 +137,18 @@
 <body>
 <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
     <ul class="list-group">
-        <a href="/EPP_Project/legacy/Admin/Notice/index" class="list-group-item active">查看公告</a>
-        <a href="/EPP_Project/legacy/Admin/Notice/add" class="list-group-item">增加公告</a>
+        <a href="/EPP_Project/legacy/Admin/Inheritor/index" class="list-group-item ">查看传承人</a>
+        <a href="/EPP_Project/legacy/Admin/Inheritor/add" class="list-group-item">添加传承人</a>
+        <a href="/EPP_Project/legacy/Admin/Inheritor/index" class="list-group-item active">修改传承人</a>
+        <a href="/EPP_Project/legacy/Admin/Inheritor/search" class="list-group-item">查询传承人</a>
+        <a href="/EPP_Project/legacy/Admin/Inheritor/index" class="list-group-item">删除传承人</a>
     </ul>
 </div>
 <!--右侧主要内容-->
 <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
     <div class="panel panel-default">
         <div class="panel-heading">
-            <h1>公告管理</h1>
+            <h1>传承人管理</h1>
         </div>
         <div class="panel-body">
             <div class="data-edit" align="center">
@@ -152,39 +156,50 @@
                     <div class="container">
                         <div class="row form-group" style="padding: 20px 0">
                             <div class="col-lg-5 col-md-6">
-                                <h3>修改公告</h3>
+                                <h3>添加传承人</h3>
                             </div>
                         </div>
                         <?php if(is_array($res)): foreach($res as $key=>$v): ?><div class="row form-group">
-                                <label class="control-label col-lg-1" for="id">公告id：</label>
+                                <label class="control-label col-lg-1" for="name">姓名：</label>
                                 <div class="col-lg-5 col-md-6">
-                                    <input class="form-control" name="place" id="id" type="text" value="<?php echo ($v["id"]); ?>">
+                                    <input class="form-control" name="name" id="name" type="text" value="<?php echo ($v["name"]); ?>">
                                 </div>
                             </div>
                             <div class="row form-group">
-                                <label class="control-label col-lg-1" for="title">公告名称：</label>
+                                <label class="control-label col-lg-1" for="sex">性别：</label>
                                 <div class="col-lg-5 col-md-6">
-                                    <input class="form-control" name="place" id="title" type="text" value="<?php echo ($v["title"]); ?>">
+                                    <input class="form-control" name="sex" id="sex" type="text" value="<?php echo ($v["sex"]); ?>">
                                 </div>
                             </div>
                             <div class="row form-group">
-                                <label class="control-label col-lg-1">公告内容：</label>
+                                <label class="control-label col-lg-1" for="qname">称号：</label>
                                 <div class="col-lg-5 col-md-6">
-                                    <textarea class="form-control" rows="5" name="content"><?php echo ($v["content"]); ?></textarea>
+                                    <input class="form-control" name="qname" id="qname" type="text" value="<?php echo ($v["qname"]); ?>">
                                 </div>
                             </div>
                             <div class="row form-group">
-                                <label class="control-label col-lg-1" for="time">发布时间：</label>
+                                <label class="control-label col-lg-1" for="age">年龄：</label>
                                 <div class="col-lg-5 col-md-6">
-                                    <input class="form-control" name="hticket" id="time" type="text" value="<?php echo ($v["time"]); ?>">
+                                    <input class="form-control" name="age" id="age" type="text" value="<?php echo ($v["age"]); ?>">
                                 </div>
                             </div>
                             <div class="row form-group">
-                                <div class="col-lg-5 col-md-6" style="margin-bottom: 50px;">
-                                    <input class="btn btn-info" type="submit" value="确定" />
-                                    <input class="btn btn-info" type="reset" value="重置" />
+                                <label class="control-label col-lg-1" for="inputtime">封号时间：</label>
+                                <div class="col-lg-5 col-md-6">
+                                    <input class="form-control" name="inputtime" id="inputtime" type="text" value="<?php echo ($v["inputtime"]); ?>">
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <label class="control-label col-lg-1">事迹：</label>
+                                <div class="col-lg-5 col-md-6">
+                                    <textarea class="form-control" rows="8" name="shiji"><?php echo ($v["shiji"]); ?></textarea>
                                 </div>
                             </div><?php endforeach; endif; ?>
+                        <div class="row form-group">
+                            <div class="col-lg-5 col-md-6">
+                                <input class="btn btn-info" type="submit" value="确定" />  <input class="btn btn-info" type="reset" value="重置" />
+                            </div>
+                        </div>
                     </div>
                 </form>
             </div>

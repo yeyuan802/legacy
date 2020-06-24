@@ -27,31 +27,26 @@ class GuestController extends CommonController
         $this->display();
     }
 
-    public function searchorder(){
-        $id=I('get.orderid');
-        $model=D('order');
-
-        $data=$model->where("id=$id")->select();
-        if(!$data) {
-            echo "该顾客不存在";
-        }else {
-            $this->assign('data', $data);
-            $this->display();
-        }
-    }
     public function seachguest(){
         $this->display();
     }
 
     public function searchguest_ok(){
 
-        $id =I('get.uid');
-        $model = D('user');
-        $data = $model->where("uid=$id")->select();
-        if(!$data) {
+        $uid =I('get.userid');
+        $user = D('user');
+        $order=D('order');
+        $goods=D('goods');
+        $userdata = $user->where("uid=$uid")->select();
+        if(!$userdata) {
             echo "该顾客不存在";
         }else{
-            $this->assign('list', $data);
+            $orderdata=$order->where("uid=$uid")->select();
+            //$ordergid=$orderdata->gid;
+            //$goodsdata=$goods->where("gid=$ordergid")->select();
+            $this->assign('userdata', $userdata);
+            $this->assign('orderdata', $orderdata);
+            //$this->assign('goodsdata', $goodsdata);
             $this->display();
         }
     }

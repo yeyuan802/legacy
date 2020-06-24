@@ -126,56 +126,91 @@
     <title>Title</title>
 </head>
 <body>
-        <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-            <ul class="list-group">
-                <li><a href="/EPP_Project/legacy/Admin/Notice/index" class="list-group-item">查看公告</a></li>
-                <li><a href="/EPP_Project/legacy/Admin/Notice/add" class="list-group-item active">增加公告</a></li>
-                <li><a href="/EPP_Project/legacy/Admin/Notice/revise" class="list-group-item">修改公告</a></li>
-                <li><a href="/EPP_Project/legacy/Admin/Notice/delete" class="list-group-item">删除公告</a></li>
-            </ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*内容编辑*/
+        .data-edit{border:1px solid #ddd;background:#F7F7F7;max-width:550px;padding:20px 40px;}
+        .data-edit label{font-weight:normal;text-align:right;vertical-align:top;}
+        .data-edit label{padding:0 10px;}
+        .data-edit select{min-width:100px;height:26px;}
+        .data-edit .file{font-size:12px;}
+        .data-edit textarea{width:200px;height:50px;}
+        .data-edit input{width:200px;}
+    </style>
+</head>
+<body>
+<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+    <ul class="list-group">
+        <a href="/EPP_Project/legacy/Admin/Notice/index" class="list-group-item">查看公告</a>
+        <a href="/EPP_Project/legacy/Admin/Notice/add" class="list-group-item  active">增加公告</a>
+
+    </ul>
+</div>
+<!--右侧主要内容-->
+<div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h1>增加公告</h1>
         </div>
-        <!--右侧主要内容-->
-        <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <!--这里放置标题、选项-->
-                    <h1>增加公告</h1>
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            <ul id="myTab" class="nav nav-tabs" role="tablist">
-                                <li class="active">
-                                    <a href="#bulletin" role="tab" data-toggle="tab">增加公告</a>
-                                </li>
-                            </ul>
-                            <!--选项卡面板-->
-                            <div id="myTabContent" class="tab-content">
-                                <div class="tab-pane active" id="bulletin">
-                                    <form method="post">
-                                    <table class="table table-hover">
-                                        <tr><th width="80">公告id：</th><td><input type="text" name="id"></td></tr>
-                                        <tr><th>公告题目：</th><td><input type="text" name="title"></td></tr>
-                                        <tr><th>公告内容：</th><td><textarea name="content"></textarea></td></tr>
-                                        <tr><td>&nbsp;</td><td><input class="login_btn" type="submit" value="确认" /></td></tr>
-                                    </table>
-                                    </form>
-                                    <table>
-                                        <nav class="pull-right">
-                                            <ul class="pagination">
-                                                <?php echo $page; ?>
-                                            </ul>
-                                        </nav>
-                                    </table>
-                                </div>
+        <div class="panel-body">
+            <div class="data-edit" align="center">
+                <form class="form-horizontal" method="post" enctype="multipart/form-data">
+                    <div class="container">
+                        <div class="row form-group" style="padding: 20px 0">
+                            <div class="col-lg-5 col-md-6">
+                                <h3>增加公告</h3>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <label class="control-label col-lg-1" for="id">公告id：</label>
+                            <div class="col-lg-5 col-md-6">
+                                <input class="form-control" name="id" id="id" type="text">
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <label class="control-label col-lg-1" for="title">公告名称：</label>
+                            <div class="col-lg-5 col-md-6">
+                                <input class="form-control" name="title" id="title" type="text">
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <label class="control-label col-lg-1">公告内容：</label>
+                            <div class="col-lg-5 col-md-6">
+                                <textarea class="form-control" rows="5" name="content"></textarea>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <label class="control-label col-lg-1" for="writer">作者：</label>
+                            <div class="col-lg-5 col-md-6">
+                                <input class="form-control" name="writer" id="writer" type="text">
+                            </div>
+                        </div>
+                       <div class="row form-group">
+                                <?php
+ $time=date("Y-m-d H:i:s"); ?>
+                           <label class="control-label col-lg-1" for="time">发布时间：</label>
+                           <div class="col-lg-5 col-md-6">
+                               <input class="form-control" name="time" id="time" type="text" value="<?php echo ($time); ?>">
+                           </div>
+                        </div>
+                        <div class="row form-group" style="margin-bottom: 50px;">
+                            <div class="col-lg-5 col-md-6">
+                                <input class="btn btn-info" type="submit" value="确定" />  <input class="btn btn-info" type="reset" value="重置" />
                             </div>
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     </div>
 </div>
 </body>
-</html></div>
+</html>
+</div>
 </div>
 
 </body>

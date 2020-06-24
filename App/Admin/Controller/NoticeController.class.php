@@ -49,17 +49,23 @@ class NoticeController extends CommonController
     }
 
     public function revise(){
-
+        $id=I('get.id',0, 'int');
         if(IS_POST){
-            $id=I('post.id');
-            $rst=$this->create('notice','save',2,array("id=$id"));
-            if ($rst===false){
-                $this->error("修改失败");
-            }
-            $this->success('修改成功', U('Notice/index'));
+            $this->reviseAction($id);
             return;
         }
+        $model=D('notice');
+        $res=$model->where("id=$id")->select();
+        $this->assign('res',$res);
         $this->display();
+
+    }
+    public function reviseAction($id){
+        $rst=$this->create('notice','save',2,array("id=$id"));
+        if ($rst===false){
+            $this->error("修改公告失败");
+        }
+        $this->success('修改公告成功', U('Notice/index'));
     }
 
     public function content(){
