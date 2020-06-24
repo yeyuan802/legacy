@@ -8,26 +8,23 @@ class InheritorController extends CommonController
     {
         $model=D('inheritor');
         $where=array('status'=>'1');
-        $count=$model->where($where)->count();
-        $Page=new \Think\Page($count, 5);
-
-        foreach ($where as $key=>$val){
+        $count=$model->count();
+        $Page=new \Think\Page($count,5);
+        foreach($where as $key=>$val){
             $Page->parameter[$key]=urlencode($val);
         }
-
         $Page->lastSuffix=false;
-        $Page->setConfig('header', '共%TOTAL_PAGE%页，当前是第%NOW_PAGE%页');
-        $Page->setConfig('first', '首页');
-        $Page->setConfig('last', '尾页');
-        $Page->setConfig('prev', '上一页');
-        $Page->setConfig('next', '下一页');
-        $Page->setConfig('theme', '%HEADER% %FIRST% %UP_PAGE% %UP_PAGE% %DOWN_PAGE% %END%');
-
+        $Page->setConfig('header','共%TOTAL_PAGE%页，当前是第%NOW_PAGE%页<br>');
+        $Page->setConfig('first','首页');
+        $Page->setConfig('last','尾页');
+        $Page->setConfig('prev','上一页');
+        $Page->setConfig('next','下一页');
+        $Page->setConfig('theme','%HEADER% %FIRST% %UP_PAGE% %DOWN_PAGE% %END%');
         $show=$Page->show();
 
-        $res=$model->where($where)->limit($Page->firstRow.','.$Page->listRows)->select();
-        $this->assign('res', $res);
-        $this->assign('page', $show);
+        $list=$model->where($where)->limit($Page->firstRow.','.$Page->listRows)->select();
+        $this->assign('res',$list);
+        $this->assign('page',$show);
         $this->display();
 
     }
@@ -54,6 +51,14 @@ class InheritorController extends CommonController
             $this->error('删除传承人失败');
         }
         $this->success('传承人删除成功', U('Inheritor/index'));
+    }
+
+    public function content(){
+        $id=I('get.id');
+        $model=D('Inheritor');
+        $res=$model->where("id=$id")->select();
+        $this->assign('page',$res);
+        $this->display();
     }
     //修改传承人
     public function revise(){

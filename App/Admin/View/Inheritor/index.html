@@ -9,9 +9,7 @@
     <ul class="list-group">
         <a href="__CONTROLLER__/index" class="list-group-item active">查看传承人</a>
         <a href="__CONTROLLER__/add" class="list-group-item">添加传承人</a>
-        <a href="__CONTROLLER__/index" class="list-group-item">修改传承人</a>
         <a href="__CONTROLLER__/search" class="list-group-item">查询传承人</a>
-        <a href="__CONTROLLER__/index" class="list-group-item">删除传承人</a>
     </ul>
 </div>
 <!--右侧主要内容-->
@@ -26,11 +24,13 @@
                 <tr class="bg-primary">
                     <th scope="row"></th>
                     <th><input type="checkbox">全选</th>
+                    <th>标号</th>
                     <th>姓名</th>
                     <th>性别</th>
                     <th>称号</th>
                     <th>年龄</th>
                     <th>封号时间</th>
+                    <th>出生地点</th>
                     <th>事迹</th>
                     <th>操作</th>
                 </tr>
@@ -38,12 +38,14 @@
                     <tr class="bg-success">
                         <th scope="row"></th>
                         <td><input type="checkbox"></td>
+                        <td>{$v.id}</td>
                         <td>{$v.name}</td>
                         <td>{$v.sex}</td>
                         <td>{$v.qname}</td>
                         <td>{$v.age}</td>
                         <td>{$v.inputtime}</td>
-                        <td>{$v.shiji|msubstr=0,40}</td>
+                        <td>{$v.birthplace}</td>
+                        <td><a href="__CONTROLLER__/content/id/{$v.id}">查看详情</a></td>
                         <td>
                             <a type="button" class="btn btn-primary btn-sm" href="__CONTROLLER__/revise/id/{$v.id}">
                                 <span class="glyphicon glyphicon-pencil"></span>编辑 </a>
