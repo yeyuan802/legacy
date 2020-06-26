@@ -44,6 +44,27 @@
             <div class="col-md-1 col-sm-6 visible-sm  col-xs-6">
                 <div class="header-right">
                     <ul>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-9 col-sm-12 hidden-xs">
+                <div class="mainmenu text-center">
+
+                </div>
+            </div>
+            <div class="col-md-1 hidden-sm">
+                <div class="header-right">
+                    <ul style="display: flex;display: -webkit-flex">
+                        <li style="width: 60px;position: absolute;top:10px;right: -100%" >
+                            <div id="userinfo">
+                                <if condition="isset($_SESSION['userName'])">
+                                    <h4><img width="25px" height="25px" style="margin-right: 10px;" src="__PUBLIC__/Home/image/icon/user2.png">当前用户：{$Think.session.userName}   <a href="{:U('User/logout')}">注销</a></h4>
+                                    <else />
+                                    <h4><a href="{:U('User/login')}"><img width="25px" height="25px" src="__PUBLIC__/Home/image/icon/user1.png">点击登录</a> </h4>
+                                </if>
+                            </div>
+                        </li>
                         <li class="shoping-cart">
                             <a href="#">
                                 <i class="flaticon-shop"></i>
@@ -109,88 +130,6 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-md-9 col-sm-12 hidden-xs">
-                <div class="mainmenu text-center">
-
-                </div>
-            </div>
-            <div class="col-md-1 hidden-sm">
-                <div class="header-right">
-                    <ul style="display: flex;display: -webkit-flex">
-                        <li style="width: 60px;position: absolute;top:10px;right: -100%" >
-                            <div id="userinfo">
-                                <if condition="isset($_SESSION['userName'])">
-                                    <h4><img width="25px" height="25px" style="margin-right: 10px;" src="__PUBLIC__/Home/image/icon/user2.png">当前用户：{$Think.session.userName}   <a href="{:U('User/logout')}">注销</a></h4>
-                                    <else />
-                                    <h4><a href="{:U('User/login')}"><img width="25px" height="25px" src="__PUBLIC__/Home/image/icon/user1.png">点击登录</a> </h4>
-                                </if>
-                            </div>
-                        </li>
-                        <li class="shoping-cart">
-                            <a href="#">
-                                <i class="flaticon-shop"></i>
-                                <span>2</span>
-                            </a>
-                            <div class="add-to-cart-product">
-                                <div class="cart-product">
-                                    <div class="cart-product-image">
-                                        <a href="single-product.html">
-                                            <img src="img/shop/1.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="cart-product-info">
-                                        <p>
-                                            <span>1</span>
-                                            x
-                                            <a href="single-product.html">East of eden</a>
-                                        </p>
-                                        <a href="single-product.html">S, Orange</a>
-                                        <span class="cart-price">$ 140.00</span>
-                                    </div>
-                                    <div class="cart-product-remove">
-                                        <i class="fa fa-times"></i>
-                                    </div>
-                                </div>
-                                <div class="cart-product">
-                                    <div class="cart-product-image">
-                                        <a href="single-product.html">
-                                            <img src="img/shop/1.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="cart-product-info">
-                                        <p>
-                                            <span>1</span>
-                                            x
-                                            <a href="single-product.html">East of eden</a>
-                                        </p>
-                                        <a href="single-product.html">S, Orange</a>
-                                        <span class="cart-price">$ 140.00</span>
-                                    </div>
-                                    <div class="cart-product-remove">
-                                        <i class="fa fa-times"></i>
-                                    </div>
-                                </div>
-                                <div class="total-cart-price">
-                                    <div class="cart-product-line fast-line">
-                                        <span>Shipping</span>
-                                        <span class="free-shiping">$10.50</span>
-                                    </div>
-                                    <div class="cart-product-line">
-                                        <span>Total</span>
-                                        <span class="total">$ 140.00</span>
-                                    </div>
-                                </div>
-                                <div class="cart-checkout">
-                                    <a href="checkout.html">
-                                        Check out
-                                        <i class="fa fa-chevron-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
         </div>
     </div>
 </div>
@@ -200,18 +139,18 @@
 <div class="slider-area">
     <div class="bend niceties preview-1">
         <div id="ensign-nivoslider" class="slides">
-            <img src="__PUBLIC__/shop/img/slider/1.jpg" alt="" title="#slider-direction-1"  />
-            <img src="__PUBLIC__/shop/img/slider/2.jpg" alt="" title="#slider-direction-2"  />
+            <img src="__PUBLIC__/shop/img/slider/{$goodsList[6]['goodname']}.jpg" alt="" title="#slider-direction-1"  />
+            <img src="__PUBLIC__/shop/img/slider/{$goodsList[3]['goodname']}.jpg" alt="" title="#slider-direction-2"  />
         </div>
         <!-- direction 1 -->
         <div id="slider-direction-1" class="text-center slider-direction">
             <!-- layer 1 -->
             <div class="layer-1">
-                <h2 class="title-1">梁平竹帘</h2>
+                <h2 class="title-1">{$goodsList[6]['goodname']}</h2>
             </div>
             <!-- layer 2 -->
             <div class="layer-2">
-                <p class="title-2">梁平竹帘，又称梁山竹帘，中国民间手工艺品，竹帘画的一种。是流传千年的历史文化遗产，已被录入中国国家级非物质文化遗产名录。</p>
+                <p class="title-2">{$goodsList[6]['introduce']}</p>
             </div>
             <!-- layer 3 -->
             <div class="layer-3">
@@ -229,12 +168,11 @@
         <div id="slider-direction-2" class="slider-direction">
             <!-- layer 1 -->
             <div class="layer-1">
-                <h2 class="title-1">合川桃片</h2>
+                <h2 class="title-1">{$goodsList[3]['goodname']}</h2>
             </div>
             <!-- layer 2 -->
             <div class="layer-2">
-                <p class="title-2">合川桃片，重庆市合川区特产，中国国家地理标志产品。合川桃片是是重庆合川区传统名点之一，
-                    始创于1840年。用上等糯米、核桃仁、川白糖、蜜玫瑰等原料，精制加工而成。</p>
+                <p class="title-2">{$goodsList[3]['introduce']}</p>
             </div>
             <!-- layer 3 -->
             <div class="layer-3">
@@ -265,33 +203,33 @@
                 <div class="col-md-4 col-sm-6">
                     <div class="single-banner">
                         <a href="#">
-                            <img src="__PUBLIC__/shop/img/banner/1.jpg" alt="">
+                            <img src="__PUBLIC__/shop/img/banner/{$goodsList[6]['goodname']}.jpg" alt="">
                         </a>
-                        <div class="price" style="color: white;"><span>￥</span>250</div>
+                        <div class="price" style="color: white;"><span>￥</span>{$goodsList[6]['price']}</div>
                         <div class="banner-bottom text-center">
-                            <a href="#">梁平竹帘</a>
+                            <a href="#">{$goodsList[6]['goodname']}</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="single-banner">
                         <a href="#">
-                            <img src="__PUBLIC__/shop/img/banner/2.jpg" alt="">
+                            <img src="__PUBLIC__/shop/img/banner/{$goodsList[0]['goodname']}.jpg" alt="">
                         </a>
-                        <div class="price" style="color: white;"><span>￥</span>20</div>
+                        <div class="price" style="color: white;"><span>￥</span>{$goodsList[0]['price']}</div>
                         <div class="banner-bottom text-center">
-                            <a href="#">重庆小面</a>
+                            <a href="#">{$goodsList[0]['goodname']}</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 hidden-sm">
                     <div class="single-banner">
                         <a href="#">
-                            <img src="__PUBLIC__/shop/img/banner/3.jpg" alt="">
+                            <img src="__PUBLIC__/shop/img/banner/{$goodsList[9]['goodname']}.jpg" alt="">
                         </a>
-                        <div class="price" style="color: white;"><span>￥</span>15</div>
+                        <div class="price" style="color: white;"><span>￥</span>{$goodsList[9]['price']}</div>
                         <div class="banner-bottom text-center">
-                            <a href="#">龙须酥</a>
+                            <a href="#">{$goodsList[9]['goodname']}</a>
                         </div>
                     </div>
                 </div>
@@ -323,885 +261,86 @@
             <div class="product-list tab-content">
                 <div role="tabpanel" class="tab-pane fade in active" id="arrival">
                     <div class="featured-product-list indicator-style">
-                        <div class="single-p-banner">
-                            <div class="col-md-3">
-                                <div class="single-banner">
-                                    <div class="product-wrapper">
-                                        <a href="#" class="single-banner-image-wrapper">
-                                            <img alt="" src="__PUBLIC__/shop/img/featured/1.jpg">
-                                            <div class="price"><span>￥</span>600</div>
-                                            <div class="rating-icon">
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </a>
-                                        <div class="product-description">
-                                            <div class="functional-buttons">
-                                                <a href="#" title="Add to Cart">
-                                                    <i class="fa fa-shopping-cart"></i>
-                                                </a>
-                                                <a href="#" title="Add to Wishlist">
-                                                    <i class="fa fa-heart-o"></i>
-                                                </a>
-                                                <a href="#" title="Quick view" data-toggle="modal" data-target="#productModal">
-                                                    <i class="fa fa-compress"></i>
-                                                </a>
+                        <foreach name="goodsList" item="gList">
+                            <div class="single-p-banner">
+                                <div class="col-md-3">
+                                    <div class="single-banner">
+                                        <div class="product-wrapper">
+                                            <a href="#" class="single-banner-image-wrapper">
+                                                <img alt="" src="__PUBLIC__/shop/img/featured/{$gList['goodname']}.jpg">
+                                                <div class="price"><span>￥</span>{$gList['price']}</div>
+                                                <div class="rating-icon">
+                                                    <i class="fa fa-star icolor"></i>
+                                                    <i class="fa fa-star icolor"></i>
+                                                    <i class="fa fa-star icolor"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </div>
+                                            </a>
+                                            <div class="product-description">
+                                                <div class="functional-buttons">
+                                                    <a href="#" title="Add to Cart">
+                                                        <i class="fa fa-shopping-cart"></i>
+                                                    </a>
+                                                    <a href="#" title="Add to Wishlist">
+                                                        <i class="fa fa-heart-o"></i>
+                                                    </a>
+                                                    <a href="#" title="Quick view" data-toggle="modal" data-target="#productModal">
+                                                        <i class="fa fa-compress"></i>
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
+                                        <div class="banner-bottom text-center">
+                                            <a href="#">{$gList['goodname']}</a>
+                                        </div>
                                     </div>
-                                    <div class="banner-bottom text-center">
-                                        <a href="#">合川峡砚</a>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="single-banner">
+                                        <div class="product-wrapper">
+                                            <a href="#" class="single-banner-image-wrapper">
+                                                <img alt="" src="__PUBLIC__/shop/img/featured/{$gList['goodname']}.jpg">
+                                                <div class="price"><span>￥</span>{$gList['price']}</div>
+                                                <div class="rating-icon">
+                                                    <i class="fa fa-star icolor"></i>
+                                                    <i class="fa fa-star icolor"></i>
+                                                    <i class="fa fa-star icolor"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </div>
+                                            </a>
+                                            <div class="product-description">
+                                                <div class="functional-buttons">
+                                                    <a href="#" title="Add to Cart">
+                                                        <i class="fa fa-shopping-cart"></i>
+                                                    </a>
+                                                    <a href="#" title="Add to Wishlist">
+                                                        <i class="fa fa-heart-o"></i>
+                                                    </a>
+                                                    <a href="#" title="Quick view" data-toggle="modal" data-target="#productModal">
+                                                        <i class="fa fa-compress"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="banner-bottom text-center">
+                                            <a href="#">{$gList['goodname']}</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3">
-                                <div class="single-banner">
-                                    <div class="product-wrapper">
-                                        <a href="#" class="single-banner-image-wrapper">
-                                            <img alt="" src="__PUBLIC__/shop/img/featured/5.jpg">
-                                            <div class="price"><span>￥</span>60</div>
-                                            <div class="rating-icon">
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </a>
-                                        <div class="product-description">
-                                            <div class="functional-buttons">
-                                                <a href="#" title="Add to Cart">
-                                                    <i class="fa fa-shopping-cart"></i>
-                                                </a>
-                                                <a href="#" title="Add to Wishlist">
-                                                    <i class="fa fa-heart-o"></i>
-                                                </a>
-                                                <a href="#" title="Quick view" data-toggle="modal" data-target="#productModal">
-                                                    <i class="fa fa-compress"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="banner-bottom text-center">
-                                        <a href="#">荣昌折扇</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single-p-banner">
-                            <div class="col-md-3">
-                                <div class="single-banner">
-                                    <div class="product-wrapper">
-                                        <a href="#" class="single-banner-image-wrapper">
-                                            <img alt="" src="__PUBLIC__/shop/img/featured/2.jpg">
-                                            <div class="price"><span>￥</span>240</div>
-                                            <div class="rating-icon">
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </a>
-                                        <div class="product-description">
-                                            <div class="functional-buttons">
-                                                <a href="#" title="Add to Cart">
-                                                    <i class="fa fa-shopping-cart"></i>
-                                                </a>
-                                                <a href="#" title="Add to Wishlist">
-                                                    <i class="fa fa-heart-o"></i>
-                                                </a>
-                                                <a href="#" title="Quick view" data-toggle="modal" data-target="#productModal">
-                                                    <i class="fa fa-compress"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="banner-bottom text-center">
-                                        <a href="#">朗溪竹板桥造纸</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="single-banner">
-                                    <div class="product-wrapper">
-                                        <a href="#" class="single-banner-image-wrapper">
-                                            <img alt="" src="__PUBLIC__/shop/img/featured/6.jpg">
-                                            <div class="price"><span>￥</span>1000</div>
-                                            <div class="rating-icon">
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </a>
-                                        <div class="product-description">
-                                            <div class="functional-buttons">
-                                                <a href="#" title="Add to Cart">
-                                                    <i class="fa fa-shopping-cart"></i>
-                                                </a>
-                                                <a href="#" title="Add to Wishlist">
-                                                    <i class="fa fa-heart-o"></i>
-                                                </a>
-                                                <a href="#" title="Quick view" data-toggle="modal" data-target="#productModal">
-                                                    <i class="fa fa-compress"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="banner-bottom text-center">
-                                        <a href="#">重庆漆艺</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single-p-banner">
-                            <div class="col-md-3">
-                                <div class="single-banner">
-                                    <div class="product-wrapper">
-                                        <a href="#" class="single-banner-image-wrapper">
-                                            <img alt="" src="__PUBLIC__/shop/img/featured/3.jpg">
-                                            <div class="price"><span>￥</span>60</div>
-                                            <div class="rating-icon">
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </a>
-                                        <div class="product-description">
-                                            <div class="functional-buttons">
-                                                <a href="#" title="Add to Cart">
-                                                    <i class="fa fa-shopping-cart"></i>
-                                                </a>
-                                                <a href="#" title="Add to Wishlist">
-                                                    <i class="fa fa-heart-o"></i>
-                                                </a>
-                                                <a href="#" title="Quick view" data-toggle="modal" data-target="#productModal">
-                                                    <i class="fa fa-compress"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="banner-bottom text-center">
-                                        <a href="#">龙灯彩扎工艺</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="single-banner">
-                                    <div class="product-wrapper">
-                                        <a href="#" class="single-banner-image-wrapper">
-                                            <img alt="" src="__PUBLIC__/shop/img/featured/7.jpg">
-                                            <div class="price"><span>￥</span>90</div>
-                                            <div class="rating-icon">
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </a>
-                                        <div class="product-description">
-                                            <div class="functional-buttons">
-                                                <a href="#" title="Add to Cart">
-                                                    <i class="fa fa-shopping-cart"></i>
-                                                </a>
-                                                <a href="#" title="Add to Wishlist">
-                                                    <i class="fa fa-heart-o"></i>
-                                                </a>
-                                                <a href="#" title="Quick view" data-toggle="modal" data-target="#productModal">
-                                                    <i class="fa fa-compress"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="banner-bottom text-center">
-                                        <a href="#">九龙坡板鸭</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single-p-banner">
-                            <div class="col-md-3">
-                                <div class="single-banner">
-                                    <div class="product-wrapper">
-                                        <a href="#" class="single-banner-image-wrapper">
-                                            <img alt="" src="__PUBLIC__/shop/img/featured/4.jpg">
-                                            <div class="price"><span>￥</span>300</div>
-                                            <div class="rating-icon">
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </a>
-                                        <div class="product-description">
-                                            <div class="functional-buttons">
-                                                <a href="#" title="Add to Cart">
-                                                    <i class="fa fa-shopping-cart"></i>
-                                                </a>
-                                                <a href="#" title="Add to Wishlist">
-                                                    <i class="fa fa-heart-o"></i>
-                                                </a>
-                                                <a href="#" title="Quick view" data-toggle="modal" data-target="#productModal">
-                                                    <i class="fa fa-compress"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="banner-bottom text-center">
-                                        <a href="#">荣昌夏布</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="single-banner">
-                                    <div class="product-wrapper">
-                                        <a href="#" class="single-banner-image-wrapper">
-                                            <img alt="" src="__PUBLIC__/shop/img/featured/8.jpg">
-                                            <div class="price"><span>￥</span>10</div>
-                                            <div class="rating-icon">
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </a>
-                                        <div class="product-description">
-                                            <div class="functional-buttons">
-                                                <a href="#" title="Add to Cart">
-                                                    <i class="fa fa-shopping-cart"></i>
-                                                </a>
-                                                <a href="#" title="Add to Wishlist">
-                                                    <i class="fa fa-heart-o"></i>
-                                                </a>
-                                                <a href="#" title="Quick view" data-toggle="modal" data-target="#productModal">
-                                                    <i class="fa fa-compress"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="banner-bottom text-center">
-                                        <a href="#">涪陵榨菜</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single-p-banner">
-                            <div class="col-md-3">
-                                <div class="single-banner">
-                                    <div class="product-wrapper">
-                                        <a href="#" class="single-banner-image-wrapper">
-                                            <img alt="" src="__PUBLIC__/shop/img/featured/1.jpg">
-                                            <div class="price"><span>￥</span>390</div>
-                                            <div class="rating-icon">
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </a>
-                                        <div class="product-description">
-                                            <div class="functional-buttons">
-                                                <a href="#" title="Add to Cart">
-                                                    <i class="fa fa-shopping-cart"></i>
-                                                </a>
-                                                <a href="#" title="Add to Wishlist">
-                                                    <i class="fa fa-heart-o"></i>
-                                                </a>
-                                                <a href="#" title="Quick view" data-toggle="modal" data-target="#productModal">
-                                                    <i class="fa fa-compress"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="banner-bottom text-center">
-                                        <a href="#">合川峡砚</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="single-banner">
-                                    <div class="product-wrapper">
-                                        <a href="#" class="single-banner-image-wrapper">
-                                            <img alt="" src="__PUBLIC__/shop/img/featured/5.jpg">
-                                            <div class="price"><span>￥</span>180</div>
-                                            <div class="rating-icon">
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </a>
-                                        <div class="product-description">
-                                            <div class="functional-buttons">
-                                                <a href="#" title="Add to Cart">
-                                                    <i class="fa fa-shopping-cart"></i>
-                                                </a>
-                                                <a href="#" title="Add to Wishlist">
-                                                    <i class="fa fa-heart-o"></i>
-                                                </a>
-                                                <a href="#" title="Quick view" data-toggle="modal" data-target="#productModal">
-                                                    <i class="fa fa-compress"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="banner-bottom text-center">
-                                        <a href="#">折扇</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single-p-banner">
-                            <div class="col-md-3">
-                                <div class="single-banner">
-                                    <div class="product-wrapper">
-                                        <a href="#" class="single-banner-image-wrapper">
-                                            <img alt="" src="__PUBLIC__/shop/img/featured/2.jpg">
-                                            <div class="price"><span>￥</span>160</div>
-                                            <div class="rating-icon">
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </a>
-                                        <div class="product-description">
-                                            <div class="functional-buttons">
-                                                <a href="#" title="Add to Cart">
-                                                    <i class="fa fa-shopping-cart"></i>
-                                                </a>
-                                                <a href="#" title="Add to Wishlist">
-                                                    <i class="fa fa-heart-o"></i>
-                                                </a>
-                                                <a href="#" title="Quick view" data-toggle="modal" data-target="#productModal">
-                                                    <i class="fa fa-compress"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="banner-bottom text-center">
-                                        <a href="#">朗溪竹板桥造纸</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="single-banner">
-                                    <div class="product-wrapper">
-                                        <a href="#" class="single-banner-image-wrapper">
-                                            <img alt="" src="__PUBLIC__/shop/img/featured/6.jpg">
-                                            <div class="price"><span>￥</span>1000</div>
-                                            <div class="rating-icon">
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </a>
-                                        <div class="product-description">
-                                            <div class="functional-buttons">
-                                                <a href="#" title="Add to Cart">
-                                                    <i class="fa fa-shopping-cart"></i>
-                                                </a>
-                                                <a href="#" title="Add to Wishlist">
-                                                    <i class="fa fa-heart-o"></i>
-                                                </a>
-                                                <a href="#" title="Quick view" data-toggle="modal" data-target="#productModal">
-                                                    <i class="fa fa-compress"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="banner-bottom text-center">
-                                        <a href="#">重庆漆艺</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        </foreach>
+
+
                     </div>
                 </div>
-                <div role="tabpanel" class="tab-pane fade" id="sale">
-                    <div class="featured-product-list indicator-style">
-                        <div class="single-p-banner">
-                            <div class="col-md-3">
-                                <div class="single-banner">
-                                    <div class="product-wrapper">
-                                        <a href="#" class="single-banner-image-wrapper">
-                                            <img alt="" src="__PUBLIC__/shop/img/featured/1.jpg">
-                                            <div class="price"><span>￥</span>600</div>
-                                            <div class="rating-icon">
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </a>
-                                        <div class="product-description">
-                                            <div class="functional-buttons">
-                                                <a href="#" title="Add to Cart">
-                                                    <i class="fa fa-shopping-cart"></i>
-                                                </a>
-                                                <a href="#" title="Add to Wishlist">
-                                                    <i class="fa fa-heart-o"></i>
-                                                </a>
-                                                <a href="#" title="Quick view" data-toggle="modal" data-target="#productModal">
-                                                    <i class="fa fa-compress"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="banner-bottom text-center">
-                                        <a href="#">合川峡砚</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="single-banner">
-                                    <div class="product-wrapper">
-                                        <a href="#" class="single-banner-image-wrapper">
-                                            <img alt="" src="__PUBLIC__/shop/img/featured/5.jpg">
-                                            <div class="price"><span>￥</span>60</div>
-                                            <div class="rating-icon">
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </a>
-                                        <div class="product-description">
-                                            <div class="functional-buttons">
-                                                <a href="#" title="Add to Cart">
-                                                    <i class="fa fa-shopping-cart"></i>
-                                                </a>
-                                                <a href="#" title="Add to Wishlist">
-                                                    <i class="fa fa-heart-o"></i>
-                                                </a>
-                                                <a href="#" title="Quick view" data-toggle="modal" data-target="#productModal">
-                                                    <i class="fa fa-compress"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="banner-bottom text-center">
-                                        <a href="#">荣昌折扇</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single-p-banner">
-                            <div class="col-md-3">
-                                <div class="single-banner">
-                                    <div class="product-wrapper">
-                                        <a href="#" class="single-banner-image-wrapper">
-                                            <img alt="" src="__PUBLIC__/shop/img/featured/2.jpg">
-                                            <div class="price"><span>￥</span>240</div>
-                                            <div class="rating-icon">
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </a>
-                                        <div class="product-description">
-                                            <div class="functional-buttons">
-                                                <a href="#" title="Add to Cart">
-                                                    <i class="fa fa-shopping-cart"></i>
-                                                </a>
-                                                <a href="#" title="Add to Wishlist">
-                                                    <i class="fa fa-heart-o"></i>
-                                                </a>
-                                                <a href="#" title="Quick view" data-toggle="modal" data-target="#productModal">
-                                                    <i class="fa fa-compress"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="banner-bottom text-center">
-                                        <a href="#">朗溪竹板桥造纸</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="single-banner">
-                                    <div class="product-wrapper">
-                                        <a href="#" class="single-banner-image-wrapper">
-                                            <img alt="" src="__PUBLIC__/shop/img/featured/6.jpg">
-                                            <div class="price"><span>￥</span>1000</div>
-                                            <div class="rating-icon">
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </a>
-                                        <div class="product-description">
-                                            <div class="functional-buttons">
-                                                <a href="#" title="Add to Cart">
-                                                    <i class="fa fa-shopping-cart"></i>
-                                                </a>
-                                                <a href="#" title="Add to Wishlist">
-                                                    <i class="fa fa-heart-o"></i>
-                                                </a>
-                                                <a href="#" title="Quick view" data-toggle="modal" data-target="#productModal">
-                                                    <i class="fa fa-compress"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="banner-bottom text-center">
-                                        <a href="#">重庆漆艺</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single-p-banner">
-                            <div class="col-md-3">
-                                <div class="single-banner">
-                                    <div class="product-wrapper">
-                                        <a href="#" class="single-banner-image-wrapper">
-                                            <img alt="" src="__PUBLIC__/shop/img/featured/3.jpg">
-                                            <div class="price"><span>￥</span>60</div>
-                                            <div class="rating-icon">
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </a>
-                                        <div class="product-description">
-                                            <div class="functional-buttons">
-                                                <a href="#" title="Add to Cart">
-                                                    <i class="fa fa-shopping-cart"></i>
-                                                </a>
-                                                <a href="#" title="Add to Wishlist">
-                                                    <i class="fa fa-heart-o"></i>
-                                                </a>
-                                                <a href="#" title="Quick view" data-toggle="modal" data-target="#productModal">
-                                                    <i class="fa fa-compress"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="banner-bottom text-center">
-                                        <a href="#">龙灯彩扎工艺</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="single-banner">
-                                    <div class="product-wrapper">
-                                        <a href="#" class="single-banner-image-wrapper">
-                                            <img alt="" src="__PUBLIC__/shop/img/featured/7.jpg">
-                                            <div class="price"><span>￥</span>90</div>
-                                            <div class="rating-icon">
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </a>
-                                        <div class="product-description">
-                                            <div class="functional-buttons">
-                                                <a href="#" title="Add to Cart">
-                                                    <i class="fa fa-shopping-cart"></i>
-                                                </a>
-                                                <a href="#" title="Add to Wishlist">
-                                                    <i class="fa fa-heart-o"></i>
-                                                </a>
-                                                <a href="#" title="Quick view" data-toggle="modal" data-target="#productModal">
-                                                    <i class="fa fa-compress"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="banner-bottom text-center">
-                                        <a href="#">九龙坡板鸭</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single-p-banner">
-                            <div class="col-md-3">
-                                <div class="single-banner">
-                                    <div class="product-wrapper">
-                                        <a href="#" class="single-banner-image-wrapper">
-                                            <img alt="" src="__PUBLIC__/shop/img/featured/4.jpg">
-                                            <div class="price"><span>￥</span>300</div>
-                                            <div class="rating-icon">
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </a>
-                                        <div class="product-description">
-                                            <div class="functional-buttons">
-                                                <a href="#" title="Add to Cart">
-                                                    <i class="fa fa-shopping-cart"></i>
-                                                </a>
-                                                <a href="#" title="Add to Wishlist">
-                                                    <i class="fa fa-heart-o"></i>
-                                                </a>
-                                                <a href="#" title="Quick view" data-toggle="modal" data-target="#productModal">
-                                                    <i class="fa fa-compress"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="banner-bottom text-center">
-                                        <a href="#">荣昌夏布</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="single-banner">
-                                    <div class="product-wrapper">
-                                        <a href="#" class="single-banner-image-wrapper">
-                                            <img alt="" src="__PUBLIC__/shop/img/featured/8.jpg">
-                                            <div class="price"><span>￥</span>10</div>
-                                            <div class="rating-icon">
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </a>
-                                        <div class="product-description">
-                                            <div class="functional-buttons">
-                                                <a href="#" title="Add to Cart">
-                                                    <i class="fa fa-shopping-cart"></i>
-                                                </a>
-                                                <a href="#" title="Add to Wishlist">
-                                                    <i class="fa fa-heart-o"></i>
-                                                </a>
-                                                <a href="#" title="Quick view" data-toggle="modal" data-target="#productModal">
-                                                    <i class="fa fa-compress"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="banner-bottom text-center">
-                                        <a href="#">涪陵榨菜</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single-p-banner">
-                            <div class="col-md-3">
-                                <div class="single-banner">
-                                    <div class="product-wrapper">
-                                        <a href="#" class="single-banner-image-wrapper">
-                                            <img alt="" src="__PUBLIC__/shop/img/featured/1.jpg">
-                                            <div class="price"><span>￥</span>390</div>
-                                            <div class="rating-icon">
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </a>
-                                        <div class="product-description">
-                                            <div class="functional-buttons">
-                                                <a href="#" title="Add to Cart">
-                                                    <i class="fa fa-shopping-cart"></i>
-                                                </a>
-                                                <a href="#" title="Add to Wishlist">
-                                                    <i class="fa fa-heart-o"></i>
-                                                </a>
-                                                <a href="#" title="Quick view" data-toggle="modal" data-target="#productModal">
-                                                    <i class="fa fa-compress"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="banner-bottom text-center">
-                                        <a href="#">合川峡砚</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="single-banner">
-                                    <div class="product-wrapper">
-                                        <a href="#" class="single-banner-image-wrapper">
-                                            <img alt="" src="__PUBLIC__/shop/img/featured/5.jpg">
-                                            <div class="price"><span>￥</span>180</div>
-                                            <div class="rating-icon">
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </a>
-                                        <div class="product-description">
-                                            <div class="functional-buttons">
-                                                <a href="#" title="Add to Cart">
-                                                    <i class="fa fa-shopping-cart"></i>
-                                                </a>
-                                                <a href="#" title="Add to Wishlist">
-                                                    <i class="fa fa-heart-o"></i>
-                                                </a>
-                                                <a href="#" title="Quick view" data-toggle="modal" data-target="#productModal">
-                                                    <i class="fa fa-compress"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="banner-bottom text-center">
-                                        <a href="#">折扇</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single-p-banner">
-                            <div class="col-md-3">
-                                <div class="single-banner">
-                                    <div class="product-wrapper">
-                                        <a href="#" class="single-banner-image-wrapper">
-                                            <img alt="" src="__PUBLIC__/shop/img/featured/2.jpg">
-                                            <div class="price"><span>￥</span>160</div>
-                                            <div class="rating-icon">
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </a>
-                                        <div class="product-description">
-                                            <div class="functional-buttons">
-                                                <a href="#" title="Add to Cart">
-                                                    <i class="fa fa-shopping-cart"></i>
-                                                </a>
-                                                <a href="#" title="Add to Wishlist">
-                                                    <i class="fa fa-heart-o"></i>
-                                                </a>
-                                                <a href="#" title="Quick view" data-toggle="modal" data-target="#productModal">
-                                                    <i class="fa fa-compress"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="banner-bottom text-center">
-                                        <a href="#">朗溪竹板桥造纸</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="single-banner">
-                                    <div class="product-wrapper">
-                                        <a href="#" class="single-banner-image-wrapper">
-                                            <img alt="" src="__PUBLIC__/shop/img/featured/6.jpg">
-                                            <div class="price"><span>￥</span>1000</div>
-                                            <div class="rating-icon">
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star icolor"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </a>
-                                        <div class="product-description">
-                                            <div class="functional-buttons">
-                                                <a href="#" title="Add to Cart">
-                                                    <i class="fa fa-shopping-cart"></i>
-                                                </a>
-                                                <a href="#" title="Add to Wishlist">
-                                                    <i class="fa fa-heart-o"></i>
-                                                </a>
-                                                <a href="#" title="Quick view" data-toggle="modal" data-target="#productModal">
-                                                    <i class="fa fa-compress"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="banner-bottom text-center">
-                                        <a href="#">重庆漆艺</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
     </div>
 </div>
 
-<!-- Counter Area Start -->
-<div class="counter-area section-padding text-center">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3 col-sm-3 col-xs-6">
-                <div class="single-counter wow" data-wow-duration="1.5s" data-wow-delay=".3s">
-                    <div class="counter-info">
-								<span class="fcount">
-									<span class="counter">3725</span>
-                                    位
-								</span>
-                        <h3>本周访客</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-3 col-xs-6">
-                <div class="single-counter wow" data-wow-duration="1.5s" data-wow-delay=".3s">
-                    <div class="counter-info">
-								<span class="fcount">
-									<span class="counter">950</span>
-                                    名
-								</span>
-                        <h3>在线用户</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-3 col-xs-6">
-                <div class="single-counter wow" data-wow-duration="1.5s" data-wow-delay=".3s">
-                    <div class="counter-info">
-								<span class="fcount">
-									<span class="counter">1450</span>
-                                    件商品
-								</span>
-                        <h3>总销售</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-3 col-xs-6">
-                <div class="single-counter wow" data-wow-duration="1.5s" data-wow-delay=".3s">
-                    <div class="counter-info">
-								<span class="fcount">
-									<span class="counter">62</span>
-                                    条
-								</span>
-                        <h3>留言</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Counter Area End -->
 <!-- Blog Area Start -->
 <div class="blog-area section-padding">
     <h2 class="section-title">旅游项目</h2>
@@ -1298,6 +437,18 @@
     </div>
 </div>
 <!-- Blog Area End -->
+<div class="footer">
+    <div class="container" id="foot-box">
+        <a href="#">免责声明</a>|
+        <a href="#">商家入驻</a>|
+        <a href="#">掌上非遗</a>|
+        <a href="#">非遗社区</a>|
+        <a href="#">非遗公益</a>
+    </div>
+    <div>
+        <b>Copyright © 2020 All Rights Reserved 重庆师范大学计算机与信息科学学院非遗工作小组 版权所有,违者必究</b>
+    </div>
+</div>
 
 <!-- jquery latest version -->
 <script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>

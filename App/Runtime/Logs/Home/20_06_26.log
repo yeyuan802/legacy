@@ -1,0 +1,1404 @@
+[ 2020-06-26T08:18:15+08:00 ] ::1 /test/legacy/Resource/shop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.057455s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001800s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000299s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000370s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.785220s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.785327s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.025874s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.025938s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.020815s ]
+INFO: [ app_end ] --END-- [ RunTime:0.020912s ]
+
+[ 2020-06-26T08:28:15+08:00 ] ::1 /test/legacy/Resource/shop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.168021s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.021129s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.021295s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000432s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000548s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:2.242130s ]
+INFO: [ view_parse ] --END-- [ RunTime:2.242342s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.124829s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.124979s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.098374s ]
+INFO: [ app_end ] --END-- [ RunTime:0.098603s ]
+
+[ 2020-06-26T09:03:52+08:00 ] ::1 /test/legacy/index.php?_ijt=i18ak7qvr8cn3v9oodb782rq02
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.034980s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.016862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016945s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.100207s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000461s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.274154s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.036821s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.012625s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.073043s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000530s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.130114s ]
+SQL: SELECT * FROM `tb_director` WHERE `type` = '传统戏剧' ORDER BY `Did` asc  [ RunTime:0.000632s ]
+SQL: SELECT * FROM `tb_director` WHERE `type` = '民间音乐' ORDER BY `Did` asc  [ RunTime:0.000771s ]
+SQL: SELECT * FROM `tb_director` WHERE `type` = '民间舞蹈' ORDER BY `Did` asc  [ RunTime:0.000508s ]
+SQL: SELECT * FROM `tb_director` WHERE `type` = '传统手工技�\�' ORDER BY `Did` asc  [ RunTime:0.000691s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.550116s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000459s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.063363s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.047362s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.148086s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000726s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000159s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000246s ]
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined index: birthPlace D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 299 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.976199s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.976460s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.040721s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.040845s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.042655s ]
+INFO: [ app_end ] --END-- [ RunTime:0.043028s ]
+
+[ 2020-06-26T09:03:52+08:00 ] ::1 /test/legacy/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000945s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000725s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068411s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068509s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000337s ]
+
+[ 2020-06-26T09:05:28+08:00 ] ::1 /test/legacy/Resource/shop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000547s ]
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.035412s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000368s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000433s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.330048s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.330155s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001056s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001230s ]
+
+[ 2020-06-26T14:34:32+08:00 ] ::1 /test/legacy/Resource/shop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.151630s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.128560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.128648s ]
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.410353s ]
+SQL: SELECT * FROM `tb_goods` WHERE ( id>0 ) ORDER BY `gid` asc  [ RunTime:0.056040s ]
+ERR: 1054:Unknown column 'id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `tb_goods` WHERE ( id>0 ) ORDER BY `gid` asc 
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000361s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000422s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.466095s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.466220s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.050256s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.050316s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.468080s ]
+INFO: [ app_end ] --END-- [ RunTime:0.468219s ]
+
+[ 2020-06-26T14:34:58+08:00 ] ::1 /test/legacy/Resource/shop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000571s ]
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.033156s ]
+SQL: SELECT * FROM `tb_goods` WHERE ( gid>0 ) ORDER BY `gid` asc  [ RunTime:0.031502s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000347s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000414s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047652s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047842s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000342s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpStudy\WWW\test\legacy\App\Home\Controller\ResourceController.class.php:50) D:\phpStudy\WWW\test\legacy\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpStudy\WWW\test\legacy\App\Home\Controller\ResourceController.class.php:50) D:\phpStudy\WWW\test\legacy\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpStudy\WWW\test\legacy\App\Home\Controller\ResourceController.class.php:50) D:\phpStudy\WWW\test\legacy\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000806s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000879s ]
+
+[ 2020-06-26T14:45:04+08:00 ] ::1 /test/legacy/Resource/shop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.020710s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.153919s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.154045s ]
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.183963s ]
+SQL: SELECT * FROM `tb_goods` WHERE ( gid>0 ) ORDER BY `gid` asc  [ RunTime:0.077542s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000381s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000462s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.921029s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.921124s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.058673s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.058770s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007683s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007807s ]
+
+[ 2020-06-26T14:45:06+08:00 ] ::1 /test/legacy/Resource/shop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000540s ]
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.208330s ]
+SQL: SELECT * FROM `tb_goods` WHERE ( gid>0 ) ORDER BY `gid` asc  [ RunTime:0.001003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000508s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000637s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.147692s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.147787s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000400s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000876s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000981s ]
+
+[ 2020-06-26T14:46:56+08:00 ] ::1 /test/legacy/Resource/shop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.055615s ]
+SQL: SELECT * FROM `tb_goods` WHERE ( gid>0 ) ORDER BY `gid` asc  [ RunTime:0.000687s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000481s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000544s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.158503s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.158592s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000614s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000706s ]
+
+[ 2020-06-26T14:47:32+08:00 ] ::1 /test/legacy/Resource/shop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000857s ]
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.063661s ]
+SQL: SELECT * FROM `tb_goods` WHERE ( gid>0 ) ORDER BY `gid` asc  [ RunTime:0.000706s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000366s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000430s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034655s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034726s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000627s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000746s ]
+
+[ 2020-06-26T14:49:12+08:00 ] ::1 /test/legacy/Resource/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+NOTIC: [8] Undefined variable: country D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\c552b9efaaee4e2535699433a8fcd74c.php 第 93 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.637684s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.637752s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000439s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000485s ]
+
+[ 2020-06-26T14:49:12+08:00 ] ::1 /test/legacy/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000680s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033019s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033153s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000527s ]
+
+[ 2020-06-26T14:49:21+08:00 ] ::1 /test/legacy/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000519s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001089s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.101883s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.000341s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.215892s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.024390s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.000720s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.172155s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.015936s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.074027s ]
+SQL: SELECT * FROM `tb_director` WHERE `type` = '传统戏剧' ORDER BY `Did` asc  [ RunTime:0.001348s ]
+SQL: SELECT * FROM `tb_director` WHERE `type` = '民间音乐' ORDER BY `Did` asc  [ RunTime:0.001081s ]
+SQL: SELECT * FROM `tb_director` WHERE `type` = '民间舞蹈' ORDER BY `Did` asc  [ RunTime:0.000484s ]
+SQL: SELECT * FROM `tb_director` WHERE `type` = '传统手工技�\�' ORDER BY `Did` asc  [ RunTime:0.000493s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.084500s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.000460s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.136470s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.019635s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.070231s ]
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.009003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined index: birthPlace D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 299 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.288644s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.288720s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000406s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000925s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001002s ]
+
+[ 2020-06-26T14:49:21+08:00 ] ::1 /test/legacy/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000558s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007229s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007290s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000212s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000254s ]
+
+[ 2020-06-26T14:49:41+08:00 ] ::1 /test/legacy/Resource/shop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000600s ]
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.022312s ]
+SQL: SELECT * FROM `tb_goods` WHERE ( gid>0 ) ORDER BY `gid` asc  [ RunTime:0.000677s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000567s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000633s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034624s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034689s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000657s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000739s ]
+
+[ 2020-06-26T15:08:29+08:00 ] ::1 /test/legacy/Resource/shop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.065142s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.052938s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.053025s ]
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.062520s ]
+SQL: SELECT * FROM `tb_goods` WHERE ( gid>0 ) ORDER BY `gid` asc  [ RunTime:0.025494s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000371s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000434s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.231998s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.232065s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.017906s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.017996s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.109152s ]
+INFO: [ app_end ] --END-- [ RunTime:0.109254s ]
+
+[ 2020-06-26T15:08:49+08:00 ] ::1 /test/legacy/Resource/shop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000386s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000563s ]
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.068059s ]
+SQL: SELECT * FROM `tb_goods` WHERE ( gid>0 ) ORDER BY `gid` asc  [ RunTime:0.000916s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000424s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000514s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.102372s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.102452s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000222s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000681s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000768s ]
+
+[ 2020-06-26T15:09:50+08:00 ] ::1 /test/legacy/Resource/shop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000559s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000798s ]
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.024961s ]
+SQL: SELECT * FROM `tb_goods` WHERE ( gid>0 ) ORDER BY `gid` asc  [ RunTime:0.000608s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000328s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000391s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.119755s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.119844s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000752s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000851s ]
+
+[ 2020-06-26T15:11:00+08:00 ] ::1 /test/legacy/Resource/shop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001501s ]
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.273234s ]
+SQL: SELECT * FROM `tb_goods` WHERE ( gid>0 ) ORDER BY `gid` asc  [ RunTime:0.000819s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000609s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000739s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.154582s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.154660s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000206s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000506s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000590s ]
+
+[ 2020-06-26T15:12:25+08:00 ] ::1 /test/legacy/Resource/shop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000569s ]
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.031206s ]
+SQL: SELECT * FROM `tb_goods` WHERE ( gid>0 ) ORDER BY `gid` asc  [ RunTime:0.000747s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000417s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000485s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055640s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055750s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000719s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000809s ]
+
+[ 2020-06-26T15:13:04+08:00 ] ::1 /test/legacy/Resource/shop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000625s ]
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.017677s ]
+SQL: SELECT * FROM `tb_goods` WHERE ( gid>0 ) ORDER BY `gid` asc  [ RunTime:0.000911s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000538s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000703s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047086s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047154s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001234s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001446s ]
+
+[ 2020-06-26T15:15:14+08:00 ] ::1 /test/legacy/Resource/shop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000698s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000770s ]
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.128875s ]
+SQL: SELECT * FROM `tb_goods` WHERE ( gid>0 ) ORDER BY `gid` asc  [ RunTime:0.000558s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000668s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000772s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.220537s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.220662s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000637s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000731s ]
+
+[ 2020-06-26T15:29:07+08:00 ] ::1 /test/legacy/Resource/shop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.032018s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009338s ]
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.090842s ]
+SQL: SELECT * FROM `tb_goods` WHERE ( gid>0 ) ORDER BY `gid` asc  [ RunTime:0.001026s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000347s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000412s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.322960s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.323029s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.033890s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.033958s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.027306s ]
+INFO: [ app_end ] --END-- [ RunTime:0.027419s ]
+
+[ 2020-06-26T15:33:13+08:00 ] ::1 /test/legacy/Resource/shop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000755s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000847s ]
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.077851s ]
+SQL: SELECT * FROM `tb_goods` WHERE ( gid>0 ) ORDER BY `gid` asc  [ RunTime:0.000699s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000381s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000490s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.125346s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.125431s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000940s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001032s ]
+
+[ 2020-06-26T15:33:55+08:00 ] ::1 /test/legacy/Resource/shop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000558s ]
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.025179s ]
+SQL: SELECT * FROM `tb_goods` WHERE ( gid>0 ) ORDER BY `gid` asc  [ RunTime:0.000851s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000333s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000402s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062922s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063036s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000399s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000449s ]
+
+[ 2020-06-26T15:33:58+08:00 ] ::1 /test/legacy/Resource/shop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000596s ]
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.018686s ]
+SQL: SELECT * FROM `tb_goods` WHERE ( gid>0 ) ORDER BY `gid` asc  [ RunTime:0.000550s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000417s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000521s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.082153s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082222s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000742s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000816s ]
+
+[ 2020-06-26T15:35:58+08:00 ] ::1 /test/legacy/Resource/shop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000580s ]
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.118883s ]
+SQL: SELECT * FROM `tb_goods` WHERE ( gid>0 ) ORDER BY `gid` asc  [ RunTime:0.000627s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000312s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000393s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.119414s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.119482s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000693s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000769s ]
+
+[ 2020-06-26T15:44:19+08:00 ] ::1 /test/legacy/Resource/shop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.042719s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008468s ]
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.134232s ]
+SQL: SELECT * FROM `tb_goods` WHERE ( gid>0 ) ORDER BY `gid` asc  [ RunTime:0.000592s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000178s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000240s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.909266s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.909331s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015571s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015657s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.020622s ]
+INFO: [ app_end ] --END-- [ RunTime:0.020781s ]
+
+[ 2020-06-26T15:44:53+08:00 ] ::1 /test/legacy/Resource/shop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000710s ]
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.109026s ]
+SQL: SELECT * FROM `tb_goods` WHERE ( gid>0 ) ORDER BY `gid` asc  [ RunTime:0.000761s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000180s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000238s ]
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 268 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 293 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061954s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062019s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000748s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000844s ]
+
+[ 2020-06-26T15:47:03+08:00 ] ::1 /test/legacy/Resource/shop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000553s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000613s ]
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.088111s ]
+SQL: SELECT * FROM `tb_goods` WHERE ( gid>0 ) ORDER BY `gid` asc  [ RunTime:0.000861s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000248s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000324s ]
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.107755s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.107827s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000368s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001025s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001181s ]
+
+[ 2020-06-26T15:48:55+08:00 ] ::1 /test/legacy/Resource/shop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000614s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000683s ]
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.033025s ]
+SQL: SELECT * FROM `tb_goods` WHERE ( gid>0 ) ORDER BY `gid` asc  [ RunTime:0.000765s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000201s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000277s ]
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.088524s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088726s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000691s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000773s ]
+
+[ 2020-06-26T15:50:33+08:00 ] ::1 /test/legacy/Resource/shop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000447s ]
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.028666s ]
+SQL: SELECT * FROM `tb_goods` WHERE ( gid>0 ) ORDER BY `gid` asc  [ RunTime:0.000583s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000249s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000312s ]
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.076478s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.076534s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000792s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000884s ]
+
+[ 2020-06-26T15:51:08+08:00 ] ::1 /test/legacy/Resource/shop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000647s ]
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.018191s ]
+SQL: SELECT * FROM `tb_goods` WHERE ( gid>0 ) ORDER BY `gid` asc  [ RunTime:0.000549s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000185s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000271s ]
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.076899s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.076955s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000683s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000762s ]
+
+[ 2020-06-26T15:53:00+08:00 ] ::1 /test/legacy/Resource/shop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000880s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001108s ]
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.067493s ]
+SQL: SELECT * FROM `tb_goods` WHERE ( gid>0 ) ORDER BY `gid` asc  [ RunTime:0.000784s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000307s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000379s ]
+NOTIC: [8] Undefined offset: 0 D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 268 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 268 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 268 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 268 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 268 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 268 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 268 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 268 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 268 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 268 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.081929s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000914s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001071s ]
+
+[ 2020-06-26T15:54:25+08:00 ] ::1 /test/legacy/Resource/shop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000707s ]
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.055741s ]
+SQL: SELECT * FROM `tb_goods` WHERE ( gid>0 ) ORDER BY `gid` asc  [ RunTime:0.001008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000178s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000238s ]
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.092049s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.092137s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000661s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000745s ]
+
+[ 2020-06-26T15:54:29+08:00 ] ::1 /test/legacy/Resource/shop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000731s ]
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.021665s ]
+SQL: SELECT * FROM `tb_goods` WHERE ( gid>0 ) ORDER BY `gid` asc  [ RunTime:0.000569s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000184s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000244s ]
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065270s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065337s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000929s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001043s ]
+
+[ 2020-06-26T15:56:11+08:00 ] ::1 /test/legacy/Resource/shop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000534s ]
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.086246s ]
+SQL: SELECT * FROM `tb_goods` WHERE ( gid>0 ) ORDER BY `gid` asc  [ RunTime:0.000692s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000179s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000240s ]
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 267 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\test\legacy\App\Runtime\Cache\Home\cad4a1034aabc12fccaded13a6fc847b.php 第 292 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.161537s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.161622s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000209s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000424s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000488s ]
+
+[ 2020-06-26T15:57:27+08:00 ] ::1 /test/legacy/Resource/shop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000889s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001039s ]
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.145096s ]
+SQL: SELECT * FROM `tb_goods` WHERE ( gid>0 ) ORDER BY `gid` asc  [ RunTime:0.000838s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000187s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000249s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.121413s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.121484s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000712s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000827s ]
+
+[ 2020-06-26T16:04:24+08:00 ] ::1 /test/legacy/Resource/shop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.019832s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.017164s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017283s ]
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.103293s ]
+SQL: SELECT * FROM `tb_goods` WHERE ( gid>0 ) ORDER BY `gid` asc  [ RunTime:0.000685s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000180s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000242s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.855901s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.856045s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.012495s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012606s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.020928s ]
+INFO: [ app_end ] --END-- [ RunTime:0.021063s ]
+
+[ 2020-06-26T16:22:07+08:00 ] ::1 /test/legacy/Resource/shop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.068537s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008888s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008969s ]
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.240210s ]
+SQL: SELECT * FROM `tb_goods` WHERE ( gid>0 ) ORDER BY `gid` asc  [ RunTime:0.081798s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000288s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000380s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.539554s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.539652s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.022183s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.022287s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.032412s ]
+INFO: [ app_end ] --END-- [ RunTime:0.032528s ]
+
+[ 2020-06-26T16:39:39+08:00 ] ::1 /test/legacy/Resource/shop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.020499s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009869s ]
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.166568s ]
+SQL: SELECT * FROM `tb_goods` WHERE ( gid>0 ) ORDER BY `gid` asc  [ RunTime:0.012522s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000262s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000347s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.168309s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.168404s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.022209s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.022272s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.069795s ]
+INFO: [ app_end ] --END-- [ RunTime:0.069914s ]
+
+[ 2020-06-26T16:40:20+08:00 ] ::1 /test/legacy/Resource/shop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000606s ]
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.107538s ]
+SQL: SELECT * FROM `tb_goods` WHERE ( gid>0 ) ORDER BY `gid` asc  [ RunTime:0.000870s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000179s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000239s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.117281s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.117385s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000571s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000866s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000981s ]
+
+[ 2020-06-26T16:41:10+08:00 ] ::1 /test/legacy/Resource/shop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000546s ]
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.060496s ]
+SQL: SELECT * FROM `tb_goods` WHERE ( gid>0 ) ORDER BY `gid` asc  [ RunTime:0.000554s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000212s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000280s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.157451s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.157522s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000866s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000964s ]
+
+[ 2020-06-26T16:41:48+08:00 ] ::1 /test/legacy/Resource/shop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000596s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001905s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002160s ]
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.046582s ]
+SQL: SELECT * FROM `tb_goods` WHERE ( gid>0 ) ORDER BY `gid` asc  [ RunTime:0.023341s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000186s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000250s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.088667s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088731s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000744s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000864s ]
+
+[ 2020-06-26T16:42:03+08:00 ] ::1 /test/legacy/Resource/shop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000561s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000984s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001119s ]
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.848689s ]
+SQL: SELECT * FROM `tb_goods` WHERE ( gid>0 ) ORDER BY `gid` asc  [ RunTime:0.000641s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000175s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000247s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.099992s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.100063s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000216s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000829s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000928s ]
+
+[ 2020-06-26T16:42:16+08:00 ] ::1 /test/legacy/Resource/shop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000693s ]
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.230005s ]
+SQL: SELECT * FROM `tb_goods` WHERE ( gid>0 ) ORDER BY `gid` asc  [ RunTime:0.000956s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000189s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000255s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.141720s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.141807s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000210s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000496s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000578s ]
+
+[ 2020-06-26T16:44:47+08:00 ] ::1 /test/legacy/Resource/shop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.053324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.056239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.056395s ]
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.081593s ]
+SQL: SELECT * FROM `tb_goods` WHERE ( gid>0 ) ORDER BY `gid` asc  [ RunTime:0.032111s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000190s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000278s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.142798s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.142879s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.032086s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.032150s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.020581s ]
+INFO: [ app_end ] --END-- [ RunTime:0.020667s ]
+
+[ 2020-06-26T16:44:50+08:00 ] ::1 /test/legacy/Resource/shop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000447s ]
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.116033s ]
+SQL: SELECT * FROM `tb_goods` WHERE ( gid>0 ) ORDER BY `gid` asc  [ RunTime:0.000644s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000221s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.086984s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.087073s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000200s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000677s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000753s ]
+
+[ 2020-06-26T16:49:50+08:00 ] ::1 /test/legacy/Resource/shop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000630s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000694s ]
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.109261s ]
+SQL: SELECT * FROM `tb_goods` WHERE ( gid>0 ) ORDER BY `gid` asc  [ RunTime:0.000586s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000261s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000396s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.116758s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.116821s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001155s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001293s ]
+
+[ 2020-06-26T20:12:33+08:00 ] ::1 /test/legacy/Resource/shop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.387059s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.201317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.201396s ]
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.219372s ]
+SQL: SELECT * FROM `tb_goods` WHERE ( gid>0 ) ORDER BY `gid` asc  [ RunTime:0.044381s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000164s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000250s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.086519s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.086640s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.118892s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.119062s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.383328s ]
+INFO: [ app_end ] --END-- [ RunTime:0.383403s ]
+
+[ 2020-06-26T20:13:21+08:00 ] ::1 /test/legacy/Resource/shop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000597s ]
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.029142s ]
+SQL: SELECT * FROM `tb_goods` WHERE ( gid>0 ) ORDER BY `gid` asc  [ RunTime:0.000736s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062438s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062508s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000650s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000712s ]
+
+[ 2020-06-26T21:13:53+08:00 ] ::1 /test/legacy/Resource/shop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.032089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015684s ]
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.157081s ]
+SQL: SELECT * FROM `tb_goods` WHERE ( gid>0 ) ORDER BY `gid` asc  [ RunTime:0.045475s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000225s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.013634s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.013738s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.021794s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.021869s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.054360s ]
+INFO: [ app_end ] --END-- [ RunTime:0.054522s ]
+

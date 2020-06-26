@@ -7,19 +7,7 @@
     <script type="text/javascript" src="__PUBLIC__/bootstrap/js/jquery.js"></script>
     <script src="__PUBLIC__/bootstrap/js/bootstrap.js"></script>
     <script type="text/javascript">
-        $(function() {
-            $('#dg-container').gallery({
-                autoplay	:	true
-            });
-            $("#navbar").find("a").each(function () {var a = $(this)[0];
-                if ($(a).attr("href") === location.pathname) {
-                    $(this).addClass("active");
-                } else {
-                    $(this).removeClass("active");
-                }
-            });
-            new ZoomPic("jswbox");
-        });
+
         function checkStr(){
             var Search = document.getElementById('search').value;
             var len = Search.length;
@@ -49,7 +37,7 @@
 </head>
     <body>
     <div id="headbox">
-        <img id="logo" src="__PUBLIC__/Home/image/logo/logo.png">
+        <a href="{:U('Index/index')}"><img id="logo" src="__PUBLIC__/Home/image/logo/logo.png"></a>
         <div id="userinfo">
             <if condition="isset($_SESSION['userName'])">
                 <h4><img width="25px" height="25px" style="margin-right: 10px;" src="__PUBLIC__/Home/image/icon/user2.png">当前用户：{$Think.session.userName}   <a href="{:U('User/logout')}">注销</a></h4>
@@ -75,13 +63,10 @@
                     <!--navbar-header-->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul id="navbar" class="nav navbar-nav navbar-right">
-                            <li><a class="active" href="{:U('Index/index')}"><img width="25px" height="25px" style="margin-top: -6px;" src="__PUBLIC__/Home/image/icon/index.png">首页</a></li>
+                            <li><a href="{:U('Index/index')}"><img width="25px" height="25px" style="margin-top: -6px;" src="__PUBLIC__/Home/image/icon/index.png">首页</a></li>
                             <li><a href="{:U('Policy/index')}"><img width="25px" height="25px" src="__PUBLIC__/Home/image/icon/policy.png">政策</a></li>
-                            <li><a href="#" class="dropdown-toggle hvr-bounce-to-bottom" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img width="25px" height="25px" src="__PUBLIC__/Home/image/icon/resource.png">资源<span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="" href="{:U('Resource/shop')}">商城</a></li>
-                                    <li><a class="" href="{:U('Resource/director')}">名录</a></li>
-                                </ul>
+                            <li><a href="{:U('Resource/shop')}"><img width="25px" height="25px" src="__PUBLIC__/Home/image/icon/resource.png">商品</a>
+
                             </li>
                             <li><a href="#" class="dropdown-toggle hvr-bounce-to-bottom" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img width="25px" height="25px" src="__PUBLIC__/Home/image/icon/info.png">资讯<span class="caret"></span></a>
                                 <ul class="dropdown-menu">
@@ -98,7 +83,7 @@
             </div>
             <form class="navbar-form navbar-right" method="post" action="{:U('Resource/search')}" role="search">
                 <div class="form-group">
-                    <input type="text" name="search" id="search" onkeyup="checkStr()" class="form-control" placeholder="请输入非遗名称" required>
+                    <input type="text" name="search" id="search" onkeyup="checkStr()" class="form-control" placeholder="请输入非遗名录名称" required>
                 </div>
                 <button type="submit" onclick="check()" class="btn btn-default">搜索</button>
                 <div id="city-button" onclick="cityDisplay()" class="btn btn-default">区县</div>

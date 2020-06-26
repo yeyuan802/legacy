@@ -38,14 +38,16 @@ class ResourceController extends Controller
         $type = I('get.type',0);
         $map['type'] = $type;
         $typeList = $director->where($map)->order(array('Did' => "asc"))->select();
-        var_dump($typeList);
+
         $this->assign('typeList',$typeList);
         $this->display;
     }
 
 
     public function shop(){
-
+        $goods=D("goods");
+        $goodsList = $goods->where("gid>0")->order(array('gid' => "asc"))->select();
+        $this->assign('goodsList',$goodsList);
         $this->display();
     }
 

@@ -28,6 +28,10 @@ list-style: outside none none;
 margin: 0;
 padding: 0
 }
+.text-fixed{
+  position: absolute;
+  bottom:0;
+}
 .clear{clear:both}
 ::-moz-selection {
     background: #b3d4fc;
@@ -2450,3 +2454,30 @@ h3.widget-title-modal {
 #scrollUp i {
   line-height: 40px;
 }
+
+/*footer start*/
+.footer{
+  width: 100%;
+  height: 150px;
+  margin-top: 40px;
+  background-color: #eaedee;
+}
+
+.footer div{
+  text-align: center;
+}
+#foot-box{
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  font-family: "微软雅黑 Light";
+  padding: 30px;
+}
+
+#foot-box a{
+  text-decoration: none;
+  color: black;
+}
+/*footer end*/
