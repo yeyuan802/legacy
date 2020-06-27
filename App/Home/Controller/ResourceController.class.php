@@ -51,6 +51,9 @@ class ResourceController extends Controller
         $this->display();
     }
 
+    public function single(){
+        $this->display();
+    }
     public function search(){
         $search = I('post.search');
 

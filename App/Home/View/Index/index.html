@@ -48,21 +48,21 @@
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4" id="gonggao">
             <div class="title-style">公告发布</div>
             <foreach name="list" item="g">
-                        <a href="">
-                            <form action="{:U('Information/noticontent')}" method="post">
-                                <input type="hidden" name="noticeId" value="{$noti.id}">
-                                <input type="hidden" name="contentType" value="notice">
-                                <button type="submit" class="info-title">
-                                    {$g.title|msubstr=###,0,12,'utf-8'}<b>{$g.time}</b>
-                                </button>
-                            </form>
-                            <!--<div class="info-title">{$g.title|msubstr=###,0,12,'utf-8'}<b>{$g.time}</b></div>-->
-                        </a>
-                    </foreach>
+                <a href="">
+                    <form action="{:U('Information/noticontent')}" method="post">
+                        <input type="hidden" name="noticeId" value="{$noti.id}">
+                        <input type="hidden" name="contentType" value="notice">
+                        <button type="submit" class="info-title">
+                            {$g.title|msubstr=###,0,12,'utf-8'}<b>{$g.time}</b>
+                        </button>
+                    </form>
+                    <!--<div class="info-title">{$g.title|msubstr=###,0,12,'utf-8'}<b>{$g.time}</b></div>-->
+                </a>
+            </foreach>
             <div class="under-box">
-                        <div class="page-list pages" id="page">
-                            {$page}
-                        </div>
+                <div class="page-list pages" id="page">
+                    {$page}
+                </div>
             </div>
         </div>
     </div>
@@ -173,7 +173,7 @@
                                 {$dynamic.title|msubstr=###,0,10,'utf-8'}<b>{$dynamic.time}</b>
                             </button>
                         </form>
-                            <!--<div class="info-title">{$dynamic.title|msubstr=###,0,10,'utf-8'}<b>{$dynamic.time}</b></div>-->
+                        <!--<div class="info-title">{$dynamic.title|msubstr=###,0,10,'utf-8'}<b>{$dynamic.time}</b></div>-->
                     </foreach>
                     <div class="under">
                         <a href="{:U('Dynamic/index')}"><h4>查看更多</h4></a>
