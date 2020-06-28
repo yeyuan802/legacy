@@ -1,28 +1,28 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <head>
     <title>非遗商城</title>
-    <link rel="stylesheet" href="/test/legacy/Public/shop/css/animate.css">
-    <link rel="stylesheet" href="/test/legacy/Public/shop/css/jquery-ui.min.css">
-    <link rel="stylesheet" href="/test/legacy/Public/shop/css/meanmenu.min.css">
-    <link href="/test/legacy/Public/bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="/test/legacy/Public/shop/css/font-awesome.css">
-    <link rel="stylesheet" href="/test/legacy/Public/shop/css/pe-icon-7-stroke.css">
-    <link rel="stylesheet" href="/test/legacy/Public/shop/css/flaticon.css">
+    <link rel="stylesheet" href="/legacy/Public/shop/css/animate.css">
+    <link rel="stylesheet" href="/legacy/Public/shop/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="/legacy/Public/shop/css/meanmenu.min.css">
+    <link href="/legacy/Public/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="/legacy/Public/shop/css/font-awesome.css">
+    <link rel="stylesheet" href="/legacy/Public/shop/css/pe-icon-7-stroke.css">
+    <link rel="stylesheet" href="/legacy/Public/shop/css/flaticon.css">
 
 
     <!-- venobox css -->
-    <link rel="stylesheet" href="/test/legacy/Public/shop/venobox/venobox.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/legacy/Public/shop/venobox/venobox.css" type="text/css" media="screen" />
     <!-- nivo slider css -->
-    <link rel="stylesheet" href="/test/legacy/Public/shop/lib/css/nivo-slider.css" type="text/css" />
-    <link rel="stylesheet" href="/test/legacy/Public/shop/lib/css/preview.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/legacy/Public/shop/lib/css/nivo-slider.css" type="text/css" />
+    <link rel="stylesheet" href="/legacy/Public/shop/lib/css/preview.css" type="text/css" media="screen" />
     <!-- owl.carousel css -->
-    <link rel="stylesheet" href="/test/legacy/Public/shop/css/owl.carousel.css">
+    <link rel="stylesheet" href="/legacy/Public/shop/css/owl.carousel.css">
     <!-- style css -->
-    <link rel="stylesheet" href="/test/legacy/Public/shop/css/style.css">
+    <link rel="stylesheet" href="/legacy/Public/shop/css/style.css">
     <!-- responsive css -->
-    <link rel="stylesheet" href="/test/legacy/Public/shop/css/responsive.css">
+    <link rel="stylesheet" href="/legacy/Public/shop/css/responsive.css">
     <!-- modernizr css -->
-    <script src="/test/legacy/Public/shop/js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="/legacy/Public/shop/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 
 
@@ -37,7 +37,7 @@
             <div class="col-md-2 col-sm-6 col-xs-6">
                 <div class="header-logo">
                     <a href="<?php echo U('Index/index');?>">
-                        <img src="/test/legacy/Public/Home/image/logo/logo.png" alt="">
+                        <img src="/legacy/Public/Home/image/logo/logo.png" alt="">
                     </a>
                 </div>
             </div>
@@ -71,7 +71,7 @@
                                 <div class="cart-product">
                                     <div class="cart-product-image">
                                         <a href="single-product.html">
-                                            <img src="/test/legacy/Public/shop/img/featured/1.jpg" alt="">
+                                            <img src="/legacy/Public/shop/img/featured/1.jpg" alt="">
                                         </a>
                                     </div>
                                     <div class="cart-product-info">
@@ -90,7 +90,7 @@
                                 <div class="cart-product">
                                     <div class="cart-product-image">
                                         <a href="single-product.html">
-                                            <img src="/test/legacy/Public/shop/img/featured/1.jpg" alt="">
+                                            <img src="/legacy/Public/shop/img/featured/1.jpg" alt="">
                                         </a>
                                     </div>
                                     <div class="cart-product-info">
@@ -137,8 +137,8 @@
 <div class="slider-area">
     <div class="bend niceties preview-1">
         <div id="ensign-nivoslider" class="slides">
-            <img src="/test/legacy/Public/shop/img/slider/<?php echo ($goodsList[6]['goodname']); ?>.jpg" alt="" title="#slider-direction-1"  />
-            <img src="/test/legacy/Public/shop/img/slider/<?php echo ($goodsList[3]['goodname']); ?>.jpg" alt="" title="#slider-direction-2"  />
+            <img src="/legacy/Public/shop/img/slider/<?php echo ($goodsList[6]['goodname']); ?>.jpg" alt="" title="#slider-direction-1"  />
+            <img src="/legacy/Public/shop/img/slider/<?php echo ($goodsList[3]['goodname']); ?>.jpg" alt="" title="#slider-direction-2"  />
         </div>
         <!-- direction 1 -->
         <div id="slider-direction-1" class="text-center slider-direction">
@@ -201,7 +201,7 @@
                 <div class="col-md-4 col-sm-6">
                     <div class="single-banner">
                         <a href="#">
-                            <img src="/test/legacy/Public/shop/img/banner/<?php echo ($goodsList[6]['goodname']); ?>.jpg" alt="">
+                            <img src="/legacy/Public/shop/img/banner/<?php echo ($goodsList[6]['goodname']); ?>.jpg" alt="">
                         </a>
                         <div class="price" style="color: white;"><span>￥</span><?php echo ($goodsList[6]['price']); ?></div>
                         <div class="banner-bottom text-center">
@@ -212,7 +212,7 @@
                 <div class="col-md-4 col-sm-6">
                     <div class="single-banner">
                         <a href="#">
-                            <img src="/test/legacy/Public/shop/img/banner/<?php echo ($goodsList[0]['goodname']); ?>.jpg" alt="">
+                            <img src="/legacy/Public/shop/img/banner/<?php echo ($goodsList[0]['goodname']); ?>.jpg" alt="">
                         </a>
                         <div class="price" style="color: white;"><span>￥</span><?php echo ($goodsList[0]['price']); ?></div>
                         <div class="banner-bottom text-center">
@@ -223,7 +223,7 @@
                 <div class="col-md-4 hidden-sm">
                     <div class="single-banner">
                         <a href="#">
-                            <img src="/test/legacy/Public/shop/img/banner/<?php echo ($goodsList[9]['goodname']); ?>.jpg" alt="">
+                            <img src="/legacy/Public/shop/img/banner/<?php echo ($goodsList[9]['goodname']); ?>.jpg" alt="">
                         </a>
                         <div class="price" style="color: white;"><span>￥</span><?php echo ($goodsList[9]['price']); ?></div>
                         <div class="banner-bottom text-center">
@@ -264,7 +264,7 @@
                                     <div class="single-banner">
                                         <div class="product-wrapper">
                                             <a href="#" class="single-banner-image-wrapper">
-                                                <img alt="" src="/test/legacy/Public/shop/img/featured/<?php echo ($gList['goodname']); ?>.jpg">
+                                                <img alt="" src="/legacy/Public/shop/img/featured/<?php echo ($gList['goodname']); ?>.jpg">
                                                 <div class="price"><span>￥</span><?php echo ($gList['price']); ?></div>
                                                 <div class="rating-icon">
                                                     <i class="fa fa-star icolor"></i>
@@ -297,7 +297,7 @@
                                     <div class="single-banner">
                                         <div class="product-wrapper">
                                             <a href="#" class="single-banner-image-wrapper">
-                                                <img alt="" src="/test/legacy/Public/shop/img/featured/<?php echo ($gList['goodname']); ?>.jpg">
+                                                <img alt="" src="/legacy/Public/shop/img/featured/<?php echo ($gList['goodname']); ?>.jpg">
                                                 <div class="price"><span>￥</span><?php echo ($gList['price']); ?></div>
                                                 <div class="rating-icon">
                                                     <i class="fa fa-star icolor"></i>
@@ -347,7 +347,7 @@
                 <div class="col-md-3">
                     <div class="single-blog">
                         <a href="single-#">
-                            <img src="/test/legacy/Public/shop/img/blog/1.jpg" alt="">
+                            <img src="/legacy/Public/shop/img/blog/1.jpg" alt="">
                         </a>
                         <div class="blog-info text-center">
                             <a href="#"><h2>重庆之美</h2></a>
@@ -361,7 +361,7 @@
                 <div class="col-md-3">
                     <div class="single-blog">
                         <a href="single-#">
-                            <img src="/test/legacy/Public/shop/img/blog/2.jpg" alt="">
+                            <img src="/legacy/Public/shop/img/blog/2.jpg" alt="">
                         </a>
                         <div class="blog-info text-center">
                             <a href="#"><h2>重庆之美</h2></a>
@@ -375,7 +375,7 @@
                 <div class="col-md-3">
                     <div class="single-blog">
                         <a href="single-#">
-                            <img src="/test/legacy/Public/shop/img/blog/3.jpg" alt="">
+                            <img src="/legacy/Public/shop/img/blog/3.jpg" alt="">
                         </a>
                         <div class="blog-info text-center">
                             <a href="#"><h2>重庆之美</h2></a>
@@ -389,7 +389,7 @@
                 <div class="col-md-3">
                     <div class="single-blog">
                         <a href="single-#">
-                            <img src="/test/legacy/Public/shop/img/blog/4.jpg" alt="">
+                            <img src="/legacy/Public/shop/img/blog/4.jpg" alt="">
                         </a>
                         <div class="blog-info text-center">
                             <a href="#"><h2>重庆之美</h2></a>
@@ -403,7 +403,7 @@
                 <div class="col-md-3">
                     <div class="single-blog">
                         <a href="single-#">
-                            <img src="/test/legacy/Public/shop/img/blog/1.jpg" alt="">
+                            <img src="/legacy/Public/shop/img/blog/1.jpg" alt="">
                         </a>
                         <div class="blog-info text-center">
                             <a href="#"><h2>重庆之美</h2></a>
@@ -417,7 +417,7 @@
                 <div class="col-md-3">
                     <div class="single-blog">
                         <a href="single-#">
-                            <img src="/test/legacy/Public/shop/img/blog/2.jpg" alt="">
+                            <img src="/legacy/Public/shop/img/blog/2.jpg" alt="">
                         </a>
                         <div class="blog-info text-center">
                             <a href="#"><h2>重庆之美</h2></a>
@@ -449,32 +449,32 @@
 <!-- jquery latest version -->
 <script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
 <!-- bootstrap js -->
-<script src="/test/legacy/Public/shop/js/bootstrap.min.js"></script>
+<script src="/legacy/Public/shop/js/bootstrap.min.js"></script>
 <!-- owl.carousel js -->
-<script src="/test/legacy/Public/shop/js/owl.carousel.min.js"></script>
+<script src="/legacy/Public/shop/js/owl.carousel.min.js"></script>
 <!-- jquery-ui js -->
-<script src="/test/legacy/Public/shop/js/jquery-ui.min.js"></script>
+<script src="/legacy/Public/shop/js/jquery-ui.min.js"></script>
 <!-- jquery Counterup js -->
-<script src="/test/legacy/Public/shop/js/jquery.counterup.min.js"></script>
-<script src="/test/legacy/Public/shop/js/waypoints.min.js"></script>
+<script src="/legacy/Public/shop/js/jquery.counterup.min.js"></script>
+<script src="/legacy/Public/shop/js/waypoints.min.js"></script>
 <!-- jquery countdown js -->
-<script src="/test/legacy/Public/shop/js/jquery.countdown.min.js"></script>
+<script src="/legacy/Public/shop/js/jquery.countdown.min.js"></script>
 <!-- jquery countdown js -->
-<script type="text/javascript" src="/test/legacy/Public/shop/venobox/venobox.min.js"></script>
+<script type="text/javascript" src="/legacy/Public/shop/venobox/venobox.min.js"></script>
 <!-- jquery Meanmenu js -->
-<script src="/test/legacy/Public/shop/js/jquery.meanmenu.js"></script>
+<script src="/legacy/Public/shop/js/jquery.meanmenu.js"></script>
 <!-- wow js -->
-<script src="/test/legacy/Public/shop/js/wow.min.js"></script>
+<script src="/legacy/Public/shop/js/wow.min.js"></script>
 <script>
     new WOW().init();
 </script>
 <!-- scrollUp JS -->
-<script src="/test/legacy/Public/shop/js/jquery.scrollUp.min.js"></script>
+<script src="/legacy/Public/shop/js/jquery.scrollUp.min.js"></script>
 <!-- plugins js -->
-<script src="/test/legacy/Public/shop/js/plugins.js"></script>
+<script src="/legacy/Public/shop/js/plugins.js"></script>
 <!-- Nivo slider js -->
-<script src="/test/legacy/Public/shop/lib/js/jquery.nivo.slider.js" type="text/javascript"></script>
-<script src="/test/legacy/Public/shop/lib/home.js" type="text/javascript"></script>
+<script src="/legacy/Public/shop/lib/js/jquery.nivo.slider.js" type="text/javascript"></script>
+<script src="/legacy/Public/shop/lib/home.js" type="text/javascript"></script>
 <!-- main js -->
-<script src="/test/legacy/Public/shop/js/main.js"></script>
+<script src="/legacy/Public/shop/js/main.js"></script>
 </body>

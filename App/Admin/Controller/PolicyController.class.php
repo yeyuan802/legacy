@@ -66,6 +66,29 @@ class PolicyController extends CommonController
         }
         $this->success('政策删除成功', U('Policy/index'));
     }
+    /**
+     **删除函数支持删除多条和一个
+     **/
+    public function delAll(){
+        //dump($_GET['id']);
+        //$name = strtolower($_GET['_URL_'][0]); //获取当前模块名
+//        $name = $this->getActionName();
+        $model = D('policy');//获取当期模块的操作对象
+        $id = $_GET['id'];
+        //判断id是数组还是一个数值
+        if(is_array($id)){
+            $where = 'id in('.implode(',',$id).')';
+        }else{
+            $where = 'id='.$id;
+        }
+        //dump($where);
+        $list=$model->where($where)->delete();
+        if($list!==false) {
+            $this->success("成功删除{$list}条！");
+        }else{
+            $this->error('删除失败！');
+        }
+    }
     //修改政策
     public function revise(){
         $id=I('get.id',0, 'int');

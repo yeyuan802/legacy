@@ -1,11 +1,11 @@
 <?php if (!defined('THINK_PATH')) exit();?><html>
 <head>
     <meta charset="UTF-8">
-    <link href="/test/legacy/Public/bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link href="/test/legacy/Public/Home/css/style.css" rel="stylesheet">
-    <script type="text/javascript" src="/test/legacy/Public/bootstrap/js/jquery.min.js"></script>
-    <script type="text/javascript" src="/test/legacy/Public/bootstrap/js/jquery.js"></script>
-    <script src="/test/legacy/Public/bootstrap/js/bootstrap.js"></script>
+    <link href="/legacy/Public/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="/legacy/Public/Home/css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="/legacy/Public/bootstrap/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/legacy/Public/bootstrap/js/jquery.js"></script>
+    <script src="/legacy/Public/bootstrap/js/bootstrap.js"></script>
     <script type="text/javascript">
 
         function checkStr(){
@@ -37,13 +37,13 @@
 </head>
 <body>
 <div id="headbox">
-    <a href="<?php echo U('Index/index');?>"><img id="logo" src="/test/legacy/Public/Home/image/logo/logo.png"></a>
+    <a href="<?php echo U('Index/index');?>"><img id="logo" src="/legacy/Public/Home/image/logo/logo.png"></a>
     <div id="userinfo">
-        <?php if(isset($_SESSION['userName'])): ?><h4><img width="25px" height="25px" style="margin-right: 10px;" src="/test/legacy/Public/Home/image/icon/user2.png">当前用户：<?php echo (session('userName')); ?>   <a href="<?php echo U('User/logout');?>">注销</a></h4>
-            <h5><img width="25px" height="25px" style="margin-right: 10px;" src="/test/legacy/Public/Home/image/icon/clock2.png"><?php echo (date('Y-m-d g:i a',time())); ?></h5>
+        <?php if(isset($_SESSION['userName'])): ?><h4><img width="25px" height="25px" style="margin-right: 10px;" src="/legacy/Public/Home/image/icon/user2.png">当前用户：<?php echo (session('userName')); ?>   <a href="<?php echo U('User/logout');?>">注销</a></h4>
+            <h5><img width="25px" height="25px" style="margin-right: 10px;" src="/legacy/Public/Home/image/icon/clock2.png"><?php echo (date('Y-m-d g:i a',time())); ?></h5>
             <?php else: ?>
-            <h4><a href="<?php echo U('User/login');?>"><img width="25px" height="25px" style="margin-right: 10px;" src="/test/legacy/Public/Home/image/icon/user1.png">点击登录</a> </h4>
-            <h5><img width="25px" height="25px" style="margin-right: 10px;" src="/test/legacy/Public/Home/image/icon/clock1.png"><?php echo (date('Y-m-d g:i a',time())); ?></h5><?php endif; ?>
+            <h4><a href="<?php echo U('User/login');?>"><img width="25px" height="25px" style="margin-right: 10px;" src="/legacy/Public/Home/image/icon/user1.png">点击登录</a> </h4>
+            <h5><img width="25px" height="25px" style="margin-right: 10px;" src="/legacy/Public/Home/image/icon/clock1.png"><?php echo (date('Y-m-d g:i a',time())); ?></h5><?php endif; ?>
     </div>
 </div>
 <div class="header">
@@ -61,19 +61,19 @@
                 <!--navbar-header-->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul id="navbar" class="nav navbar-nav navbar-right">
-                        <li><a href="<?php echo U('Index/index');?>"><img width="25px" height="25px" style="margin-top: -6px;" src="/test/legacy/Public/Home/image/icon/index.png">首页</a></li>
-                        <li><a href="<?php echo U('Policy/index');?>"><img width="25px" height="25px" src="/test/legacy/Public/Home/image/icon/policy.png">政策</a></li>
-                        <li><a href="<?php echo U('Resource/shop');?>"><img width="25px" height="25px" src="/test/legacy/Public/Home/image/icon/resource.png">商品</a>
+                        <li><a href="<?php echo U('Index/index');?>"><img width="25px" height="25px" style="margin-top: -6px;" src="/legacy/Public/Home/image/icon/index.png">首页</a></li>
+                        <li><a href="<?php echo U('Policy/index');?>"><img width="25px" height="25px" src="/legacy/Public/Home/image/icon/policy.png">政策</a></li>
+                        <li><a href="<?php echo U('Resource/shop');?>"><img width="25px" height="25px" src="/legacy/Public/Home/image/icon/resource.png">商品</a>
 
                         </li>
-                        <li><a href="#" class="dropdown-toggle hvr-bounce-to-bottom" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img width="25px" height="25px" src="/test/legacy/Public/Home/image/icon/info.png">资讯<span class="caret"></span></a>
+                        <li><a href="#" class="dropdown-toggle hvr-bounce-to-bottom" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img width="25px" height="25px" src="/legacy/Public/Home/image/icon/info.png">资讯<span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a class="" href="<?php echo U('Information/notice');?>">公告</a></li>
                                 <li><a class="" href="<?php echo U('Information/dynamic');?>">动态</a></li>
                             </ul>
                         </li>
-                        <li><a href=""><img width="25px" height="25px" style="margin-top: -8px;" src="/test/legacy/Public/Home/image/icon/school.png">高校合作</a></li>
-                        <li><a href="<?php echo U('Message/index');?>"><img width="25px" height="25px" src="/test/legacy/Public/Home/image/icon/message.png">留言板</a></li>
+                        <li><a href=""><img width="25px" height="25px" style="margin-top: -8px;" src="/legacy/Public/Home/image/icon/school.png">高校合作</a></li>
+                        <li><a href="<?php echo U('Message/index');?>"><img width="25px" height="25px" src="/legacy/Public/Home/image/icon/message.png">留言板</a></li>
                     </ul>
                     <div class="clearfix"> </div>
                 </div>
@@ -97,7 +97,7 @@
             </button>
         </form><?php endforeach; endif; ?>
 </div>
-<link href="/test/legacy/Public/Home/css/policy&info.css" rel="stylesheet">
+<link href="/legacy/Public/Home/css/policy&info.css" rel="stylesheet">
 <div id="policy-main" class="container">
     <div id="policy-title"><h2 id="pl">政策</h2></div>
     <br>

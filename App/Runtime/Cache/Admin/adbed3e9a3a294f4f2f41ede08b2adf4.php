@@ -98,9 +98,6 @@
                         <a href="#" class="dropdown-toggle " data-toggle="dropdown">admin<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="/legacy/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>前台首页</a></li>
-                            <li><a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span>个人设置</a></li>
-                            <li><a href="#"><span class="glyphicon glyphicon-credit-card" aria-hidden="true"></span>账户中心</a></li>
-                            <li><a href="#"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span>我的收藏</a></li>
                         </ul>
                     </li>
                     <li><a href="/legacy/Admin/Login/logout"><span class="glyphicon glyphicon-off" aria-hidden="true"></span>退出</a></li>
@@ -171,14 +168,17 @@
                     </tr><?php endforeach; endif; ?>
                 </tbody>
             </table>
+            <input name='id[]' type='checkbox' value='<?php echo ($v["id"]); ?>' class="noborder">
             <div class="pagelist" align="right">
                 <?php echo $page; ?>
             </div>
         </div>
     </div>
 </div>
+
 </body>
-</html></div>
+</html>
+</div>
 </div>
 
 </body>
