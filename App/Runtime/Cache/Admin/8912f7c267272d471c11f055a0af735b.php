@@ -41,18 +41,15 @@
                         <ul class="dropdown-menu">
                             <li><a href="/EPP_Project/legacy/Admin/Goods/index">查看商品</a></li>
                             <li><a href="/EPP_Project/legacy/Admin/Goods/add">添加商品</a></li>
-                            <li><a href="/EPP_Project/legacy/Admin/Goods/index">删除商品</a></li>
-                            <li><a href="/EPP_Project/legacy/Admin/Goods/index">修改商品</a></li>
                             <li><a href="/EPP_Project/legacy/Admin/Goods/search">查询商品</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a href="/EPP_Project/legacy/Admin/Travel/index" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-camera" aria-hidden="true"></span> 旅游管理<b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="/EPP_Project/legacy/Admin/Travel/index">查看旅游景点</a></li>
-                            <li><a href="/EPP_Project/legacy/Admin/Travel/add">增加旅游景点</a></li>
-                            <li><a href="/EPP_Project/legacy/Admin/Travel/search">查询旅游景点</a></li>
-                            <li><a href="/EPP_Project/legacy/Admin/Travel/index">修改旅游景点</a></li>
+                            <li><a href="/EPP_Project/legacy/Admin/Travel/index">查看景点</a></li>
+                            <li><a href="/EPP_Project/legacy/Admin/Travel/add">增加景点</a></li>
+                            <li> <a href="/EPP_Project/legacy/Admin/Travel/search">查询景点</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -77,8 +74,7 @@
                                 <ul class="dropdown-menu">
                                     <li><a href="/EPP_Project/legacy/Admin/Inheritor/index">查看传承人</a></li>
                                     <li><a href="/EPP_Project/legacy/Admin/Inheritor/add">增加传承人</a></li>
-                                    <li><a href="/EPP_Project/legacy/Admin/Inheritor/delete">删除传承人</a></li>
-                                    <li><a href="/EPP_Project/legacy/Admin/Inheritor/revise">修改传承人</a></li>
+                                    <li><a href="/EPP_Project/legacy/Admin/Inheritor/search">查询传承人</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown-submenu">
@@ -86,8 +82,6 @@
                                 <ul class="dropdown-menu">
                                     <li><a href="/EPP_Project/legacy/Admin/Policy/index">查看政策</a></li>
                                     <li><a href="/EPP_Project/legacy/Admin/Policy/add">增加政策</a></li>
-                                    <li><a href="/EPP_Project/legacy/Admin/Policy/delete">删除政策</a></li>
-                                    <li><a href="/EPP_Project/legacy/Admin/Policy/revise">修改政策</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -149,7 +143,6 @@
     <ul class="list-group">
         <a href="/EPP_Project/legacy/Admin/Travel/index" class="list-group-item ">查看景点</a>
         <a href="/EPP_Project/legacy/Admin/Travel/add" class="list-group-item">添加景点</a>
-        <a href="/EPP_Project/legacy/Admin/Travel/revise" class="list-group-item active">修改景点</a>
         <a href="/EPP_Project/legacy/Admin/Travel/search" class="list-group-item">查询景点</a>
     </ul>
 </div>

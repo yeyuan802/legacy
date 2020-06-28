@@ -29,7 +29,8 @@ class DynamicController extends CommonController
         $Page->setConfig('next','下一页');
         $Page->setConfig('theme','%HEADER% %FIRST% %UP_PAGE% %DOWN_PAGE% %END%');
         $show=$Page->show();
-        $list=$model->where($where)->limit($Page->firstRow.','.$Page->listRows)->select();
+
+        $list = $model->where($where)->order(array('id' => 'asc'))->limit($Page->firstRow.','.$Page->listRows)->select();
         $this->assign('list',$list);
         $this->assign('page',$show);
         $this->display();

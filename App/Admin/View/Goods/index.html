@@ -9,7 +9,6 @@
     <ul class="list-group">
         <a href="__CONTROLLER__/index" class="list-group-item active">查看商品</a>
         <a href="__CONTROLLER__/add" class="list-group-item">添加商品</a>
-        <a href="__CONTROLLER__/index" class="list-group-item">修改商品</a>
         <a href="__CONTROLLER__/search" class="list-group-item">查询商品</a>
     </ul>
 </div>
@@ -25,6 +24,7 @@
                 <tr class="bg-primary">
                     <th scope="row"></th>
                     <td><input type="checkbox">全选</td>
+                    <td>商品id</td>
                     <td>商品名称</td>
                     <td>商品类型</td>
                     <td>商品价格</td>
@@ -38,6 +38,7 @@
                     <tr class="bg-success">
                         <th scope="row"></th>
                         <td><input type="checkbox"></td>
+                        <td>{$v.gid}</td>
                         <td>{$v.goodname}</td>
                         <td>{$v.type}</td>
                         <td>{$v.price}</td>
@@ -46,18 +47,20 @@
                         <td>{$v.title}</td>
                         <td>{$v.place}</td>
                         <td>
-                            <a type="button" class="btn btn-primary btn-sm" href="__CONTROLLER__/revise/goodname/{$v.goodname}">
+                            <a type="button" class="btn btn-primary btn-sm" href="__CONTROLLER__/revise/gid/{$v.gid}">
                                 <span class="glyphicon glyphicon-pencil"></span>编辑 </a>
-                            <a type="button" class="btn btn-danger btn-sm" href="__CONTROLLER__/delete/id/{$v.id}">
+                            <a type="button" class="btn btn-danger btn-sm" href="__CONTROLLER__/delete/gid/{$v.gid}">
                                 <span class="glyphicon glyphicon-trash"></span>删除</a>
                         </td>
                     </tr>
                 </foreach>
                 </tbody>
             </table>
+
             <div class="pagelist" align="right">
                 <?php echo $page; ?>
             </div>
+
         </div>
     </div>
 </div>

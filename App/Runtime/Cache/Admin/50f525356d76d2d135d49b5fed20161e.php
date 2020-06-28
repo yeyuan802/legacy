@@ -128,71 +128,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <style>
-        /*内容编辑*/
-        .data-edit{border:1px solid #ddd;background:#F7F7F7;max-width:550px;padding:20px 40px;}
-        .data-edit label{font-weight:normal;text-align:right;vertical-align:top;}
-        .data-edit label{padding:0 10px;}
-        .data-edit select{min-width:100px;height:26px;}
-        .data-edit .file{font-size:12px;}
-        .data-edit textarea{width:200px;height:150px;}
-        .data-edit input{width:200px;}
-    </style>
 </head>
 <body>
 <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
     <ul class="list-group">
-        <a href="/EPP_Project/legacy/Admin/Travel/index" class="list-group-item ">查看景点</a>
-        <a href="/EPP_Project/legacy/Admin/Travel/add" class="list-group-item active">添加景点</a>
-        <a href="/EPP_Project/legacy/Admin/Travel/search" class="list-group-item">查询景点</a>
+        <a href="/EPP_Project/legacy/Admin/Policy/index" class="list-group-item">查看政策</a>
+        <a href="/EPP_Project/legacy/Admin/Policy/add" class="list-group-item active">添加政策</a>
     </ul>
 </div>
 <!--右侧主要内容-->
 <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
     <div class="panel panel-default">
         <div class="panel-heading">
-            <h1>景点管理</h1>
-        </div>
-        <div class="panel-body">
-            <div class="data-edit" align="center">
-                <form class="form-horizontal" method="post">
-                    <div class="container">
-                        <div class="row form-group" style="padding: 20px 0">
-                            <div class="col-lg-5 col-md-6">
-                                <h3>添加景点</h3>
-                            </div>
+            <!--这里放置标题、选项-->
+            <h1>查看政策</h1>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <?php if(is_array($page)): foreach($page as $key=>$v): ?><p style="text-align: center;font-size: 40px"><?php echo ($v["title"]); ?></p>
+                        <div style=" text-indent:2em;margin-top: 20px;border-right: solid;border-left: solid;border-width: 2px;height: auto;border-color: #C0C0BB;">
+                            <?php echo ($v["content"]); ?>
                         </div>
-                        <div class="row form-group">
-                            <label class="control-label col-lg-1" for="placename">景点名称：</label>
-                            <div class="col-lg-5 col-md-6">
-                                <input class="form-control" name="place" id="placename" type="text">
-                            </div>
-                        </div>
-                        <div class="row form-group">
-                            <label class="control-label col-lg-1" for="hticket">景点票价：</label>
-                            <div class="col-lg-5 col-md-6">
-                                <input class="form-control" name="hticket" id="hticket" type="text">
-                            </div>
-                        </div>
-                        <div class="row form-group">
-                            <label class="control-label col-lg-1" for="sticket">景点票数：</label>
-                            <div class="col-lg-5 col-md-6">
-                                <input class="form-control" name="sticket" id="sticket" type="text">
-                            </div>
-                        </div>
-                        <div class="row form-group">
-                            <label class="control-label col-lg-1">景点介绍：</label>
-                            <div class="col-lg-5 col-md-6">
-                                <textarea class="form-control" rows="5" name="introduce"></textarea>
-                            </div>
-                        </div>
-                        <div class="row form-group">
-                            <div class="col-lg-5 col-md-6">
-                                <input class="btn btn-info" type="submit" value="确定" />  <input class="btn btn-info" type="reset" value="重置" />
-                            </div>
-                        </div>
-                    </div>
-                </form>
+                        <p style="float: right;color: #1f1f1f;"><?php echo ($v["time"]); ?></p><?php endforeach; endif; ?>
+                </div>
             </div>
         </div>
     </div>

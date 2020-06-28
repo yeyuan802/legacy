@@ -304,3 +304,94 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003788s ]
 INFO: [ app_end ] --END-- [ RunTime:0.003961s ]
 
+[ 2020-06-24T14:59:09+08:00 ] ::1 /EPP_Project/legacy/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011180s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.020380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.020564s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.246712s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.047226s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.365628s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.108518s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.046319s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.105682s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.087654s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.115999s ]
+SQL: SELECT * FROM `tb_director` WHERE `type` = '传统戏剧' ORDER BY `Did` asc  [ RunTime:0.026485s ]
+SQL: SELECT * FROM `tb_director` WHERE `type` = '民间音乐' ORDER BY `Did` asc  [ RunTime:0.001234s ]
+SQL: SELECT * FROM `tb_director` WHERE `type` = '民间舞蹈' ORDER BY `Did` asc  [ RunTime:0.000699s ]
+SQL: SELECT * FROM `tb_director` WHERE `type` = '传统手工技艺' ORDER BY `Did` asc  [ RunTime:0.001078s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.133738s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.054503s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.097957s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.001931s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.163508s ]
+ERR: 1146:Table 'db_culture.tb_country' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_country`
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.002352s ]
+ERR: 1146:Table 'db_culture.tb_country' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc 
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000420s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000628s ]
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\EPP_Project\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\EPP_Project\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\EPP_Project\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\EPP_Project\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\EPP_Project\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\EPP_Project\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\EPP_Project\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\EPP_Project\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\EPP_Project\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\EPP_Project\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 166 行.
+NOTIC: [8] Undefined index: birthPlace D:\phpStudy\WWW\EPP_Project\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 314 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.303210s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.303454s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.027370s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.027536s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.024931s ]
+INFO: [ app_end ] --END-- [ RunTime:0.025145s ]
+
+[ 2020-06-24T14:59:10+08:00 ] ::1 /EPP_Project/legacy/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000702s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001669s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000235s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000753s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.081892s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082213s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003999s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004193s ]
+
+[ 2020-06-24T14:59:39+08:00 ] ::1 /EPP_Project/legacy/Public/Admin/js/jquery-3.4.1.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002174s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002295s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000208s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025846s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026082s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002619s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002746s ]
+

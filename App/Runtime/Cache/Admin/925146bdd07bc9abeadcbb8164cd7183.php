@@ -41,18 +41,15 @@
                         <ul class="dropdown-menu">
                             <li><a href="/EPP_Project/legacy/Admin/Goods/index">查看商品</a></li>
                             <li><a href="/EPP_Project/legacy/Admin/Goods/add">添加商品</a></li>
-                            <li><a href="/EPP_Project/legacy/Admin/Goods/index">删除商品</a></li>
-                            <li><a href="/EPP_Project/legacy/Admin/Goods/index">修改商品</a></li>
                             <li><a href="/EPP_Project/legacy/Admin/Goods/search">查询商品</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a href="/EPP_Project/legacy/Admin/Travel/index" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-camera" aria-hidden="true"></span> 旅游管理<b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="/EPP_Project/legacy/Admin/Travel/index">查看旅游景点</a></li>
-                            <li><a href="/EPP_Project/legacy/Admin/Travel/add">增加旅游景点</a></li>
-                            <li><a href="/EPP_Project/legacy/Admin/Travel/search">查询旅游景点</a></li>
-                            <li><a href="/EPP_Project/legacy/Admin/Travel/index">修改旅游景点</a></li>
+                            <li><a href="/EPP_Project/legacy/Admin/Travel/index">查看景点</a></li>
+                            <li><a href="/EPP_Project/legacy/Admin/Travel/add">增加景点</a></li>
+                            <li> <a href="/EPP_Project/legacy/Admin/Travel/search">查询景点</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -77,8 +74,7 @@
                                 <ul class="dropdown-menu">
                                     <li><a href="/EPP_Project/legacy/Admin/Inheritor/index">查看传承人</a></li>
                                     <li><a href="/EPP_Project/legacy/Admin/Inheritor/add">增加传承人</a></li>
-                                    <li><a href="/EPP_Project/legacy/Admin/Inheritor/delete">删除传承人</a></li>
-                                    <li><a href="/EPP_Project/legacy/Admin/Inheritor/revise">修改传承人</a></li>
+                                    <li><a href="/EPP_Project/legacy/Admin/Inheritor/search">查询传承人</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown-submenu">
@@ -86,8 +82,6 @@
                                 <ul class="dropdown-menu">
                                     <li><a href="/EPP_Project/legacy/Admin/Policy/index">查看政策</a></li>
                                     <li><a href="/EPP_Project/legacy/Admin/Policy/add">增加政策</a></li>
-                                    <li><a href="/EPP_Project/legacy/Admin/Policy/delete">删除政策</a></li>
-                                    <li><a href="/EPP_Project/legacy/Admin/Policy/revise">修改政策</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -100,8 +94,10 @@
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
+
+                    <li><a href="#"><?php $time=date("Y-m-d H:i"); echo $time ?></a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle " data-toggle="dropdown">admin<b class="caret"></b></a>
+                    <a href="#"  class="dropdown-toggle " data-toggle="dropdown">admin<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="/EPP_Project/legacy/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>前台首页</a></li>
                             <li><a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span>个人设置</a></li>
@@ -117,7 +113,7 @@
 </div>
 
 
-<script>
+<!--<script>
     $(document).ready(function () {
         $(".activemenu li a").each(function () {
             $this=$(this);
@@ -126,7 +122,7 @@
             }
         });
     });
-</script>
+</script>-->
 
 <div id="content">
     <div class="item"><!DOCTYPE html>
@@ -140,8 +136,6 @@
     <ul class="list-group">
         <a href="index" class="list-group-item active">查看政策</a>
         <a href="/EPP_Project/legacy/Admin/Policy/add" class="list-group-item">添加政策</a>
-        <a href="/EPP_Project/legacy/Admin/Policy/index" class="list-group-item">修改政策</a>
-        <a href="/EPP_Project/legacy/Admin/Policy/index" class="list-group-item">删除政策</a>
     </ul>
 </div>
 <!--右侧主要内容-->
@@ -156,21 +150,21 @@
                 <tr class="bg-primary">
                     <th scope="row"></th>
                     <th><input type="checkbox">全选</th>
+                    <th>政策标题</th>
                     <th>发布时间</th>
-                    <th>发布机构</th>
-                    <th>索引号</th>
-                    <th>标题</th>
                     <th>内容</th>
+                    <th>索引号</th>
+                    <th>发布机构</th>
                     <th>操作</th>
                 </tr>
                 <?php if(is_array($res)): foreach($res as $key=>$v): ?><tr class="bg-success">
                         <th scope="row"></th>
                         <td><input type="checkbox"></td>
-                        <td><?php echo ($v["time"]); ?></td>
-                        <td><?php echo ($v["promulgator"]); ?></td>
-                        <td><?php echo ($v["reference"]); ?></td>
                         <td><?php echo (msubstr($v["title"],0,20)); ?></td>
-                        <td><?php echo (msubstr($v["content"],0,40)); ?></td>
+                        <td><?php echo ($v["time"]); ?></td>
+                        <td><a href="/EPP_Project/legacy/Admin/Policy/content/id/<?php echo ($v["id"]); ?>">查看详情</a></td>
+                        <td><?php echo ($v["reference"]); ?></td>
+                        <td><?php echo ($v["promulgator"]); ?></td>
                         <td>
                             <a type="button" class="btn btn-primary btn-sm" href="/EPP_Project/legacy/Admin/Policy/revise/id/<?php echo ($v["id"]); ?>">
                                 <span class="glyphicon glyphicon-pencil"></span>编辑 </a>

@@ -41,18 +41,15 @@
                         <ul class="dropdown-menu">
                             <li><a href="__MODULE__/Goods/index">查看商品</a></li>
                             <li><a href="__MODULE__/Goods/add">添加商品</a></li>
-                            <li><a href="__MODULE__/Goods/index">删除商品</a></li>
-                            <li><a href="__MODULE__/Goods/index">修改商品</a></li>
                             <li><a href="__MODULE__/Goods/search">查询商品</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a href="__MODULE__/Travel/index" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-camera" aria-hidden="true"></span> 旅游管理<b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="__MODULE__/Travel/index">查看旅游景点</a></li>
-                            <li><a href="__MODULE__/Travel/add">增加旅游景点</a></li>
-                            <li><a href="__MODULE__/Travel/search">查询旅游景点</a></li>
-                            <li><a href="__MODULE__/Travel/index">修改旅游景点</a></li>
+                            <li><a href="__MODULE__/Travel/index">查看景点</a></li>
+                            <li><a href="__MODULE__/Travel/add">增加景点</a></li>
+                            <li> <a href="__MODULE__/Travel/search">查询景点</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -77,8 +74,7 @@
                                 <ul class="dropdown-menu">
                                     <li><a href="__MODULE__/Inheritor/index">查看传承人</a></li>
                                     <li><a href="__MODULE__/Inheritor/add">增加传承人</a></li>
-                                    <li><a href="__MODULE__/Inheritor/delete">删除传承人</a></li>
-                                    <li><a href="__MODULE__/Inheritor/revise">修改传承人</a></li>
+                                    <li><a href="__MODULE__/Inheritor/search">查询传承人</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown-submenu">
@@ -86,8 +82,6 @@
                                 <ul class="dropdown-menu">
                                     <li><a href="__MODULE__/Policy/index">查看政策</a></li>
                                     <li><a href="__MODULE__/Policy/add">增加政策</a></li>
-                                    <li><a href="__MODULE__/Policy/delete">删除政策</a></li>
-                                    <li><a href="__MODULE__/Policy/revise">修改政策</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -100,8 +94,10 @@
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
+
+                    <li><a href="#"><?php $time=date("Y-m-d H:i"); echo $time ?></a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle " data-toggle="dropdown">admin<b class="caret"></b></a>
+                    <a href="#"  class="dropdown-toggle " data-toggle="dropdown">admin<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="__APP__/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>前台首页</a></li>
                             <li><a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span>个人设置</a></li>
@@ -117,7 +113,7 @@
 </div>
 
 
-<script>
+<!--<script>
     $(document).ready(function () {
         $(".activemenu li a").each(function () {
             $this=$(this);
@@ -126,7 +122,7 @@
             }
         });
     });
-</script>
+</script>-->
 
 <div id="content">
     <div class="item">{__CONTENT__}</div>

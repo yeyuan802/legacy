@@ -94,8 +94,10 @@
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
+
+                    <li><a href="#"><?php $time=date("Y-m-d H:i"); echo $time ?></a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle " data-toggle="dropdown">admin<b class="caret"></b></a>
+                    <a href="#"  class="dropdown-toggle " data-toggle="dropdown">admin<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="/EPP_Project/legacy/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>前台首页</a></li>
                             <li><a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span>个人设置</a></li>
@@ -111,7 +113,7 @@
 </div>
 
 
-<script>
+<!--<script>
     $(document).ready(function () {
         $(".activemenu li a").each(function () {
             $this=$(this);
@@ -120,80 +122,38 @@
             }
         });
     });
-</script>
+</script>-->
 
 <div id="content">
     <div class="item"><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <style>
-        /*内容编辑*/
-        .data-edit{border:1px solid #ddd;background:#F7F7F7;max-width:550px;padding:20px 40px;}
-        .data-edit label{font-weight:normal;text-align:right;vertical-align:top;}
-        .data-edit label{padding:0 10px;}
-        .data-edit select{min-width:100px;height:26px;}
-        .data-edit .file{font-size:12px;}
-        .data-edit textarea{width:200px;height:150px;}
-        .data-edit input{width:200px;}
-    </style>
+    <title>传承人</title>
 </head>
 <body>
 <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
     <ul class="list-group">
-        <a href="/EPP_Project/legacy/Admin/Travel/index" class="list-group-item ">查看景点</a>
-        <a href="/EPP_Project/legacy/Admin/Travel/add" class="list-group-item active">添加景点</a>
-        <a href="/EPP_Project/legacy/Admin/Travel/search" class="list-group-item">查询景点</a>
+        <a href="/EPP_Project/legacy/Admin/Inheritor/index" class="list-group-item">查看传承人</a>
+        <a href="/EPP_Project/legacy/Admin/Inheritor/add" class="list-group-item">添加传承人</a>
+        <a href="/EPP_Project/legacy/Admin/Inheritor/search" class="list-group-item active">查询传承人</a>
+
     </ul>
 </div>
 <!--右侧主要内容-->
 <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
     <div class="panel panel-default">
         <div class="panel-heading">
-            <h1>景点管理</h1>
+            <h1>传承人管理</h1>
         </div>
         <div class="panel-body">
-            <div class="data-edit" align="center">
-                <form class="form-horizontal" method="post">
-                    <div class="container">
-                        <div class="row form-group" style="padding: 20px 0">
-                            <div class="col-lg-5 col-md-6">
-                                <h3>添加景点</h3>
-                            </div>
-                        </div>
-                        <div class="row form-group">
-                            <label class="control-label col-lg-1" for="placename">景点名称：</label>
-                            <div class="col-lg-5 col-md-6">
-                                <input class="form-control" name="place" id="placename" type="text">
-                            </div>
-                        </div>
-                        <div class="row form-group">
-                            <label class="control-label col-lg-1" for="hticket">景点票价：</label>
-                            <div class="col-lg-5 col-md-6">
-                                <input class="form-control" name="hticket" id="hticket" type="text">
-                            </div>
-                        </div>
-                        <div class="row form-group">
-                            <label class="control-label col-lg-1" for="sticket">景点票数：</label>
-                            <div class="col-lg-5 col-md-6">
-                                <input class="form-control" name="sticket" id="sticket" type="text">
-                            </div>
-                        </div>
-                        <div class="row form-group">
-                            <label class="control-label col-lg-1">景点介绍：</label>
-                            <div class="col-lg-5 col-md-6">
-                                <textarea class="form-control" rows="5" name="introduce"></textarea>
-                            </div>
-                        </div>
-                        <div class="row form-group">
-                            <div class="col-lg-5 col-md-6">
-                                <input class="btn btn-info" type="submit" value="确定" />  <input class="btn btn-info" type="reset" value="重置" />
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
+            <form class="form-inline" role="form" method="get" action="/EPP_Project/legacy/Admin/Inheritor/search_ok">
+                <div class="form-group">
+                    <label class="sr-only" for="name">查询传承人信息</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="查询传承人姓名">
+                </div>
+                <button type="submit" class="btn btn-default">搜索🔍</button>
+            </form>
         </div>
     </div>
 </div>

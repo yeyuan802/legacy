@@ -26,7 +26,6 @@
     <ul class="list-group">
         <a href="__CONTROLLER__/index" class="list-group-item">查看商品</a>
         <a href="__CONTROLLER__/add" class="list-group-item  active">添加商品</a>
-        <a href="__CONTROLLER__/index" class="list-group-item">修改商品</a>
         <a href="__CONTROLLER__/search" class="list-group-item">查询商品</a>
     </ul>
 </div>
@@ -35,45 +34,9 @@
     <div class="panel panel-default">
         <div class="panel-heading">
             <h1>添加商品</h1>
-           <!-- <div class="panel panel-default">
-                <div class="panel-body">
-                    <ul id="myTab" class="nav nav-tabs" role="tablist">
-                        <li>
-                            <a href="#index" role="tab" data-toggle="tab">查看商品</a>
-                        </li>
-                        <li  class="active">
-                            <a href="#add" role="tab" data-toggle="tab">添加商品</a>
-                        </li>
-                        <li>
-                            <a href="#rule" role="tab" data-toggle="tab">修改商品</a>
-                        </li>
-                        <li>
-                            <a href="#rule" role="tab" data-toggle="tab">查询商品</a>
-                        </li>
-                        <li>
-                            <a href="#rule" role="tab" data-toggle="tab">删除商品</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>-->
         </div>
         <div class="panel-body">
             <div class="data-edit" align="center">
-                <!--<form method="post" enctype="multipart/form-data">
-                    <h2>增加商品</h2>
-                    <table>
-                        <tr><th>商品名字：</th><td><input type="text" name="goodname" /></td></tr>
-                        <tr><th>商品价格：</th><td><input type="text" name="price" /></td></tr>
-                        <tr><th>上架时间：</th><td><input type="text" name="time" /></td></tr>
-                        <tr><th>总的数量：</th><td><input type="text" name="total"/></td></tr>
-                        <tr><th>商品标号：</th><td><input type="text" name="biaohao"/></td></tr>
-                        <tr><th>商品产地：</th><td><input type="text" name="place"/></td></tr>
-                        <tr><th>商品图片：</th><td><input type="file" name="picname" class="file" /></td></tr>
-                        <tr class="tr_btn center">
-                            <td colspan="2"><input type="submit" value="确定" /><input type="reset" value="重置" /></td>
-                        </tr>
-                    </table>
-                </form>-->
                 <form class="form-horizontal" method="post" enctype="multipart/form-data">
                     <div class="container">
                         <div class="row form-group" style="padding: 20px 0">
@@ -94,9 +57,12 @@
                             </div>
                         </div>
                         <div class="row form-group">
+                            <?php
+                                        $time=date("Y-m-d H:i:s");
+                             ?>
                             <label class="control-label col-lg-1" for="time">上架时间：</label>
                             <div class="col-lg-5 col-md-6">
-                                <input class="form-control" name="time" id="time" type="text">
+                                <input class="form-control" name="time" id="time" type="text" value="{$time}">
                             </div>
                         </div>
                         <div class="row form-group">

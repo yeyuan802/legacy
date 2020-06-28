@@ -27,32 +27,29 @@
             </div>
             <!--Collect the nav linnks, forms, and other content for toggling-->
             <div class="collapse navbar-collapse navbar-ex1-collapse " id="bs-example-navbar-collapse-1" >
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="/EPP_Project/legacy/Admin/Index/index"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> 首页</a></li>
+                <ul class="nav navbar-nav activemenu ">
+                    <li class=""><a href="/EPP_Project/legacy/Admin/Index/index"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> 首页</a></li>
                     <li class="dropdown">
-                        <a href="/EPP_Project/legacy/Admin/Guest/index" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> 顾客管理<b class="caret"></b></a>
+                        <a href="/EPP_Project/legacy/Admin/Guest/index" class="dropdown-toggle active1" data-toggle="dropdown"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> 顾客管理<b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="/EPP_Project/legacy/Admin/Guest/index">查看顾客信息</a></li>
+                            <li><a href="/EPP_Project/legacy/Admin/Guest/index">查看顾客</a></li>
                             <li><a href="/EPP_Project/legacy/Admin/Guest/searchguest">查询顾客</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="/EPP_Project/legacy/Admin/Goods/index" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> 商品管理<b class="caret"></b></a>
+                        <a href="/EPP_Project/legacy/Admin/Goods/index" class="dropdown-toggle active2" data-toggle="dropdown"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> 商品管理<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="/EPP_Project/legacy/Admin/Goods/index">查看商品</a></li>
                             <li><a href="/EPP_Project/legacy/Admin/Goods/add">添加商品</a></li>
-                            <li><a href="/EPP_Project/legacy/Admin/Goods/index">删除商品</a></li>
-                            <li><a href="/EPP_Project/legacy/Admin/Goods/index">修改商品</a></li>
                             <li><a href="/EPP_Project/legacy/Admin/Goods/search">查询商品</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a href="/EPP_Project/legacy/Admin/Travel/index" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-camera" aria-hidden="true"></span> 旅游管理<b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="/EPP_Project/legacy/Admin/Travel/index">查看旅游景点</a></li>
-                            <li><a href="/EPP_Project/legacy/Admin/Travel/add">增加旅游景点</a></li>
-                            <li><a href="/EPP_Project/legacy/Admin/Travel/search">查询旅游景点</a></li>
-                            <li><a href="/EPP_Project/legacy/Admin/Travel/index">修改旅游景点</a></li>
+                            <li><a href="/EPP_Project/legacy/Admin/Travel/index">查看景点</a></li>
+                            <li><a href="/EPP_Project/legacy/Admin/Travel/add">增加景点</a></li>
+                            <li> <a href="/EPP_Project/legacy/Admin/Travel/search">查询景点</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -63,7 +60,6 @@
                                 <ul class="dropdown-menu">
                                     <li><a href="/EPP_Project/legacy/Admin/Notice/index">查看公告</a></li>
                                     <li><a href="/EPP_Project/legacy/Admin/Notice/add">增加公告</a></li>
-                                    <li><a href="/EPP_Project/legacy/Admin/Notice/revise">修改公告</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown-submenu">
@@ -71,7 +67,6 @@
                                 <ul class="dropdown-menu">
                                     <li><a href="/EPP_Project/legacy/Admin/Dynamic/index">查看动态</a></li>
                                     <li><a href="/EPP_Project/legacy/Admin/Dynamic/add">增加动态</a></li>
-                                    <li><a href="/EPP_Project/legacy/Admin/Dynamic/revise">修改动态</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown-submenu">
@@ -79,8 +74,7 @@
                                 <ul class="dropdown-menu">
                                     <li><a href="/EPP_Project/legacy/Admin/Inheritor/index">查看传承人</a></li>
                                     <li><a href="/EPP_Project/legacy/Admin/Inheritor/add">增加传承人</a></li>
-                                    <li><a href="/EPP_Project/legacy/Admin/Inheritor/delete">删除传承人</a></li>
-                                    <li><a href="/EPP_Project/legacy/Admin/Inheritor/revise">修改传承人</a></li>
+                                    <li><a href="/EPP_Project/legacy/Admin/Inheritor/search">查询传承人</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown-submenu">
@@ -88,8 +82,6 @@
                                 <ul class="dropdown-menu">
                                     <li><a href="/EPP_Project/legacy/Admin/Policy/index">查看政策</a></li>
                                     <li><a href="/EPP_Project/legacy/Admin/Policy/add">增加政策</a></li>
-                                    <li><a href="/EPP_Project/legacy/Admin/Policy/delete">删除政策</a></li>
-                                    <li><a href="/EPP_Project/legacy/Admin/Policy/revise">修改政策</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -102,8 +94,10 @@
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
+
+                    <li><a href="#"><?php $time=date("Y-m-d H:i"); echo $time ?></a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">admin<b class="caret"></b></a>
+                    <a href="#"  class="dropdown-toggle " data-toggle="dropdown">admin<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="/EPP_Project/legacy/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>前台首页</a></li>
                             <li><a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span>个人设置</a></li>
@@ -117,6 +111,19 @@
         </nav>
     </nav>
 </div>
+
+
+<!--<script>
+    $(document).ready(function () {
+        $(".activemenu li a").each(function () {
+            $this=$(this);
+            if($this[0].href==String(window.location)){
+                $this.parent().addClass("active");
+            }
+        });
+    });
+</script>-->
+
 <div id="content">
     <div class="item"><!DOCTYPE html>
 <html lang="en">
@@ -138,8 +145,6 @@
     <ul class="list-group">
         <a href="/EPP_Project/legacy/Admin/Policy/index" class="list-group-item">查看政策</a>
         <a href="/EPP_Project/legacy/Admin/Policy/add" class="list-group-item active">添加政策</a>
-        <a href="/EPP_Project/legacy/Admin/Policy/index" class="list-group-item">修改政策</a>
-        <a href="/EPP_Project/legacy/Admin/Policy/index" class="list-group-item">删除政策</a>
     </ul>
 </div>
 <!--右侧主要内容-->
@@ -155,12 +160,6 @@
                         <div class="row form-group" style="padding: 20px 0">
                             <div class="col-lg-5 col-md-6">
                                 <h3>添加政策</h3>
-                            </div>
-                        </div>
-                        <div class="row form-group">
-                            <label class="control-label col-lg-1" for="time">发布时间：</label>
-                            <div class="col-lg-5 col-md-6">
-                                <input class="form-control" name="time" id="time" type="text">
                             </div>
                         </div>
                         <div class="row form-group">
@@ -185,6 +184,14 @@
                             <label class="control-label col-lg-1">内容：</label>
                             <div class="col-lg-5 col-md-6">
                                 <textarea class="form-control" rows="20" name="content"></textarea>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <?php
+ $time=date("Y-m-d H:i:s"); ?>
+                            <label class="control-label col-lg-1" for="time">发布时间：</label>
+                            <div class="col-lg-5 col-md-6">
+                                <input class="form-control" name="time" id="time" type="text" value="<?php echo ($time); ?>">
                             </div>
                         </div>
 
