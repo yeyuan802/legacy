@@ -23,7 +23,7 @@
                 <tbody>
                 <tr class="bg-primary">
                     <th scope="row"></th>
-                    <td><input type="checkbox">全选</td>
+                    <td><input type="checkbox" id="all">全选</td>
                     <td>商品id</td>
                     <td>商品名称</td>
                     <td>商品类型</td>
@@ -31,6 +31,7 @@
                     <td>商品简介</td>
                     <td>上架时间</td>
                     <td>商品总量</td>
+                    <td>折扣</td>
                     <td>商品产地</td>
                     <td>商品操作</td>
                 </tr>
@@ -42,9 +43,10 @@
                         <td>{$v.goodname}</td>
                         <td>{$v.type}</td>
                         <td>{$v.price}</td>
-                        <td>{$v.introduce}</td>
+                        <td>{$v.introduce|msubstr=0,6}</td>
                         <td>{$v.time}</td>
-                        <td>{$v.title}</td>
+                        <td>{$v.total}</td>
+                        <td>{$v.discount}</td>
                         <td>{$v.place}</td>
                         <td>
                             <a type="button" class="btn btn-primary btn-sm" href="__CONTROLLER__/revise/gid/{$v.gid}">
@@ -72,7 +74,12 @@
         }else {
             $cks.prop("checked","true");
         }
-    })
+    });
+    $("#all").click(function () {
+        var $cks=$("td input[type=checkbox]");
+
+        $cks.prop("checked","true");
+    });
 </script>
 </body>
 </html>

@@ -24,7 +24,7 @@ class GoodsController extends CommonController
         $Page->setConfig('theme','%HEADER% %FIRST% %UP_PAGE% %DOWN_PAGE% %END%');
         $show=$Page->show();
 
-        $list=$model->where($where)->limit($Page->firstRow.','.$Page->listRows)->select();
+        $list=$model->where($where)->order(array('time' => 'desc'))->limit($Page->firstRow.','.$Page->listRows)->select();
         $this->assign('res',$list);
         $this->assign('page',$show);
         $this->display();
@@ -36,8 +36,8 @@ class GoodsController extends CommonController
             if ($rst === false) {
                 $this->error($rst->getError());
             }
-            $id=I('get.id',0, 'int');
-            $this->uploadThumb($id);
+//            $id=I('get.gid',0, 'int');
+//            $this->uploadThumb($id);
 
             $this->success('添加成功', U('Goods/index'));
             //添加成功后查看商品
@@ -84,7 +84,7 @@ class GoodsController extends CommonController
         //删除原来的图片文件
         $this->delImage($gid);
         //保存缩略图
-        $this->where("id=$gid")->save(array(
+        $this->where("gid=$gid")->save(array(
             'thumb'=> $file['save'].$file['name'],
         ));
         return true;

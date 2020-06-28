@@ -46,12 +46,6 @@
                         </div>
                         <foreach name="res" item="v">
                             <div class="row form-group">
-                                <label class="control-label col-lg-1" for="id">商品标号：</label>
-                                <div class="col-lg-5 col-md-6">
-                                    <input class="form-control" name="id" id="id" type="text" value="{$v.gid}">
-                                </div>
-                            </div>
-                            <div class="row form-group">
                                 <label class="control-label col-lg-1" for="goodname">商品名称：</label>
                                 <div class="col-lg-5 col-md-6">
                                     <input class="form-control" name="goodname" id="goodname" type="text" value="{$v.goodname}">
@@ -66,7 +60,7 @@
                             <div class="row form-group">
                                 <label class="control-label col-lg-1" for="introduce">商品介绍：</label>
                                 <div class="col-lg-5 col-md-6">
-                                    <input class="form-control" name="introduce" id="introduce" type="text" value="{$v.place}">
+                                    <input class="form-control" name="introduce" id="introduce" type="text" value="{$v.introduce}">
                                 </div>
                             </div>
                             <div class="row form-group">
@@ -76,9 +70,15 @@
                                 </div>
                             </div>
                             <div class="row form-group">
-                                <label class="control-label col-lg-1" for="total">总量：</label>
+                                <label class="control-label col-lg-1" for="total">剩余数量：</label>
                                 <div class="col-lg-5 col-md-6">
                                     <input class="form-control" name="total" id="total" type="text" value="{$v.total}">
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <label class="control-label col-lg-1" for="discount">折扣：</label>
+                                <div class="col-lg-5 col-md-6">
+                                    <input class="form-control" name="discount" id="discount" type="text" value="{$v.discount}">
                                 </div>
                             </div>
 
