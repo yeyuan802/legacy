@@ -36,7 +36,7 @@
         <div class="row">
             <div class="col-md-2 col-sm-6 col-xs-6">
                 <div class="header-logo">
-                    <a href="index.html">
+                    <a href="<?php echo U('Index/index');?>">
                         <img src="/test/legacy/Public/Home/image/logo/logo.png" alt="">
                     </a>
                 </div>
@@ -55,13 +55,12 @@
             </div>
             <div class="col-md-1 hidden-sm">
                 <div class="header-right">
-                    <ul style="display: flex;display: -webkit-flex">
-                        <li style="width: 60px;position: absolute;top:10px;right: -100%" >
-                            <div id="userinfo">
-                                <?php if(isset($_SESSION['userName'])): ?><h4><img width="25px" height="25px" style="margin-right: 10px;" src="/test/legacy/Public/Home/image/icon/user2.png">当前用户：<?php echo (session('userName')); ?>   <a href="<?php echo U('User/logout');?>">注销</a></h4>
-                                    <?php else: ?>
-                                    <h4><a href="<?php echo U('User/login');?>"><img width="25px" height="25px" src="/test/legacy/Public/Home/image/icon/user1.png">点击登录</a> </h4><?php endif; ?>
-                            </div>
+                    <ul style="width:150px;">
+                        <li>
+                            <a href="<?php echo U('Resource/wishlist');?>"><i class="fa fa-heart-o"></i></a>
+                        </li>
+                        <li>
+                            <a href="<?php echo U('User/login');?>"><i class="flaticon-people"></i></a>
                         </li>
                         <li class="shoping-cart">
                             <a href="#">
@@ -125,6 +124,7 @@
                                 </div>
                             </div>
                         </li>
+
                     </ul>
                 </div>
             </div>
@@ -205,7 +205,7 @@
                         </a>
                         <div class="price" style="color: white;"><span>￥</span><?php echo ($goodsList[6]['price']); ?></div>
                         <div class="banner-bottom text-center">
-                            <a href="#"><?php echo ($goodsList[6]['goodname']); ?></a>
+                            <a href="<?php echo U('Resource/single');?>"><?php echo ($goodsList[6]['goodname']); ?></a>
                         </div>
                     </div>
                 </div>

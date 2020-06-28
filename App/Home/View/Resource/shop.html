@@ -36,7 +36,7 @@
         <div class="row">
             <div class="col-md-2 col-sm-6 col-xs-6">
                 <div class="header-logo">
-                    <a href="index.html">
+                    <a href="{:U('Index/index')}">
                         <img src="__PUBLIC__/Home/image/logo/logo.png" alt="">
                     </a>
                 </div>
@@ -55,15 +55,12 @@
             </div>
             <div class="col-md-1 hidden-sm">
                 <div class="header-right">
-                    <ul style="display: flex;display: -webkit-flex">
-                        <li style="width: 60px;position: absolute;top:10px;right: -100%" >
-                            <div id="userinfo">
-                                <if condition="isset($_SESSION['userName'])">
-                                    <h4><img width="25px" height="25px" style="margin-right: 10px;" src="__PUBLIC__/Home/image/icon/user2.png">当前用户：{$Think.session.userName}   <a href="{:U('User/logout')}">注销</a></h4>
-                                    <else />
-                                    <h4><a href="{:U('User/login')}"><img width="25px" height="25px" src="__PUBLIC__/Home/image/icon/user1.png">点击登录</a> </h4>
-                                </if>
-                            </div>
+                    <ul style="width:150px;">
+                        <li>
+                            <a href="{:U('Resource/wishlist')}"><i class="fa fa-heart-o"></i></a>
+                        </li>
+                        <li>
+                            <a href="{:U('User/login')}"><i class="flaticon-people"></i></a>
                         </li>
                         <li class="shoping-cart">
                             <a href="#">
@@ -127,6 +124,7 @@
                                 </div>
                             </div>
                         </li>
+
                     </ul>
                 </div>
             </div>
