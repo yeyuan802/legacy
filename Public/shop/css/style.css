@@ -1973,7 +1973,7 @@ a.wish-btn {
   padding: 25px 0;
 }
 .wishlist-table-area .t-product-name h3 a {
-  color: #666666;
+  color: #f38c3e;
   font-size: 14px;
   font-weight: normal;
   text-transform: capitalize;
@@ -1998,7 +1998,7 @@ a.wish-btn {
   font-weight: 300;
 }
 .shopingcart-bottom-area a {
-  background: #32b5f3 none repeat scroll 0 0;
+  background: #f38c44 none repeat scroll 0 0;
   border-radius: 20px;
   color: #ffffff;
   display: inline-block;
@@ -2044,7 +2044,7 @@ a.wish-btn {
   padding: 10px 20px;
 }
 .shopingcart-bottom-area a:hover , .subtotal-main-area > a:hover, .discount-middle > a:hover {
-  background: #444444 none repeat scroll 0 0;
+  background: #ffb578 none repeat scroll 0 0;
 }
 .discount-area {
   color: #666666;
@@ -2118,7 +2118,8 @@ a.wish-btn {
   font-weight: 600;
 }
 .product-cart-details > input[type="submit"] {
-  background: #d5d5d5 none repeat scroll 0 0;
+  background: #f39a60 none repeat scroll 0 0;
+  color: white;
   border: 0 none;
   font-weight: 500;
   margin-top: 10px;
@@ -2162,7 +2163,7 @@ a.wish-btn {
   width: 100%;
 }
 .product-cart-details > input[type="submit"]:hover {
-  background: #32b5f3 none repeat scroll 0 0;
+  background: #f3831c none repeat scroll 0 0;
   color: #ffffff;
 }
 /*----------------------------------------*/
