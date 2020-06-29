@@ -39,17 +39,29 @@
                     <li class="dropdown">
                         <a href="/legacy/Admin/Goods/index" class="dropdown-toggle active2" data-toggle="dropdown"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> 商品管理<b class="caret"></b></a>
                         <ul class="dropdown-menu">
+<<<<<<< HEAD
                             <li><a href="/legacy/Admin/Goods/index">查看商品</a></li>
                             <li><a href="/legacy/Admin/Goods/add">添加商品</a></li>
                             <li><a href="/legacy/Admin/Goods/search">查询商品</a></li>
+=======
+                            <li><a href="/EPP_Project/legacy/Admin/Goods/index">查看商品</a></li>
+                            <li><a href="/EPP_Project/legacy/Admin/Goods/add">添加商品</a></li>
+                            <li><a href="/EPP_Project/legacy/Admin/Goods/search">查询商品</a></li>
+>>>>>>> orgin/master
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a href="/legacy/Admin/Travel/index" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-camera" aria-hidden="true"></span> 旅游管理<b class="caret"></b></a>
                         <ul class="dropdown-menu">
+<<<<<<< HEAD
                             <li><a href="/legacy/Admin/Travel/index">查看景点</a></li>
                             <li><a href="/legacy/Admin/Travel/add">增加景点</a></li>
                             <li> <a href="/legacy/Admin/Travel/search">查询景点</a></li>
+=======
+                            <li><a href="/EPP_Project/legacy/Admin/Travel/index">查看景点</a></li>
+                            <li><a href="/EPP_Project/legacy/Admin/Travel/add">增加景点</a></li>
+                            <li> <a href="/EPP_Project/legacy/Admin/Travel/search">查询景点</a></li>
+>>>>>>> orgin/master
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -72,16 +84,27 @@
                             <li class="dropdown-submenu">
                                 <a href="/legacy/Admin/Inheritor/index" class="dropdown-toggle" data-toggle="dropdown">传承人管理</a>
                                 <ul class="dropdown-menu">
+<<<<<<< HEAD
                                     <li><a href="/legacy/Admin/Inheritor/index">查看传承人</a></li>
                                     <li><a href="/legacy/Admin/Inheritor/add">增加传承人</a></li>
                                     <li><a href="/legacy/Admin/Inheritor/search">查询传承人</a></li>
+=======
+                                    <li><a href="/EPP_Project/legacy/Admin/Inheritor/index">查看传承人</a></li>
+                                    <li><a href="/EPP_Project/legacy/Admin/Inheritor/add">增加传承人</a></li>
+                                    <li><a href="/EPP_Project/legacy/Admin/Inheritor/search">查询传承人</a></li>
+>>>>>>> orgin/master
                                 </ul>
                             </li>
                             <li class="dropdown-submenu">
                                 <a href="/legacy/Admin/Inheritor/index" class="dropdown-toggle" data-toggle="dropdown">政策管理</a>
                                 <ul class="dropdown-menu">
+<<<<<<< HEAD
                                     <li><a href="/legacy/Admin/Policy/index">查看政策</a></li>
                                     <li><a href="/legacy/Admin/Policy/add">增加政策</a></li>
+=======
+                                    <li><a href="/EPP_Project/legacy/Admin/Policy/index">查看政策</a></li>
+                                    <li><a href="/EPP_Project/legacy/Admin/Policy/add">增加政策</a></li>
+>>>>>>> orgin/master
                                 </ul>
                             </li>
                         </ul>
@@ -94,8 +117,10 @@
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
+
+                    <li><a href="#"><?php $time=date("Y-m-d H:i"); echo $time ?></a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle " data-toggle="dropdown">admin<b class="caret"></b></a>
+                    <a href="#"  class="dropdown-toggle " data-toggle="dropdown">admin<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="/legacy/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>前台首页</a></li>
                         </ul>
@@ -341,31 +366,6 @@
     </div>
 </section>
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-4">
-            <ul>
-                <p>部分：一内容</p>
-                <p>部分：一内容</p>
-                <p>部分：一内容</p>
-            </ul>
-        </div>
-        <div class="col-md-4">
-            <ul>
-                <p>部分：一内容</p>
-                <p>部分：一内容</p>
-                <p>部分：一内容</p>
-            </ul>
-        </div>
-        <div class="col-md-4">
-            <ul>
-                <p>部分：一内容</p>
-                <p>部分：一内容</p>
-                <p>部分：一内容</p>
-            </ul>
-        </div>
-    </div>
-</div>
 </body>
 </html></div>
 </div>

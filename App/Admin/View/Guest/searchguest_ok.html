@@ -7,7 +7,7 @@
 <body>
 <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
             <ul class="list-group">
-                <a href="__MODULE__/Guest/index" class="list-group-item">查看顾客信息</a>
+                <a href="__MODULE__/Guest/index" class="list-group-item">查看顾客</a>
                 <a href="__MODULE__/Guest/searchguest" class="list-group-item active">查询顾客</a>
             </ul>
         </div>
@@ -33,22 +33,22 @@
                                             <th scope="row"></th>
                                             <td>用户id</td>
                                             <td>昵称</td>
-                                            <td>性别</td>
-                                            <td>qq</td>
-                                            <td>用户积分</td>
-                                            <td>生日</td>
                                             <td>订单</td>
+                                            <td>邮箱</td>
+                                            <td>电话号码</td>
+                                            <td>家庭住址</td>
+                                            <td>注册时间</td>
                                         </tr>
-                                        <foreach name="list" item="res">
-                                            <tr class="bg-danger">
-                                                <th scope="row"></th>
-                                                <td>{$res.id}</td>
-                                                <td>{$res.name}</td>
-                                                <td>{$res.sex}</td>
-                                                <td>{$res.qq}</td>
-                                                <td>{$res.score}</td>
-                                                <td>{$res.birthday}</td>
-                                                <td><a href="__CONTROLLER__/content/id/{$v.id}">查看订单</a></td>
+                                        <foreach name="userdata" item="v">
+                                            <tr class="bg-success">
+                                                <td></td>
+                                                <td>{$v.uid}</td>
+                                                <td>{$v.nickname}</td>
+                                                <td><a href="__CONTROLLER__/order/uid/{$v.uid}">查看订单</a></td>
+                                                <td>{$v.email}</td>
+                                                <td>{$v.phone}</td>
+                                                <td>{$v.address}</td>
+                                                <td>{$v.regdate}</td>
                                             </tr>
                                         </foreach>
                                         </tbody>

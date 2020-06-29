@@ -22,9 +22,15 @@ class TravelController extends CommonController
         $Page->setConfig('theme','%HEADER% %FIRST% %UP_PAGE% %DOWN_PAGE% %END%');
         $show=$Page->show();
 
+<<<<<<< HEAD
         $res=$model->where($where)->order(array('id' => 'desc'))->limit($Page->firstRow.','.$Page->listRows)->select();
         $this->assign('res', $res);
         $this->assign('page', $show);
+=======
+        $list=$model->where($where)->limit($Page->firstRow.','.$Page->listRows)->select();
+        $this->assign('res',$list);
+        $this->assign('page',$show);
+>>>>>>> orgin/master
         $this->display();
 
         /* $model=D('goods');
