@@ -19,11 +19,13 @@
             <h1>旅游管理</h1>
         </div>
         <div class="panel-body">
+            <form action="__CONTROLLER__/delete/id/{$v.id}" method="get">
+<<<<<<< HEAD
             <table class="table table-hover">
                 <tbody>
                 <tr class="bg-primary">
                     <th scope="row"></th>
-                    <th><input type="checkbox">全选</th>
+                    <th><input type="checkbox" id="boxid" onclick="setAllNo()">全选</th>
                     <th>景点名称</th>
                     <th>景点介绍</th>
                     <th>景点票价</th>
@@ -33,9 +35,12 @@
                 <foreach name="res" item="v">
                     <tr class="bg-success">
                         <th scope="row"></th>
-                        <td><input type="checkbox"></td>
+                        <td>
+
+                            <input name='id[]' type="checkbox" value='{$v.id}' class="noborder">
+                        </td>
                         <td>{$v.place}</td>
-                        <td>{$v.introduce}</td>
+                        <td>{$v.introduce|msubstr=0,10}</td>
                         <td>{$v.hticket}</td>
                         <td>{$v.sticket}</td>
                         <td>
@@ -46,8 +51,11 @@
                         </td>
                     </tr>
                 </foreach>
+
                 </tbody>
             </table>
+            <input type="submit" class="btn btn-danger btn-sm" value="批量删除" style="margin-left: 25px;">
+            </form>
             <div class="pagelist" align="right">
                 <?php echo $page; ?>
             </div>
@@ -55,4 +63,34 @@
     </div>
 </div>
 </body>
+<script>
+    function setAllNo(){
+        var box = document.getElementById("boxid");
+        var loves = document.getElementsByName("id[]");
+        if(box.checked == false){
+            for (var i = 0; i < loves.length; i++) {
+                loves[i].checked = false;
+            }
+        }else{
+            for (var i = 0; i < loves.length; i++) {
+                loves[i].checked = true;
+            }
+        }
+    }
+</script>
+<!--<script type="text/javascript">
+    $(".all input[type]").click(function () {
+        var $cks=$("td input[type=checkbox]");
+        if ($cks.is(":checked")){
+            $cks.checked=false;
+        }else {
+            $cks.checked=true;
+        }
+    });
+    $("#all").click(function () {
+        var $cks=$("td input[type=checkbox]");
+        $cks.prop("checked","true");
+    });
+</script>-->
 </html>
+

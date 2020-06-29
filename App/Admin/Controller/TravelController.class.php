@@ -8,26 +8,25 @@ class TravelController extends CommonController
     {
         $model=D('travel');
         $where=array('status'=>'1');
-        $count=$model->where($where)->count();
-        $Page=new \Think\Page($count, 5);
-
-        foreach ($where as $key=>$val){
+        $count=$model->count();
+        $Page=new \Think\Page($count,5);
+        foreach($where as $key=>$val){
             $Page->parameter[$key]=urlencode($val);
         }
-
         $Page->lastSuffix=false;
-        $Page->setConfig('header', '共%TOTAL_PAGE%页，当前是第%NOW_PAGE%页');
-        $Page->setConfig('first', '首页');
-        $Page->setConfig('last', '尾页');
-        $Page->setConfig('prev', '上一页');
-        $Page->setConfig('next', '下一页');
-        $Page->setConfig('theme', '%HEADER% %FIRST% %UP_PAGE% %UP_PAGE% %DOWN_PAGE% %END%');
-
+        $Page->setConfig('header','共%TOTAL_PAGE%页，当前是第%NOW_PAGE%页<br>');
+        $Page->setConfig('first','首页');
+        $Page->setConfig('last','尾页');
+        $Page->setConfig('prev','上一页');
+        $Page->setConfig('next','下一页');
+        $Page->setConfig('theme','%HEADER% %FIRST% %UP_PAGE% %DOWN_PAGE% %END%');
         $show=$Page->show();
 
-        $res=$model->where($where)->limit($Page->firstRow.','.$Page->listRows)->select();
+
+        $res=$model->where($where)->order(array('id' => 'desc'))->limit($Page->firstRow.','.$Page->listRows)->select();
         $this->assign('res', $res);
         $this->assign('page', $show);
+
         $this->display();
 
         /* $model=D('goods');
@@ -47,15 +46,6 @@ class TravelController extends CommonController
         } else {
             $this->display();
         }
-    }
-    public function delete(){
-        $placeid=I('get.id',0, 'int');
-        $model=D('travel');
-        $res=$model->where("id=$placeid")->delete();
-        if ($res===false) {
-            $this->error('删除景点失败');
-        }
-        $this->success('景点删除成功', U('Travel/index'));
     }
 
     public function revise(){
@@ -94,8 +84,22 @@ class TravelController extends CommonController
         $this->assign('res',$data);
         $this->display();
     }
-
-
-
+    public function delete(){
+        $model=D('travel');
+        $id = $_GET['id'];
+        //判断id是数组还是一个数值
+        if(is_array($id)){
+            $where = 'id in('.implode(',',$id).')';
+        }else{
+            $where = 'id='.$id;
+        }
+        //dump($where);
+        $list=$model->where($where)->delete();
+        if($list!==false) {
+            $this->success("成功删除{$list}条！",U('Travel/index'));
+        }else{
+            $this->error('删除失败！');
+        }
+    }
 
 }

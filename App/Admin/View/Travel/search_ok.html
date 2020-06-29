@@ -31,7 +31,7 @@
                 <foreach name="res" item="v">
                     <tr class="bg-success">
                         <td>{$v.place}</td>
-                        <td>{$v.introduce}</td>
+                        <td>{$v.introduce|msubstr=0,10}</td>
                         <td>{$v.hticket}</td>
                         <td>{$v.sticket}</td>
                         <td>

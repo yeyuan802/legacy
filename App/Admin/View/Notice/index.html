@@ -19,10 +19,12 @@
                     <h1>查看公告</h1>
                 </div>
                 <div class="panel-body">
+                    <form action="__CONTROLLER__/delete/id/{$v.id}" method="get">
                     <table class="table table-hover">
                         <tbody>
                             <tr class="bg-primary">
                                 <th scope="row"></th>
+                                <th><input type="checkbox" id="boxid" onclick="setAllNo()">全选</th>
                                 <td>公告id</td>
                                 <td>公告题目</td>
                                 <td>公告内容</td>
@@ -32,6 +34,9 @@
                             <foreach name="list" item="v">
                                 <tr class="bg-success">
                                     <th scope="row"></th>
+                                    <td>
+                                        <input name='id[]' type="checkbox" value='{$v.id}' class="noborder">
+                                    </td>
                                     <td>{$v.id}</td>
                                     <td>{$v.title}</td>
                                     <td><a href="__CONTROLLER__/content/id/{$v.id}">公告详情</a></td>
@@ -48,11 +53,28 @@
                             </foreach>
                         </tbody>
                     </table>
+                        <input type="submit" class="btn btn-danger btn-sm" value="批量删除" style="margin-left: 25px;">
+                    </form>
                     <div class="pagelist" align="right">
                         <?php echo $page; ?>
                     </div>
                 </div>
             </div>
         </div>
+<script>
+    function setAllNo(){
+        var box = document.getElementById("boxid");
+        var loves = document.getElementsByName("id[]");
+        if(box.checked == false){
+            for (var i = 0; i < loves.length; i++) {
+                loves[i].checked = false;
+            }
+        }else{
+            for (var i = 0; i < loves.length; i++) {
+                loves[i].checked = true;
+            }
+        }
+    }
+</script>
 </body>
 </html>

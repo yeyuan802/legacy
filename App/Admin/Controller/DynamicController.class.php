@@ -29,7 +29,8 @@ class DynamicController extends CommonController
         $Page->setConfig('next','下一页');
         $Page->setConfig('theme','%HEADER% %FIRST% %UP_PAGE% %DOWN_PAGE% %END%');
         $show=$Page->show();
-        $list=$model->where($where)->limit($Page->firstRow.','.$Page->listRows)->select();
+
+        $list = $model->where($where)->order(array('id' => 'asc'))->limit($Page->firstRow.','.$Page->listRows)->select();
         $this->assign('list',$list);
         $this->assign('page',$show);
         $this->display();
@@ -78,15 +79,20 @@ class DynamicController extends CommonController
     }
 
     public function delete(){
-        $id=I('get.id');
         $model=D('dynamic');
-        $res=$model->where("id=$id")->delete();
-        if ($res===false) {
-            $this->error('删除失败');
+        $id = $_GET['id'];
+        //判断id是数组还是一个数值
+        if(is_array($id)){
+            $where = 'id in('.implode(',',$id).')';
+        }else{
+            $where = 'id='.$id;
         }
-        $this->success('删除成功', U('Dynamic/index'));
-
-
+        //dump($where);
+        $list=$model->where($where)->delete();
+        if($list!==false) {
+            $this->success("成功删除{$list}条！",U('Dynamic/index'));
+        }else{
+            $this->error('删除失败！');
+        }
     }
-
 }

@@ -72,7 +72,7 @@
                                 <li><a class="" href="<?php echo U('Information/dynamic');?>">动态</a></li>
                             </ul>
                         </li>
-                        <li><a href=""><img width="25px" height="25px" style="margin-top: -8px;" src="/test/legacy/Public/Home/image/icon/school.png">高校合作</a></li>
+                        <li><a href=""><img width="25px" height="25px" style="margin-top: -8px;" src="/test/legacy/Public/Home/image/icon/school.png">非遗视频</a></li>
                         <li><a href="<?php echo U('Message/index');?>"><img width="25px" height="25px" src="/test/legacy/Public/Home/image/icon/message.png">留言板</a></li>
                     </ul>
                     <div class="clearfix"> </div>
