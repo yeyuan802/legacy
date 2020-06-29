@@ -126,27 +126,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>旅游</title>
+    <title>传承人</title>
 </head>
 <body>
 <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
     <ul class="list-group">
-        <a href="/legacy/Admin/Travel/index" class="list-group-item ">查看景点</a>
-        <a href="/legacy/Admin/Travel/add" class="list-group-item">添加景点</a>
-        <a href="/legacy/Admin/Travel/search" class="list-group-item active">查询景点</a>
+        <a href="/legacy/Admin/Inheritor/index" class="list-group-item">查看传承人</a>
+        <a href="/legacy/Admin/Inheritor/add" class="list-group-item">添加传承人</a>
+        <a href="/legacy/Admin/Inheritor/search" class="list-group-item active">查询传承人</a>
+
     </ul>
 </div>
 <!--右侧主要内容-->
 <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
     <div class="panel panel-default">
         <div class="panel-heading">
-            <h1>旅游管理</h1>
+            <h1>传承人管理</h1>
         </div>
         <div class="panel-body">
-            <form class="form-inline" role="form" method="get" action="/legacy/Admin/Travel/search_ok">
+            <form class="form-inline" role="form" method="get" action="/legacy/Admin/Inheritor/search_ok">
                 <div class="form-group">
-                    <label class="sr-only" for="name">查询景点名称</label>
-                    <input type="text" class="form-control" id="name" name="place" placeholder="查询景点名称">
+                    <label class="sr-only" for="name">查询传承人信息</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="查询传承人姓名">
                 </div>
                 <button type="submit" class="btn btn-default">搜索🔍</button>
             </form>

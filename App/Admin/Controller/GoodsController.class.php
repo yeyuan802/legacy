@@ -102,7 +102,7 @@ class GoodsController extends CommonController
 //    }
     public function delete(){
         $model=D('goods');
-        $id = $_GET['id'];
+        $id = $_GET['gid'];
         //判断id是数组还是一个数值
         if(is_array($id)){
             $where = 'gid in('.implode(',',$id).')';

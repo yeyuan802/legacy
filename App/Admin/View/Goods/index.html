@@ -39,7 +39,7 @@
                     <foreach name="res" item="v">
                         <tr class="bg-success">
                             <th scope="row"></th>
-                            <td><input name='id[]' type="checkbox" value='{$v.gid}' class="noborder"></td>
+                            <td><input name='gid[]' type="checkbox" value='{$v.gid}' class="noborder"></td>
                             <td>{$v.gid}</td>
                             <td>{$v.goodname}</td>
                             <td>{$v.type}</td>
@@ -72,7 +72,7 @@
 <script>
     function setAllNo(){
         var box = document.getElementById("boxid");
-        var loves = document.getElementsByName("id[]");
+        var loves = document.getElementsByName("gid[]");
         if(box.checked == false){
             for (var i = 0; i < loves.length; i++) {
                 loves[i].checked = false;

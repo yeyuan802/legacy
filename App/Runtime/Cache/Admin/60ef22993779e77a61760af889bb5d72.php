@@ -126,30 +126,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>旅游</title>
+    <title>Title</title>
 </head>
 <body>
 <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
     <ul class="list-group">
-        <a href="/legacy/Admin/Travel/index" class="list-group-item ">查看景点</a>
-        <a href="/legacy/Admin/Travel/add" class="list-group-item">添加景点</a>
-        <a href="/legacy/Admin/Travel/search" class="list-group-item active">查询景点</a>
+        <a href="/legacy/Admin/Goods/index" class="list-group-item">查看商品</a>
+        <a href="/legacy/Admin/Goods/add" class="list-group-item ">添加商品</a>
+        <a href="/legacy/Admin/Goods/search" class="list-group-item active">查询商品</a>
     </ul>
 </div>
 <!--右侧主要内容-->
 <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
     <div class="panel panel-default">
         <div class="panel-heading">
-            <h1>旅游管理</h1>
+            <h1>商品管理</h1>
+
         </div>
         <div class="panel-body">
-            <form class="form-inline" role="form" method="get" action="/legacy/Admin/Travel/search_ok">
-                <div class="form-group">
-                    <label class="sr-only" for="name">查询景点名称</label>
-                    <input type="text" class="form-control" id="name" name="place" placeholder="查询景点名称">
-                </div>
-                <button type="submit" class="btn btn-default">搜索🔍</button>
-            </form>
+            <table class="table table-hover">
+                <tbody>
+                <tr class="bg-primary">
+                    <th scope="row"></th>
+                    <td><input type="checkbox">全选</td>
+                    <td>商品id</td>
+                    <td>商品名称</td>
+                    <td>商品类型</td>
+                    <td>商品价格</td>
+                    <td>商品简介</td>
+                    <td>上架时间</td>
+                    <td>商品总量</td>
+                    <td>折扣</td>
+                    <td>商品产地</td>
+                    <td>商品操作</td>
+                </tr>
+                <?php if(is_array($res)): foreach($res as $key=>$v): ?><tr class="bg-success">
+                        <th scope="row"></th>
+                        <td><input type="checkbox"></td>
+                        <td><?php echo ($v["gid"]); ?></td>
+                        <td><?php echo ($v["goodname"]); ?></td>
+                        <td><?php echo ($v["type"]); ?></td>
+                        <td><?php echo ($v["price"]); ?></td>
+                        <td><?php echo (msubstr($v["introduce"],0,6)); ?></td>
+                        <td><?php echo ($v["time"]); ?></td>
+                        <td><?php echo ($v["total"]); ?></td>
+                        <td><?php echo ($v["discount"]); ?></td>
+                        <td><?php echo ($v["place"]); ?></td>
+                        <td>
+                            <a type="button" class="btn btn-primary btn-sm" href="/legacy/Admin/Goods/revise/goodname/<?php echo ($v["goodname"]); ?>">
+                                <span class="glyphicon glyphicon-pencil"></span>编辑 </a>
+                            <a type="button" class="btn btn-danger btn-sm" href="/legacy/Admin/Goods/delete/gid/<?php echo ($v["gid"]); ?>">
+                                <span class="glyphicon glyphicon-trash"></span>删除</a>
+                        </td>
+                    </tr><?php endforeach; endif; ?>
+                </tbody>
+            </table>
+
         </div>
     </div>
 </div>
