@@ -19,50 +19,49 @@
             <h1>商品管理</h1>
         </div>
         <div class="panel-body">
-            <table class="table table-hover">
-                <tbody>
-                <tr class="bg-primary">
-                    <th scope="row"></th>
-<<<<<<< HEAD
-                    <td><input type="checkbox" id="all">全选</td>
-=======
-                    <td><input type="checkbox">全选</td>
->>>>>>> orgin/master
-                    <td>商品id</td>
-                    <td>商品名称</td>
-                    <td>商品类型</td>
-                    <td>商品价格</td>
-                    <td>商品简介</td>
-                    <td>上架时间</td>
-                    <td>商品总量</td>
-                    <td>折扣</td>
-                    <td>商品产地</td>
-                    <td>商品操作</td>
-                </tr>
-                <foreach name="res" item="v">
-                    <tr class="bg-success">
+            <form action="__CONTROLLER__/delete/gid/{$v.gid}" method="get">
+                <table class="table table-hover">
+                    <tbody>
+                    <tr class="bg-primary">
                         <th scope="row"></th>
-                        <td><input type="checkbox"></td>
-                        <td>{$v.gid}</td>
-                        <td>{$v.goodname}</td>
-                        <td>{$v.type}</td>
-                        <td>{$v.price}</td>
-                        <td>{$v.introduce|msubstr=0,6}</td>
-                        <td>{$v.time}</td>
-                        <td>{$v.total}</td>
-                        <td>{$v.discount}</td>
-                        <td>{$v.place}</td>
-                        <td>
-                            <a type="button" class="btn btn-primary btn-sm" href="__CONTROLLER__/revise/gid/{$v.gid}">
-                                <span class="glyphicon glyphicon-pencil"></span>编辑 </a>
-                            <a type="button" class="btn btn-danger btn-sm" href="__CONTROLLER__/delete/gid/{$v.gid}">
-                                <span class="glyphicon glyphicon-trash"></span>删除</a>
-                        </td>
+                        <td><input type="checkbox" id="boxid" onclick="setAllNo()">全选</td>
+                        <td>商品id</td>
+                        <td>商品名称</td>
+                        <td>商品类型</td>
+                        <td>商品价格</td>
+                        <td>商品简介</td>
+                        <td>上架时间</td>
+                        <td>商品总量</td>
+                        <td>折扣</td>
+                        <td>商品产地</td>
+                        <td>商品操作</td>
                     </tr>
-                </foreach>
-                </tbody>
-            </table>
+                    <foreach name="res" item="v">
+                        <tr class="bg-success">
+                            <th scope="row"></th>
+                            <td><input name='id[]' type="checkbox" value='{$v.gid}' class="noborder"></td>
+                            <td>{$v.gid}</td>
+                            <td>{$v.goodname}</td>
+                            <td>{$v.type}</td>
+                            <td>{$v.price}</td>
+                            <td>{$v.introduce|msubstr=0,6}</td>
+                            <td>{$v.time}</td>
+                            <td>{$v.total}</td>
+                            <td>{$v.discount}</td>
+                            <td>{$v.place}</td>
+                            <td>
+                                <a type="button" class="btn btn-primary btn-sm" href="__CONTROLLER__/revise/gid/{$v.gid}">
+                                    <span class="glyphicon glyphicon-pencil"></span>编辑 </a>
+                                <a type="button" class="btn btn-danger btn-sm" href="__CONTROLLER__/delete/gid/{$v.gid}">
+                                    <span class="glyphicon glyphicon-trash"></span>删除</a>
+                            </td>
+                        </tr>
+                    </foreach>
+                    </tbody>
 
+                </table>
+                <input type="submit" class="btn btn-danger btn-sm"  value="批量删除" style="margin-left: 25px;">
+            </form>
             <div class="pagelist" align="right">
                 <?php echo $page; ?>
             </div>
@@ -70,20 +69,20 @@
         </div>
     </div>
 </div>
-<script type="text/javascript">
-    $(".all input[type]").click(function () {
-        var $cks=$("td input[type=checkbox]");
-        if ($cks.is(":checked")){
-            $cks.removeAttr("checked");
-        }else {
-            $cks.prop("checked","true");
+<script>
+    function setAllNo(){
+        var box = document.getElementById("boxid");
+        var loves = document.getElementsByName("id[]");
+        if(box.checked == false){
+            for (var i = 0; i < loves.length; i++) {
+                loves[i].checked = false;
+            }
+        }else{
+            for (var i = 0; i < loves.length; i++) {
+                loves[i].checked = true;
+            }
         }
-    });
-    $("#all").click(function () {
-        var $cks=$("td input[type=checkbox]");
-
-        $cks.prop("checked","true");
-    });
+    }
 </script>
 </body>
 </html>
