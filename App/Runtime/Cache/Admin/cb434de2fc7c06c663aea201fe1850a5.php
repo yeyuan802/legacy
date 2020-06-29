@@ -100,9 +100,6 @@
                     <a href="#"  class="dropdown-toggle " data-toggle="dropdown">admin<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="/EPP_Project/legacy/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>前台首页</a></li>
-                            <li><a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span>个人设置</a></li>
-                            <li><a href="#"><span class="glyphicon glyphicon-credit-card" aria-hidden="true"></span>账户中心</a></li>
-                            <li><a href="#"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span>我的收藏</a></li>
                         </ul>
                     </li>
                     <li><a href="/EPP_Project/legacy/Admin/Login/logout"><span class="glyphicon glyphicon-off" aria-hidden="true"></span>退出</a></li>
@@ -155,9 +152,11 @@
                             <div id="myTabContent" class="tab-content">
                                 <div class="tab-pane active" id="bulletin">
                                     <table class="table table-hover">
+                                        <form action="/EPP_Project/legacy/Admin/Dynamic/delete/id/<?php echo ($v["id"]); ?>" method="get">
                                         <tbody>
                                         <tr class="bg-primary">
                                             <th scope="row"></th>
+                                            <th><input type="checkbox" id="boxid" onclick="setAllNo()">全选</th>
                                             <td>id</td>
                                             <td>动态题目</td>
                                             <td>动态内容</td>
@@ -167,6 +166,9 @@
                                         </tr>
                                         <?php if(is_array($list)): foreach($list as $key=>$v): ?><tr class="bg-success">
                                                 <th scope="row"></th>
+                                                <td>
+                                                    <input name='id[]' type="checkbox" value='<?php echo ($v["id"]); ?>' class="noborder">
+                                                </td>
                                                 <td><?php echo ($v["id"]); ?></td>
                                                 <td><?php echo ($v["title"]); ?></td>
                                                 <td><a href="/EPP_Project/legacy/Admin/Dynamic/content/id/<?php echo ($v["id"]); ?>">查看详情</a></td>
@@ -181,6 +183,8 @@
                                             </tr><?php endforeach; endif; ?>
                                         </tbody>
                                     </table>
+                                    <input type="submit" class="btn btn-danger btn-sm" value="批量删除" style="margin-left: 25px;">
+                                    </form>
                                     <table>
                                         <nav class="pull-right">
                                             <ul class="pagination">
@@ -195,6 +199,21 @@
                 </div>
             </div>
         </div>
+        <script>
+            function setAllNo(){
+                var box = document.getElementById("boxid");
+                var loves = document.getElementsByName("id[]");
+                if(box.checked == false){
+                    for (var i = 0; i < loves.length; i++) {
+                        loves[i].checked = false;
+                    }
+                }else{
+                    for (var i = 0; i < loves.length; i++) {
+                        loves[i].checked = true;
+                    }
+                }
+            }
+        </script>
 </body>
 </html></div>
 </div>
