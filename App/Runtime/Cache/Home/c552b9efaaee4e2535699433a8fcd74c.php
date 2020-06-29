@@ -11,15 +11,15 @@
         function checkStr(){
             var Search = document.getElementById('search').value;
             var len = Search.length;
-            if(len>20){
-                alert("搜索内容不能多于20字符！");
+            if(len>40){
+                alert("搜索内容不能多于20字！");
             }
         }
         function check() {
             var Search = document.getElementById('search').value;
             var len = Search.length;
-            if(len>20){
-                alert("您当前输入超过了20个字符！");
+            if(len>40){
+                alert("您当前输入超过了20个字！");
                 return false;
             }else{
                 return true;

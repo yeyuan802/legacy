@@ -44,21 +44,13 @@ class InheritorController extends CommonController
     }
     //删除传承人
     public function delete(){
+        $id=I('get.id',0, 'int');
         $model=D('inheritor');
-        $id = $_GET['id'];
-        //判断id是数组还是一个数值
-        if(is_array($id)){
-            $where = 'id in('.implode(',',$id).')';
-        }else{
-            $where = 'id='.$id;
+        $res=$model->where("id=$id")->delete();
+        if ($res===false) {
+            $this->error('删除传承人失败');
         }
-        //dump($where);
-        $list=$model->where($where)->delete();
-        if($list!==false) {
-            $this->success("成功删除{$list}条！",U('Inheritor/index'));
-        }else{
-            $this->error('删除失败！');
-        }
+        $this->success('传承人删除成功', U('Inheritor/index'));
     }
 
     public function content(){

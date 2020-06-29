@@ -39,29 +39,20 @@
                     <li class="dropdown">
                         <a href="/EPP_Project/legacy/Admin/Goods/index" class="dropdown-toggle active2" data-toggle="dropdown"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> 商品管理<b class="caret"></b></a>
                         <ul class="dropdown-menu">
-<<<<<<< HEAD
                             <li><a href="/EPP_Project/legacy/Admin/Goods/index">查看商品</a></li>
                             <li><a href="/EPP_Project/legacy/Admin/Goods/add">添加商品</a></li>
+                            <li><a href="/EPP_Project/legacy/Admin/Goods/index">删除商品</a></li>
+                            <li><a href="/EPP_Project/legacy/Admin/Goods/index">修改商品</a></li>
                             <li><a href="/EPP_Project/legacy/Admin/Goods/search">查询商品</a></li>
-=======
-                            <li><a href="/legacy/Admin/Goods/index">查看商品</a></li>
-                            <li><a href="/legacy/Admin/Goods/add">添加商品</a></li>
-                            <li><a href="/legacy/Admin/Goods/search">查询商品</a></li>
->>>>>>> orign/master
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a href="/EPP_Project/legacy/Admin/Travel/index" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-camera" aria-hidden="true"></span> 旅游管理<b class="caret"></b></a>
                         <ul class="dropdown-menu">
-<<<<<<< HEAD
-                            <li><a href="/EPP_Project/legacy/Admin/Travel/index">查看景点</a></li>
-                            <li><a href="/EPP_Project/legacy/Admin/Travel/add">增加景点</a></li>
-                            <li> <a href="/EPP_Project/legacy/Admin/Travel/search">查询景点</a></li>
-=======
-                            <li><a href="/legacy/Admin/Travel/index">查看景点</a></li>
-                            <li><a href="/legacy/Admin/Travel/add">增加景点</a></li>
-                            <li> <a href="/legacy/Admin/Travel/search">查询景点</a></li>
->>>>>>> orign/master
+                            <li><a href="/EPP_Project/legacy/Admin/Travel/index">查看旅游景点</a></li>
+                            <li><a href="/EPP_Project/legacy/Admin/Travel/add">增加旅游景点</a></li>
+                            <li><a href="/EPP_Project/legacy/Admin/Travel/search">查询旅游景点</a></li>
+                            <li><a href="/EPP_Project/legacy/Admin/Travel/index">修改旅游景点</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -84,27 +75,19 @@
                             <li class="dropdown-submenu">
                                 <a href="/EPP_Project/legacy/Admin/Inheritor/index" class="dropdown-toggle" data-toggle="dropdown">传承人管理</a>
                                 <ul class="dropdown-menu">
-<<<<<<< HEAD
                                     <li><a href="/EPP_Project/legacy/Admin/Inheritor/index">查看传承人</a></li>
                                     <li><a href="/EPP_Project/legacy/Admin/Inheritor/add">增加传承人</a></li>
-                                    <li><a href="/EPP_Project/legacy/Admin/Inheritor/search">查询传承人</a></li>
-=======
-                                    <li><a href="/legacy/Admin/Inheritor/index">查看传承人</a></li>
-                                    <li><a href="/legacy/Admin/Inheritor/add">增加传承人</a></li>
-                                    <li><a href="/legacy/Admin/Inheritor/search">查询传承人</a></li>
->>>>>>> orign/master
+                                    <li><a href="/EPP_Project/legacy/Admin/Inheritor/delete">删除传承人</a></li>
+                                    <li><a href="/EPP_Project/legacy/Admin/Inheritor/revise">修改传承人</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown-submenu">
                                 <a href="/EPP_Project/legacy/Admin/Inheritor/index" class="dropdown-toggle" data-toggle="dropdown">政策管理</a>
                                 <ul class="dropdown-menu">
-<<<<<<< HEAD
                                     <li><a href="/EPP_Project/legacy/Admin/Policy/index">查看政策</a></li>
                                     <li><a href="/EPP_Project/legacy/Admin/Policy/add">增加政策</a></li>
-=======
-                                    <li><a href="/legacy/Admin/Policy/index">查看政策</a></li>
-                                    <li><a href="/legacy/Admin/Policy/add">增加政策</a></li>
->>>>>>> orign/master
+                                    <li><a href="/EPP_Project/legacy/Admin/Policy/delete">删除政策</a></li>
+                                    <li><a href="/EPP_Project/legacy/Admin/Policy/revise">修改政策</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -117,12 +100,13 @@
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-
-                    <li><a href="#"><?php $time=date("Y-m-d H:i"); echo $time ?></a></li>
                     <li class="dropdown">
-                    <a href="#"  class="dropdown-toggle " data-toggle="dropdown">admin<b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle " data-toggle="dropdown">admin<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="/EPP_Project/legacy/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>前台首页</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span>个人设置</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-credit-card" aria-hidden="true"></span>账户中心</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span>我的收藏</a></li>
                         </ul>
                     </li>
                     <li><a href="/EPP_Project/legacy/Admin/Login/logout"><span class="glyphicon glyphicon-off" aria-hidden="true"></span>退出</a></li>
@@ -133,7 +117,7 @@
 </div>
 
 
-<!--<script>
+<script>
     $(document).ready(function () {
         $(".activemenu li a").each(function () {
             $this=$(this);
@@ -142,7 +126,7 @@
             }
         });
     });
-</script>-->
+</script>
 
 <div id="content">
     <div class="item"><!DOCTYPE html>
@@ -154,15 +138,10 @@
 <body>
 <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
     <ul class="list-group">
-<<<<<<< HEAD
         <a href="/EPP_Project/legacy/Admin/Travel/index" class="list-group-item active">查看景点</a>
         <a href="/EPP_Project/legacy/Admin/Travel/add" class="list-group-item">添加景点</a>
+        <a href="/EPP_Project/legacy/Admin/Travel/revise" class="list-group-item">修改景点</a>
         <a href="/EPP_Project/legacy/Admin/Travel/search" class="list-group-item">查询景点</a>
-=======
-        <a href="/legacy/Admin/Travel/index" class="list-group-item active">查看景点</a>
-        <a href="/legacy/Admin/Travel/add" class="list-group-item">添加景点</a>
-        <a href="/legacy/Admin/Travel/search" class="list-group-item">查询景点</a>
->>>>>>> orign/master
     </ul>
 </div>
 <!--右侧主要内容-->
@@ -172,13 +151,11 @@
             <h1>旅游管理</h1>
         </div>
         <div class="panel-body">
-<<<<<<< HEAD
-            <form action="/EPP_Project/legacy/Admin/Travel/delete/id/<?php echo ($v["id"]); ?>" method="get">
             <table class="table table-hover">
                 <tbody>
                 <tr class="bg-primary">
                     <th scope="row"></th>
-                    <th><input type="checkbox" id="boxid" onclick="setAllNo()">全选</th>
+                    <th><input type="checkbox">全选</th>
                     <th>景点名称</th>
                     <th>景点介绍</th>
                     <th>景点票价</th>
@@ -187,12 +164,9 @@
                 </tr>
                 <?php if(is_array($res)): foreach($res as $key=>$v): ?><tr class="bg-success">
                         <th scope="row"></th>
-                        <td>
-
-                            <input name='id[]' type="checkbox" value='<?php echo ($v["id"]); ?>' class="noborder">
-                        </td>
+                        <td><input type="checkbox"></td>
                         <td><?php echo ($v["place"]); ?></td>
-                        <td><?php echo (msubstr($v["introduce"],0,10)); ?></td>
+                        <td><?php echo ($v["introduce"]); ?></td>
                         <td><?php echo ($v["hticket"]); ?></td>
                         <td><?php echo ($v["sticket"]); ?></td>
                         <td>
@@ -202,46 +176,8 @@
                                 <span class="glyphicon glyphicon-trash"></span>删除</a>
                         </td>
                     </tr><?php endforeach; endif; ?>
-
                 </tbody>
             </table>
-            <input type="submit" class="btn btn-danger btn-sm" value="批量删除" style="margin-left: 25px;">
-=======
-            <form action="/legacy/Admin/Travel/delete/id/<?php echo ($v["id"]); ?>" method="get">
-                <table class="table table-hover">
-                    <tbody>
-                    <tr class="bg-primary">
-                        <th scope="row"></th>
-                        <th><input type="checkbox" id="boxid" onclick="setAllNo()">全选</th>
-                        <th>景点名称</th>
-                        <th>景点介绍</th>
-                        <th>景点票价</th>
-                        <th>景点票数</th>
-                        <th>操作</th>
-                    </tr>
-                    <?php if(is_array($res)): foreach($res as $key=>$v): ?><tr class="bg-success">
-                            <th scope="row"></th>
-                            <td>
-
-                                <input name='id[]' type="checkbox" value='<?php echo ($v["id"]); ?>' class="noborder">
-                            </td>
-                            <td><?php echo ($v["place"]); ?></td>
-                            <td><?php echo (msubstr($v["introduce"],0,10)); ?></td>
-                            <td><?php echo ($v["hticket"]); ?></td>
-                            <td><?php echo ($v["sticket"]); ?></td>
-                            <td>
-                                <a type="button" class="btn btn-primary btn-sm" href="/legacy/Admin/Travel/revise/id/<?php echo ($v["id"]); ?>">
-                                    <span class="glyphicon glyphicon-pencil"></span>编辑 </a>
-                                <a type="button" class="btn btn-danger btn-sm" href="/legacy/Admin/Travel/delete/id/<?php echo ($v["id"]); ?>">
-                                    <span class="glyphicon glyphicon-trash"></span>删除</a>
-                            </td>
-                        </tr><?php endforeach; endif; ?>
-
-                    </tbody>
-                </table>
-                <input type="submit" class="btn btn-danger btn-sm"  value="批量删除" style="margin-left: 25px;">
->>>>>>> orign/master
-            </form>
             <div class="pagelist" align="right">
                 <?php echo $page; ?>
             </div>
@@ -249,41 +185,7 @@
     </div>
 </div>
 </body>
-<script>
-    function setAllNo(){
-        var box = document.getElementById("boxid");
-        var loves = document.getElementsByName("id[]");
-        if(box.checked == false){
-            for (var i = 0; i < loves.length; i++) {
-                loves[i].checked = false;
-            }
-        }else{
-            for (var i = 0; i < loves.length; i++) {
-                loves[i].checked = true;
-            }
-        }
-    }
-</script>
-<!--<script type="text/javascript">
-    $(".all input[type]").click(function () {
-        var $cks=$("td input[type=checkbox]");
-        if ($cks.is(":checked")){
-            $cks.checked=false;
-        }else {
-            $cks.checked=true;
-        }
-    });
-    $("#all").click(function () {
-        var $cks=$("td input[type=checkbox]");
-        $cks.prop("checked","true");
-    });
-</script>-->
-<<<<<<< HEAD
-</html>
-</div>
-=======
 </html></div>
->>>>>>> orign/master
 </div>
 
 </body>

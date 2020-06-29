@@ -11,15 +11,15 @@
         function checkStr(){
             var Search = document.getElementById('search').value;
             var len = Search.length;
-            if(len>20){
-                alert("搜索内容不能多于20字符！");
+            if(len>40){
+                alert("搜索内容不能多于20字！");
             }
         }
         function check() {
             var Search = document.getElementById('search').value;
             var len = Search.length;
-            if(len>20){
-                alert("您当前输入超过了20个字符！");
+            if(len>40){
+                alert("您当前输入超过了20个字！");
                 return false;
             }else{
                 return true;
@@ -74,7 +74,7 @@
                                 <li><a class="" href="{:U('Information/dynamic')}">动态</a></li>
                             </ul>
                         </li>
-                        <li><a href=""><img width="25px" height="25px" style="margin-top: -8px;" src="__PUBLIC__/Home/image/icon/school.png">高校合作</a></li>
+                        <li><a href=""><img width="25px" height="25px" style="margin-top: -8px;" src="__PUBLIC__/Home/image/icon/school.png">非遗视频</a></li>
                         <li><a href="{:U('Message/index')}"><img width="25px" height="25px" src="__PUBLIC__/Home/image/icon/message.png">留言板</a></li>
                     </ul>
                     <div class="clearfix"> </div>
@@ -83,7 +83,7 @@
         </div>
         <form class="navbar-form navbar-right" method="post" action="{:U('Resource/search')}" role="search">
             <div class="form-group">
-                <input type="text" name="search" id="search" onkeyup="checkStr()" class="form-control" placeholder="请输入非遗名录名称" required>
+                <input type="text" name="search" id="search" onkeyup="checkStr()" class="form-control" placeholder="请输入想要查询的名录" required>
             </div>
             <button type="submit" onclick="check()" class="btn btn-default">搜索</button>
             <div id="city-button" onclick="cityDisplay()" class="btn btn-default">区县</div>

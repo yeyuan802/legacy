@@ -1,1 +1,17 @@
-<h3>这里是搜索界面</h3>
+<div class="container" style="background-color: white;padding:20px;box-sizing: border-box;margin-top:30px">
+    <div class="row list-box">
+        <if condition="$searchResult neq null">
+            <div class="col-xs-12 col-sm-5 col-md-5  col-lg-4 list-pic">
+                <img class="intro-pic" src="__PUBLIC__/Home/image/minglu/{$searchResult[0].name}.jpg">
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 list-intro">
+                <div class="intro-box">
+                    <h3 class="page-header">{$searchResult[0].name} | 简介</h3>
+                    <p>&emsp;{$searchResult[0].introduce|msubstr=###,0,400,'utf-8'}</p>
+                </div>
+            </div>
+            <else/>
+            <p style="display: block;width:100%;margin-top:30px;margin-bottom: 30px;text-align: center">您搜索的名录不存在！</p>
+        </if>
+    </div>
+</div>

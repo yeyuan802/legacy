@@ -1,28 +1,28 @@
-{__NOLAYOUT__}<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <head>
     <title>非遗商城</title>
-    <link rel="stylesheet" href="__PUBLIC__/shop/css/animate.css">
-    <link rel="stylesheet" href="__PUBLIC__/shop/css/jquery-ui.min.css">
-    <link rel="stylesheet" href="__PUBLIC__/shop/css/meanmenu.min.css">
-    <link href="__PUBLIC__/bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="__PUBLIC__/shop/css/font-awesome.css">
-    <link rel="stylesheet" href="__PUBLIC__/shop/css/pe-icon-7-stroke.css">
-    <link rel="stylesheet" href="__PUBLIC__/shop/css/flaticon.css">
+    <link rel="stylesheet" href="/test/legacy/Public/shop/css/animate.css">
+    <link rel="stylesheet" href="/test/legacy/Public/shop/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="/test/legacy/Public/shop/css/meanmenu.min.css">
+    <link href="/test/legacy/Public/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="/test/legacy/Public/shop/css/font-awesome.css">
+    <link rel="stylesheet" href="/test/legacy/Public/shop/css/pe-icon-7-stroke.css">
+    <link rel="stylesheet" href="/test/legacy/Public/shop/css/flaticon.css">
 
 
     <!-- venobox css -->
-    <link rel="stylesheet" href="__PUBLIC__/shop/venobox/venobox.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/test/legacy/Public/shop/venobox/venobox.css" type="text/css" media="screen" />
     <!-- nivo slider css -->
-    <link rel="stylesheet" href="__PUBLIC__/shop/lib/css/nivo-slider.css" type="text/css" />
-    <link rel="stylesheet" href="__PUBLIC__/shop/lib/css/preview.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/test/legacy/Public/shop/lib/css/nivo-slider.css" type="text/css" />
+    <link rel="stylesheet" href="/test/legacy/Public/shop/lib/css/preview.css" type="text/css" media="screen" />
     <!-- owl.carousel css -->
-    <link rel="stylesheet" href="__PUBLIC__/shop/css/owl.carousel.css">
+    <link rel="stylesheet" href="/test/legacy/Public/shop/css/owl.carousel.css">
     <!-- style css -->
-    <link rel="stylesheet" href="__PUBLIC__/shop/css/style.css">
+    <link rel="stylesheet" href="/test/legacy/Public/shop/css/style.css">
     <!-- responsive css -->
-    <link rel="stylesheet" href="__PUBLIC__/shop/css/responsive.css">
+    <link rel="stylesheet" href="/test/legacy/Public/shop/css/responsive.css">
     <!-- modernizr css -->
-    <script src="__PUBLIC__/shop/js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="/test/legacy/Public/shop/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 
 
@@ -36,8 +36,8 @@
         <div class="row">
             <div class="col-md-2 col-sm-6 col-xs-6">
                 <div class="header-logo">
-                    <a href="{:U('Index/index')}">
-                        <img src="__PUBLIC__/Home/image/logo/logo.png" alt="">
+                    <a href="<?php echo U('Index/index');?>">
+                        <img src="/test/legacy/Public/Home/image/logo/logo.png" alt="">
                     </a>
                 </div>
             </div>
@@ -57,10 +57,10 @@
                 <div class="header-right">
                     <ul style="width:150px;">
                         <li>
-                            <a href="{:U('Resource/wishlist')}"><i class="fa fa-heart-o"></i></a>
+                            <a href="<?php echo U('Resource/wishlist');?>"><i class="fa fa-heart-o"></i></a>
                         </li>
                         <li>
-                            <a href="{:U('User/login')}"><i class="flaticon-people"></i></a>
+                            <a href="<?php echo U('User/login');?>"><i class="flaticon-people"></i></a>
                         </li>
                         <li class="shoping-cart">
                             <a href="#">
@@ -71,7 +71,7 @@
                                 <div class="cart-product">
                                     <div class="cart-product-image">
                                         <a href="single-product.html">
-                                            <img src="__PUBLIC__/shop/img/featured/1.jpg" alt="">
+                                            <img src="/test/legacy/Public/shop/img/featured/1.jpg" alt="">
                                         </a>
                                     </div>
                                     <div class="cart-product-info">
@@ -90,7 +90,7 @@
                                 <div class="cart-product">
                                     <div class="cart-product-image">
                                         <a href="single-product.html">
-                                            <img src="__PUBLIC__/shop/img/featured/1.jpg" alt="">
+                                            <img src="/test/legacy/Public/shop/img/featured/1.jpg" alt="">
                                         </a>
                                     </div>
                                     <div class="cart-product-info">
@@ -141,17 +141,17 @@
                     <!-- Tab panes -->
                     <div class="tab-content">
                         <div role="tabpanel" class="tab-pane active" id="one">
-                            <a class="venobox" href="__PUBLIC__/shop/img/single-product/{$sList['goodname']}.jpg" data-gall="gallery" title="">
-                                <img src="__PUBLIC__/shop/img/single-product/{$sList['goodname']}.jpg" alt="">
+                            <a class="venobox" href="/test/legacy/Public/shop/img/single-product/<?php echo ($sList['goodname']); ?>.jpg" data-gall="gallery" title="">
+                                <img src="/test/legacy/Public/shop/img/single-product/<?php echo ($sList['goodname']); ?>.jpg" alt="">
                             </a>
                         </div>
 
                     </div>
                     <!-- Nav tabs -->
                     <ul class="product-tabs" role="tablist">
-                        <li role="presentation" class="active"><a href="#one" aria-controls="one" role="tab" data-toggle="tab"><img src="__PUBLIC__/shop/img/single-little/{$sList['goodname']}.jpg" alt=""></a></li>
-                        <li role="presentation"><a href="#two" aria-controls="two" role="tab" data-toggle="tab"><img src="__PUBLIC__/shop/img/single-little/{$sList['goodname']}.jpg" alt=""></a></li>
-                        <li role="presentation"><a href="#three" aria-controls="three" role="tab" data-toggle="tab"><img src="__PUBLIC__/shop/img/single-little/{$sList['goodname']}.jpg" alt=""></a></li>
+                        <li role="presentation" class="active"><a href="#one" aria-controls="one" role="tab" data-toggle="tab"><img src="/test/legacy/Public/shop/img/single-little/<?php echo ($sList['goodname']); ?>.jpg" alt=""></a></li>
+                        <li role="presentation"><a href="#two" aria-controls="two" role="tab" data-toggle="tab"><img src="/test/legacy/Public/shop/img/single-little/<?php echo ($sList['goodname']); ?>.jpg" alt=""></a></li>
+                        <li role="presentation"><a href="#three" aria-controls="three" role="tab" data-toggle="tab"><img src="/test/legacy/Public/shop/img/single-little/<?php echo ($sList['goodname']); ?>.jpg" alt=""></a></li>
                     </ul>
                 </div>
             </div>
@@ -164,19 +164,17 @@
                         <i class="fa fa-star icolor"></i>
                         <i class="fa fa-star"></i>
                     </div>
-                    <h2>{$sList['goodname']}</h2>
+                    <h2><?php echo ($sList['goodname']); ?></h2>
                     <div class="availability">
                         <span>
-                            <if condition="$sList['status'] eq 1">
-                                在售
-                            <else />
-                                暂未销售
-                            </if>
+                            <?php if($sList['status'] == 1): ?>在售
+                            <?php else: ?>
+                                暂未销售<?php endif; ?>
                         </span>
                     </div>
-                    <p>{$sList['introduce']}</p>
+                    <p><?php echo ($sList['introduce']); ?></p>
                     <div class="single-product-price">
-                        <h2>￥{$sList['price']}</h2>
+                        <h2>￥<?php echo ($sList['price']); ?></h2>
                     </div>
                     <div class="product-attributes clearfix">
                                 <span class="pull-left" id="quantity-wanted-p">
@@ -228,26 +226,24 @@
                     <div class="clearfix"></div>
                     <div class="tab-content review">
                         <div role="tabpanel" class="tab-pane active" id="more-info">
-                            <p>{$sList['introduce']}</p>
+                            <p><?php echo ($sList['introduce']); ?></p>
                         </div>
                         <div role="tabpanel" class="tab-pane" id="data">
                             <table class="table-data-sheet">
                                 <tbody>
                                 <tr class="odd">
                                     <td>类型</td>
-                                    <td><if condition="$sList['type'] eq food">
-                                        食品
-                                        <else />
-                                        工艺品
-                                    </if></td>
+                                    <td><?php if($sList['type'] == food): ?>食品
+                                        <?php else: ?>
+                                        工艺品<?php endif; ?></td>
                                 </tr>
                                 <tr class="even">
                                     <td>剩余数量</td>
-                                    <td>{$sList['total']}</td>
+                                    <td><?php echo ($sList['total']); ?></td>
                                 </tr>
                                 <tr class="odd">
                                     <td>上架时间</td>
-                                    <td>{$sList['time']}</td>
+                                    <td><?php echo ($sList['time']); ?></td>
                                 </tr>
                                 </tbody>
                             </table>
@@ -276,32 +272,32 @@
 <!-- jquery latest version -->
 <script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
 <!-- bootstrap js -->
-<script src="__PUBLIC__/shop/js/bootstrap.min.js"></script>
+<script src="/test/legacy/Public/shop/js/bootstrap.min.js"></script>
 <!-- owl.carousel js -->
-<script src="__PUBLIC__/shop/js/owl.carousel.min.js"></script>
+<script src="/test/legacy/Public/shop/js/owl.carousel.min.js"></script>
 <!-- jquery-ui js -->
-<script src="__PUBLIC__/shop/js/jquery-ui.min.js"></script>
+<script src="/test/legacy/Public/shop/js/jquery-ui.min.js"></script>
 <!-- jquery Counterup js -->
-<script src="__PUBLIC__/shop/js/jquery.counterup.min.js"></script>
-<script src="__PUBLIC__/shop/js/waypoints.min.js"></script>
+<script src="/test/legacy/Public/shop/js/jquery.counterup.min.js"></script>
+<script src="/test/legacy/Public/shop/js/waypoints.min.js"></script>
 <!-- jquery countdown js -->
-<script src="__PUBLIC__/shop/js/jquery.countdown.min.js"></script>
+<script src="/test/legacy/Public/shop/js/jquery.countdown.min.js"></script>
 <!-- jquery countdown js -->
-<script type="text/javascript" src="__PUBLIC__/shop/venobox/venobox.min.js"></script>
+<script type="text/javascript" src="/test/legacy/Public/shop/venobox/venobox.min.js"></script>
 <!-- jquery Meanmenu js -->
-<script src="__PUBLIC__/shop/js/jquery.meanmenu.js"></script>
+<script src="/test/legacy/Public/shop/js/jquery.meanmenu.js"></script>
 <!-- wow js -->
-<script src="__PUBLIC__/shop/js/wow.min.js"></script>
+<script src="/test/legacy/Public/shop/js/wow.min.js"></script>
 <script>
     new WOW().init();
 </script>
 <!-- scrollUp JS -->
-<script src="__PUBLIC__/shop/js/jquery.scrollUp.min.js"></script>
+<script src="/test/legacy/Public/shop/js/jquery.scrollUp.min.js"></script>
 <!-- plugins js -->
-<script src="__PUBLIC__/shop/js/plugins.js"></script>
+<script src="/test/legacy/Public/shop/js/plugins.js"></script>
 <!-- Nivo slider js -->
-<script src="__PUBLIC__/shop/lib/js/jquery.nivo.slider.js" type="text/javascript"></script>
-<script src="__PUBLIC__/shop/lib/home.js" type="text/javascript"></script>
+<script src="/test/legacy/Public/shop/lib/js/jquery.nivo.slider.js" type="text/javascript"></script>
+<script src="/test/legacy/Public/shop/lib/home.js" type="text/javascript"></script>
 <!-- main js -->
-<script src="__PUBLIC__/shop/js/main.js"></script>
+<script src="/test/legacy/Public/shop/js/main.js"></script>
 </body>

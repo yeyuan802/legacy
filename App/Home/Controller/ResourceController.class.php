@@ -40,6 +40,7 @@ class ResourceController extends Controller
         $typeList = $director->where($map)->order(array('Did' => "asc"))->select();
 
         $this->assign('typeList',$typeList);
+        $this->country();
         $this->display;
     }
 
@@ -52,6 +53,11 @@ class ResourceController extends Controller
     }
 
     public function single(){
+        $gid = I('get.gid',0);
+        $goods=D("goods");
+        $map['gid'] = $gid;
+        $singleSearch = $goods->where($map)->find();
+        $this->assign('sList',$singleSearch);
         $this->display();
     }
 
@@ -60,8 +66,11 @@ class ResourceController extends Controller
     }
 
     public function search(){
-        $search = I('post.search');
-
+        $search = I('post.search','','trim');
+        $dir= D("director");
+        $map['name'] = $search;
+        $dirList = $dir->where($map)->order(array('Did' => "asc"))->select();
+        $this->assign('searchResult',$dirList);
         $this->country();
         $this->display();
     }

@@ -21,7 +21,7 @@ class GuestController extends CommonController
         $Page->setConfig('next','下一页');
         $Page->setConfig('theme','%HEADER% %FIRST% %UP_PAGE% %DOWN_PAGE% %END%');
         $show=$Page->show();
-        $list = $model->where($where)->order(array('uid' => 'asc'))->limit($Page->firstRow.','.$Page->listRows)->select();
+        $list=$model->where($where)->limit($Page->firstRow.','.$Page->listRows)->select();
         $this->assign('res',$list);
         $this->assign('page',$show);
         $this->display();
@@ -30,28 +30,23 @@ class GuestController extends CommonController
     public function seachguest(){
         $this->display();
     }
-    public function order(){
-        $id=I('get.uid',0, 'int');
-        $ordermodel=D('order');
-
-        $res=$ordermodel->where("uid=$id")->select();
-        $this->assign('res',$res);
-        $this->display();
-    }
-
 
     public function searchguest_ok(){
 
-        $uid =I('get.uid');
+        $uid =I('get.userid');
         $user = D('user');
+        $order=D('order');
+        $goods=D('goods');
         $userdata = $user->where("uid=$uid")->select();
         if(!$userdata) {
             echo "该顾客不存在";
         }else{
-            //$orderdata=$order->where("uid=$uid")->select();
+            $orderdata=$order->where("uid=$uid")->select();
             //$ordergid=$orderdata->gid;
             //$goodsdata=$goods->where("gid=$ordergid")->select();
             $this->assign('userdata', $userdata);
+            $this->assign('orderdata', $orderdata);
+            //$this->assign('goodsdata', $goodsdata);
             $this->display();
         }
     }

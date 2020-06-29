@@ -25,34 +25,32 @@
                 <tr class="bg-primary">
                     <th scope="row"></th>
                     <td><input type="checkbox">全选</td>
-                    <td>商品id</td>
                     <td>商品名称</td>
                     <td>商品类型</td>
                     <td>商品价格</td>
                     <td>商品简介</td>
                     <td>上架时间</td>
                     <td>商品总量</td>
-                    <td>折扣</td>
                     <td>商品产地</td>
+                    <td>商品图片</td>
                     <td>商品操作</td>
                 </tr>
                 <foreach name="res" item="v">
                     <tr class="bg-success">
                         <th scope="row"></th>
                         <td><input type="checkbox"></td>
-                        <td>{$v.gid}</td>
                         <td>{$v.goodname}</td>
                         <td>{$v.type}</td>
                         <td>{$v.price}</td>
-                        <td>{$v.introduce|msubstr=0,6}</td>
+                        <td>{$v.introduce}</td>
                         <td>{$v.time}</td>
-                        <td>{$v.total}</td>
-                        <td>{$v.discount}</td>
+                        <td>{$v.title}</td>
                         <td>{$v.place}</td>
+                        <td>{$v.picname}</td>
                         <td>
                             <a type="button" class="btn btn-primary btn-sm" href="__CONTROLLER__/revise/goodname/{$v.goodname}">
                                 <span class="glyphicon glyphicon-pencil"></span>编辑 </a>
-                            <a type="button" class="btn btn-danger btn-sm" href="__CONTROLLER__/delete/gid/{$v.gid}">
+                            <a type="button" class="btn btn-danger btn-sm" href="__CONTROLLER__/delete/id/{$v.id}">
                                 <span class="glyphicon glyphicon-trash"></span>删除</a>
                         </td>
                     </tr>

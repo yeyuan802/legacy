@@ -19,47 +19,43 @@
             <h1>传承人管理</h1>
         </div>
         <div class="panel-body">
-            <form action="__CONTROLLER__/delete/id/{$v.id}" method="get">
-                <table class="table table-hover">
-                    <tbody>
-                    <tr class="bg-primary">
+            <table class="table table-hover">
+                <tbody>
+                <tr class="bg-primary">
+                    <th scope="row"></th>
+                    <th><input type="checkbox">全选</th>
+                    <th>标号</th>
+                    <th>姓名</th>
+                    <th>性别</th>
+                    <th>称号</th>
+                    <th>年龄</th>
+                    <th>封号时间</th>
+                    <th>出生地点</th>
+                    <th>事迹</th>
+                    <th>操作</th>
+                </tr>
+                <foreach name="res" item="v">
+                    <tr class="bg-success">
                         <th scope="row"></th>
-                        <th><input type="checkbox" id="boxid" onclick="setAllNo()">全选</th>
-                        <th>标号</th>
-                        <th>姓名</th>
-                        <th>性别</th>
-                        <th>称号</th>
-                        <th>年龄</th>
-                        <th>封号时间</th>
-                        <th>出生地点</th>
-                        <th>事迹</th>
-                        <th>操作</th>
+                        <td><input type="checkbox"></td>
+                        <td>{$v.id}</td>
+                        <td>{$v.name}</td>
+                        <td>{$v.sex}</td>
+                        <td>{$v.qname}</td>
+                        <td>{$v.age}</td>
+                        <td>{$v.inputtime}</td>
+                        <td>{$v.birthplace}</td>
+                        <td><a href="__CONTROLLER__/content/id/{$v.id}">查看详情</a></td>
+                        <td>
+                            <a type="button" class="btn btn-primary btn-sm" href="__CONTROLLER__/revise/id/{$v.id}">
+                                <span class="glyphicon glyphicon-pencil"></span>编辑 </a>
+                            <a type="button" class="btn btn-danger btn-sm" href="__CONTROLLER__/delete/id/{$v.id}">
+                                <span class="glyphicon glyphicon-trash"></span>删除</a>
+                        </td>
                     </tr>
-                    <foreach name="res" item="v">
-                        <tr class="bg-success">
-                            <th scope="row"></th>
-                            <td> <input name='id[]' type="checkbox" value='{$v.id}' class="noborder"></td>
-                            <td>{$v.id}</td>
-                            <td>{$v.name}</td>
-                            <td>{$v.sex}</td>
-                            <td>{$v.qname}</td>
-                            <td>{$v.age}</td>
-                            <td>{$v.inputtime}</td>
-                            <td>{$v.birthplace}</td>
-                            <td><a href="__CONTROLLER__/content/id/{$v.id}">查看详情</a></td>
-                            <td>
-                                <a type="button" class="btn btn-primary btn-sm" href="__CONTROLLER__/revise/id/{$v.id}">
-                                    <span class="glyphicon glyphicon-pencil"></span>编辑 </a>
-                                <a type="button" class="btn btn-danger btn-sm" href="__CONTROLLER__/delete/id/{$v.id}">
-                                    <span class="glyphicon glyphicon-trash"></span>删除</a>
-                            </td>
-                        </tr>
-                    </foreach>
-                    </tbody>
-                </table>
-                <input type="submit" class="btn btn-danger btn-sm"  value="批量删除" style="margin-left: 25px;">
-
-            </form>
+                </foreach>
+                </tbody>
+            </table>
             <div class="pagelist" align="right">
                 <?php echo $page; ?>
             </div>
@@ -67,19 +63,4 @@
     </div>
 </div>
 </body>
-<script>
-    function setAllNo(){
-        var box = document.getElementById("boxid");
-        var loves = document.getElementsByName("id[]");
-        if(box.checked == false){
-            for (var i = 0; i < loves.length; i++) {
-                loves[i].checked = false;
-            }
-        }else{
-            for (var i = 0; i < loves.length; i++) {
-                loves[i].checked = true;
-            }
-        }
-    }
-</script>
 </html>

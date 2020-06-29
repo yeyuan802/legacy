@@ -1,6 +1,6 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <head>
-    <title>心愿单</title>
+    <title>我的收藏</title>
     <link rel="stylesheet" href="/test/legacy/Public/shop/css/animate.css">
     <link rel="stylesheet" href="/test/legacy/Public/shop/css/jquery-ui.min.css">
     <link rel="stylesheet" href="/test/legacy/Public/shop/css/meanmenu.min.css">
@@ -36,7 +36,7 @@
         <div class="row">
             <div class="col-md-2 col-sm-6 col-xs-6">
                 <div class="header-logo">
-                    <a href="index.html">
+                    <a href="<?php echo U('Index/index');?>">
                         <img src="/test/legacy/Public/Home/image/logo/logo.png" alt="">
                     </a>
                 </div>

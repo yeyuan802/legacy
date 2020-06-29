@@ -24,8 +24,7 @@ class GoodsController extends CommonController
         $Page->setConfig('theme','%HEADER% %FIRST% %UP_PAGE% %DOWN_PAGE% %END%');
         $show=$Page->show();
 
-
-        $list=$model->where($where)->order(array('time' => 'desc'))->limit($Page->firstRow.','.$Page->listRows)->select();
+        $list=$model->where($where)->limit($Page->firstRow.','.$Page->listRows)->select();
         $this->assign('res',$list);
         $this->assign('page',$show);
         $this->display();
@@ -37,8 +36,8 @@ class GoodsController extends CommonController
             if ($rst === false) {
                 $this->error($rst->getError());
             }
-//            $id=I('get.gid',0, 'int');
-//            $this->uploadThumb($id);
+            $id=I('get.id',0, 'int');
+            $this->uploadThumb($id);
 
             $this->success('添加成功', U('Goods/index'));
             //添加成功后查看商品
@@ -85,37 +84,20 @@ class GoodsController extends CommonController
         //删除原来的图片文件
         $this->delImage($gid);
         //保存缩略图
-        $this->where("gid=$gid")->save(array(
+        $this->where("id=$gid")->save(array(
             'thumb'=> $file['save'].$file['name'],
         ));
         return true;
     }
 
-//    public function delete(){
-//        $id=I('get.gid',0, 'int');
-//        $model=D('goods');
-//        $res=$model->where("gid=$id")->delete();
-//        if ($res===false) {
-//            $this->error('删除商品失败');
-//        }
-//        $this->success('商品删除成功', U('Goods/index'));
-//    }
     public function delete(){
+        $id=I('get.gid',0, 'int');
         $model=D('goods');
-        $id = $_GET['id'];
-        //判断id是数组还是一个数值
-        if(is_array($id)){
-            $where = 'gid in('.implode(',',$id).')';
-        }else{
-            $where = 'gid='.$id;
+        $res=$model->where("gid=$id")->delete();
+        if ($res===false) {
+            $this->error('删除商品失败');
         }
-        //dump($where);
-        $list=$model->where($where)->delete();
-        if($list!==false) {
-            $this->success("成功删除{$list}条！",U('Goods/index'));
-        }else{
-            $this->error('删除失败！');
-        }
+        $this->success('商品删除成功', U('Goods/index'));
     }
 
     public function revise(){

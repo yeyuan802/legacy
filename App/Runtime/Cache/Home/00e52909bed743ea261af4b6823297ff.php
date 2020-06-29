@@ -1,25 +1,25 @@
 <?php if (!defined('THINK_PATH')) exit();?><html>
 <head>
     <meta charset="UTF-8">
-    <link href="/EPP_Project/legacy/Public/bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link href="/EPP_Project/legacy/Public/Home/css/style.css" rel="stylesheet">
-    <script type="text/javascript" src="/EPP_Project/legacy/Public/bootstrap/js/jquery.min.js"></script>
-    <script type="text/javascript" src="/EPP_Project/legacy/Public/bootstrap/js/jquery.js"></script>
-    <script src="/EPP_Project/legacy/Public/bootstrap/js/bootstrap.js"></script>
+    <link href="/test/legacy/Public/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="/test/legacy/Public/Home/css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="/test/legacy/Public/bootstrap/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/test/legacy/Public/bootstrap/js/jquery.js"></script>
+    <script src="/test/legacy/Public/bootstrap/js/bootstrap.js"></script>
     <script type="text/javascript">
 
         function checkStr(){
             var Search = document.getElementById('search').value;
             var len = Search.length;
-            if(len>20){
-                alert("搜索内容不能多于20字符！");
+            if(len>40){
+                alert("搜索内容不能多于20字！");
             }
         }
         function check() {
             var Search = document.getElementById('search').value;
             var len = Search.length;
-            if(len>20){
-                alert("您当前输入超过了20个字符！");
+            if(len>40){
+                alert("您当前输入超过了20个字！");
                 return false;
             }else{
                 return true;
@@ -37,13 +37,13 @@
 </head>
 <body>
 <div id="headbox">
-    <a href="<?php echo U('Index/index');?>"><img id="logo" src="/EPP_Project/legacy/Public/Home/image/logo/logo.png"></a>
+    <a href="<?php echo U('Index/index');?>"><img id="logo" src="/test/legacy/Public/Home/image/logo/logo.png"></a>
     <div id="userinfo">
-        <?php if(isset($_SESSION['userName'])): ?><h4><img width="25px" height="25px" style="margin-right: 10px;" src="/EPP_Project/legacy/Public/Home/image/icon/user2.png">当前用户：<?php echo (session('userName')); ?>   <a href="<?php echo U('User/logout');?>">注销</a></h4>
-            <h5><img width="25px" height="25px" style="margin-right: 10px;" src="/EPP_Project/legacy/Public/Home/image/icon/clock2.png"><?php echo (date('Y-m-d g:i a',time())); ?></h5>
+        <?php if(isset($_SESSION['userName'])): ?><h4><img width="25px" height="25px" style="margin-right: 10px;" src="/test/legacy/Public/Home/image/icon/user2.png">当前用户：<?php echo (session('userName')); ?>   <a href="<?php echo U('User/logout');?>">注销</a></h4>
+            <h5><img width="25px" height="25px" style="margin-right: 10px;" src="/test/legacy/Public/Home/image/icon/clock2.png"><?php echo (date('Y-m-d g:i a',time())); ?></h5>
             <?php else: ?>
-            <h4><a href="<?php echo U('User/login');?>"><img width="25px" height="25px" style="margin-right: 10px;" src="/EPP_Project/legacy/Public/Home/image/icon/user1.png">点击登录</a> </h4>
-            <h5><img width="25px" height="25px" style="margin-right: 10px;" src="/EPP_Project/legacy/Public/Home/image/icon/clock1.png"><?php echo (date('Y-m-d g:i a',time())); ?></h5><?php endif; ?>
+            <h4><a href="<?php echo U('User/login');?>"><img width="25px" height="25px" style="margin-right: 10px;" src="/test/legacy/Public/Home/image/icon/user1.png">点击登录</a> </h4>
+            <h5><img width="25px" height="25px" style="margin-right: 10px;" src="/test/legacy/Public/Home/image/icon/clock1.png"><?php echo (date('Y-m-d g:i a',time())); ?></h5><?php endif; ?>
     </div>
 </div>
 <div class="header">
@@ -61,19 +61,19 @@
                 <!--navbar-header-->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul id="navbar" class="nav navbar-nav navbar-right">
-                        <li><a href="<?php echo U('Index/index');?>"><img width="25px" height="25px" style="margin-top: -6px;" src="/EPP_Project/legacy/Public/Home/image/icon/index.png">首页</a></li>
-                        <li><a href="<?php echo U('Policy/index');?>"><img width="25px" height="25px" src="/EPP_Project/legacy/Public/Home/image/icon/policy.png">政策</a></li>
-                        <li><a href="<?php echo U('Resource/shop');?>"><img width="25px" height="25px" src="/EPP_Project/legacy/Public/Home/image/icon/resource.png">商品</a>
+                        <li><a href="<?php echo U('Index/index');?>"><img width="25px" height="25px" style="margin-top: -6px;" src="/test/legacy/Public/Home/image/icon/index.png">首页</a></li>
+                        <li><a href="<?php echo U('Policy/index');?>"><img width="25px" height="25px" src="/test/legacy/Public/Home/image/icon/policy.png">政策</a></li>
+                        <li><a href="<?php echo U('Resource/shop');?>"><img width="25px" height="25px" src="/test/legacy/Public/Home/image/icon/resource.png">商品</a>
 
                         </li>
-                        <li><a href="#" class="dropdown-toggle hvr-bounce-to-bottom" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img width="25px" height="25px" src="/EPP_Project/legacy/Public/Home/image/icon/info.png">资讯<span class="caret"></span></a>
+                        <li><a href="#" class="dropdown-toggle hvr-bounce-to-bottom" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img width="25px" height="25px" src="/test/legacy/Public/Home/image/icon/info.png">资讯<span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a class="" href="<?php echo U('Information/notice');?>">公告</a></li>
                                 <li><a class="" href="<?php echo U('Information/dynamic');?>">动态</a></li>
                             </ul>
                         </li>
-                        <li><a href=""><img width="25px" height="25px" style="margin-top: -8px;" src="/EPP_Project/legacy/Public/Home/image/icon/school.png">高校合作</a></li>
-                        <li><a href="<?php echo U('Message/index');?>"><img width="25px" height="25px" src="/EPP_Project/legacy/Public/Home/image/icon/message.png">留言板</a></li>
+                        <li><a href=""><img width="25px" height="25px" style="margin-top: -8px;" src="/test/legacy/Public/Home/image/icon/school.png">非遗视频</a></li>
+                        <li><a href="<?php echo U('Message/index');?>"><img width="25px" height="25px" src="/test/legacy/Public/Home/image/icon/message.png">留言板</a></li>
                     </ul>
                     <div class="clearfix"> </div>
                 </div>
@@ -81,7 +81,7 @@
         </div>
         <form class="navbar-form navbar-right" method="post" action="<?php echo U('Resource/search');?>" role="search">
             <div class="form-group">
-                <input type="text" name="search" id="search" onkeyup="checkStr()" class="form-control" placeholder="请输入非遗名录名称" required>
+                <input type="text" name="search" id="search" onkeyup="checkStr()" class="form-control" placeholder="请输入想要查询的名录" required>
             </div>
             <button type="submit" onclick="check()" class="btn btn-default">搜索</button>
             <div id="city-button" onclick="cityDisplay()" class="btn btn-default">区县</div>
@@ -113,19 +113,19 @@
                     <!-- 轮播（Carousel）项目 -->
                     <div class="carousel-inner" style="text-align: center">
                         <div class="item active">
-                            <img alt="First slide" src="/EPP_Project/legacy/Public/Home/image/mianju.jpg"/>
+                            <img alt="First slide" src="/test/legacy/Public/Home/image/mianju.jpg"/>
                             <div class="carousel-caption">
                                 <span>习近平总书记</span>
                             </div>
                         </div>
                         <div class="item">
-                            <img alt="Second slide" src="/EPP_Project/legacy/Public/Home/image/huasan.jpg" />
+                            <img alt="Second slide" src="/test/legacy/Public/Home/image/huasan.jpg" />
                             <div class="carousel-caption">
                                 <span>隔山打虎</span>
                             </div>
                         </div>
                         <div class="item">
-                            <img alt="Third slide" src="/EPP_Project/legacy/Public/Home/image/piying.jpg" />
+                            <img alt="Third slide" src="/test/legacy/Public/Home/image/piying.jpg" />
                             <div class="carousel-caption">
                                 <span>浙江温州</span>
                             </div>
@@ -173,7 +173,7 @@
                     <div id="minglu-main">
                         <div id = "minglu-main1" class="minglu">
                             <div class="minglu-pic">
-                                <img width="90%" height="90%" src="/EPP_Project/legacy/Public/Home/image/icon/shuji.png">
+                                <img width="90%" height="90%" src="/test/legacy/Public/Home/image/icon/shuji.png">
                             </div>
                             <div class="minglu-intro">
                                 <div class="minglu-list">
@@ -193,7 +193,7 @@
                                 </div>
                             </div>
                             <div class="minglu-pic">
-                                <img width="90%" height="90%" src="/EPP_Project/legacy/Public/Home/image/icon/erhu.png">
+                                <img width="90%" height="90%" src="/test/legacy/Public/Home/image/icon/erhu.png">
                             </div>
                             <div class="minglu-intro">
                                 <div class="minglu-list">
@@ -215,7 +215,7 @@
                         </div>
                         <div id = "minglu-main2" class="minglu">
                             <div class="minglu-pic">
-                                <img width="90%" height="90%" src="/EPP_Project/legacy/Public/Home/image/icon/wudao.png">
+                                <img width="90%" height="90%" src="/test/legacy/Public/Home/image/icon/wudao.png">
                             </div>
                             <div class="minglu-intro">
                                 <div class="minglu-list">
@@ -235,7 +235,7 @@
                                 </div>
                             </div>
                             <div class="minglu-pic">
-                                <img width="90%" height="90%" src="/EPP_Project/legacy/Public/Home/image/icon/shanzi.png">
+                                <img width="90%" height="90%" src="/test/legacy/Public/Home/image/icon/shanzi.png">
                             </div>
                             <div class="minglu-intro">
                                 <div class="minglu-list">
@@ -291,7 +291,7 @@
                     </div>
                 </div>
                 <div id="inheritor-pic">
-                    <div id="pic" style='background-image: url("/EPP_Project/legacy/Public/Home/image/inheritor/<?php echo ($inher["id"]); ?>.png");'>
+                    <div id="pic" style='background-image: url("/test/legacy/Public/Home/image/inheritor/<?php echo ($inher["id"]); ?>.png");'>
                         <div id="pic-intro">
                             <div class="pic-info"><b>姓名：</b><?php echo ($inher["name"]); ?></div>
                             <div class="pic-info"><b>性别：</b><?php echo ($inher["sex"]); ?></div>
@@ -334,43 +334,43 @@
                 <ul>
                     <li><a href="#" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow">
                         <div class="shop-list">
-                            <div class="shop-list-pic"><img width="100%" height="100%" src="/EPP_Project/legacy/Public/Home/image/shop/products/banya1.jpg"/></div>
+                            <div class="shop-list-pic"><img width="100%" height="100%" src="/test/legacy/Public/Home/image/shop/products/banya1.jpg"/></div>
                             <div class="shop-list-intro"><i>每周上新！点击查看！</i></div>
                         </div>
                     </a> </li>
                     <li><a href="#" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow">
                         <div class="shop-list">
-                            <div class="shop-list-pic"><img width="100%" height="100%" src="/EPP_Project/legacy/Public/Home/image/shop/products/banya1.jpg"/></div>
+                            <div class="shop-list-pic"><img width="100%" height="100%" src="/test/legacy/Public/Home/image/shop/products/banya1.jpg"/></div>
                             <div class="shop-list-intro">每周上新！点击查看！</div>
                         </div>
                     </a> </li>
                     <li><a href="#" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow">
                         <div class="shop-list">
-                            <div class="shop-list-pic"><img width="100%" height="100%" src="/EPP_Project/legacy/Public/Home/image/shop/products/banya1.jpg"/></div>
+                            <div class="shop-list-pic"><img width="100%" height="100%" src="/test/legacy/Public/Home/image/shop/products/banya1.jpg"/></div>
                             <div class="shop-list-intro"><i>每周上新！点击查看！</i></div>
                         </div>
                     </a> </li>
                     <li><a href="#" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow">
                         <div class="shop-list">
-                            <div class="shop-list-pic"><img width="100%" height="100%" src="/EPP_Project/legacy/Public/Home/image/shop/products/banya1.jpg"/></div>
+                            <div class="shop-list-pic"><img width="100%" height="100%" src="/test/legacy/Public/Home/image/shop/products/banya1.jpg"/></div>
                             <div class="shop-list-intro">每周上新！点击查看！</div>
                         </div>
                     </a> </li>
                     <li><a href="#" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow">
                         <div class="shop-list">
-                            <div class="shop-list-pic"><img width="100%" height="100%" src="/EPP_Project/legacy/Public/Home/image/shop/products/banya1.jpg"/></div>
+                            <div class="shop-list-pic"><img width="100%" height="100%" src="/test/legacy/Public/Home/image/shop/products/banya1.jpg"/></div>
                             <div class="shop-list-intro"><i>每周上新！点击查看！</i></div>
                         </div>
                     </a> </li>
                     <li><a href="#" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow">
                         <div class="shop-list">
-                            <div class="shop-list-pic"><img width="100%" height="100%" src="/EPP_Project/legacy/Public/Home/image/shop/products/banya1.jpg"/></div>
+                            <div class="shop-list-pic"><img width="100%" height="100%" src="/test/legacy/Public/Home/image/shop/products/banya1.jpg"/></div>
                             <div class="shop-list-intro">每周上新！点击查看！</div>
                         </div>
                     </a> </li>
                     <li><a href="#" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow">
                         <div class="shop-list">
-                            <div class="shop-list-pic"><img width="100%" height="100%" src="/EPP_Project/legacy/Public/Home/image/shop/products/banya1.jpg"/></div>
+                            <div class="shop-list-pic"><img width="100%" height="100%" src="/test/legacy/Public/Home/image/shop/products/banya1.jpg"/></div>
                             <div class="shop-list-intro"><i>每周上新！点击查看！</i></div>
                         </div>
                     </a> </li>
