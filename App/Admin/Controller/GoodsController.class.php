@@ -24,11 +24,8 @@ class GoodsController extends CommonController
         $Page->setConfig('theme','%HEADER% %FIRST% %UP_PAGE% %DOWN_PAGE% %END%');
         $show=$Page->show();
 
-<<<<<<< HEAD
+
         $list=$model->where($where)->order(array('time' => 'desc'))->limit($Page->firstRow.','.$Page->listRows)->select();
-=======
-        $list=$model->where($where)->limit($Page->firstRow.','.$Page->listRows)->select();
->>>>>>> orgin/master
         $this->assign('res',$list);
         $this->assign('page',$show);
         $this->display();
