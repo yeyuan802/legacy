@@ -47,32 +47,6 @@ class TravelController extends CommonController
             $this->display();
         }
     }
-    public function delete(){
-            $model=D('travel');
-            $id = $_GET['id'];
-            //判断id是数组还是一个数值
-            if(is_array($id)){
-                $where = 'id in('.implode(',',$id).')';
-            }else{
-                $where = 'id='.$id;
-            }
-            //dump($where);
-            $list=$model->where($where)->delete();
-            if($list!==false) {
-                $this->success("成功删除{$list}条！",U('Travel/index'));
-            }else{
-                $this->error('删除失败！');
-            }
-        }
-        /*$placeid=I('get.id',0, 'int');
-        $model=D('travel');
-        $res=$model->where("id=$placeid")->delete();
-        if ($res===false) {
-            $this->error('删除景点失败');
-        }
-        $this->success('景点删除成功', U('Travel/index'));
-        */
-
 
     public function revise(){
         $placeid=I('get.id',0, 'int');
@@ -110,8 +84,22 @@ class TravelController extends CommonController
         $this->assign('res',$data);
         $this->display();
     }
-
-
-
+    public function delete(){
+        $model=D('travel');
+        $id = $_GET['id'];
+        //判断id是数组还是一个数值
+        if(is_array($id)){
+            $where = 'id in('.implode(',',$id).')';
+        }else{
+            $where = 'id='.$id;
+        }
+        //dump($where);
+        $list=$model->where($where)->delete();
+        if($list!==false) {
+            $this->success("成功删除{$list}条！",U('Travel/index'));
+        }else{
+            $this->error('删除失败！');
+        }
+    }
 
 }

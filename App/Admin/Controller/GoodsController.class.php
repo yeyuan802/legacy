@@ -91,14 +91,31 @@ class GoodsController extends CommonController
         return true;
     }
 
+//    public function delete(){
+//        $id=I('get.gid',0, 'int');
+//        $model=D('goods');
+//        $res=$model->where("gid=$id")->delete();
+//        if ($res===false) {
+//            $this->error('删除商品失败');
+//        }
+//        $this->success('商品删除成功', U('Goods/index'));
+//    }
     public function delete(){
-        $id=I('get.gid',0, 'int');
         $model=D('goods');
-        $res=$model->where("gid=$id")->delete();
-        if ($res===false) {
-            $this->error('删除商品失败');
+        $id = $_GET['id'];
+        //判断id是数组还是一个数值
+        if(is_array($id)){
+            $where = 'gid in('.implode(',',$id).')';
+        }else{
+            $where = 'gid='.$id;
         }
-        $this->success('商品删除成功', U('Goods/index'));
+        //dump($where);
+        $list=$model->where($where)->delete();
+        if($list!==false) {
+            $this->success("成功删除{$list}条！",U('Goods/index'));
+        }else{
+            $this->error('删除失败！');
+        }
     }
 
     public function revise(){

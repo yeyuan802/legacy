@@ -89,6 +89,7 @@ INFO: [ view_filter ] --START--
 INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001699s ]
 INFO: [ view_filter ] --END-- [ RunTime:0.001905s ]
 
+<<<<<<< HEAD
 [ 2020-06-29T15:59:33+08:00 ] ::1 /EPP_Project/legacy/index.php
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
@@ -120,10 +121,44 @@ SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.029794s ]
 ERR: 1146:Table 'db_culture.tb_country' doesn't exist
  [ SQL语句 ] : SHOW COLUMNS FROM `tb_country`
 SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.003155s ]
+=======
+[ 2020-06-29T15:23:26+08:00 ] ::1 /legacy/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.050687s ]
+INFO: [ app_init ] --END-- [ RunTime:0.083359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.013449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013647s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.445144s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.057753s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.188228s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.240663s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.049263s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.063542s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.061869s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.216125s ]
+SQL: SELECT * FROM `tb_director` WHERE `type` = '传统戏剧' ORDER BY `Did` asc  [ RunTime:0.034995s ]
+SQL: SELECT * FROM `tb_director` WHERE `type` = '民间音乐' ORDER BY `Did` asc  [ RunTime:0.002171s ]
+SQL: SELECT * FROM `tb_director` WHERE `type` = '民间舞蹈' ORDER BY `Did` asc  [ RunTime:0.002690s ]
+SQL: SELECT * FROM `tb_director` WHERE `type` = '传统手工技�\�' ORDER BY `Did` asc  [ RunTime:0.002816s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.091374s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.041470s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.109153s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.047487s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.035074s ]
+ERR: 1146:Table 'db_culture.tb_country' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_country`
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.003983s ]
+>>>>>>> orign/master
 ERR: 1146:Table 'db_culture.tb_country' doesn't exist
  [ SQL语句 ] : SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc 
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
+<<<<<<< HEAD
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000230s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000350s ]
 NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\EPP_Project\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
@@ -211,10 +246,191 @@ SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.004839s ]
 ERR: 1146:Table 'db_culture.tb_country' doesn't exist
  [ SQL语句 ] : SHOW COLUMNS FROM `tb_country`
 SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000871s ]
+=======
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000453s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000737s ]
+NOTIC: [8] Undefined variable: noti F:\phpStudy\WWW\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined variable: noti F:\phpStudy\WWW\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined variable: noti F:\phpStudy\WWW\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined variable: noti F:\phpStudy\WWW\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined variable: noti F:\phpStudy\WWW\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined variable: noti F:\phpStudy\WWW\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined variable: noti F:\phpStudy\WWW\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined variable: noti F:\phpStudy\WWW\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined variable: noti F:\phpStudy\WWW\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined variable: noti F:\phpStudy\WWW\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined index: birthPlace F:\phpStudy\WWW\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 299 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.496248s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.496486s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015255s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015471s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008419s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009393s ]
+
+[ 2020-06-29T15:23:27+08:00 ] ::1 /legacy/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001039s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005841s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006367s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000400s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.203914s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.204183s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002643s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002937s ]
+
+[ 2020-06-29T15:23:54+08:00 ] ::1 /legacy/Public/Admin/js/jquery-3.4.1.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000824s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001116s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001226s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000363s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027501s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027747s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002031s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002222s ]
+
+[ 2020-06-29T17:07:54+08:00 ] ::1 /legacy/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.028264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.023784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.023870s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.189908s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.017102s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.611331s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.147094s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.048353s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.100581s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.244926s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.098241s ]
+SQL: SELECT * FROM `tb_director` WHERE `type` = '传统戏剧' ORDER BY `Did` asc  [ RunTime:0.020569s ]
+SQL: SELECT * FROM `tb_director` WHERE `type` = '民间音乐' ORDER BY `Did` asc  [ RunTime:0.002398s ]
+SQL: SELECT * FROM `tb_director` WHERE `type` = '民间舞蹈' ORDER BY `Did` asc  [ RunTime:0.002613s ]
+SQL: SELECT * FROM `tb_director` WHERE `type` = '传统手工技�\�' ORDER BY `Did` asc  [ RunTime:0.002629s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.329942s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.036344s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.149916s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.098290s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.042251s ]
+ERR: 1146:Table 'db_culture.tb_country' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_country`
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.001344s ]
 ERR: 1146:Table 'db_culture.tb_country' doesn't exist
  [ SQL语句 ] : SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc 
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000638s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001009s ]
+NOTIC: [8] Undefined variable: noti F:\phpStudy\WWW\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined variable: noti F:\phpStudy\WWW\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined variable: noti F:\phpStudy\WWW\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined variable: noti F:\phpStudy\WWW\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined variable: noti F:\phpStudy\WWW\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined variable: noti F:\phpStudy\WWW\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined variable: noti F:\phpStudy\WWW\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined variable: noti F:\phpStudy\WWW\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined variable: noti F:\phpStudy\WWW\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined variable: noti F:\phpStudy\WWW\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined index: birthPlace F:\phpStudy\WWW\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 299 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.817339s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.817599s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.045827s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.046032s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.100891s ]
+INFO: [ app_end ] --END-- [ RunTime:0.101165s ]
+
+[ 2020-06-29T17:07:57+08:00 ] ::1 /legacy/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001979s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002928s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003171s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000210s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000619s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.134450s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.134854s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001825s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002125s ]
+
+[ 2020-06-29T17:08:11+08:00 ] ::1 /legacy/Public/Admin/js/jquery-3.4.1.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005033s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.014135s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014566s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000201s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069459s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069590s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001490s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001591s ]
+
+[ 2020-06-29T17:32:04+08:00 ] ::1 /legacy/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001834s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003381s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.030895s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.002691s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.026315s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.037911s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.009064s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.094736s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.007142s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.007523s ]
+SQL: SELECT * FROM `tb_director` WHERE `type` = '传统戏剧' ORDER BY `Did` asc  [ RunTime:0.000641s ]
+SQL: SELECT * FROM `tb_director` WHERE `type` = '民间音乐' ORDER BY `Did` asc  [ RunTime:0.000558s ]
+SQL: SELECT * FROM `tb_director` WHERE `type` = '民间舞蹈' ORDER BY `Did` asc  [ RunTime:0.000389s ]
+SQL: SELECT * FROM `tb_director` WHERE `type` = '传统手工技�\�' ORDER BY `Did` asc  [ RunTime:0.000957s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.010117s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.001218s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.089691s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.042809s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.027470s ]
+ERR: 1146:Table 'db_culture.tb_country' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_country`
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.001792s ]
+>>>>>>> orign/master
+ERR: 1146:Table 'db_culture.tb_country' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc 
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+<<<<<<< HEAD
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000181s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000269s ]
 NOTIC: [8] Undefined variable: noti D:\phpStudy\WWW\EPP_Project\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
@@ -270,4 +486,388 @@ INFO: [ view_parse ] --END-- [ RunTime:0.013434s ]
 INFO: [ view_filter ] --START--
 INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002171s ]
 INFO: [ view_filter ] --END-- [ RunTime:0.002297s ]
+=======
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000275s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000564s ]
+NOTIC: [8] Undefined variable: noti F:\phpStudy\WWW\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined variable: noti F:\phpStudy\WWW\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined variable: noti F:\phpStudy\WWW\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined variable: noti F:\phpStudy\WWW\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined variable: noti F:\phpStudy\WWW\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined variable: noti F:\phpStudy\WWW\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined variable: noti F:\phpStudy\WWW\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined variable: noti F:\phpStudy\WWW\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined variable: noti F:\phpStudy\WWW\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined variable: noti F:\phpStudy\WWW\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined index: birthPlace F:\phpStudy\WWW\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 299 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.182229s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.182438s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001175s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001285s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002071s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002265s ]
+
+[ 2020-06-29T17:32:04+08:00 ] ::1 /legacy/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000967s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001382s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006877s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006943s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000557s ]
+
+[ 2020-06-29T17:32:15+08:00 ] ::1 /legacy/Public/Admin/js/jquery-3.4.1.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000809s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001911s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002043s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000241s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018555s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018782s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001461s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001627s ]
+
+[ 2020-06-29T18:41:17+08:00 ] ::1 /legacy/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000158s ]
+INFO: [ app_init ] --END-- [ RunTime:0.134451s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.047100s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.047293s ]
+SQL: SHOW COLUMNS FROM `tb_picture` [ RunTime:0.070413s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_picture`
+SQL: SELECT * FROM `tb_picture` WHERE `type` = 'slide'  [ RunTime:0.017272s ]
+ERR: 1146:Table 'db_culture.tb_picture' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_picture` WHERE `type` = 'slide' 
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.017189s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=1 ) LIMIT 1   [ RunTime:0.033607s ]
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=1 ) ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.002058s ]
+SQL: SHOW COLUMNS FROM `tb_policy` [ RunTime:0.025646s ]
+SQL: SELECT * FROM `tb_policy` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.023522s ]
+SQL: SHOW COLUMNS FROM `tb_director` [ RunTime:0.007382s ]
+SQL: SELECT * FROM `tb_director` WHERE `type` = '传统戏剧' ORDER BY `Did` asc  [ RunTime:0.029126s ]
+SQL: SELECT * FROM `tb_director` WHERE `type` = '民间音乐' ORDER BY `Did` asc  [ RunTime:0.001974s ]
+SQL: SELECT * FROM `tb_director` WHERE `type` = '民间舞蹈' ORDER BY `Did` asc  [ RunTime:0.002546s ]
+SQL: SELECT * FROM `tb_director` WHERE `type` = '传统手工技�\�' ORDER BY `Did` asc  [ RunTime:0.001406s ]
+SQL: SHOW COLUMNS FROM `tb_dynamic` [ RunTime:0.017128s ]
+SQL: SELECT * FROM `tb_dynamic` WHERE ( id>=1 ) ORDER BY `time` desc  [ RunTime:0.001061s ]
+SQL: SHOW COLUMNS FROM `tb_inheritor` [ RunTime:0.018036s ]
+SQL: SELECT * FROM `tb_inheritor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000764s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.014029s ]
+ERR: 1146:Table 'db_culture.tb_country' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_country`
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000844s ]
+ERR: 1146:Table 'db_culture.tb_country' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc 
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000170s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000270s ]
+NOTIC: [8] Undefined variable: noti F:\phpStudy\WWW\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined variable: noti F:\phpStudy\WWW\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined variable: noti F:\phpStudy\WWW\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined variable: noti F:\phpStudy\WWW\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined variable: noti F:\phpStudy\WWW\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined variable: noti F:\phpStudy\WWW\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined variable: noti F:\phpStudy\WWW\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined variable: noti F:\phpStudy\WWW\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined variable: noti F:\phpStudy\WWW\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+NOTIC: [8] Undefined variable: noti F:\phpStudy\WWW\legacy\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 151 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.094427s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.094499s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015893s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.016018s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.032716s ]
+INFO: [ app_end ] --END-- [ RunTime:0.033029s ]
+
+[ 2020-06-29T18:41:18+08:00 ] ::1 /legacy/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000713s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000211s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.102385s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.102507s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001028s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001138s ]
+
+[ 2020-06-29T18:41:40+08:00 ] ::1 /legacy/Resource/shop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000814s ]
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.048367s ]
+SQL: SELECT * FROM `tb_goods` WHERE ( gid>0 ) ORDER BY `gid` asc  [ RunTime:0.001048s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.136537s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.136620s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000607s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002427s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002906s ]
+
+[ 2020-06-29T18:41:56+08:00 ] ::1 /legacy/Information/notice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000769s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000730s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000789s ]
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.039431s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=0 ) LIMIT 1   [ RunTime:0.000329s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\legacy\App\Home\Controller\IndexController.class.php 第 109 行.
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=0 ) ORDER BY `time` desc LIMIT 0,15   [ RunTime:0.001755s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.033026s ]
+ERR: 1146:Table 'db_culture.tb_country' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_country`
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000488s ]
+ERR: 1146:Table 'db_culture.tb_country' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc 
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000220s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000432s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.132894s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.133149s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002993s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003283s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007634s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008010s ]
+
+[ 2020-06-29T18:41:56+08:00 ] ::1 /legacy/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000428s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000583s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000644s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006819s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006872s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000415s ]
+
+[ 2020-06-29T18:42:06+08:00 ] ::1 /legacy/Information/notice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000900s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001687s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001860s ]
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.019919s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=0 ) LIMIT 1   [ RunTime:0.000609s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\legacy\App\Home\Controller\IndexController.class.php 第 109 行.
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=0 ) ORDER BY `time` desc LIMIT 0,15   [ RunTime:0.001014s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.012477s ]
+ERR: 1146:Table 'db_culture.tb_country' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_country`
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.001077s ]
+ERR: 1146:Table 'db_culture.tb_country' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc 
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012398s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012506s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000677s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000734s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001095s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001205s ]
+
+[ 2020-06-29T18:42:06+08:00 ] ::1 /legacy/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000621s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006896s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006954s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000434s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000477s ]
+
+[ 2020-06-29T18:42:11+08:00 ] ::1 /legacy/Information/notice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000635s ]
+SQL: SHOW COLUMNS FROM `tb_notice` [ RunTime:0.074442s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_notice` WHERE ( id>=0 ) LIMIT 1   [ RunTime:0.001255s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\legacy\App\Home\Controller\IndexController.class.php 第 109 行.
+SQL: SELECT * FROM `tb_notice` WHERE ( id>=0 ) ORDER BY `time` desc LIMIT 0,15   [ RunTime:0.001711s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.017444s ]
+ERR: 1146:Table 'db_culture.tb_country' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_country`
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.001230s ]
+ERR: 1146:Table 'db_culture.tb_country' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc 
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000221s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018905s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019032s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001055s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001152s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001214s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001318s ]
+
+[ 2020-06-29T18:42:13+08:00 ] ::1 /legacy/Message/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000856s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001451s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.025486s ]
+ERR: 1146:Table 'db_culture.tb_country' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_country`
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.001260s ]
+ERR: 1146:Table 'db_culture.tb_country' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc 
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000301s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063662s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063827s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001195s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001323s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002015s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002218s ]
+
+[ 2020-06-29T18:42:13+08:00 ] ::1 /legacy/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000663s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008822s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008884s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000623s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000696s ]
+
+[ 2020-06-29T18:42:18+08:00 ] ::1 /legacy/Message/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000880s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+SQL: SHOW COLUMNS FROM `tb_country` [ RunTime:0.011925s ]
+ERR: 1146:Table 'db_culture.tb_country' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_country`
+SQL: SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc  [ RunTime:0.000987s ]
+ERR: 1146:Table 'db_culture.tb_country' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `tb_country` WHERE ( id>=1 ) ORDER BY `id` asc 
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000244s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018100s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018222s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001185s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001288s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001634s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001736s ]
+
+[ 2020-06-29T18:42:18+08:00 ] ::1 /legacy/Public/bootstrap/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000664s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000880s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009175s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009257s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000529s ]
+
+[ 2020-06-29T18:42:23+08:00 ] ::1 /legacy/Resource/shop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001197s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001308s ]
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.047811s ]
+SQL: SELECT * FROM `tb_goods` WHERE ( gid>0 ) ORDER BY `gid` asc  [ RunTime:0.002362s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000215s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000332s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040121s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040320s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000937s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001028s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001349s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001498s ]
+>>>>>>> orign/master
 
