@@ -126,33 +126,95 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>旅游</title>
+    <title>Title</title>
 </head>
 <body>
 <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
     <ul class="list-group">
-        <a href="/legacy/Admin/Travel/index" class="list-group-item ">查看景点</a>
-        <a href="/legacy/Admin/Travel/add" class="list-group-item">添加景点</a>
-        <a href="/legacy/Admin/Travel/search" class="list-group-item active">查询景点</a>
+        <a href="/legacy/Admin/Guest/index" class="list-group-item active">查看顾客</a>
+        <a href="/legacy/Admin/Guest/searchguest" class="list-group-item">查询顾客</a>
     </ul>
 </div>
-<!--右侧主要内容-->
 <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
     <div class="panel panel-default">
         <div class="panel-heading">
-            <h1>旅游管理</h1>
-        </div>
-        <div class="panel-body">
-            <form class="form-inline" role="form" method="get" action="/legacy/Admin/Travel/search_ok">
-                <div class="form-group">
-                    <label class="sr-only" for="name">查询景点名称</label>
-                    <input type="text" class="form-control" id="name" name="place" placeholder="查询景点名称">
+            <!--这里放置标题、选项-->
+            <h1>查看顾客</h1>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <ul id="myTab" class="nav nav-tabs" role="tablist">
+                        <li class="active">
+                            <a href="#bulletin" role="tab" data-toggle="tab">查看顾客</a>
+                        </li>
+                    </ul>
+                    <!--选项卡面板-->
+                    <div id="myTabContent" class="tab-content">
+                        <div class="tab-pane active" id="bulletin">
+                            <table class="table table-hover">
+                                <tbody>
+                                <tr class="bg-primary">
+                                    <th scope="row"></th>
+                                    <td>用户id</td>
+                                    <td>昵称</td>
+                                    <td>订单</td>
+                                    <td>邮箱</td>
+                                    <td>电话号码</td>
+                                    <td>家庭住址</td>
+                                    <td>注册时间</td>
+                                </tr>
+                                <?php if(is_array($res)): foreach($res as $key=>$v): ?><tr class="bg-success">
+                                        <th scope="row"></th>
+                                        <td><?php echo ($v["uid"]); ?></td>
+                                        <td><?php echo ($v["nickname"]); ?></td>
+                                        <td><a href="/legacy/Admin/Guest/order/uid/<?php echo ($v["uid"]); ?>">查看详情</a></td>
+                                        <td><?php echo ($v["email"]); ?></td>
+                                        <td><?php echo ($v["phone"]); ?></td>
+                                        <td><?php echo ($v["address"]); ?></td>
+                                        <td><?php echo ($v["regdate"]); ?></td>
+                                    </tr><?php endforeach; endif; ?>
+                                </tbody>
+                            </table>
+                            <table>
+                                <nav class="pull-right">
+                                    <ul class="pagination">
+                                        <?php echo $page; ?>
+                                        <!--          <li class="disabled">
+                                                      <a href="#" aria-label="Previous">
+                                                          <span aria-hidden="true">&laquo;</span>
+                                                      </a>
+                                                  </li>
+                                                  <li class="active">
+                                                      <a href="#">1</a>
+                                                  </li>
+                                                  <li>
+                                                      <a href="#">2</a>
+                                                  </li>
+                                                  <li>
+                                                      <a href="#">3</a>
+                                                  </li>
+                                                  <li>
+                                                      <a href="#">4</a>
+                                                  </li>
+                                                  <li>
+                                                      <a href="#">5</a>
+                                                  </li>
+                                                  <li>
+                                                      <a href="#">6</a>
+                                                  </li>
+                                                  <li><a href="#">
+                                                      <span aria-hidden="true">&raquo;</span>
+                                                  </a> </li>-->
+                                    </ul>
+                                </nav>
+                            </table>
+                        </div>
+                    </div>
                 </div>
-                <button type="submit" class="btn btn-default">搜索🔍</button>
-            </form>
+            </div>
         </div>
     </div>
 </div>
+
 </body>
 </html></div>
 </div>

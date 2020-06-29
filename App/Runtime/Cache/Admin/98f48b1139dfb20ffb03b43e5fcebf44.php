@@ -126,30 +126,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>旅游</title>
+    <title>Title</title>
 </head>
 <body>
 <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
     <ul class="list-group">
-        <a href="/legacy/Admin/Travel/index" class="list-group-item ">查看景点</a>
-        <a href="/legacy/Admin/Travel/add" class="list-group-item">添加景点</a>
-        <a href="/legacy/Admin/Travel/search" class="list-group-item active">查询景点</a>
+        <a href="/legacy/Admin/Inheritor/index" class="list-group-item active">查看传承人</a>
+        <a href="/legacy/Admin/Inheritor/add" class="list-group-item">添加传承人</a>
+        <a href="/legacy/Admin/Inheritor/search" class="list-group-item">查询传承人</a>
     </ul>
 </div>
 <!--右侧主要内容-->
 <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
     <div class="panel panel-default">
         <div class="panel-heading">
-            <h1>旅游管理</h1>
-        </div>
-        <div class="panel-body">
-            <form class="form-inline" role="form" method="get" action="/legacy/Admin/Travel/search_ok">
-                <div class="form-group">
-                    <label class="sr-only" for="name">查询景点名称</label>
-                    <input type="text" class="form-control" id="name" name="place" placeholder="查询景点名称">
+            <!--这里放置标题、选项-->
+            <h1>查看传承人</h1>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <?php if(is_array($page)): foreach($page as $key=>$v): ?><p style="text-align: center;font-size: 40px"><?php echo ($v["name"]); ?></p>
+                        <div style=" text-indent:2em;margin-top: 20px;border-right: solid;border-left: solid;border-width: 2px;height: auto;border-color: #C0C0BB;">
+                            <?php echo ($v["introduce"]); ?>
+                        </div>
+                        <p style="float: right;color: #1f1f1f;"><?php echo ($v["inputtime"]); ?></p><?php endforeach; endif; ?>
                 </div>
-                <button type="submit" class="btn btn-default">搜索🔍</button>
-            </form>
+            </div>
         </div>
     </div>
 </div>

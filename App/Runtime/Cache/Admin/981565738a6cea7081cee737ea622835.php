@@ -126,30 +126,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>旅游</title>
+    <title>传承人</title>
 </head>
 <body>
 <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
     <ul class="list-group">
-        <a href="/legacy/Admin/Travel/index" class="list-group-item ">查看景点</a>
-        <a href="/legacy/Admin/Travel/add" class="list-group-item">添加景点</a>
-        <a href="/legacy/Admin/Travel/search" class="list-group-item active">查询景点</a>
+        <a href="/legacy/Admin/Inheritor/index" class="list-group-item">查看传承人</a>
+        <a href="/legacy/Admin/Inheritor/add" class="list-group-item">添加传承人</a>
+        <a href="/legacy/Admin/Inheritor/search" class="list-group-item active">查询传承人</a>
     </ul>
 </div>
 <!--右侧主要内容-->
 <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
     <div class="panel panel-default">
         <div class="panel-heading">
-            <h1>旅游管理</h1>
+            <h1>传承人管理</h1>
         </div>
         <div class="panel-body">
-            <form class="form-inline" role="form" method="get" action="/legacy/Admin/Travel/search_ok">
-                <div class="form-group">
-                    <label class="sr-only" for="name">查询景点名称</label>
-                    <input type="text" class="form-control" id="name" name="place" placeholder="查询景点名称">
-                </div>
-                <button type="submit" class="btn btn-default">搜索🔍</button>
-            </form>
+            <table class="table table-hover">
+                <tbody>
+                <tr class="bg-primary">
+                    <th>姓名</th>
+                    <th>性别</th>
+                    <th>称号</th>
+                    <th>年龄</th>
+                    <th>封号时间</th>
+                    <th>事迹</th>
+                    <th>操作</th>
+                </tr>
+                <?php if(is_array($res)): foreach($res as $key=>$v): ?><tr class="bg-success">
+                        <td><?php echo ($v["name"]); ?></td>
+                        <td><?php echo ($v["sex"]); ?></td>
+                        <td><?php echo ($v["qname"]); ?></td>
+                        <td><?php echo ($v["age"]); ?></td>
+                        <td><?php echo ($v["inputtime"]); ?></td>
+                        <td><a href="/legacy/Admin/Inheritor/content/id/<?php echo ($v["id"]); ?>">查看详情</a></td>
+                        <td>
+                            <a type="button" class="btn btn-primary btn-sm" href="/legacy/Admin/Inheritor/revise/id/<?php echo ($v["id"]); ?>">
+                                <span class="glyphicon glyphicon-pencil"></span>编辑 </a>
+                            <a type="button" class="btn btn-danger btn-sm" href="/legacy/Admin/Inheritor/delete/id/<?php echo ($v["id"]); ?>">
+                                <span class="glyphicon glyphicon-trash"></span>删除</a>
+                        </td>
+                    </tr><?php endforeach; endif; ?>
+                </tbody>
+            </table>
+            <div class="pagelist" align="right">
+                <?php echo $page; ?>
+            </div>
         </div>
     </div>
 </div>
