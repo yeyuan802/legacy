@@ -92,6 +92,14 @@
                             <li><a href="/EPP_Project/legacy/Admin/Message/index">查看留言</a></li>
                         </ul>
                     </li>
+                    <li class="dropdown">
+                        <a href="/EPP_Project/legacy/Admin/Director/index" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-camera" aria-hidden="true"></span> 名录管理<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/EPP_Project/legacy/Admin/Director/index">查看名录</a></li>
+                            <li><a href="/EPP_Project/legacy/Admin/Director/add">增加名录</a></li>
+                            <li> <a href="/EPP_Project/legacy/Admin/Director/search">查询名录</a></li>
+                        </ul>
+                    </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
 
@@ -129,119 +137,94 @@
     <title>Title</title>
 </head>
 <body>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <style>
-        /*内容编辑*/
-        .data-edit{border:1px solid #ddd;background:#F7F7F7;max-width:550px;padding:20px 40px;}
-        .data-edit label{font-weight:normal;text-align:right;vertical-align:top;}
-        .data-edit label{padding:0 10px;}
-        .data-edit select{min-width:100px;height:26px;}
-        .data-edit .file{font-size:12px;}
-        .data-edit textarea{width:200px;height:50px;}
-        .data-edit input{width:200px;}
-    </style>
-</head>
-<body>
-<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-    <ul class="list-group">
-        <a href="/EPP_Project/legacy/Admin/Goods/index" class="list-group-item active">查看商品</a>
-        <a href="/EPP_Project/legacy/Admin/Goods/add" class="list-group-item ">添加商品</a>
-        <a href="/EPP_Project/legacy/Admin/Goods/search" class="list-group-item">查询商品</a>
-    </ul>
-</div>
-<!--右侧主要内容-->
-<div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <h1>商品管理</h1>
+        <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+            <ul class="list-group">
+                <a href="/EPP_Project/legacy/Admin/Director/index" class="list-group-item active">查看名录</a>
+                <a href="/EPP_Project/legacy/Admin/Director/add" class="list-group-item">增加名录</a>
+            </ul>
         </div>
-        <div class="panel-body">
-            <div class="data-edit" align="center">
-                <form class="form-horizontal" method="post" enctype="multipart/form-data">
-                    <div class="container">
-                        <div class="row form-group" style="padding: 20px 0">
-                            <div class="col-lg-5 col-md-6">
-                                <h3>修改商品</h3>
-                            </div>
-                        </div>
-                        <?php if(is_array($res)): foreach($res as $key=>$v): ?><div class="row form-group">
-                                <label class="control-label col-lg-1" for="id">商品标号：</label>
-                                <div class="col-lg-5 col-md-6">
-                                    <input class="form-control" name="id" id="id" type="text" value="<?php echo ($v["gid"]); ?>">
-                                </div>
-                            </div>
-                            <div class="row form-group">
-                                <label class="control-label col-lg-1" for="goodname">商品名称：</label>
-                                <div class="col-lg-5 col-md-6">
-                                    <input class="form-control" name="goodname" id="goodname" type="text" value="<?php echo ($v["goodname"]); ?>">
-                                </div>
-                            </div>
-                            <div class="row form-group">
-                                <label class="control-label col-lg-1" for="price">商品价格：</label>
-                                <div class="col-lg-5 col-md-6">
-                                    <input class="form-control" name="price" id="price" type="text"  value="<?php echo ($v["price"]); ?>">
-                                </div>
-                            </div>
-                            <div class="row form-group">
-                                <label class="control-label col-lg-1" for="introduce">商品介绍：</label>
-                                <div class="col-lg-5 col-md-6">
-                                    <input class="form-control" name="introduce" id="introduce" type="text" value="<?php echo ($v["introduce"]); ?>">
-                                </div>
-                            </div>
+        <!--右侧主要内容-->
+        <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <!--这里放置标题、选项-->
+                    <h1>查看名录</h1>
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <ul id="myTab" class="nav nav-tabs" role="tablist">
+                                <li class="active">
+                                    <a href="#bulletin" role="tab" data-toggle="tab">所有名录</a>
+                                </li>
+                            </ul>
+                            <!--选项卡面板-->
+                            <div id="myTabContent" class="tab-content">
+                                <div class="tab-pane active" id="bulletin">
+                                    <table class="table table-hover">
+                                        <form action="/EPP_Project/legacy/Admin/Director/delete/Did/<?php echo ($v["Did"]); ?>" method="get">
+                                        <tbody>
+                                        <tr class="bg-primary">
+                                            <th scope="row"></th>
+                                            <th><input type="checkbox" id="boxid" onclick="setAllNo()">全选</th>
+                                            <td>id</td>
+                                            <td>名录编号</td>
+                                            <td>名录名</td>
+                                            <td>名录地区</td>
+                                            <td>名录介绍</td>
+                                            <td>发布时间</td>
+                                            <td>操作</td>
+                                        </tr>
+                                        <?php if(is_array($list)): foreach($list as $key=>$v): ?><tr class="bg-success">
+                                                <th scope="row"></th>
+                                                <td>
+                                                    <input name='Did[]' type="checkbox" value='<?php echo ($v["Did"]); ?>' class="noborder">
+                                                </td>
+                                                <td><?php echo ($v["Did"]); ?></td>
+                                                <td><?php echo ($v["number"]); ?></td>
+                                                <td><?php echo ($v["name"]); ?></td>
+                                                <td><?php echo ($v["place"]); ?></td>
+                                                <td><a href="/EPP_Project/legacy/Admin/Director/content/Did/<?php echo ($v["Did"]); ?>">查看详情</a></td>
+                                                <td><?php echo ($v["time"]); ?></td>
 
-                            <div class="row form-group">
-
-                                <label class="control-label col-lg-1" for="time">上架时间：</label>
-                                <div class="col-lg-5 col-md-6">
-                                    <input class="form-control" name="time" id="time" type="text" value="<?php echo ($v["time"]); ?>">
+                                                <td>
+                                                    <a type="button" class="btn btn-primary btn-sm" href="/EPP_Project/legacy/Admin/Director/revise/Did/<?php echo ($v["Did"]); ?>">
+                                                        <span class="glyphicon glyphicon-pencil"></span>编辑 </a>
+                                                    <a type="button" class="btn btn-danger btn-sm" href="/EPP_Project/legacy/Admin/Director/delete/Did/<?php echo ($v["Did"]); ?>">
+                                                        <span class="glyphicon glyphicon-trash"></span>删除</a>
+                                                </td>
+                                            </tr><?php endforeach; endif; ?>
+                                        </tbody>
+                                    </table>
+                                    <input type="submit" class="btn btn-danger btn-sm" value="批量删除" style="margin-left: 25px;">
+                                    </form>
+                                    <table>
+                                        <nav class="pull-right">
+                                            <ul class="pagination">
+                                                <?php echo $page; ?>
+                                            </ul>
+                                        </nav>
+                                    </table>
                                 </div>
-                            </div>
-                            <div class="row form-group">
-
-                                <label class="control-label col-lg-1" for="discount">折扣：</label>
-                                <div class="col-lg-5 col-md-6">
-                                    <input class="form-control" name="discount" id="discount" type="text" value="<?php echo ($v["discount"]); ?>">
-
-                                </div>
-                            </div>
-                            <div class="row form-group">
-                                <label class="control-label col-lg-1" for="total">总量：</label>
-                                <div class="col-lg-5 col-md-6">
-                                    <input class="form-control" name="total" id="total" type="text" value="<?php echo ($v["total"]); ?>">
-                                </div>
-                            </div>
-                            <div class="row form-group">
-                                <label class="control-label col-lg-1" for="place">商品产地：</label>
-                                <div class="col-lg-5 col-md-6">
-                                    <input class="form-control" name="place" id="place" type="text" value="<?php echo ($v["place"]); ?>">
-                                </div>
-                            </div>
-                            <div class="row form-group">
-                                <label class="control-label col-lg-1" for="picname">商品图片：</label>
-                                <div class="col-lg-5 col-md-6">
-                                    <input  type="file" name="picname" class="file" id="picname" value="<?php echo ($v["picname"]); ?>"/>
-
-                                </div>
-                            </div><?php endforeach; endif; ?>
-                        <div class="row form-group">
-                            <div class="col-lg-5 col-md-6" style="margin-bottom: 50px;">
-                                <input class="btn btn-info" type="submit" value="确定" />
-                                <input class="btn btn-info" type="reset" value="重置" />
-                                <a class="btn btn-info" style="margin-top: 10px;" href="javascript:window.history.back();">返回</a>
                             </div>
                         </div>
                     </div>
-                </form>
+                </div>
             </div>
         </div>
-    </div>
-</div>
-</body>
-</html>
+        <script>
+            function setAllNo(){
+                var box = document.getElementById("boxid");
+                var loves = document.getElementsByName("Did[]");
+                if(box.checked == false){
+                    for (var i = 0; i < loves.length; i++) {
+                        loves[i].checked = false;
+                    }
+                }else{
+                    for (var i = 0; i < loves.length; i++) {
+                        loves[i].checked = true;
+                    }
+                }
+            }
+        </script>
 </body>
 </html></div>
 </div>

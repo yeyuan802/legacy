@@ -8,6 +8,7 @@ class IndexController extends CommonController {
         $where1=array('status'=>'1');
         $travelcount=$model1->where($where1)->count();
 
+
         $model2=D('goods');
         $where2=array('status'=>'1');
         $goodscount=$model2->where($where2)->count();

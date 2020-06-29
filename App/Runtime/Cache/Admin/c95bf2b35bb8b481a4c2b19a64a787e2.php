@@ -41,18 +41,15 @@
                         <ul class="dropdown-menu">
                             <li><a href="/EPP_Project/legacy/Admin/Goods/index">查看商品</a></li>
                             <li><a href="/EPP_Project/legacy/Admin/Goods/add">添加商品</a></li>
-                            <li><a href="/EPP_Project/legacy/Admin/Goods/index">删除商品</a></li>
-                            <li><a href="/EPP_Project/legacy/Admin/Goods/index">修改商品</a></li>
                             <li><a href="/EPP_Project/legacy/Admin/Goods/search">查询商品</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a href="/EPP_Project/legacy/Admin/Travel/index" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-camera" aria-hidden="true"></span> 旅游管理<b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="/EPP_Project/legacy/Admin/Travel/index">查看旅游景点</a></li>
-                            <li><a href="/EPP_Project/legacy/Admin/Travel/add">增加旅游景点</a></li>
-                            <li><a href="/EPP_Project/legacy/Admin/Travel/search">查询旅游景点</a></li>
-                            <li><a href="/EPP_Project/legacy/Admin/Travel/index">修改旅游景点</a></li>
+                            <li><a href="/EPP_Project/legacy/Admin/Travel/index">查看景点</a></li>
+                            <li><a href="/EPP_Project/legacy/Admin/Travel/add">增加景点</a></li>
+                            <li> <a href="/EPP_Project/legacy/Admin/Travel/search">查询景点</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -77,8 +74,7 @@
                                 <ul class="dropdown-menu">
                                     <li><a href="/EPP_Project/legacy/Admin/Inheritor/index">查看传承人</a></li>
                                     <li><a href="/EPP_Project/legacy/Admin/Inheritor/add">增加传承人</a></li>
-                                    <li><a href="/EPP_Project/legacy/Admin/Inheritor/delete">删除传承人</a></li>
-                                    <li><a href="/EPP_Project/legacy/Admin/Inheritor/revise">修改传承人</a></li>
+                                    <li><a href="/EPP_Project/legacy/Admin/Inheritor/search">查询传承人</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown-submenu">
@@ -86,8 +82,6 @@
                                 <ul class="dropdown-menu">
                                     <li><a href="/EPP_Project/legacy/Admin/Policy/index">查看政策</a></li>
                                     <li><a href="/EPP_Project/legacy/Admin/Policy/add">增加政策</a></li>
-                                    <li><a href="/EPP_Project/legacy/Admin/Policy/delete">删除政策</a></li>
-                                    <li><a href="/EPP_Project/legacy/Admin/Policy/revise">修改政策</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -98,15 +92,22 @@
                             <li><a href="/EPP_Project/legacy/Admin/Message/index">查看留言</a></li>
                         </ul>
                     </li>
+                    <li class="dropdown">
+                        <a href="/EPP_Project/legacy/Admin/Director/index" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-camera" aria-hidden="true"></span> 名录管理<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/EPP_Project/legacy/Admin/Director/index">查看名录</a></li>
+                            <li><a href="/EPP_Project/legacy/Admin/Director/add">增加名录</a></li>
+                            <li> <a href="/EPP_Project/legacy/Admin/Director/search">查询名录</a></li>
+                        </ul>
+                    </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
+
+                    <li><a href="#"><?php $time=date("Y-m-d H:i"); echo $time ?></a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle " data-toggle="dropdown">admin<b class="caret"></b></a>
+                    <a href="#"  class="dropdown-toggle " data-toggle="dropdown">admin<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="/EPP_Project/legacy/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>前台首页</a></li>
-                            <li><a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span>个人设置</a></li>
-                            <li><a href="#"><span class="glyphicon glyphicon-credit-card" aria-hidden="true"></span>账户中心</a></li>
-                            <li><a href="#"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span>我的收藏</a></li>
                         </ul>
                     </li>
                     <li><a href="/EPP_Project/legacy/Admin/Login/logout"><span class="glyphicon glyphicon-off" aria-hidden="true"></span>退出</a></li>
@@ -117,7 +118,7 @@
 </div>
 
 
-<script>
+<!--<script>
     $(document).ready(function () {
         $(".activemenu li a").each(function () {
             $this=$(this);
@@ -126,7 +127,7 @@
             }
         });
     });
-</script>
+</script>-->
 
 <div id="content">
     <div class="item"><!DOCTYPE html>
@@ -138,7 +139,7 @@
 <body>
 <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
             <ul class="list-group">
-                <a href="/EPP_Project/legacy/Admin/Guest/index" class="list-group-item active">查看顾客信息</a>
+                <a href="/EPP_Project/legacy/Admin/Guest/index" class="list-group-item active">查看顾客</a>
                 <a href="/EPP_Project/legacy/Admin/Guest/searchguest" class="list-group-item">查询顾客</a>
             </ul>
         </div>
@@ -157,10 +158,12 @@
                             <!--选项卡面板-->
                             <div id="myTabContent" class="tab-content">
                                 <div class="tab-pane active" id="bulletin">
+
                                     <table class="table table-hover">
                                         <tbody>
                                         <tr class="bg-primary">
                                             <th scope="row"></th>
+
                                             <td>用户id</td>
                                             <td>昵称</td>
                                             <td>邮箱</td>
@@ -170,6 +173,7 @@
                                         </tr>
                                         <?php if(is_array($res)): foreach($res as $key=>$v): ?><tr class="bg-success">
                                                 <th scope="row"></th>
+
                                                 <td><?php echo ($v["uid"]); ?></td>
                                                 <td><?php echo ($v["nickname"]); ?></td>
                                                 <td><?php echo ($v["email"]); ?></td>
@@ -179,6 +183,7 @@
                                             </tr><?php endforeach; endif; ?>
                                         </tbody>
                                     </table>
+                                   
                                     <table>
                                         <nav class="pull-right">
                                             <ul class="pagination">
@@ -219,6 +224,7 @@
                 </div>
             </div>
         </div>
+
 
 </body>
 </html></div>

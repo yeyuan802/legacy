@@ -129,119 +129,92 @@
     <title>Title</title>
 </head>
 <body>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <style>
-        /*内容编辑*/
-        .data-edit{border:1px solid #ddd;background:#F7F7F7;max-width:550px;padding:20px 40px;}
-        .data-edit label{font-weight:normal;text-align:right;vertical-align:top;}
-        .data-edit label{padding:0 10px;}
-        .data-edit select{min-width:100px;height:26px;}
-        .data-edit .file{font-size:12px;}
-        .data-edit textarea{width:200px;height:50px;}
-        .data-edit input{width:200px;}
-    </style>
-</head>
-<body>
 <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
     <ul class="list-group">
-        <a href="/EPP_Project/legacy/Admin/Goods/index" class="list-group-item active">查看商品</a>
-        <a href="/EPP_Project/legacy/Admin/Goods/add" class="list-group-item ">添加商品</a>
-        <a href="/EPP_Project/legacy/Admin/Goods/search" class="list-group-item">查询商品</a>
+        <a href="/EPP_Project/legacy/Admin/Guest/index" class="list-group-item active">查看顾客</a>
+        <a href="/EPP_Project/legacy/Admin/Guest/searchguest" class="list-group-item">查询顾客</a>
     </ul>
 </div>
-<!--右侧主要内容-->
 <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
     <div class="panel panel-default">
         <div class="panel-heading">
-            <h1>商品管理</h1>
-        </div>
-        <div class="panel-body">
-            <div class="data-edit" align="center">
-                <form class="form-horizontal" method="post" enctype="multipart/form-data">
-                    <div class="container">
-                        <div class="row form-group" style="padding: 20px 0">
-                            <div class="col-lg-5 col-md-6">
-                                <h3>修改商品</h3>
-                            </div>
-                        </div>
-                        <?php if(is_array($res)): foreach($res as $key=>$v): ?><div class="row form-group">
-                                <label class="control-label col-lg-1" for="id">商品标号：</label>
-                                <div class="col-lg-5 col-md-6">
-                                    <input class="form-control" name="id" id="id" type="text" value="<?php echo ($v["gid"]); ?>">
-                                </div>
-                            </div>
-                            <div class="row form-group">
-                                <label class="control-label col-lg-1" for="goodname">商品名称：</label>
-                                <div class="col-lg-5 col-md-6">
-                                    <input class="form-control" name="goodname" id="goodname" type="text" value="<?php echo ($v["goodname"]); ?>">
-                                </div>
-                            </div>
-                            <div class="row form-group">
-                                <label class="control-label col-lg-1" for="price">商品价格：</label>
-                                <div class="col-lg-5 col-md-6">
-                                    <input class="form-control" name="price" id="price" type="text"  value="<?php echo ($v["price"]); ?>">
-                                </div>
-                            </div>
-                            <div class="row form-group">
-                                <label class="control-label col-lg-1" for="introduce">商品介绍：</label>
-                                <div class="col-lg-5 col-md-6">
-                                    <input class="form-control" name="introduce" id="introduce" type="text" value="<?php echo ($v["introduce"]); ?>">
-                                </div>
-                            </div>
-
-                            <div class="row form-group">
-
-                                <label class="control-label col-lg-1" for="time">上架时间：</label>
-                                <div class="col-lg-5 col-md-6">
-                                    <input class="form-control" name="time" id="time" type="text" value="<?php echo ($v["time"]); ?>">
-                                </div>
-                            </div>
-                            <div class="row form-group">
-
-                                <label class="control-label col-lg-1" for="discount">折扣：</label>
-                                <div class="col-lg-5 col-md-6">
-                                    <input class="form-control" name="discount" id="discount" type="text" value="<?php echo ($v["discount"]); ?>">
-
-                                </div>
-                            </div>
-                            <div class="row form-group">
-                                <label class="control-label col-lg-1" for="total">总量：</label>
-                                <div class="col-lg-5 col-md-6">
-                                    <input class="form-control" name="total" id="total" type="text" value="<?php echo ($v["total"]); ?>">
-                                </div>
-                            </div>
-                            <div class="row form-group">
-                                <label class="control-label col-lg-1" for="place">商品产地：</label>
-                                <div class="col-lg-5 col-md-6">
-                                    <input class="form-control" name="place" id="place" type="text" value="<?php echo ($v["place"]); ?>">
-                                </div>
-                            </div>
-                            <div class="row form-group">
-                                <label class="control-label col-lg-1" for="picname">商品图片：</label>
-                                <div class="col-lg-5 col-md-6">
-                                    <input  type="file" name="picname" class="file" id="picname" value="<?php echo ($v["picname"]); ?>"/>
-
-                                </div>
-                            </div><?php endforeach; endif; ?>
-                        <div class="row form-group">
-                            <div class="col-lg-5 col-md-6" style="margin-bottom: 50px;">
-                                <input class="btn btn-info" type="submit" value="确定" />
-                                <input class="btn btn-info" type="reset" value="重置" />
-                                <a class="btn btn-info" style="margin-top: 10px;" href="javascript:window.history.back();">返回</a>
-                            </div>
+            <!--这里放置标题、选项-->
+            <h1>查看顾客</h1>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <ul id="myTab" class="nav nav-tabs" role="tablist">
+                        <li class="active">
+                            <a href="#bulletin" role="tab" data-toggle="tab">查看顾客</a>
+                        </li>
+                    </ul>
+                    <!--选项卡面板-->
+                    <div id="myTabContent" class="tab-content">
+                        <div class="tab-pane active" id="bulletin">
+                            <table class="table table-hover">
+                                <tbody>
+                                <tr class="bg-primary">
+                                    <th scope="row"></th>
+                                    <td>用户id</td>
+                                    <td>昵称</td>
+                                    <td>订单</td>
+                                    <td>邮箱</td>
+                                    <td>电话号码</td>
+                                    <td>家庭住址</td>
+                                    <td>注册时间</td>
+                                </tr>
+                                <?php if(is_array($res)): foreach($res as $key=>$v): ?><tr class="bg-success">
+                                        <th scope="row"></th>
+                                        <td><?php echo ($v["uid"]); ?></td>
+                                        <td><?php echo ($v["nickname"]); ?></td>
+                                        <td><a href="/EPP_Project/legacy/Admin/Guest/order/uid/<?php echo ($v["uid"]); ?>">查看详情</a></td>
+                                        <td><?php echo ($v["email"]); ?></td>
+                                        <td><?php echo ($v["phone"]); ?></td>
+                                        <td><?php echo ($v["address"]); ?></td>
+                                        <td><?php echo ($v["regdate"]); ?></td>
+                                    </tr><?php endforeach; endif; ?>
+                                </tbody>
+                            </table>
+                            <table>
+                                <nav class="pull-right">
+                                    <ul class="pagination">
+                                        <?php echo $page; ?>
+                                        <!--          <li class="disabled">
+                                                      <a href="#" aria-label="Previous">
+                                                          <span aria-hidden="true">&laquo;</span>
+                                                      </a>
+                                                  </li>
+                                                  <li class="active">
+                                                      <a href="#">1</a>
+                                                  </li>
+                                                  <li>
+                                                      <a href="#">2</a>
+                                                  </li>
+                                                  <li>
+                                                      <a href="#">3</a>
+                                                  </li>
+                                                  <li>
+                                                      <a href="#">4</a>
+                                                  </li>
+                                                  <li>
+                                                      <a href="#">5</a>
+                                                  </li>
+                                                  <li>
+                                                      <a href="#">6</a>
+                                                  </li>
+                                                  <li><a href="#">
+                                                      <span aria-hidden="true">&raquo;</span>
+                                                  </a> </li>-->
+                                    </ul>
+                                </nav>
+                            </table>
                         </div>
                     </div>
-                </form>
+                </div>
             </div>
         </div>
     </div>
 </div>
-</body>
-</html>
+
 </body>
 </html></div>
 </div>

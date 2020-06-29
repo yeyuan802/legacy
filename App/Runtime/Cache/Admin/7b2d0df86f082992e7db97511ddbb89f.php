@@ -92,6 +92,14 @@
                             <li><a href="/EPP_Project/legacy/Admin/Message/index">查看留言</a></li>
                         </ul>
                     </li>
+                    <li class="dropdown">
+                        <a href="/EPP_Project/legacy/Admin/Director/index" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-camera" aria-hidden="true"></span> 名录管理<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/EPP_Project/legacy/Admin/Director/index">查看名录</a></li>
+                            <li><a href="/EPP_Project/legacy/Admin/Director/add">增加名录</a></li>
+                            <li> <a href="/EPP_Project/legacy/Admin/Director/search">查询名录</a></li>
+                        </ul>
+                    </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
 
@@ -122,7 +130,8 @@
 </script>-->
 
 <div id="content">
-    <div class="item"><!DOCTYPE html>
+    <div class="item">
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -148,16 +157,16 @@
 <body>
 <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
     <ul class="list-group">
-        <a href="/EPP_Project/legacy/Admin/Goods/index" class="list-group-item active">查看商品</a>
-        <a href="/EPP_Project/legacy/Admin/Goods/add" class="list-group-item ">添加商品</a>
-        <a href="/EPP_Project/legacy/Admin/Goods/search" class="list-group-item">查询商品</a>
+        <a href="/EPP_Project/legacy/Admin/Director/index" class="list-group-item">查看名录</a>
+        <a href="/EPP_Project/legacy/Admin/Director/add" class="list-group-item active">增加名录</a>
+
     </ul>
 </div>
 <!--右侧主要内容-->
 <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
     <div class="panel panel-default">
         <div class="panel-heading">
-            <h1>商品管理</h1>
+            <h1>增加名录</h1>
         </div>
         <div class="panel-body">
             <div class="data-edit" align="center">
@@ -165,73 +174,52 @@
                     <div class="container">
                         <div class="row form-group" style="padding: 20px 0">
                             <div class="col-lg-5 col-md-6">
-                                <h3>修改商品</h3>
+                                <h3>增加名录</h3>
                             </div>
                         </div>
-                        <?php if(is_array($res)): foreach($res as $key=>$v): ?><div class="row form-group">
-                                <label class="control-label col-lg-1" for="id">商品标号：</label>
-                                <div class="col-lg-5 col-md-6">
-                                    <input class="form-control" name="id" id="id" type="text" value="<?php echo ($v["gid"]); ?>">
-                                </div>
-                            </div>
-                            <div class="row form-group">
-                                <label class="control-label col-lg-1" for="goodname">商品名称：</label>
-                                <div class="col-lg-5 col-md-6">
-                                    <input class="form-control" name="goodname" id="goodname" type="text" value="<?php echo ($v["goodname"]); ?>">
-                                </div>
-                            </div>
-                            <div class="row form-group">
-                                <label class="control-label col-lg-1" for="price">商品价格：</label>
-                                <div class="col-lg-5 col-md-6">
-                                    <input class="form-control" name="price" id="price" type="text"  value="<?php echo ($v["price"]); ?>">
-                                </div>
-                            </div>
-                            <div class="row form-group">
-                                <label class="control-label col-lg-1" for="introduce">商品介绍：</label>
-                                <div class="col-lg-5 col-md-6">
-                                    <input class="form-control" name="introduce" id="introduce" type="text" value="<?php echo ($v["introduce"]); ?>">
-                                </div>
-                            </div>
-
-                            <div class="row form-group">
-
-                                <label class="control-label col-lg-1" for="time">上架时间：</label>
-                                <div class="col-lg-5 col-md-6">
-                                    <input class="form-control" name="time" id="time" type="text" value="<?php echo ($v["time"]); ?>">
-                                </div>
-                            </div>
-                            <div class="row form-group">
-
-                                <label class="control-label col-lg-1" for="discount">折扣：</label>
-                                <div class="col-lg-5 col-md-6">
-                                    <input class="form-control" name="discount" id="discount" type="text" value="<?php echo ($v["discount"]); ?>">
-
-                                </div>
-                            </div>
-                            <div class="row form-group">
-                                <label class="control-label col-lg-1" for="total">总量：</label>
-                                <div class="col-lg-5 col-md-6">
-                                    <input class="form-control" name="total" id="total" type="text" value="<?php echo ($v["total"]); ?>">
-                                </div>
-                            </div>
-                            <div class="row form-group">
-                                <label class="control-label col-lg-1" for="place">商品产地：</label>
-                                <div class="col-lg-5 col-md-6">
-                                    <input class="form-control" name="place" id="place" type="text" value="<?php echo ($v["place"]); ?>">
-                                </div>
-                            </div>
-                            <div class="row form-group">
-                                <label class="control-label col-lg-1" for="picname">商品图片：</label>
-                                <div class="col-lg-5 col-md-6">
-                                    <input  type="file" name="picname" class="file" id="picname" value="<?php echo ($v["picname"]); ?>"/>
-
-                                </div>
-                            </div><?php endforeach; endif; ?>
                         <div class="row form-group">
-                            <div class="col-lg-5 col-md-6" style="margin-bottom: 50px;">
+                            <label class="control-label col-lg-1" for="Did">名录id：</label>
+                            <div class="col-lg-5 col-md-6">
+                                <input class="form-control" name="Did" id="Did" type="text">
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <label class="control-label col-lg-1" for="name">名录名称：</label>
+                            <div class="col-lg-5 col-md-6">
+                                <input class="form-control" name="name" id="name" type="text">
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <label class="control-label col-lg-1" for="number">名录编号：</label>
+                            <div class="col-lg-5 col-md-6">
+                                <input class="form-control" name="number" id="number" type="text">
+                            </div>
+                        </div>
+
+                        <div class="row form-group">
+                            <label class="control-label col-lg-1">名录内容：</label>
+                            <div class="col-lg-5 col-md-6">
+                                <textarea class="form-control" rows="5" name="introduce"></textarea>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <label class="control-label col-lg-1" for="place">名录地区：</label>
+                            <div class="col-lg-5 col-md-6">
+                                <input class="form-control" name="place" id="place" type="text">
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <?php
+ $time=date("Y-m-d H:i:s"); ?>
+                            <label class="control-label col-lg-1" for="time">发布时间：</label>
+                            <div class="col-lg-5 col-md-6">
+                                <input class="form-control" name="time" id="time" type="text" value="<?php echo ($time); ?>">
+                            </div>
+                        </div>
+                        <div class="row form-group" style="margin-bottom: 50px;">
+                            <div class="col-lg-5 col-md-6">
                                 <input class="btn btn-info" type="submit" value="确定" />
                                 <input class="btn btn-info" type="reset" value="重置" />
-                                <a class="btn btn-info" style="margin-top: 10px;" href="javascript:window.history.back();">返回</a>
                             </div>
                         </div>
                     </div>
@@ -242,8 +230,7 @@
 </div>
 </body>
 </html>
-</body>
-</html></div>
+</div>
 </div>
 
 </body>
