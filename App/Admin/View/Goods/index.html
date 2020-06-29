@@ -19,10 +19,31 @@
             <h1>商品管理</h1>
         </div>
         <div class="panel-body">
+<<<<<<< HEAD
             <form action="__CONTROLLER__/delete/gid/{$v.gid}" method="get">
                 <table class="table table-hover">
                     <tbody>
                     <tr class="bg-primary">
+=======
+            <table class="table table-hover">
+                <tbody>
+                <tr class="bg-primary">
+                    <th scope="row"></th>
+                    <td><input type="checkbox" id="all">全选</td>
+                    <td>商品id</td>
+                    <td>商品名称</td>
+                    <td>商品类型</td>
+                    <td>商品价格</td>
+                    <td>商品简介</td>
+                    <td>上架时间</td>
+                    <td>商品总量</td>
+                    <td>折扣</td>
+                    <td>商品产地</td>
+                    <td>商品操作</td>
+                </tr>
+                <foreach name="res" item="v">
+                    <tr class="bg-success">
+>>>>>>> orgin/master
                         <th scope="row"></th>
                         <td><input type="checkbox" id="boxid" onclick="setAllNo()">全选</td>
                         <td>商品id</td>
