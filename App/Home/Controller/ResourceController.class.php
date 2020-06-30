@@ -87,6 +87,12 @@ class ResourceController extends Controller
         $this->display();
     }
 
+    public function cart(){
+        $goods=D("goods");
+        $goodsList = $goods->where("gid>0")->order(array('gid' => "asc"))->select();
+        $this->assign('goodsList',$goodsList);
+        $this->display();
+    }
     public function search(){
         $search = I('post.search','','trim');
         $dir= D("director");
