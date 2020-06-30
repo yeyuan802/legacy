@@ -48,16 +48,38 @@ class ResourceController extends Controller
     public function shop(){
         $goods=D("goods");
         $goodsList = $goods->where("gid>0")->order(array('gid' => "asc"))->select();
+        $travel=D("travel");
+        $travelList =  $travel->where("id>0")->order(array('id' => "asc"))->select();
         $this->assign('goodsList',$goodsList);
+        $this->assign('travelList',$travelList);
         $this->display();
     }
 
     public function single(){
         $gid = I('get.gid',0);
+
         $goods=D("goods");
+
         $map['gid'] = $gid;
+
         $singleSearch = $goods->where($map)->find();
+
         $this->assign('sList',$singleSearch);
+
+        $this->display();
+    }
+
+    public function tsingle(){
+
+        $id = I('get.id',0);
+
+        $travel=D("travel");
+
+        $map1['id'] = $id;
+
+        $travelSearch = $travel->where($map1)->find();
+
+        $this->assign('tList',$travelSearch);
         $this->display();
     }
 
