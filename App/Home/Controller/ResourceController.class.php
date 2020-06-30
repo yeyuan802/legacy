@@ -84,6 +84,9 @@ class ResourceController extends Controller
     }
 
     public function wishlist(){
+        $goods=D("goods");
+        $goodsList = $goods->where("gid>0")->order(array('gid' => "asc"))->select();
+        $this->assign('goodsList',$goodsList);
         $this->display();
     }
 
