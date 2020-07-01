@@ -73,6 +73,16 @@ class ResourceController extends Controller
         $this->display();
     }
 
+<<<<<<< HEAD
+=======
+    public function wishlist(){
+        $goods=D("goods");
+        $goodsList = $goods->where("gid>0")->order(array('gid' => "asc"))->select();
+        $this->assign('goodsList',$goodsList);
+        $this->display();
+    }
+
+>>>>>>> origin/master
     public function cart(){
         $cart = D("cart");
         if($_SESSION['userName']){

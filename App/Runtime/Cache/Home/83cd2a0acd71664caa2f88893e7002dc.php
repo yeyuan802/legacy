@@ -63,68 +63,11 @@
                             <a href="<?php echo U('User/login');?>"><i class="flaticon-people"></i></a>
                         </li>
                         <li class="shoping-cart">
-                            <a href="#">
+                            <a href="<?php echo U('Resource/cart');?>">
                                 <i class="flaticon-shop"></i>
-                                <span>2</span>
                             </a>
-                            <div class="add-to-cart-product">
-                                <div class="cart-product">
-                                    <div class="cart-product-image">
-                                        <a href="single-product.html">
-                                            <img src="/test/legacy/Public/shop/img/featured/1.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="cart-product-info">
-                                        <p>
-                                            <span>1</span>
-                                            x
-                                            <a href="single-product.html">合川峡砚</a>
-                                        </p>
-                                        <a href="single-product.html">12寸</a>
-                                        <span class="cart-price">￥300.00</span>
-                                    </div>
-                                    <div class="cart-product-remove">
-                                        <i class="fa fa-times"></i>
-                                    </div>
-                                </div>
-                                <div class="cart-product">
-                                    <div class="cart-product-image">
-                                        <a href="single-product.html">
-                                            <img src="/test/legacy/Public/shop/img/featured/1.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="cart-product-info">
-                                        <p>
-                                            <span>1</span>
-                                            x
-                                            <a href="single-product.html">合川峡砚</a>
-                                        </p>
-                                        <a href="single-product.html">12寸</a>
-                                        <span class="cart-price">￥300.00</span>
-                                    </div>
-                                    <div class="cart-product-remove">
-                                        <i class="fa fa-times"></i>
-                                    </div>
-                                </div>
-                                <div class="total-cart-price">
-                                    <div class="cart-product-line fast-line">
-                                        <span>优惠</span>
-                                        <span class="free-shiping">￥10.50</span>
-                                    </div>
-                                    <div class="cart-product-line">
-                                        <span>共计</span>
-                                        <span class="total">￥600.00</span>
-                                    </div>
-                                </div>
-                                <div class="cart-checkout">
-                                    <a href="checkout.html">
-                                        查看购物车
-                                        <i class="fa fa-chevron-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
 
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -150,8 +93,8 @@
                     <!-- Nav tabs -->
                     <ul class="product-tabs" role="tablist">
                         <li role="presentation" class="active"><a href="#one" aria-controls="one" role="tab" data-toggle="tab"><img src="/test/legacy/Public/shop/img/single-little/<?php echo ($sList['goodname']); ?>.jpg" alt=""></a></li>
-                        <li role="presentation"><a href="#two" aria-controls="two" role="tab" data-toggle="tab"><img src="/test/legacy/Public/shop/img/single-little/<?php echo ($sList['goodname']); ?>.jpg" alt=""></a></li>
-                        <li role="presentation"><a href="#three" aria-controls="three" role="tab" data-toggle="tab"><img src="/test/legacy/Public/shop/img/single-little/<?php echo ($sList['goodname']); ?>.jpg" alt=""></a></li>
+                        <li role="presentation"><a href="#" aria-controls="two" role="tab" data-toggle="tab"><img src="/test/legacy/Public/shop/img/single-little/<?php echo ($sList['goodname']); ?>.jpg" alt=""></a></li>
+                        <li role="presentation"><a href="#" aria-controls="three" role="tab" data-toggle="tab"><img src="/test/legacy/Public/shop/img/single-little/<?php echo ($sList['goodname']); ?>.jpg" alt=""></a></li>
                     </ul>
                 </div>
             </div>
@@ -177,26 +120,28 @@
                         <h2>￥<?php echo ($sList['price']); ?></h2>
                     </div>
                     <div class="product-attributes clearfix">
+                        <form action="<?php echo U('Resource/cart');?>">
                                 <span class="pull-left" id="quantity-wanted-p">
 									<span class="dec qtybutton">-</span>
 									<input type="text" value="1" class="cart-plus-minus-box">
 									<span class="inc qtybutton">+</span>
 								</span>
-                        <span>
-                                    <a class="cart-btn btn-default" href="cart.html">
+                                <span>
+                                    <button class="cart-btn btn-default" type="submit">
                                         <i class="flaticon-shop"></i>
                                         加入购物车
-                                    </a>
+                                    </button>
                                </span>
+                        </form>
                     </div>
                     <div class="add-to-wishlist">
-                        <a class="wish-btn" href="cart.html">
+                        <a class="wish-btn" href="<?php echo U('Resource/wishlist');?>">
                             <i class="fa fa-heart-o"></i>
                             加入收藏
                         </a>
                     </div>
 
-                    
+
                     <div id="product-comments-block-extra">
                         <ul class="comments-advices">
                             <li>

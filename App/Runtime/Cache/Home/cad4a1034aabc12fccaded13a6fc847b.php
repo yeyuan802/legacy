@@ -63,66 +63,11 @@
                             <a href="<?php echo U('User/login');?>"><i class="flaticon-people"></i></a>
                         </li>
                         <li class="shoping-cart">
-                            <a href="#">
+                            <a href="<?php echo U('Resource/cart');?>">
                                 <i class="flaticon-shop"></i>
-                                <span>2</span>
+
                             </a>
-                            <div class="add-to-cart-product">
-                                <div class="cart-product">
-                                    <div class="cart-product-image">
-                                        <a href="single-product.html">
-                                            <img src="/test/legacy/Public/shop/img/featured/1.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="cart-product-info">
-                                        <p>
-                                            <span>1</span>
-                                            x
-                                            <a href="single-product.html">合川峡砚</a>
-                                        </p>
-                                        <a href="single-product.html">12寸</a>
-                                        <span class="cart-price">￥300.00</span>
-                                    </div>
-                                    <div class="cart-product-remove">
-                                        <i class="fa fa-times"></i>
-                                    </div>
-                                </div>
-                                <div class="cart-product">
-                                    <div class="cart-product-image">
-                                        <a href="single-product.html">
-                                            <img src="/test/legacy/Public/shop/img/featured/1.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="cart-product-info">
-                                        <p>
-                                            <span>1</span>
-                                            x
-                                            <a href="single-product.html">合川峡砚</a>
-                                        </p>
-                                        <a href="single-product.html">12寸</a>
-                                        <span class="cart-price">￥300.00</span>
-                                    </div>
-                                    <div class="cart-product-remove">
-                                        <i class="fa fa-times"></i>
-                                    </div>
-                                </div>
-                                <div class="total-cart-price">
-                                    <div class="cart-product-line fast-line">
-                                        <span>优惠</span>
-                                        <span class="free-shiping">￥10.50</span>
-                                    </div>
-                                    <div class="cart-product-line">
-                                        <span>共计</span>
-                                        <span class="total">￥600.00</span>
-                                    </div>
-                                </div>
-                                <div class="cart-checkout">
-                                    <a href="checkout.html">
-                                        查看购物车
-                                        <i class="fa fa-chevron-right"></i>
-                                    </a>
-                                </div>
-                            </div>
+
                         </li>
 
                     </ul>
@@ -260,39 +205,7 @@
                 <div role="tabpanel" class="tab-pane fade in active" id="arrival">
                     <div class="featured-product-list indicator-style">
                         <?php if(is_array($goodsList)): foreach($goodsList as $key=>$gList): ?><div class="single-p-banner">
-                                <div class="col-md-3">
-                                    <div class="single-banner">
-                                        <div class="product-wrapper">
-                                            <a href="#" class="single-banner-image-wrapper">
-                                                <img alt="" src="/test/legacy/Public/shop/img/feature d/<?php echo ($gList['goodname']); ?>.jpg">
-                                                <div class="price"><span>￥</span><?php echo ($gList['price']); ?></div>
-                                                <div class="rating-icon">
-                                                    <i class="fa fa-star icolor"></i>
-                                                    <i class="fa fa-star icolor"></i>
-                                                    <i class="fa fa-star icolor"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                </div>
-                                            </a>
-                                            <div class="product-description">
-                                                <div class="functional-buttons">
-                                                    <a href="#" title="Add to Cart">
-                                                        <i class="fa fa-shopping-cart"></i>
-                                                    </a>
-                                                    <a href="#" title="Add to Wishlist">
-                                                        <i class="fa fa-heart-o"></i>
-                                                    </a>
-                                                    <a href="#" title="Quick view" data-toggle="modal" data-target="#productModal">
-                                                        <i class="fa fa-compress"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="banner-bottom text-center">
-                                            <a href="#"><?php echo ($gList['goodname']); ?></a>
-                                        </div>
-                                    </div>
-                                </div>
+
                                 <div class="col-md-3">
                                     <div class="single-banner">
                                         <div class="product-wrapper">
@@ -312,7 +225,7 @@
                                                     <a href="#" title="Add to Cart">
                                                         <i class="fa fa-shopping-cart"></i>
                                                     </a>
-                                                    <a href="#" title="Add to Wishlist">
+                                                    <a href="<?php echo U('Resource/wishlist');?>" title="Add to Wishlist">
                                                         <i class="fa fa-heart-o"></i>
                                                     </a>
                                                     <a href="#" title="Quick view" data-toggle="modal" data-target="#productModal">
@@ -346,84 +259,84 @@
             <div class="blog-list indicator-style">
                 <div class="col-md-3">
                     <div class="single-blog">
-                        <a href="single-#">
+                        <a href="<?php echo U('Resource/tsingle?id=1');?>">
                             <img src="/test/legacy/Public/shop/img/blog/1.jpg" alt="">
                         </a>
                         <div class="blog-info text-center">
-                            <a href="#"><h2>重庆之美</h2></a>
+                            <a href="<?php echo U('Resource/tsingle?id=1');?>"><h2><?php echo ($travelList[0]['place']); ?></h2></a>
                             <div class="blog-info-bottom">
-                                <span class="blog-author"> <a href="#">三峡三日游</a></span>
-                                <span class="blog-date">￥600</span>
+                                <span class="blog-author"> <a href="<?php echo U('Resource/tsingle?id=1');?>"><?php echo ($travelList[0]['little']); ?></a></span>
+                                <span class="blog-date"><?php echo ($travelList[0]['hticket']); ?></span>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="single-blog">
-                        <a href="single-#">
-                            <img src="/test/legacy/Public/shop/img/blog/2.jpg" alt="">
-                        </a>
-                        <div class="blog-info text-center">
-                            <a href="#"><h2>重庆之美</h2></a>
-                            <div class="blog-info-bottom">
-                                <span class="blog-author"> <a href="#">三峡三日游</a></span>
-                                <span class="blog-date">￥600</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="single-blog">
-                        <a href="single-#">
-                            <img src="/test/legacy/Public/shop/img/blog/3.jpg" alt="">
-                        </a>
-                        <div class="blog-info text-center">
-                            <a href="#"><h2>重庆之美</h2></a>
-                            <div class="blog-info-bottom">
-                                <span class="blog-author"> <a href="#">三峡三日游</a></span>
-                                <span class="blog-date">￥600</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="single-blog">
-                        <a href="single-#">
-                            <img src="/test/legacy/Public/shop/img/blog/4.jpg" alt="">
-                        </a>
-                        <div class="blog-info text-center">
-                            <a href="#"><h2>重庆之美</h2></a>
-                            <div class="blog-info-bottom">
-                                <span class="blog-author"> <a href="#">三峡三日游</a></span>
-                                <span class="blog-date">￥600</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="single-blog">
-                        <a href="single-#">
+                        <a href="<?php echo U('Resource/tsingle?id=3');?>">
                             <img src="/test/legacy/Public/shop/img/blog/1.jpg" alt="">
                         </a>
                         <div class="blog-info text-center">
-                            <a href="#"><h2>重庆之美</h2></a>
+                            <a href="<?php echo U('Resource/tsingle?id=3');?>"><h2><?php echo ($travelList[2]['place']); ?></h2></a>
                             <div class="blog-info-bottom">
-                                <span class="blog-author"> <a href="#">三峡三日游</a></span>
-                                <span class="blog-date">￥600</span>
+                                <span class="blog-author"> <a href="<?php echo U('Resource/tsingle?id=3');?>"><?php echo ($travelList[1]['little']); ?></a></span>
+                                <span class="blog-date"><?php echo ($travelList[2]['hticket']); ?></span>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="single-blog">
-                        <a href="single-#">
-                            <img src="/test/legacy/Public/shop/img/blog/2.jpg" alt="">
+                        <a href="<?php echo U('Resource/tsingle?id=3');?>">
+                            <img src="/test/legacy/Public/shop/img/blog/1.jpg" alt="">
                         </a>
                         <div class="blog-info text-center">
-                            <a href="#"><h2>重庆之美</h2></a>
+                            <a href="<?php echo U('Resource/tsingle?id=3');?>"><h2><?php echo ($travelList[2]['place']); ?></h2></a>
                             <div class="blog-info-bottom">
-                                <span class="blog-author"> <a href="#">三峡三日游</a></span>
-                                <span class="blog-date">￥600</span>
+                                <span class="blog-author"> <a href="<?php echo U('Resource/tsingle?id=3');?>"><?php echo ($travelList[2]['little']); ?></a></span>
+                                <span class="blog-date"><?php echo ($travelList[2]['hticket']); ?></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="single-blog">
+                        <a href="<?php echo U('Resource/tsingle?id=4');?>">
+                            <img src="/test/legacy/Public/shop/img/blog/1.jpg" alt="">
+                        </a>
+                        <div class="blog-info text-center">
+                            <a href="<?php echo U('Resource/tsingle?id=4');?>"><h2><?php echo ($travelList[3]['place']); ?></h2></a>
+                            <div class="blog-info-bottom">
+                                <span class="blog-author"> <a href="<?php echo U('Resource/tsingle?id=4');?>"><?php echo ($travelList[3]['little']); ?></a></span>
+                                <span class="blog-date"><?php echo ($travelList[3]['hticket']); ?></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="single-blog">
+                        <a href="<?php echo U('Resource/tsingle?id=5');?>">
+                            <img src="/test/legacy/Public/shop/img/blog/1.jpg" alt="">
+                        </a>
+                        <div class="blog-info text-center">
+                            <a href="<?php echo U('Resource/tsingle?id=5');?>"><h2><?php echo ($travelList[4]['place']); ?></h2></a>
+                            <div class="blog-info-bottom">
+                                <span class="blog-author"> <a href="<?php echo U('Resource/tsingle?id=5');?>"><?php echo ($travelList[4]['little']); ?></a></span>
+                                <span class="blog-date"><?php echo ($travelList[4]['hticket']); ?></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="single-blog">
+                        <a href="<?php echo U('Resource/tsingle?id=1');?>">
+                            <img src="/test/legacy/Public/shop/img/blog/1.jpg" alt="">
+                        </a>
+                        <div class="blog-info text-center">
+                            <a href="<?php echo U('Resource/tsingle?id=1');?>"><h2><?php echo ($travelList[0]['place']); ?></h2></a>
+                            <div class="blog-info-bottom">
+                                <span class="blog-author"> <a href="<?php echo U('Resource/tsingle?id=1');?>"><?php echo ($travelList[0]['little']); ?></a></span>
+                                <span class="blog-date"><?php echo ($travelList[0]['hticket']); ?></span>
                             </div>
                         </div>
                     </div>
