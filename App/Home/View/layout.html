@@ -40,7 +40,7 @@
     <a href="{:U('Index/index')}"><img id="logo" src="__PUBLIC__/Home/image/logo/logo.png"></a>
     <div id="userinfo">
         <if condition="isset($_SESSION['userName'])">
-            <h4><img width="25px" height="25px" style="margin-right: 10px;" src="__PUBLIC__/Home/image/icon/user2.png">当前用户：{$Think.session.userName}   <a href="{:U('User/logout')}">注销</a></h4>
+            <h4><img width="25px" height="25px" style="margin-right: 10px;" src="__PUBLIC__/Home/image/icon/user2.png">当前用户：{$Think.session.userName}   <a href="{:U('User/logout')}">注销</a>&emsp;<a href="{:U('User/change')}">修改密码</a></h4>
             <h5><img width="25px" height="25px" style="margin-right: 10px;" src="__PUBLIC__/Home/image/icon/clock2.png">{$Think.now}</h5>
             <else />
             <h4><a href="{:U('User/login')}"><img width="25px" height="25px" style="margin-right: 10px;" src="__PUBLIC__/Home/image/icon/user1.png">点击登录</a> </h4>

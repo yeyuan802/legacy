@@ -12,7 +12,7 @@ use Think\Model;
 class MessageModel extends Model
 {
     protected $_validate = array(
-        array('writer', 'require', '姓名不能为空！'), //默认情况下用正则进行验证
+        array('writer', 'require', '<script>alert("姓名不能为空!");</script>'), //默认情况下用正则进行验证
         array('email', 'email', '<script>alert("邮箱格式不正确!");</script>'), // 内置正则验证邮箱格式
         array('phone', '/^1[34578]\d{9}$/', '<script>alert("手机号码格式不正确!");</script>', 0), // 正则表达式验证手机号码
     );

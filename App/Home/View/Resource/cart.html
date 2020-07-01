@@ -56,9 +56,7 @@
             <div class="col-md-1 hidden-sm">
                 <div class="header-right">
                     <ul style="width:150px;">
-                        <li>
-                            <a href="{:U('Resource/wishlist')}"><i class="fa fa-heart-o"></i></a>
-                        </li>
+
                         <li>
                             <a href="{:U('User/login')}"><i class="flaticon-people"></i></a>
                         </li>
@@ -71,98 +69,116 @@
                 </div>
             </div>
         </div>
+
     </div>
 </div>
 <!--Header Area End-->
 <!-- Single Product Area Start -->
-<!-- Breadcrumbs Area Start -->
-<!-- Cart Area Start -->
-<div class="shopping-cart-area section-padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="wishlist-table-area table-responsive">
-                    <table>
-                        <thead>
-                        <tr>
-                            <th class="product-remove">删除</th>
-                            <th class="product-image">图片</th>
-                            <th class="t-product-name">商品</th>
-                            <th class="product-edit">编辑</th>
-                            <th class="product-unit-price">单价</th>
-                            <th class="product-quantity">数量</th>
-                            <th class="product-subtotal">总价</th>
-                        </tr>
-                        </thead>
-                        <tbody>
+<if condition="$Think.session.userName eq null">
+    <script type="text/javascript">
+        alert("请先登录！");
+        window.location.href="{:U('User/login')}";
+
+    </script>
+    <else />
+    <!-- Cart Area Start -->
+    <div class="shopping-cart-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="wishlist-table-area table-responsive">
+                        <table>
+                            <thead>
                             <tr>
-                            <td class="product-remove">
-                                <a href="#">
-                                    <i class="flaticon-delete"></i>
-                                </a>
-                            </td>
-                            <td class="product-image">
-                                <a href="#">
-                                    <img src="__PUBLIC__/shop/img/single-little/{$goodsList[6]['goodname']}.jpg">
-                                </a>
-                            </td>
-                            <td class="t-product-name">
-                                <h3>
-                                    <a href="#">{$goodsList[6]['goodname']}</a>
-                                </h3>
-                            </td>
-                            <td class="product-edit">
-                                <p>
-                                    <a href="#">编辑</a>
-                                </p>
-                            </td>
-                            <td class="product-unit-price">
-                                <p>￥{$goodsList[6]['price']}</p>
-                            </td>
-                            <td class="product-quantity product-cart-details">
-                                <input type="number" value="1">
-                            </td>
-                            <td class="product-quantity">
-                                <p>￥{$goodsList[6]['price']}</p>
-                            </td>
-                        </tr>
+                                <th class="product-remove">删除</th>
+                                <th class="product-image">图片</th>
+                                <th class="t-product-name">商品</th>
+                                <th class="product-edit">编辑</th>
+                                <th class="product-unit-price">单价(元)</th>
+                                <th class="product-quantity">数量</th>
+                                <th class="product-subtotal">总价(元)</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <foreach name="cartGoods" item="cart">
+                                <tr>
+                                    <td class="product-remove">
+                                        <form action="{:U('Resource/moveCart')}" method="post">
+                                            <input type="hidden" name="id" value="{$cart['id']}">
+                                            <button type="submit" value="删除">删除</button>
+                                        </form>
+                                    </td>
+                                    <td class="product-image">
 
-                        </tbody>
-                    </table>
-                </div>
-                <div class="shopingcart-bottom-area">
-                    <a class="left-shoping-cart" href="#">继续购物</a>
-                    <div class="shopingcart-bottom-area pull-right">
-                        <a class="right-shoping-cart" href="#">清空购物车</a>
-                        <a class="right-shoping-cart" href="#">更新购物车</a>
+                                            <img src="__PUBLIC__/shop/img/single-little/{$cart['goodname']}.jpg">
+
+                                    </td>
+                                    <td class="t-product-name">
+                                        <h3>
+                                            <a href="#">{$cart['goodname']}</a>
+                                        </h3>
+                                    </td>
+                                    <td class="product-edit">
+                                        <p>
+                                            <a href="#">编辑</a>
+                                        </p>
+                                    </td>
+                                    <td class="product-unit-price">
+                                        <p>￥{$cart['price']}</p>
+                                    </td>
+                                    <td class="product-quantity">
+
+                                        {$cart['num']}
+
+                                    </td>
+                                    <td class="product-quantity">
+
+                                        <p>￥{$cart['price']*$cart['num']}</p>
+                                    </td>
+
+                                </tr>
+                                <div style="display: none">{$total=$cart['price']*$cart['num']+$total}</div>
+                            </foreach>
+
+                            </tbody>
+                        </table>
+
+                    </div>
+                    <div class="shopingcart-bottom-area">
+                        <a class="left-shoping-cart" href="{:U('Resource/shop')}">继续购物</a>
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Cart Area End -->
-<!-- Discount Area Start -->
-<div class="discount-area">
-    <div class="container">
-        <div class="row">
+    <!-- Cart Area End -->
 
-            <div class="col-md-12 col-sm-12">
-                <div class="subtotal-main-area">
-                    <div class="subtotal-area">
-                        <h2>总价<span>$ 200</span></h2>
-                    </div>
-                    <div class="subtotal-area">
-                        <h2>折后总价<span>$ 200</span></h2>
-                    </div>
-                    <a href="#">点击购买</a>
+    <!-- Discount Area Start -->
+    <div class="discount-area">
+        <div class="container">
+            <div class="row">
 
+                <div class="col-md-12 col-sm-12">
+                    <div class="subtotal-main-area">
+                        <div class="subtotal-area">
+                            <h2>总价<span>￥{$total}</span></h2>
+                        </div>
+                        <div class="subtotal-area">
+                            <h2>折后总价<span>￥{$total}</span></h2>
+                        </div>
+                        <a href="{:U('Resource/buy?total=$total')}">点击购买</a>
+
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Discount Area End -->
+    <!-- Discount Area End -->
+</if>
+
+<!-- Breadcrumbs Area Start -->
+
 <!-- Single Product Area End -->
 <div class="footer">
     <div class="container" id="foot-box">

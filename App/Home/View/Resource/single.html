@@ -56,9 +56,7 @@
             <div class="col-md-1 hidden-sm">
                 <div class="header-right">
                     <ul style="width:150px;">
-                        <li>
-                            <a href="{:U('Resource/wishlist')}"><i class="fa fa-heart-o"></i></a>
-                        </li>
+
                         <li>
                             <a href="{:U('User/login')}"><i class="flaticon-people"></i></a>
                         </li>
@@ -75,8 +73,14 @@
     </div>
 </div>
 <!--Header Area End-->
-<!-- Single Product Area Start -->
-<div class="single-product-area section-padding">
+<if condition="$Think.session.userName eq null">
+    <script type="text/javascript">
+        alert("请先登录！");
+        window.location.href="{:U('User/login')}";
+    </script>
+    <else />
+    <!-- Single Product Area Start -->
+    <div class="single-product-area section-padding">
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-sm-7">
@@ -122,13 +126,16 @@
                         <h2>￥{$sList['price']}</h2>
                     </div>
                     <div class="product-attributes clearfix">
-                        <form action="{:U('Resource/cart')}">
+                        <form action="{:U('Resource/addCart')}" method="post">
                                 <span class="pull-left" id="quantity-wanted-p">
 									<span class="dec qtybutton">-</span>
-									<input type="text" value="1" class="cart-plus-minus-box">
+									<input type="text" name="num" value="1" class="cart-plus-minus-box">
+
 									<span class="inc qtybutton">+</span>
+
 								</span>
                                 <span>
+                                    <input type="hidden" name="gid"  value="{$sList['gid']}">
                                     <button class="cart-btn btn-default" type="submit">
                                         <i class="flaticon-shop"></i>
                                         加入购物车
@@ -136,12 +143,7 @@
                                </span>
                         </form>
                     </div>
-                    <div class="add-to-wishlist">
-                        <a class="wish-btn" href="cart.html">
-                            <i class="fa fa-heart-o"></i>
-                            加入收藏
-                        </a>
-                    </div>
+
 
 
                     <div id="product-comments-block-extra">
@@ -197,7 +199,8 @@
         </div>
     </div>
 </div>
-<!-- Single Product Area End -->
+</if>
+    <!-- Single Product Area End -->
 <div class="footer">
     <div class="container" id="foot-box">
         <a href="#">免责声明</a>|
